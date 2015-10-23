@@ -4,7 +4,7 @@ This is a collection of node packages expressed in the nix language. They can be
 
 ## Using this library
 
-Make sure you have nix installed.
+Of course, make sure you have nix installed.
 
 Clone the repo:
 
@@ -12,23 +12,17 @@ Clone the repo:
 $ git clone https://github.com/adnelson/nix-node-packages.git
 ```
 
-The expressions here refer to a `nodeLib` nix path variable. Add the `nodeLib` directory here to your `NIX_PATH`:
-
-```bash
-$ export NIX_PATH="nodeLibs=$PWD/nix-node-packages/nodeLib:$NIX_PATH"
-```
-
-They also reference `nixpkgs`, so make sure you have it your `NIX_PATH`. For example, to point it at your `nixpkgs` channel:
+The expressions here refer to a `nixpkgs` path variable, so make sure you have it your `NIX_PATH`. For example, to point it at your `nixpkgs` channel:
 
 ```bash
 $ export NIX_PATH="$HOME/.nix-defexpr/channels:$NIX_PATH"
 ```
 
-After that you're free to do whatever you please with the library. For example, to build `grunt.js`:
+After that you're free to do whatever you please with the library. Packages are locate under the top-level attribute `nodePackages`. An unqualified name will build the latest version (as determined by comparing package version names), while a particular version can be referred to as shown below. For example, the following commands build the latest version of `grunt`, and version `0.4.5`, respectively:
 
 ```bash
-$ nix-build nix-node-packages/nodePackages -A grunt
-$ nix-build nix-node-packages/nodePackages -A grunt_0-4-5
+$ nix-build nix-node-packages/nodePackages -A nodePackages.grunt
+$ nix-build nix-node-packages/nodePackages -A nodePackages.grunt_0-4-5
 ```
 
 ## Extending the libraries
