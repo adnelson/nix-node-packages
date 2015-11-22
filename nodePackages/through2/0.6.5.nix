@@ -8,10 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       xtend_4-0-1
-      (brokenPackage {
-        name = "readable-stream";
-        reason = "NoMatchingVersion >=1.0.33-1 <1.1.0-0";
-      })
+      readable-stream_1-0-33
     ];
     meta = {
       homepage = "https://github.com/rvagg/through2";
