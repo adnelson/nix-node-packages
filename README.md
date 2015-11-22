@@ -32,7 +32,7 @@ It's possible that you'll want to add additional packages that haven't been defi
 ### Adding new packages to the central package set
 
 ```bash
-$ nixfromnpm -p package1 -p package2 -o nix-node-packages/nodePackages
+$ nixfromnpm -p package1 -p package2 -o nix-node-packages
 ```
 
 This will calculate expressions for `package1` and `package2`, and place the generated expressions alongside all of the existing packages.
@@ -40,7 +40,7 @@ This will calculate expressions for `package1` and `package2`, and place the gen
 ### Create a new package set which refers to the central set
 
 ```bash
-$ nixfromnpm -p package1 -p package2 -o path/to/new/set --extend nix-node-packages/nodePackages
+$ nixfromnpm -p package1 -p package2 -o path/to/new/set --extend nix-node-packages
 ```
 
 This will calculate expressions for `package1` and `package2`, and place them and their dependencies in `path/to/new/set`. However, any dependencies which exist in `nix-node-packages/nodePackages` will not need to be fetched, and will not appear in `path/to/new/set`.
@@ -50,5 +50,5 @@ This will calculate expressions for `package1` and `package2`, and place them an
 You might have a project which has a `package.json` that specifies a bunch of dependencies. You can use `nixfromnpm` to generate expressions for the package's dependencies, and output a `default.nix` file for the package.
 
 ```bash
-$ nixfromnpm -f path/to/project -o nix-node-packags/nodePackages
+$ nixfromnpm -f path/to/project -o nix-node-packags
 ```
