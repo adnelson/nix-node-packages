@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "regex-cache";
     version = "0.4.2";

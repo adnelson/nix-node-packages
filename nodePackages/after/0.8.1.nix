@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "after";
     version = "0.8.1";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "filenamify";
     version = "1.2.0";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "55ce57cec2966431f34ab002eb70659210bbde49";
     };
     deps = with nodePackages; [
-      filename-reserved-regex_1-0-0
-      trim-repeated_1-0-0
       strip-outer_1-0-0
+      trim-repeated_1-0-0
+      filename-reserved-regex_1-0-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/filenamify";

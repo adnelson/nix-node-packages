@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "isobject";
     version = "1.0.2";

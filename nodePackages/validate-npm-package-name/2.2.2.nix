@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "validate-npm-package-name";
     version = "2.2.2";

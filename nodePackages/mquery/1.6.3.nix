@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "mquery";
     version = "1.6.3";
@@ -8,9 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       sliced_0-0-5
-      bluebird_2-9-26
-      regexp-clone_0-0-1
       debug_2-2-0
+      regexp-clone_0-0-1
+      bluebird_2-9-26
     ];
     meta = {
       homepage = "https://github.com/aheckmann/mquery/";

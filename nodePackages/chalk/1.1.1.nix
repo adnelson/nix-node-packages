@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "chalk";
     version = "1.1.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "509afb67066e7499f7eb3535c77445772ae2d019";
     };
     deps = with nodePackages; [
-      ansi-styles_2-1-0
       strip-ansi_3-0-0
+      ansi-styles_2-1-0
       has-ansi_2-0-0
       supports-color_2-0-0
       escape-string-regexp_1-0-3

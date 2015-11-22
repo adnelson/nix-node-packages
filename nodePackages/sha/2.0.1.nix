@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "sha";
     version = "2.0.1";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       graceful-fs_4-1-2
-      readable-stream_2-0-2
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/ForbesLindesay/sha";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "vinyl";
     version = "0.5.3";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "b0455b38fc5e0cf30d4325132e461970c2091cde";
     };
     deps = with nodePackages; [
+      clone-stats_0-0-1
       replace-ext_0-0-1
       clone_1-0-2
-      clone-stats_0-0-1
     ];
     meta = {
       homepage = "http://github.com/wearefractal/vinyl";

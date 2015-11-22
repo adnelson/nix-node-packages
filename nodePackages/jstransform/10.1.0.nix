@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "jstransform";
     version = "10.1.0";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "b4c49bf63f162c108b0348399a8737c713b0a83a";
     };
     deps = with nodePackages; [
-      esprima-fb_13001-1001-0-dev-harmony-fb
       source-map_0-1-31
+      esprima-fb_13001-1001-0-dev-harmony-fb
       base62_0-1-1
     ];
     meta = {

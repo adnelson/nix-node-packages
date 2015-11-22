@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "gulp-sourcemaps";
     version = "1.6.0";
@@ -7,10 +7,10 @@ buildNodePackage {
       sha1 = "b86ff349d801ceb56e1d9e7dc7bbcb4b7dee600c";
     };
     deps = with nodePackages; [
-      graceful-fs_4-1-2
-      convert-source-map_1-1-1
+      convert-source-map_1-1-2
       through2_2-0-0
       vinyl_1-1-0
+      graceful-fs_4-1-2
       strip-bom_2-0-0
     ];
     meta = {

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "gulp-decompress";
     version = "1.2.0";
@@ -7,10 +7,10 @@ buildNodePackage {
       sha1 = "8eeb65a5e015f8ed8532cafe28454960626f0dc7";
     };
     deps = with nodePackages; [
-      archive-type_3-0-1
-      gulp-util_3-0-7
+      archive-type_3-0-2
       decompress_3-0-0
-      readable-stream_2-0-3
+      gulp-util_3-0-7
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/kevva/gulp-decompress#readme";

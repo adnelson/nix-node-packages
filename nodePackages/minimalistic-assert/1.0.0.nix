@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "minimalistic-assert";
     version = "1.0.0";
@@ -11,5 +11,6 @@ buildNodePackage {
     meta = {
       homepage = "https://github.com/calvinmetcalf/minimalistic-assert";
       description = "minimalistic-assert ===";
+      author = "";
     };
   }

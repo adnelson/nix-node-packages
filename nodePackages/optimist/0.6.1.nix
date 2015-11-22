@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "optimist";
     version = "0.6.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "da3ea74686fa21a19a111c326e90eb15a0196686";
     };
     deps = with nodePackages; [
-      wordwrap_0-0-3
       minimist_0-0-8
+      wordwrap_0-0-3
     ];
     meta = {
       homepage = "https://github.com/substack/node-optimist";

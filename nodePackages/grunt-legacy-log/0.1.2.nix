@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "grunt-legacy-log";
     version = "0.1.2";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "15ee03b61e262e1b36f13762d967923cd1ce515e";
     };
     deps = with nodePackages; [
-      hooker_0-2-3
       lodash_2-4-2
       underscore-string_2-3-3
+      hooker_0-2-3
       colors_0-6-2
       grunt-legacy-log-utils_0-1-1
     ];

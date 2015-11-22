@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "liftoff";
     version = "2.2.0";
@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "f5fcfa4583113159d12935a8a0616f50128b5753";
     };
     deps = with nodePackages; [
-      findup-sync_0-3-0
       extend_2-0-1
-      resolve_1-1-6
       rechoir_0-6-2
+      findup-sync_0-3-0
       flagged-respawn_0-3-1
+      resolve_1-1-6
     ];
     meta = {
       homepage = "https://github.com/tkellen/node-liftoff";

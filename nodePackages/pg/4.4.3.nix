@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "pg";
     version = "4.4.3";
@@ -8,17 +8,12 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       pg-connection-string_0-1-3
-      packet-reader_0-2-0
       pgpass_0-0-3
+      generic-pool_2-1-1
+      packet-reader_0-2-0
+      pg-types_1-10-0
       buffer-writer_1-0-0
       semver_4-3-6
-      generic-pool_2-1-1
-      pg-types_1-10-0
-    ];
-    devDependencies = with nodePackages; [
-      async_0-9-0
-      jshint_2-5-2
-      pg-copy-streams_0-3-0
     ];
     meta = {
       homepage = "http://github.com/brianc/node-postgres";

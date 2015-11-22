@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "buildmail";
     version = "2.0.0";
@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "f0b7b0a59e9a4a1b5066bbfa051d248f3832eece";
     };
     deps = with nodePackages; [
-      libbase64_0-1-0
-      needle_0-10-0
       addressparser_0-3-2
       libmime_1-2-0
       libqp_1-1-0
+      libbase64_0-1-0
+      needle_0-10-0
     ];
     meta = {
       homepage = "https://github.com/andris9/buildmail#readme";

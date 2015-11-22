@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "d";
     version = "0.1.1";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "da184c535d18d8ee7ba2aa229b914009fae11309";
     };
     deps = with nodePackages; [
-      es5-ext_0-10-2
+      es5-ext_0-10-8
     ];
     meta = {
       homepage = "https://github.com/medikoo/d";

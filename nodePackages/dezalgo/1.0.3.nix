@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "dezalgo";
     version = "1.0.3";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "7f742de066fc748bc8db820569dddce49bf0d456";
     };
     deps = with nodePackages; [
-      wrappy_1-0-1
       asap_2-0-3
+      wrappy_1-0-1
     ];
     meta = {
       homepage = "https://github.com/npm/dezalgo";

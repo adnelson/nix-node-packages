@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "parsejson";
     version = "0.0.1";
@@ -11,5 +11,6 @@ buildNodePackage {
     ];
     meta = {
       description = "Method that parses a JSON string and returns a JSON object";
+      author = "";
     };
   }

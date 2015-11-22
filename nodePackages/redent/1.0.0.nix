@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "redent";
     version = "1.0.0";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "cf916ab1fd5f1f16dfb20822dd6ec7f730c2afde";
     };
     deps = with nodePackages; [
-      strip-indent_1-0-1
       indent-string_2-1-0
+      strip-indent_1-0-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/redent";

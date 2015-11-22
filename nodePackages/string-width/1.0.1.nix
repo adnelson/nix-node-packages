@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "string-width";
     version = "1.0.1";
@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       strip-ansi_3-0-0
-      is-fullwidth-code-point_1-0-0
       code-point-at_1-0-0
+      is-fullwidth-code-point_1-0-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/string-width";

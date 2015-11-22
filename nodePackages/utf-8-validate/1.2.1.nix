@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "utf-8-validate";
     version = "1.2.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "44cb7c6eead73d6b40448f71f745904357b9f72c";
     };
     deps = with nodePackages; [
-      bindings_1-2-1
       nan_2-1-0
+      bindings_1-2-1
     ];
     devDependencies = [];
     meta = {

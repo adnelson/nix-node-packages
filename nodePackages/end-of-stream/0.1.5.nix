@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "end-of-stream";
     version = "0.1.5";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8e177206c3c80837d85632e8b9359dfe8b2f6eaf";
     };
     deps = with nodePackages; [
-      once_1-3-2
+      once_1-3-3
     ];
     devDependencies = [];
     meta = {

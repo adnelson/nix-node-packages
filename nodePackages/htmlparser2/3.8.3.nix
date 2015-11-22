@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "htmlparser2";
     version = "3.8.3";
@@ -8,10 +8,10 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       entities_1-0-0
-      domelementtype_1-1-3
       domhandler_2-3-0
+      domelementtype_1-1-3
+      readable-stream_1-1-13
       domutils_1-5-1
-      readable-stream_1-1-13-1
     ];
     meta = {
       homepage = "https://github.com/fb55/htmlparser2#readme";

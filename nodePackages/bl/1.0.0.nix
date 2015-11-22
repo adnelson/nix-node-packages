@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "bl";
     version = "1.0.0";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "ada9a8a89a6d7ac60862f7dec7db207873e0c3f5";
     };
     deps = with nodePackages; [
-      readable-stream_2-0-3
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/rvagg/bl";

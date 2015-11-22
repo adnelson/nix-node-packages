@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "uglify-js";
     version = "2.2.5";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "a6e02a70d839792b9780488b7b8b184c095c99c7";
     };
     deps = with nodePackages; [
-      source-map_0-1-43
+      source-map_0-1-31
       optimist_0-3-7
     ];
     devDependencies = [];

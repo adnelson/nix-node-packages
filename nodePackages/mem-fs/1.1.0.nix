@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "mem-fs";
     version = "1.1.0";
@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       through2_0-6-5
       vinyl_0-4-6
-      vinyl-file_1-2-1
+      vinyl-file_1-3-0
     ];
     meta = {
       homepage = "https://github.com/SBoudrias/mem-fs";

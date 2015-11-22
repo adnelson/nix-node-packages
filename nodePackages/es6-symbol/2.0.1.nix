@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "es6-symbol";
     version = "2.0.1";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "761b5c67cfd4f1d18afb234f691d678682cb3bf3";
     };
     deps = with nodePackages; [
-      es5-ext_0-10-5
+      es5-ext_0-10-8
       d_0-1-1
     ];
     meta = {

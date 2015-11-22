@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "create-hmac";
     version = "1.1.4";
@@ -14,5 +14,6 @@ buildNodePackage {
       homepage = "https://github.com/crypto-browserify/createHmac";
       description = "node style hmacs in the browser";
       keywords = [ "crypto" "hmac" ];
+      author = "";
     };
   }

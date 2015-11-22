@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "stream-browserify";
     version = "2.0.1";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       inherits_2-0-1
-      readable-stream_2-0-2
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/substack/stream-browserify";

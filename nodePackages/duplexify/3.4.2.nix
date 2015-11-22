@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "duplexify";
     version = "3.4.2";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "71a578af03e0d063eb8f1326affd5e5600145e1b";
     };
     deps = with nodePackages; [
+      readable-stream_2-0-4
       end-of-stream_1-0-0
-      readable-stream_2-0-2
     ];
     meta = {
       homepage = "https://github.com/mafintosh/duplexify";

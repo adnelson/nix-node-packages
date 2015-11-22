@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "es6-weak-map";
     version = "0.1.4";
@@ -8,12 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       es5-ext_0-10-8
-      (brokenPackage {
-        name = "es6-iterator";
-        reason = "NoMatchingVersion >=0.1.3 <0.2.0";
-      })
-      es6-symbol_2-0-1
+      es6-iterator_0-1-3
       d_0-1-1
+      es6-symbol_2-0-1
     ];
     meta = {
       homepage = "https://github.com/medikoo/es6-weak-map";

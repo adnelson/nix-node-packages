@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "realize-package-specifier";
     version = "3.0.1";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "fde32e926448e38f99334d95b7b08d51e3a98d9f";
     };
     deps = with nodePackages; [
-      npm-package-arg_4-0-2
+      npm-package-arg_4-1-0
       dezalgo_1-0-3
     ];
     meta = {

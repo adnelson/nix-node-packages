@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "rc";
     version = "0.5.5";
@@ -8,9 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       ini_1-3-4
+      minimist_0-0-8
       strip-json-comments_0-1-3
       deep-extend_0-2-11
-      minimist_0-0-8
     ];
     devDependencies = [];
     meta = {

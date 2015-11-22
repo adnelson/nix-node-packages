@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "output-file-sync";
     version = "1.1.1";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       mkdirp_0-5-1
-      xtend_4-0-0
+      xtend_4-0-1
     ];
     meta = {
       homepage = "https://github.com/shinnn/output-file-sync#readme";

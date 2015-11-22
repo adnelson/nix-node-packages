@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "readable-stream";
     version = "1.0.27-1";
@@ -8,9 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       string_decoder_0-10-31
-      core-util-is_1-0-1
       inherits_2-0-1
       isarray_0-0-1
+      core-util-is_1-0-2
     ];
     meta = {
       homepage = "https://github.com/isaacs/readable-stream";

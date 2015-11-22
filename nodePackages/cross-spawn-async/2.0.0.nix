@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "cross-spawn-async";
     version = "2.0.0";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "4af143df4156900d012be41cabf4da3abfc797c0";
     };
     deps = with nodePackages; [
-      lru-cache_2-7-0
       which_1-2-0
+      lru-cache_2-7-0
     ];
     meta = {
       homepage = "https://github.com/IndigoUnited/node-cross-spawn-async#readme";

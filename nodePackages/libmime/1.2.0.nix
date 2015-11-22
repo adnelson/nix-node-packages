@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "libmime";
     version = "1.2.0";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "8d84b4f3b225b3704410236ef494906436ba742b";
     };
     deps = with nodePackages; [
-      libbase64_0-1-0
       iconv-lite_0-4-13
       libqp_1-1-0
+      libbase64_0-1-0
     ];
     meta = {
       homepage = "https://github.com/andris9/libmime";

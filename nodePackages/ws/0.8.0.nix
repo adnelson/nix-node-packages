@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "ws";
     version = "0.8.0";
@@ -9,8 +9,12 @@ buildNodePackage {
     deps = with nodePackages; [
       bufferutil_1-2-1
       ultron_1-0-2
-      utf-8-validate_1-2-1
       options_0-0-6
+      utf-8-validate_1-2-1
+    ];
+    optionalDependencies = with nodePackages; [
+      bufferutil_1-2-1
+      utf-8-validate_1-2-1
     ];
     meta = {
       homepage = "https://github.com/websockets/ws#readme";

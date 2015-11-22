@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "through2";
     version = "2.0.0";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "f41a1c31df5e129e4314446f66eca05cd6a30480";
     };
     deps = with nodePackages; [
-      xtend_4-0-0
-      readable-stream_2-0-2
+      xtend_4-0-1
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/rvagg/through2#readme";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "through2-filter";
     version = "2.0.0";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       through2_2-0-0
-      xtend_4-0-0
+      xtend_4-0-1
     ];
     meta = {
       homepage = "https://github.com/brycebaril/through2-filter";

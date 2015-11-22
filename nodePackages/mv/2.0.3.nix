@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "mv";
     version = "2.0.3";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "e9ab707d71dc38de24edcc637a8e2f5f480c7f32";
     };
     deps = with nodePackages; [
-      mkdirp_0-5-1
       ncp_0-6-0
+      mkdirp_0-5-1
       rimraf_2-2-8
     ];
     meta = {

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "stream-combiner2";
     version = "1.1.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "fb4d8a1420ea362764e21ad4780397bebcb41cbe";
     };
     deps = with nodePackages; [
-      duplexer2_0-1-2
-      readable-stream_2-0-3
+      duplexer2_0-1-4
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/substack/stream-combiner2";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "vinyl-assign";
     version = "1.2.1";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       object-assign_4-0-1
-      readable-stream_2-0-3
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/kevva/vinyl-assign#readme";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "tar";
     version = "1.0.3";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "15bcdab244fa4add44e4244a0176edb8aa9a2b44";
     };
     deps = with nodePackages; [
-      fstream_1-0-8
       inherits_2-0-1
       block-stream_0-0-8
+      fstream_1-0-8
     ];
     meta = {
       homepage = "https://github.com/isaacs/node-tar";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "decompress";
     version = "3.0.0";
@@ -8,14 +8,14 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       vinyl-fs_2-2-1
+      decompress-tar_3-1-0
+      concat-stream_1-5-1
       decompress-tarbz2_3-1-0
       decompress-unzip_3-4-0
-      vinyl-assign_1-2-1
-      stream-combiner2_1-1-1
-      decompress-targz_3-1-0
       buffer-to-vinyl_1-1-0
-      decompress-tar_3-1-0
-      concat-stream_1-4-10
+      stream-combiner2_1-1-1
+      vinyl-assign_1-2-1
+      decompress-targz_3-1-0
     ];
     meta = {
       homepage = "https://github.com/kevva/decompress#readme";

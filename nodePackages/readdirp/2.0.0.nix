@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "readdirp";
     version = "2.0.0";
@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       graceful-fs_4-1-2
       minimatch_2-0-10
-      readable-stream_2-0-3
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/thlorenz/readdirp";

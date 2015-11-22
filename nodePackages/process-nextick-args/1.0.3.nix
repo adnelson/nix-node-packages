@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "process-nextick-args";
     version = "1.0.3";
@@ -10,5 +10,6 @@ buildNodePackage {
     meta = {
       homepage = "https://github.com/calvinmetcalf/process-nextick-args";
       description = "process.nextTick but always with args";
+      author = "";
     };
   }

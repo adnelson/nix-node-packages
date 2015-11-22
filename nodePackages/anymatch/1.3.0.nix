@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "anymatch";
     version = "1.3.0";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "a3e52fa39168c825ff57b0248126ce5a8ff95507";
     };
     deps = with nodePackages; [
-      micromatch_2-2-0
+      micromatch_2-3-2
       arrify_1-0-0
     ];
     meta = {

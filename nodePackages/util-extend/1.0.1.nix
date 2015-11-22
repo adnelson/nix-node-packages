@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "util-extend";
     version = "1.0.1";
@@ -10,5 +10,6 @@ buildNodePackage {
     devDependencies = [];
     meta = {
       description = "Node's internal object extension function";
+      author = "";
     };
   }

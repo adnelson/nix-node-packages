@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "is-binary-path";
     version = "1.0.1";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "75f16642b480f187a711c814161fd3a4a7655898";
     };
     deps = with nodePackages; [
-      binary-extensions_1-3-1
+      binary-extensions_1-4-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/is-binary-path";

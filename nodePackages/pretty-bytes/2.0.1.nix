@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "pretty-bytes";
     version = "2.0.1";
@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       get-stdin_4-0-1
-      meow_3-4-2
       number-is-nan_1-0-0
+      meow_3-6-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/pretty-bytes";

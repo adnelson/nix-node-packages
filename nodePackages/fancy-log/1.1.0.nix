@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "fancy-log";
     version = "1.1.0";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       chalk_1-1-1
-      dateformat_1-0-11
+      dateformat_1-0-12
     ];
     meta = {
       homepage = "https://github.com/phated/fancy-log#readme";

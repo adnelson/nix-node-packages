@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "duplexer2";
     version = "0.0.2";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "c614dcf67e2fb14995a91711e5a617e8a60a31db";
     };
     deps = with nodePackages; [
-      readable-stream_1-1-13-1
+      readable-stream_1-1-13
     ];
     meta = {
       homepage = "https://github.com/deoxxa/duplexer2";

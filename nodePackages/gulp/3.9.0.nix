@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "gulp";
     version = "3.9.0";
@@ -10,16 +10,16 @@ buildNodePackage {
       pretty-hrtime_1-0-1
       vinyl-fs_0-3-14
       interpret_0-6-6
-      chalk_1-1-1
-      liftoff_2-2-0
-      tildify_1-1-2
-      archy_1-0-0
-      gulp-util_3-0-7
-      semver_4-3-6
       minimist_1-2-0
+      archy_1-0-0
+      chalk_1-1-1
       orchestrator_0-3-7
+      gulp-util_3-0-7
+      liftoff_2-2-0
       deprecated_0-0-1
       v8flags_2-0-10
+      semver_4-3-6
+      tildify_1-1-2
     ];
     meta = {
       homepage = "http://gulpjs.com";

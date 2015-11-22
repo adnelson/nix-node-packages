@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "es6-iterator";
     version = "2.0.0";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "bd968567d61635e33c0b80727613c9cb4b096bac";
     };
     deps = with nodePackages; [
-      es5-ext_0-10-7
-      es6-symbol_3-0-1
+      es5-ext_0-10-8
       d_0-1-1
+      es6-symbol_3-0-1
     ];
     meta = {
       homepage = "https://github.com/medikoo/es6-iterator#readme";

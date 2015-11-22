@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "read-all-stream";
     version = "3.0.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "c3701aecd7c911516677590eedea49684c62fa47";
     };
     deps = with nodePackages; [
+      readable-stream_2-0-4
       pinkie-promise_1-0-0
-      readable-stream_2-0-2
     ];
     meta = {
       homepage = "https://github.com/floatdrop/read-all-stream";

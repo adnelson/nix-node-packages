@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "type-is";
     version = "1.6.9";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "87f3e88b92ff5ac30fbc1acf9a9d00cbc38b3d7a";
     };
     deps = with nodePackages; [
-      media-typer_0-3-0
       mime-types_2-1-7
+      media-typer_0-3-0
     ];
     meta = {
       homepage = "https://github.com/jshttp/type-is";

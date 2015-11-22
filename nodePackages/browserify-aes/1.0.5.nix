@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "browserify-aes";
     version = "1.0.5";
@@ -7,10 +7,10 @@ buildNodePackage {
       sha1 = "447e7e4671fceb575f6bb16c7f31a20924f0c303";
     };
     deps = with nodePackages; [
-      cipher-base_1-0-1
-      buffer-xor_1-0-3
       inherits_2-0-1
       create-hash_1-1-2
+      cipher-base_1-0-2
+      buffer-xor_1-0-3
       evp_bytestokey_1-0-0
     ];
     meta = {
@@ -21,5 +21,6 @@ buildNodePackage {
         "crypto"
         "browserify"
       ];
+      author = "";
     };
   }

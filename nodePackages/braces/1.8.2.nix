@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "braces";
     version = "1.8.2";
@@ -8,9 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       repeat-element_1-1-2
-      preserve_0-2-0
       expand-range_1-8-1
-      lazy-cache_0-2-3
+      lazy-cache_0-2-4
+      preserve_0-2-0
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/braces";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "body-parser";
     version = "1.14.1";
@@ -8,13 +8,13 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       content-type_1-0-1
-      type-is_1-6-9
-      qs_5-1-0
-      on-finished_2-3-0
-      raw-body_2-1-4
-      debug_2-2-0
-      iconv-lite_0-4-12
       depd_1-1-0
+      on-finished_2-3-0
+      type-is_1-6-9
+      debug_2-2-0
+      raw-body_2-1-4
+      qs_5-1-0
+      iconv-lite_0-4-12
       http-errors_1-3-1
       bytes_2-1-0
     ];

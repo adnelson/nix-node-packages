@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "mysql";
     version = "2.9.0";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       bignumber-js_2-0-7
-      readable-stream_1-1-13-1
+      readable-stream_1-1-13
     ];
     meta = {
       homepage = "https://github.com/felixge/node-mysql";

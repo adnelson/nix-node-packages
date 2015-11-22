@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "merge-stream";
     version = "1.0.0";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "9cfd156fef35421e2b5403ce11dc6eb1962b026e";
     };
     deps = with nodePackages; [
-      readable-stream_2-0-3
+      readable-stream_2-0-4
     ];
     meta = {
       homepage = "https://github.com/grncdr/merge-stream#readme";

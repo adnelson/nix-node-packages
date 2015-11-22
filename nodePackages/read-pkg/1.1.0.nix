@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "read-pkg";
     version = "1.1.0";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28";
     };
     deps = with nodePackages; [
-      path-type_1-0-0
-      load-json-file_1-0-1
-      normalize-package-data_2-3-4
+      normalize-package-data_2-3-5
+      load-json-file_1-1-0
+      path-type_1-1-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/read-pkg";

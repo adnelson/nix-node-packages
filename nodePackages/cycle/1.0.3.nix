@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "cycle";
     version = "1.0.3";
@@ -17,5 +17,6 @@ buildNodePackage {
         "stringify"
         "parse"
       ];
+      author = "";
     };
   }

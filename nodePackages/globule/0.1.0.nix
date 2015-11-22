@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "globule";
     version = "0.1.0";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "d9c8edde1da79d125a151b79533b978676346ae5";
     };
     deps = with nodePackages; [
-      minimatch_0-2-14
       lodash_1-0-2
       glob_3-1-21
+      minimatch_0-2-14
     ];
     meta = {
       homepage = "https://github.com/cowboy/node-globule";

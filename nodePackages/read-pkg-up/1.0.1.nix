@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "read-pkg-up";
     version = "1.0.1";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "9d63c13276c065918d57f002a57f40a1b643fb02";
     };
     deps = with nodePackages; [
-      find-up_1-0-0
+      find-up_1-1-0
       read-pkg_1-1-0
     ];
     meta = {

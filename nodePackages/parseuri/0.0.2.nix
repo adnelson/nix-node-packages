@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "parseuri";
     version = "0.0.2";
@@ -11,5 +11,6 @@ buildNodePackage {
     ];
     meta = {
       description = "Method that parses a URI and returns an array of its components";
+      author = "";
     };
   }

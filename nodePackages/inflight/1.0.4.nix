@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "inflight";
     version = "1.0.4";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "6cbb4521ebd51ce0ec0a936bfd7657ef7e9b172a";
     };
     deps = with nodePackages; [
-      once_1-3-2
+      once_1-3-3
       wrappy_1-0-1
     ];
     meta = {

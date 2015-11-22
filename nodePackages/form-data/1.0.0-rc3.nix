@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "form-data";
     version = "1.0.0-rc3";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       combined-stream_1-0-5
-      async_1-4-2
+      async_1-5-0
       mime-types_2-1-7
     ];
     meta = {

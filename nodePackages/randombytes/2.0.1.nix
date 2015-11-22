@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "randombytes";
     version = "2.0.1";
@@ -14,5 +14,6 @@ buildNodePackage {
         "crypto"
         "random"
       ];
+      author = "";
     };
   }

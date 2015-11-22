@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "decompress-tarbz2";
     version = "3.1.0";
@@ -8,11 +8,11 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       seek-bzip_1-0-5
-      through2_0-6-5
-      vinyl_0-4-6
-      is-bzip2_1-0-0
       strip-dirs_1-1-1
-      tar-stream_1-2-2
+      through2_0-6-5
+      is-bzip2_1-0-0
+      vinyl_0-4-6
+      tar-stream_1-3-1
       object-assign_2-1-1
     ];
     meta = {

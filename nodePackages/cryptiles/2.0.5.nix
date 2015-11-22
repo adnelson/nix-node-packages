@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "cryptiles";
     version = "2.0.5";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "3bdfecdc608147c1c67202fa291e7dca59eaa3b8";
     };
     deps = with nodePackages; [
-      boom_2-9-0
+      boom_2-10-1
     ];
     meta = {
       homepage = "https://github.com/hapijs/cryptiles#readme";

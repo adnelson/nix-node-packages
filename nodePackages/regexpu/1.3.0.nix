@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "regexpu";
     version = "1.3.0";
@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "e534dc991a9e5846050c98de6d7dd4a55c9ea16d";
     };
     deps = with nodePackages; [
-      regjsgen_0-2-0
       regjsparser_0-1-5
       esprima_2-7-0
       regenerate_1-2-1
-      recast_0-10-34
+      regjsgen_0-2-0
+      recast_0-10-39
     ];
     meta = {
       homepage = "https://mths.be/regexpu";

@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "postgres-interval";
     version = "1.0.0";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "ddf3f4c67377e28a872bf3189305b4c7eb02ef14";
     };
     deps = with nodePackages; [
-      xtend_4-0-0
+      xtend_4-0-1
     ];
     meta = {
       homepage = "https://github.com/bendrucker/postgres-interval#readme";

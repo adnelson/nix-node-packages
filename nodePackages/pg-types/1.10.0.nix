@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "pg-types";
     version = "1.10.0";
@@ -9,9 +9,9 @@ buildNodePackage {
     deps = with nodePackages; [
       postgres-array_1-0-0
       postgres-bytea_1-0-0
-      postgres-date_1-0-0
       postgres-interval_1-0-0
       ap_0-2-0
+      postgres-date_1-0-0
     ];
     meta = {
       homepage = "https://github.com/brianc/node-pg-types";

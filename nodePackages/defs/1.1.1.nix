@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "defs";
     version = "1.1.1";
@@ -8,15 +8,15 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       simple-fmt_0-1-0
+      breakable_1-0-0
+      yargs_3-27-0
+      simple-is_0-2-0
+      stringmap_0-2-2
       tryor_0-1-2
+      alter_0-2-0
+      stringset_0-2-1
       esprima-fb_15001-1001-0-dev-harmony-fb
       ast-traverse_0-1-1
-      yargs_3-27-0
-      stringmap_0-2-2
-      simple-is_0-2-0
-      stringset_0-2-1
-      breakable_1-0-0
-      alter_0-2-0
     ];
     meta = {
       homepage = "https://github.com/olov/defs#readme";

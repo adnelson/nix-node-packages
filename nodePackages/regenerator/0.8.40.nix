@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "regenerator";
     version = "0.8.40";
@@ -7,12 +7,12 @@ buildNodePackage {
       sha1 = "a0e457c58ebdbae575c9f8cd75127e93756435d8";
     };
     deps = with nodePackages; [
-      commoner_0-10-3
+      commoner_0-10-4
+      defs_1-1-1
       private_0-1-6
       esprima-fb_15001-1001-0-dev-harmony-fb
-      through_2-3-8
-      defs_1-1-1
       recast_0-10-33
+      through_2-3-8
     ];
     meta = {
       homepage = "http://github.com/facebook/regenerator";

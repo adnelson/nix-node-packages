@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "parseqs";
     version = "0.0.2";
@@ -11,5 +11,6 @@ buildNodePackage {
     ];
     meta = {
       description = "Provides methods for parsing a query string into an object, and vice versa.";
+      author = "";
     };
   }

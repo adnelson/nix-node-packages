@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "strip-dirs";
     version = "1.1.1";
@@ -8,11 +8,11 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       get-stdin_4-0-1
+      is-absolute_0-1-7
+      minimist_1-2-0
       chalk_1-1-1
       is-natural-number_2-0-0
       sum-up_1-0-2
-      is-absolute_0-1-7
-      minimist_1-2-0
     ];
     meta = {
       homepage = "https://github.com/shinnn/node-strip-dirs";

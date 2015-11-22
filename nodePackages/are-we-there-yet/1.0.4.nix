@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "are-we-there-yet";
     version = "1.0.4";
@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       delegates_0-1-0
-      readable-stream_1-1-13-1
+      readable-stream_1-1-13
     ];
     meta = {
       homepage = "https://github.com/iarna/are-we-there-yet";

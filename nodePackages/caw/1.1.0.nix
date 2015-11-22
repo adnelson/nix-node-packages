@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "caw";
     version = "1.1.0";
@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       get-proxy_1-0-1
-      is-obj_1-0-0
       tunnel-agent_0-4-1
+      is-obj_1-0-0
       object-assign_3-0-0
     ];
     meta = {

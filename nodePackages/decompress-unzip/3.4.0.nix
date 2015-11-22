@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "decompress-unzip";
     version = "3.4.0";
@@ -8,12 +8,12 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       is-zip_1-0-0
-      through2_2-0-0
-      vinyl_1-1-0
-      stat-mode_0-2-1
-      read-all-stream_3-0-1
       strip-dirs_1-1-1
+      through2_2-0-0
       yauzl_2-3-1
+      stat-mode_0-2-1
+      vinyl_1-1-0
+      read-all-stream_3-0-1
     ];
     meta = {
       homepage = "https://github.com/kevva/decompress-unzip#readme";

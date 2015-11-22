@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "parse-json";
     version = "2.2.0";
@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "f480f40434ef80741f8469099f8dea18f55a4dc9";
     };
     deps = with nodePackages; [
-      error-ex_1-2-0
+      error-ex_1-3-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/parse-json";

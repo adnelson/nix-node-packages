@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "mem-fs-editor";
     version = "2.0.4";
@@ -8,15 +8,15 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       ejs_2-3-4
-      commondir_1-0-1
-      multimatch_2-0-0
-      globby_2-1-0
-      through2_2-0-0
-      mkdirp_0-5-1
-      vinyl_0-5-3
-      lodash_3-10-1
       sinon_1-17-2
-      rimraf_2-4-3
+      lodash_3-10-1
+      mkdirp_0-5-1
+      through2_2-0-0
+      multimatch_2-1-0
+      commondir_1-0-1
+      rimraf_2-4-4
+      vinyl_0-5-3
+      globby_2-1-0
       glob_5-0-15
     ];
     meta = {

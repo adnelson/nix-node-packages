@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "has-cors";
     version = "1.0.3";
@@ -7,10 +7,7 @@ buildNodePackage {
       sha1 = "502acb9b3104dac33dd2630eaf2f888b0baf4cb3";
     };
     deps = with nodePackages; [
-      (brokenPackage {
-        name = "global";
-        reason = "Reason \"InvalidGithubUri https://github.com/component/global/archive/v2.0.1.tar.gz\"";
-      })
+      global_2-0-1
     ];
     devDependencies = [];
     meta = {

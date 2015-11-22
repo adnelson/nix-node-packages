@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "fill-range";
     version = "2.2.2";
@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "2ad9d158a6a666f9fb8c9f9f05345dff68d45760";
     };
     deps = with nodePackages; [
-      randomatic_1-1-0
-      repeat-element_1-1-2
       is-number_1-1-2
+      randomatic_1-1-3
+      repeat-element_1-1-2
       isobject_1-0-2
       repeat-string_1-5-2
     ];

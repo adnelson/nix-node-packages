@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "shell-quote";
     version = "1.4.3";
@@ -9,8 +9,8 @@ buildNodePackage {
     deps = with nodePackages; [
       array-reduce_0-0-0
       array-filter_0-0-1
-      array-map_0-0-0
       jsonify_0-0-0
+      array-map_0-0-0
     ];
     meta = {
       homepage = "https://github.com/substack/node-shell-quote";

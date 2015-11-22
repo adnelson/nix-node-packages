@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "send";
     version = "0.13.0";
@@ -8,17 +8,17 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       mime_1-3-4
-      etag_1-7-0
+      range-parser_1-0-3
+      depd_1-0-1
       on-finished_2-3-0
+      etag_1-7-0
       escape-html_1-0-2
       debug_2-2-0
+      ms_0-7-1
+      http-errors_1-3-1
       destroy_1-0-3
       fresh_0-3-0
       statuses_1-2-1
-      depd_1-0-1
-      range-parser_1-0-2
-      ms_0-7-1
-      http-errors_1-3-1
     ];
     meta = {
       homepage = "https://github.com/pillarjs/send";

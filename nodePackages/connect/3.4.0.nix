@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "connect";
     version = "3.4.0";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "ee8789a3bd4604bfda39dbcf1d3bb482dfe6cf24";
     };
     deps = with nodePackages; [
-      utils-merge_1-0-0
       debug_2-2-0
+      utils-merge_1-0-0
       finalhandler_0-4-0
       parseurl_1-3-0
     ];

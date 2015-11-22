@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "validate-npm-package-license";
     version = "3.0.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "2804babe712ad3379459acfbe24746ab2c303fbc";
     };
     deps = with nodePackages; [
-      spdx-correct_1-0-1
-      spdx-expression-parse_1-0-0
+      spdx-correct_1-0-2
+      spdx-expression-parse_1-0-1
     ];
     meta = {
       homepage = "https://github.com/kemitchell/validate-npm-package-license.js#readme";

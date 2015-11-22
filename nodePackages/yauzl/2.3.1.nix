@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "yauzl";
     version = "2.3.1";
@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "6707fe2b6a4dac9445cc429bf04a11c7dedfa36a";
     };
     deps = with nodePackages; [
-      pend_1-2-0
       fd-slicer_1-0-1
+      pend_1-2-0
     ];
     meta = {
       homepage = "https://github.com/thejoshwolfe/yauzl";
