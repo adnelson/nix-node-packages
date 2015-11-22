@@ -228,7 +228,7 @@ let
           ${
             let
               link = dep: ''
-                ${if dep.recursiveDeps == [] then "ln -sv" else "cp -R"} \
+                ${if dep.recursiveDeps == [] then "ln -sfv" else "cp -rf"} \
                   ${dep}/lib/${pathInModulePath dep} ${modulePath dep}
               '';
             in
@@ -240,11 +240,12 @@ let
 
           # Create shims for recursive dependenceies
           ${concatMapStrings (dep: ''
-            mkdir -p ${modulePath dep}
+            echo "Creating shim for recursive dependency ${dep.pkgName}"
+            mkdir -pv ${pathInModulePath dep}
             cat > ${pathInModulePath dep}/package.json <<EOF
             {
                 "name": "${dep.pkgName}",
-                "version": "${getVersion dep}"
+                "version": "${dep.version}"
             }
             EOF
           '') (attrValues recursiveDependencies)}
@@ -255,6 +256,9 @@ let
          "description":"Dummy package file for building $name",
          "repository":{"type":"git","url":"http://$UNIQNAME.com"}}
         EOF
+
+          # Create dummy readme
+          echo "Dummy package" > README.md
         )
 
         export HOME=$BUILD_DIR
@@ -270,8 +274,6 @@ let
 
           echo "Building $name in $BUILD_DIR"
           cd $BUILD_DIR
-          echo "Npm command:"
-          echo HOME=$PWD npm install $PATCHED_SRC ${npmFlags}
           HOME=$PWD npm install $PATCHED_SRC ${npmFlags} || {
             npm list
             exit 1
@@ -289,8 +291,8 @@ let
 
           # Remove shims
           ${concatMapStrings (dep: ''
-            rm ${pathInModulePath dep}/package.json
-            rmdir ${modulePath dep}
+            echo "Removing shim for recursive dependency ${dep.pkgName}"
+            rm -rvf ${pathInModulePath dep}/package.json
           '') (attrValues recursiveDependencies)}
 
           # Install the package that we just built.
