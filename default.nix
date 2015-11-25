@@ -1,4 +1,4 @@
-{ nodejsVersion ? "4.1", npm3 ? false, pkgs ? import <nixpkgs> {} }:
+{ nodejsVersion ? "4.1", npm3 ? true, pkgs ? import <nixpkgs> {} }:
 let
     nodeLib = import ./nodeLib {
       inherit pkgs npm3 nodejsVersion;
