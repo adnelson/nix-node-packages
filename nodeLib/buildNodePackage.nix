@@ -384,12 +384,16 @@ let
         runHook preShellHook
         runHook setVariables
         export PATH=${npm}/bin:${nodejs}/bin:$(pwd)/node_modules/.bin:$PATH
-        mkdir -p node_modules
-        ${concatMapStrings (dep: ''
-          mkdir -p ${modulePath dep}
-          [[ -e ${pathInModulePath dep} ]] || \
-            ln -sv ${dep}/lib/${pathInModulePath dep} ${pathInModulePath dep}
-        '') (attrValues requiredDependencies)}
+        mkdir -p $TMPDIR/$UNIQNAME
+        (
+          cd $TMPDIR/$UNIQNAME
+          eval "$configurePhase"
+        )
+        linkNodeModules() {
+          ln -sv $TMPDIR/$UNIQNAME/node_modules node_modules
+        }
+        echo "Installed dependencies in $TMPDIR/$UNIQNAME."
+        echo 'Run `linkNodeModules` to create a symlink to the node_modules.'
         runHook postShellHook
       '';
 
