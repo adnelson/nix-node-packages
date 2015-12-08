@@ -5,5 +5,5 @@ let
       self = nodeLib;
     };
     in nodeLib.generatePackages {
-      rootPath = ./nodePackages;
+      nodePackagesPath = ./nodePackages;
     }
