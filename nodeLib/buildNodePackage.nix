@@ -16,18 +16,23 @@
 }:
 
 let
+  inherit (pkgs.lib) showVal;
   # The path within $out/lib to find a package. If the package does not
   # have a namespace, it will simply be in `node_modules`, and otherwise it
   # will appear in `node_modules/@namespace`.
-  modulePath = pkg: if pkg.namespace == null then "node_modules"
-                    else "node_modules/@${pkg.namespace}";
+  modulePath = pkg:
+    if !(builtins.hasAttr "namespace" pkg)
+    then throw ''
+      Package dependency does not appear to be a node package: ${showVal pkg}.
+      Use "buildInputs" or "propagatedBuildInputs" for non-node dependencies,
+      instead of "deps".
+    ''
+    else if pkg.namespace == null then "node_modules"
+    else "node_modules/@${pkg.namespace}";
 
   # The path to the package within its modulePath. Just appending the name
   # of the package.
   pathInModulePath = pkg: "${modulePath pkg}/${pkg.basicName}";
-
-  # The path to a package within an npm cache.
-  pathInNpmCache = pkg: ".npm/${pkg.basicName}/${pkg.version}";
 
   # By default, when checking we'll run npm test.
   defaultCheckPhase = ''
@@ -108,6 +113,9 @@ in
   # Doc for details: https://nixos.org/wiki/NixPkgs_Standard_Environment.
   dontStrip ? true, dontPatchELF ? true,
 
+  # Optional attributes to pass through to downstream derivations.
+  passthru ? {},
+
   # Any remaining flags are passed through to mkDerivation.
   ...
 } @ args:
@@ -140,7 +148,8 @@ let
   # to be passed through to mkDerivation. They are removed below.
   attrsToRemove = ["deps" "resolvedDeps" "optionalDependencies" "flags"
                    "devDependencies" "os" "skipOptionalDependencies"
-                   "doCheck" "installDevDependencies" "version" "namespace"];
+                   "passthru" "doCheck" "installDevDependencies" "version"
+                   "namespace"];
 
   # We create a `self` object for self-referential expressions. It
   # bottoms out in a call to `mkDerivation` at the end.
@@ -174,7 +183,9 @@ let
         # All required node modules, without already resolved dependencies
         # Also override with already resolved dependencies
         requiredDeps = mapAttrs (name: dep:
-          dep.override {resolvedDeps = resolvedDeps // { "${name}" = self; };}
+          dep.overrideNodePackage {
+            resolvedDeps = resolvedDeps // {"${name}" = self;};
+          }
         ) (filterAttrs filterFunc
             (removeAttrs attrDeps (attrNames resolvedDeps)));
 
@@ -337,9 +348,6 @@ let
 
       # Remove the node_modules subfolder from there, and instead put things
       # in $PWD/node_modules into that folder.
-      # rm -rf $out/lib/${pathInModulePath self}/node_modules
-      # cp -r node_modules $out/lib/${pathInModulePath self}/node_modules
-
       if [ -e "$out/lib/${pathInModulePath self}/man" ]; then
         echo "Linking manpages..."
         mkdir -p $out/share
@@ -420,7 +428,7 @@ let
 
       # Propagate pieces of information about the package so that downstream
       # packages can reflect on them.
-      passthru = {
+      passthru = (passthru // {
         inherit uniqueName namespace version;
         # The basic name is the name without namespace or version.
         basicName = name;
@@ -441,10 +449,12 @@ let
         # defined, or it will error.
         env = buildNodePackage (args // {installDevDependencies = true;});
 
-        # An 'override' attribute, which will call `buildNodePackage` with the
-        # given arguments overridden.
-        override = newArgs: buildNodePackage (args // newArgs);
-      } // (args.passthru or {});
+        # An 'overrideNodePackage' attribute, which will call
+        # `buildNodePackage` with the given arguments overridden.
+        # We don't use the name `override` because this will get stomped on
+        # if the derivation is the result of a `callPackage` application.
+        overrideNodePackage = newArgs: buildNodePackage (args // newArgs);
+      });
     } // (removeAttrs args attrsToRemove) // {
       name = "${namePrefix}${name}-${version}";
 

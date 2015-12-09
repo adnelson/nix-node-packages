@@ -1,5 +1,4 @@
-callPackage:
-{
+{ callPackage }: {
     JSONStream = callPackage ./JSONStream/1.0.7.nix {};
     JSONStream_1-0-7 = callPackage ./JSONStream/1.0.7.nix {};
     abab = callPackage ./abab/1.0.1.nix {};
