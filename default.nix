@@ -1,7 +1,7 @@
-{ nodejsVersion ? "4.2", npm3 ? true, pkgs ? import <nixpkgs> {} }:
+{ nodejs ? pkgs.nodejs-4_x, npm3 ? true, pkgs ? import <nixpkgs> {} }:
 let
     nodeLib = import ./nodeLib {
-      inherit pkgs npm3 nodejsVersion;
+      inherit pkgs npm3 nodejs;
       self = nodeLib;
     };
     in nodeLib.generatePackages {
