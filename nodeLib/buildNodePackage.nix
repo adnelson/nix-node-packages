@@ -368,13 +368,8 @@ let
       # Install binaries using the `bin` object in the package.json
       python ${./installBinaries.py}
 
-      # Install binaries and patch shebangs. These are always found in
-      # node_modules/.bin, regardless of a package namespace.
-      mv node_modules/.bin $out/lib/node_modules 2>/dev/null || true
-      if [ -d "$out/lib/node_modules/.bin" ]; then
-        ln -sv $out/lib/node_modules/.bin $out/bin
-        patchShebangs $out/lib/node_modules/.bin
-      fi
+      # Pin down any shebangs.
+      [[ -d $out/bin ]] && patchShebangs $out/bin
 
       runHook postInstall
     '';

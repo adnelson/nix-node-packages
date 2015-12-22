@@ -3,13 +3,15 @@
 # See: https://docs.npmjs.com/files/package.json#bin
 import json
 import os
-from os.path import join, isdir, normpath
+from os.path import join, isdir, isfile, normpath
+import stat
 import sys
 
 with open('package.json', 'r') as f:
     package = json.load(f)
 
 if 'bin' not in package:
+    # Then the package declares no binaries, so nothing to do.
     sys.exit(0)
 
 _bin = package['bin']
@@ -37,5 +39,15 @@ for bin_name, bin_path in _bin.items():
     # Get the absolute path of the script being pointed to.
     bin_abs_path = normpath(join(out_dir, 'lib', 'node_modules',
                             package['name'], bin_path))
+    # Ensure that the pointed-to binary exists.
+    if not isfile(bin_abs_path):
+        sys.exit("Binary {} refers to path {}, which either does not exist, "
+                 "or refers to a directory.".format(bin_name, bin_abs_path))
+
+    # Ensure that the pointed-to binary is executable.
+    bin_stat = os.stat(bin_abs_path)
+    os.chmod(bin_abs_path, bin_stat.st_mode | stat.S_IEXEC)
+
+    # Create the symlink.
     print("Linking binary {} to {}".format(bin_name, bin_abs_path))
     os.symlink(bin_abs_path, join(bin_folder, bin_name))
