@@ -20,6 +20,7 @@
     acorn = callPackage ./acorn/2.6.4.nix {};
     acorn_2-6-4 = callPackage ./acorn/2.6.4.nix {};
     acorn_1-2-2 = callPackage ./acorn/1.2.2.nix {};
+    acorn_0-11-0 = callPackage ./acorn/0.11.0.nix {};
     acorn-globals = callPackage ./acorn-globals/1.0.9.nix {};
     acorn-globals_1-0-9 = callPackage ./acorn-globals/1.0.9.nix {};
     addressparser = callPackage ./addressparser/0.3.2.nix {};
@@ -183,6 +184,7 @@
     babylon_5-8-34 = callPackage ./babylon/5.8.34.nix {};
     backbone = callPackage ./backbone/1.2.3.nix {};
     backbone_1-2-3 = callPackage ./backbone/1.2.3.nix {};
+    backbone_1-0-0 = callPackage ./backbone/1.0.0.nix {};
     backbone_0-9-10 = callPackage ./backbone/0.9.10.nix {};
     backo2 = callPackage ./backo2/1.0.2.nix {};
     backo2_1-0-2 = callPackage ./backo2/1.0.2.nix {};
@@ -519,6 +521,8 @@
     content-disposition_0-5-0 = callPackage ./content-disposition/0.5.0.nix {};
     content-type = callPackage ./content-type/1.0.1.nix {};
     content-type_1-0-1 = callPackage ./content-type/1.0.1.nix {};
+    contextify = callPackage ./contextify/0.1.15.nix {};
+    contextify_0-1-15 = callPackage ./contextify/0.1.15.nix {};
     convert-source-map = callPackage ./convert-source-map/1.1.2.nix {};
     convert-source-map_1-1-2 = callPackage ./convert-source-map/1.1.2.nix {};
     cookie = callPackage ./cookie/0.2.3.nix {};
@@ -581,6 +585,7 @@
     css-what_1-0-0 = callPackage ./css-what/1.0.0.nix {};
     cssom = callPackage ./cssom/0.3.0.nix {};
     cssom_0-3-0 = callPackage ./cssom/0.3.0.nix {};
+    cssom_0-2-5 = callPackage ./cssom/0.2.5.nix {};
     cssstyle = callPackage ./cssstyle/0.2.30.nix {};
     cssstyle_0-2-30 = callPackage ./cssstyle/0.2.30.nix {};
     csurf = callPackage ./csurf/1.8.3.nix {};
@@ -679,6 +684,7 @@
     dicer_0-2-5 = callPackage ./dicer/0.2.5.nix {};
     diff = callPackage ./diff/2.2.1.nix {};
     diff_2-2-1 = callPackage ./diff/2.2.1.nix {};
+    diff_2-1-3 = callPackage ./diff/2.1.3.nix {};
     diff_1-4-0 = callPackage ./diff/1.4.0.nix {};
     diff_1-0-8 = callPackage ./diff/1.0.8.nix {};
     diff_1-0-7 = callPackage ./diff/1.0.7.nix {};
@@ -1042,7 +1048,8 @@
     gulp-coffee_1-4-3 = callPackage ./gulp-coffee/1.4.3.nix {};
     gulp-decompress = callPackage ./gulp-decompress/1.2.0.nix {};
     gulp-decompress_1-2-0 = callPackage ./gulp-decompress/1.2.0.nix {};
-    gulp-mocha = callPackage ./gulp-mocha/0.4.1.nix {};
+    gulp-mocha = callPackage ./gulp-mocha/2.1.3.nix {};
+    gulp-mocha_2-1-3 = callPackage ./gulp-mocha/2.1.3.nix {};
     gulp-mocha_0-4-1 = callPackage ./gulp-mocha/0.4.1.nix {};
     gulp-nodemon = callPackage ./gulp-nodemon/1.0.5.nix {};
     gulp-nodemon_1-0-5 = callPackage ./gulp-nodemon/1.0.5.nix {};
@@ -1115,6 +1122,8 @@
     html-wiring_1-2-0 = callPackage ./html-wiring/1.2.0.nix {};
     htmlescape = callPackage ./htmlescape/1.1.0.nix {};
     htmlescape_1-1-0 = callPackage ./htmlescape/1.1.0.nix {};
+    htmlparser = callPackage ./htmlparser/1.7.6.nix {};
+    htmlparser_1-7-6 = callPackage ./htmlparser/1.7.6.nix {};
     htmlparser2 = callPackage ./htmlparser2/3.8.3.nix {};
     htmlparser2_3-8-3 = callPackage ./htmlparser2/3.8.3.nix {};
     http-browserify = callPackage ./http-browserify/1.7.0.nix {};
@@ -1288,6 +1297,7 @@
     joi_7-0-0 = callPackage ./joi/7.0.0.nix {};
     jquery = callPackage ./jquery/2.1.4.nix {};
     jquery_2-1-4 = callPackage ./jquery/2.1.4.nix {};
+    jquery_1-8-3 = callPackage ./jquery/1.8.3.nix {};
     js-base64 = callPackage ./js-base64/2.1.9.nix {};
     js-base64_2-1-9 = callPackage ./js-base64/2.1.9.nix {};
     js-tokens = callPackage ./js-tokens/1.0.2.nix {};
@@ -1302,6 +1312,8 @@
     jsdom = callPackage ./jsdom/7.0.2.nix {};
     jsdom_7-0-2 = callPackage ./jsdom/7.0.2.nix {};
     jsdom_5-6-1 = callPackage ./jsdom/5.6.1.nix {};
+    jsdom_3-1-2 = callPackage ./jsdom/3.1.2.nix {};
+    jsdom_0-2-19 = callPackage ./jsdom/0.2.19.nix {};
     jsesc = callPackage ./jsesc/0.5.0.nix {};
     jsesc_0-5-0 = callPackage ./jsesc/0.5.0.nix {};
     json-parse-helpfulerror = callPackage ./json-parse-helpfulerror/1.0.3.nix {};
@@ -1393,6 +1405,8 @@
     libmime_1-2-0 = callPackage ./libmime/1.2.0.nix {};
     libqp = callPackage ./libqp/1.1.0.nix {};
     libqp_1-1-0 = callPackage ./libqp/1.1.0.nix {};
+    libyaml = callPackage ./libyaml/0.2.5.nix {};
+    libyaml_0-2-5 = callPackage ./libyaml/0.2.5.nix {};
     liftoff = callPackage ./liftoff/2.2.0.nix {};
     liftoff_2-2-0 = callPackage ./liftoff/2.2.0.nix {};
     liftoff_2-0-3 = callPackage ./liftoff/2.0.3.nix {};
@@ -1403,6 +1417,8 @@
     load-json-file_1-1-0 = callPackage ./load-json-file/1.1.0.nix {};
     loader-utils = callPackage ./loader-utils/0.2.12.nix {};
     loader-utils_0-2-12 = callPackage ./loader-utils/0.2.12.nix {};
+    location = callPackage ./location/0.0.1.nix {};
+    location_0-0-1 = callPackage ./location/0.0.1.nix {};
     lock = callPackage ./lock/0.1.2.nix {};
     lock_0-1-2 = callPackage ./lock/0.1.2.nix {};
     lockfile = callPackage ./lockfile/1.0.1.nix {};
@@ -1632,6 +1648,7 @@
     mktemp_0-3-5 = callPackage ./mktemp/0.3.5.nix {};
     mocha = callPackage ./mocha/2.3.4.nix {};
     mocha_2-3-4 = callPackage ./mocha/2.3.4.nix {};
+    mocha_2-2-5 = callPackage ./mocha/2.2.5.nix {};
     mocha_2-1-0 = callPackage ./mocha/2.1.0.nix {};
     mocha_1-18-2 = callPackage ./mocha/1.18.2.nix {};
     mocha_1-17-1 = callPackage ./mocha/1.17.1.nix {};
@@ -1693,6 +1710,8 @@
     nan_2-1-0 = callPackage ./nan/2.1.0.nix {};
     nan_2-0-9 = callPackage ./nan/2.0.9.nix {};
     nan_2-0-5 = callPackage ./nan/2.0.5.nix {};
+    navigator = callPackage ./navigator/1.0.1.nix {};
+    navigator_1-0-1 = callPackage ./navigator/1.0.1.nix {};
     nconf = callPackage ./nconf/0.8.2.nix {};
     nconf_0-8-2 = callPackage ./nconf/0.8.2.nix {};
     ncp = callPackage ./ncp/0.6.0.nix {};
@@ -1795,6 +1814,8 @@
     object-keys_0-4-0 = callPackage ./object-keys/0.4.0.nix {};
     object-omit = callPackage ./object-omit/2.0.0.nix {};
     object-omit_2-0-0 = callPackage ./object-omit/2.0.0.nix {};
+    objectid = callPackage ./objectid/2.3.0.nix {};
+    objectid_2-3-0 = callPackage ./objectid/2.3.0.nix {};
     on-finished = callPackage ./on-finished/2.3.0.nix {};
     on-finished_2-3-0 = callPackage ./on-finished/2.3.0.nix {};
     on-finished_2-2-1 = callPackage ./on-finished/2.2.1.nix {};
@@ -1951,6 +1972,8 @@
     pkginfo = callPackage ./pkginfo/0.3.1.nix {};
     pkginfo_0-3-1 = callPackage ./pkginfo/0.3.1.nix {};
     pkginfo_0-2-3 = callPackage ./pkginfo/0.2.3.nix {};
+    plur = callPackage ./plur/1.0.0.nix {};
+    plur_1-0-0 = callPackage ./plur/1.0.0.nix {};
     pool2 = callPackage ./pool2/1.3.0.nix {};
     pool2_1-3-0 = callPackage ./pool2/1.3.0.nix {};
     pop-iterate = callPackage ./pop-iterate/1.0.1.nix {};
@@ -2157,6 +2180,8 @@
     resolve_1-1-6 = callPackage ./resolve/1.1.6.nix {};
     resolve_0-6-3 = callPackage ./resolve/0.6.3.nix {};
     resolve_0-2-8 = callPackage ./resolve/0.2.8.nix {};
+    resolve-from = callPackage ./resolve-from/1.0.1.nix {};
+    resolve-from_1-0-1 = callPackage ./resolve-from/1.0.1.nix {};
     restore-cursor = callPackage ./restore-cursor/1.0.1.nix {};
     restore-cursor_1-0-1 = callPackage ./restore-cursor/1.0.1.nix {};
     retry = callPackage ./retry/0.8.0.nix {};
@@ -2201,6 +2226,7 @@
     semver_5-0-3 = callPackage ./semver/5.0.3.nix {};
     semver_4-3-6 = callPackage ./semver/4.3.6.nix {};
     semver_2-3-2 = callPackage ./semver/2.3.2.nix {};
+    semver_1-0-14 = callPackage ./semver/1.0.14.nix {};
     semver-diff = callPackage ./semver-diff/2.1.0.nix {};
     semver-diff_2-1-0 = callPackage ./semver-diff/2.1.0.nix {};
     semver-diff_0-1-0 = callPackage ./semver-diff/0.1.0.nix {};
@@ -2255,10 +2281,12 @@
     sinon_1-12-2 = callPackage ./sinon/1.12.2.nix {};
     sinon_1-9-1 = callPackage ./sinon/1.9.1.nix {};
     sinon_1-7-3 = callPackage ./sinon/1.7.3.nix {};
+    sinon_1-5-2 = callPackage ./sinon/1.5.2.nix {};
     sinon-chai = callPackage ./sinon-chai/2.8.0.nix {};
     sinon-chai_2-8-0 = callPackage ./sinon-chai/2.8.0.nix {};
     sinon-chai_2-5-0 = callPackage ./sinon-chai/2.5.0.nix {};
     sinon-chai_2-4-0 = callPackage ./sinon-chai/2.4.0.nix {};
+    sinon-chai_2-1-2 = callPackage ./sinon-chai/2.1.2.nix {};
     slash = callPackage ./slash/1.0.0.nix {};
     slash_1-0-0 = callPackage ./slash/1.0.0.nix {};
     sliced = callPackage ./sliced/0.0.5.nix {};
@@ -2544,6 +2572,7 @@
     underscore = callPackage ./underscore/1.8.3.nix {};
     underscore_1-8-3 = callPackage ./underscore/1.8.3.nix {};
     underscore_1-7-0 = callPackage ./underscore/1.7.0.nix {};
+    underscore_1-5-2 = callPackage ./underscore/1.5.2.nix {};
     underscore-string = callPackage ./underscore-string/3.2.2.nix {};
     underscore-string_3-2-2 = callPackage ./underscore-string/3.2.2.nix {};
     underscore-string_2-4-0 = callPackage ./underscore-string/2.4.0.nix {};
@@ -2694,6 +2723,7 @@
     xdg-basedir_1-0-1 = callPackage ./xdg-basedir/1.0.1.nix {};
     xml-name-validator = callPackage ./xml-name-validator/2.0.1.nix {};
     xml-name-validator_2-0-1 = callPackage ./xml-name-validator/2.0.1.nix {};
+    xml-name-validator_1-0-0 = callPackage ./xml-name-validator/1.0.0.nix {};
     xml2js = callPackage ./xml2js/0.4.15.nix {};
     xml2js_0-4-15 = callPackage ./xml2js/0.4.15.nix {};
     xml2js_0-2-8 = callPackage ./xml2js/0.2.8.nix {};
@@ -2703,7 +2733,9 @@
     xmlbuilder_0-4-2 = callPackage ./xmlbuilder/0.4.2.nix {};
     xmlhttprequest = callPackage ./xmlhttprequest/1.8.0.nix {};
     xmlhttprequest_1-8-0 = callPackage ./xmlhttprequest/1.8.0.nix {};
+    xmlhttprequest_1-6-0 = callPackage ./xmlhttprequest/1.6.0.nix {};
     xmlhttprequest_1-5-0 = callPackage ./xmlhttprequest/1.5.0.nix {};
+    xmlhttprequest_1-4-2 = callPackage ./xmlhttprequest/1.4.2.nix {};
     xmlhttprequest_1-3-0 = callPackage ./xmlhttprequest/1.3.0.nix {};
     xtend = callPackage ./xtend/4.0.1.nix {};
     xtend_4-0-1 = callPackage ./xtend/4.0.1.nix {};
