@@ -1297,6 +1297,7 @@
     joi_7-0-0 = callPackage ./joi/7.0.0.nix {};
     jquery = callPackage ./jquery/2.1.4.nix {};
     jquery_2-1-4 = callPackage ./jquery/2.1.4.nix {};
+    jquery_1-12-0 = callPackage ./jquery/1.12.0.nix {};
     jquery_1-8-3 = callPackage ./jquery/1.8.3.nix {};
     js-base64 = callPackage ./js-base64/2.1.9.nix {};
     js-base64_2-1-9 = callPackage ./js-base64/2.1.9.nix {};
