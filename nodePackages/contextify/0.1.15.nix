@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "3d34681d14a5ccbbe609c9ee11eda206b8cf266f";
     };
     deps = with nodePackages; [
-      nan_2-1-0
+      nan_2-2-0
       bindings_1-2-1
     ];
     meta = {
