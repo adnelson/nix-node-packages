@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "2de59a0822d5027fabff6f032c2b25a2a8abe738";
     };
     deps = with nodePackages; [
-      domelementtype_1-1-3
+      domelementtype_1-3-0
     ];
     meta = {
       homepage = "https://github.com/fb55/DomHandler";

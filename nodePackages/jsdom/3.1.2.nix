@@ -17,7 +17,7 @@ buildNodePackage {
       nwmatcher_1-3-7
       xml-name-validator_1-0-0
       browser-request_0-3-3
-      request_2-67-0
+      request_2-53-0
       acorn_0-11-0
       contextify_0-1-15
     ];

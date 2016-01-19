@@ -97,6 +97,8 @@ rec {
         passthru.withoutTests = deriv;
         passthru.pkgName = name;
         passthru.basicName = "BROKEN";
+        passthru.uniqueName = "BROKEN";
+        passthru.overrideNodePackage = (_: deriv);
         passthru.namespace = null;
         passthru.version = "BROKEN";
         passthru.override = _: deriv;

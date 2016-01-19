@@ -18,16 +18,31 @@ The expressions here refer to a `nixpkgs` path variable, so make sure you have i
 $ export NIX_PATH="$HOME/.nix-defexpr/channels:$NIX_PATH"
 ```
 
-After that you're free to do whatever you please with the library. Packages are locate under the top-level attribute `nodePackages`. An unqualified name will build the latest version (as determined by comparing package version names), while a particular version can be referred to as shown below. For example, the following commands build the latest version of `grunt`, and version `0.4.5`, respectively:
+After that you're free to do whatever you please with the library. Packages are located under the top-level attribute `nodePackages`. An unqualified name will build the latest version (as determined by comparing package version names), while a particular version can be referred to as shown below. For example, the following commands build the latest version of `grunt`, and version `0.4.5`, respectively:
 
 ```bash
 $ nix-build nix-node-packages/nodePackages -A nodePackages.grunt
 $ nix-build nix-node-packages/nodePackages -A nodePackages.grunt_0-4-5
 ```
 
+## If a package doesn't build
+
+There are any number of reasons why a package might not build. Some of the most common ones are:
+
+* The `nixfromnpm` tool wasn't able to generate the definition of one of the package's dependencies. It will insert in the `brokenPackage` function, which, as might be anticipated, never builds. Looking at the call to `brokenPackage` will tell you why it couldn't build it. In my experience, this is because `nixfromnpm`'s version range checker is not completely up to spec, and it's unable to find a version that satisfies the bounds given by a `package.json`. If this is the case, the easiest way to fix it is to use `npm` to:
+  * See what version range `nixfromnpm` failed to resolve. E.g. `foo@>=1.2.3-bar <2.3.4-baz.qux`.
+  * Manually build the package at the given version bounds. E g. `npm install foo@>=1.2.3-bar <2.3.4-baz.qux`.
+  * See what version it ends up building. E.g. `foo@1.2.3-xyz`.
+  * Call `nixfromnpm` on that version. E.g. `nixfromnpm -o /path/to/nix-node-packages -p 'foo%1.2.3-xyz'`.
+  * Replace the call to `brokenPackage` with `foo_1-2-3-xyz`.
+* The build fails with `npm` complaining about HTTP errors. This is usually caused by a dependency that wasn't satified, likely because `nixfromnpm` calculated the wrong dependency. In this case, use steps similar to the above to find out what the actual dependency should be, and modify the package definition to include the correct one.
+* A package build script is attempting to do some hacky bullshit like modifying its dependencies. This, of course, is not kosher in the `nix` view of things. In this case, you'll probably want to `nix-shell` into the package and see what it's trying to do. Figure out how to stop it from doing these things, and supply `prePatch` or `postPatch` steps to apply those changes.
+
+Fixing broken packages is great, because the way nix works, you'll only need to fix them once (although, getting that to propagate to future versions might not be as easy). By all means, please make pull requests for any of these fixes.
+
 ## Extending the libraries
 
-It's possible that you'll want to add additional packages that haven't been defined here. Alternatively, you might have your own packages, perhaps private, that you want to generate expressions for, but not have alongside all of the other packages in this repo. While you can always write these packages by hand, it's easier to do this with `nixfromnpm`. It can be obtained [here](https://github.com/adnelson/nixfromnpm).
+It's possible that you'll want to add additional packages that haven't been defined here. Alternatively, you might have your own packages, perhaps private, that you want to generate expressions for, but not have alongside all of the other packages in this repo. While you can always write these packages by hand, it's easier to do this with `nixfromnpm`. It can be obtained [here](https://github.com/adnelson/nixfromnpm). As with fixes above, feel free to pull request any new packages added, whether by hand or auto-generated.
 
 ### Adding new packages to the central package set
 

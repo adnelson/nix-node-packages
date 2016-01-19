@@ -12,7 +12,7 @@
   # List of required native build inputs.
   neededNatives,
   # Self-reference for overriding purposes.
-  buildNodePackage
+  buildNodePackage,
 }:
 
 let
@@ -116,6 +116,9 @@ in
   # Optional attributes to pass through to downstream derivations.
   passthru ? {},
 
+  # A set of dependencies to patch.
+  patchDependencies ? {},
+
   # Any remaining flags are passed through to mkDerivation.
   ...
 } @ args:
@@ -144,12 +147,15 @@ let
                        mapAttrs filterAttrs attrNames elem concatMapStrings
                        attrValues getVersion flatten remove concatStringsSep;
 
+  dependencyTypes = ["dependencies" "devDependencies" "peerDependencies"
+                     "optionalDependencies"];
+
+
   # These arguments are intended as directives to this function and not
   # to be passed through to mkDerivation. They are removed below.
-  attrsToRemove = ["deps" "resolvedDeps" "optionalDependencies" "flags"
-                   "devDependencies" "os" "skipOptionalDependencies"
+  attrsToRemove = ["deps" "resolvedDeps" "flags" "os" "skipOptionalDependencies"
                    "passthru" "doCheck" "installDevDependencies" "version"
-                   "namespace"];
+                   "namespace" "patchDependencies"] ++ dependencyTypes;
 
   # We create a `self` object for self-referential expressions. It
   # bottoms out in a call to `mkDerivation` at the end.
@@ -271,6 +277,28 @@ let
 
       # We do not handle shrinkwraps yet
       rm npm-shrinkwrap.json 2>/dev/null || true
+
+      ${if patchDependencies == {} then "" else ''
+        cat <<EOF | python
+        import json
+        with open("package.json") as f:
+            package_json = json.load(f)
+        ${flip concatMapStrings (attrNames patchDependencies) (name: let
+            version = patchDependencies.${name};
+          in flip concatMapStrings dependencyTypes (depType: ''
+            if "${name}" in package_json.setdefault("${depType}", {}):
+                ${if version == null then ''
+                    print("removing ${name} from ${depType}")
+                    package_json["${depType}"].pop("${name}", None)
+                  '' else ''
+                    print("Patching ${depType} ${name} to version ${version}")
+                    package_json["dependencies"]["${name}"] = "${version}"
+                  ''}
+            ''))}
+        with open("package.json", "w") as f:
+            f.write(json.dumps(package_json))
+        EOF
+      ''}
 
       runHook postPatch
     '';
@@ -411,11 +439,8 @@ let
           cd $TMPDIR/$UNIQNAME
           eval "$configurePhase"
         )
-        linkNodeModules() {
-          ln -sv $TMPDIR/$UNIQNAME/node_modules node_modules
-        }
         echo "Installed dependencies in $TMPDIR/$UNIQNAME."
-        echo 'Run `linkNodeModules` to create a symlink to the node_modules.'
+        export NODE_PATH=$TMPDIR/$UNIQNAME/node_modules
         runHook postShellHook
       '';
 

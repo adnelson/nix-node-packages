@@ -11,7 +11,7 @@ buildNodePackage {
       ansi-styles_2-1-0
       has-ansi_2-0-0
       supports-color_2-0-0
-      escape-string-regexp_1-0-3
+      escape-string-regexp_1-0-4
     ];
     meta = {
       homepage = "https://github.com/chalk/chalk#readme";
