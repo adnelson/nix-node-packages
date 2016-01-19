@@ -29,9 +29,9 @@ $ nix-build nix-node-packages/nodePackages -A nodePackages.grunt_0-4-5
 
 There are any number of reasons why a package might not build. Some of the most common ones are:
 
-* The `nixfromnpm` tool wasn't able to generate the definition of one of the package's dependencies. It will insert in the `brokenPackage` function, which, as might be anticipated, never builds. Looking at the call to `brokenPackage` will tell you why it couldn't build it. In my experience, this is because `nixfromnpm`'s version range checker is not completely up to spec, and it's unable to find a version that satisfies the bounds given by a `package.json`. If this is the case, the easiest way to fix it is to use `npm` to:
+* The `nixfromnpm` tool wasn't able to generate the definition of one of the package's dependencies. It will insert in the `brokenPackage` function, which, as might be anticipated, never builds. Looking at the call to `brokenPackage` will tell you why it couldn't build it. In my experience, this is because `nixfromnpm`'s version range checker is not completely up to spec, and it's unable to find a version that satisfies the bounds given by a `package.json`. If this is the case, the easiest way to fix it is to:
   * See what version range `nixfromnpm` failed to resolve. E.g. `foo@>=1.2.3-bar <2.3.4-baz.qux`.
-  * Manually build the package at the given version bounds. E g. `npm install foo@>=1.2.3-bar <2.3.4-baz.qux`.
+  * Use `npm` to manually build the package at the given version bounds. E g. `npm install foo@>=1.2.3-bar <2.3.4-baz.qux`.
   * See what version it ends up building. E.g. `foo@1.2.3-xyz`.
   * Call `nixfromnpm` on that version. E.g. `nixfromnpm -o /path/to/nix-node-packages -p 'foo%1.2.3-xyz'`.
   * Replace the call to `brokenPackage` with `foo_1-2-3-xyz`.
