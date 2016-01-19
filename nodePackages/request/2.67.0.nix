@@ -1,4 +1,4 @@
-{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
+{ buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "request";
     version = "2.67.0";
@@ -26,10 +26,7 @@ buildNodePackage {
       is-typedarray_1-0-0
       json-stringify-safe_5-0-1
       mime-types_2-1-9
-      (brokenPackage {
-        name = "form-data";
-        reason = "NoMatchingVersion >=1.0.0-rc3 <1.1.0";
-      })
+      form-data_1-0-0-rc3
     ];
     meta = {
       homepage = "https://github.com/request/request#readme";
