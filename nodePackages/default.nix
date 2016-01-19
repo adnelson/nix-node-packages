@@ -33,6 +33,10 @@
     alter_0-2-0 = callPackage ./alter/0.2.0.nix {};
     amdefine = callPackage ./amdefine/1.0.0.nix {};
     amdefine_1-0-0 = callPackage ./amdefine/1.0.0.nix {};
+    amp = callPackage ./amp/0.3.1.nix {};
+    amp_0-3-1 = callPackage ./amp/0.3.1.nix {};
+    amp-message = callPackage ./amp-message/0.1.2.nix {};
+    amp-message_0-1-2 = callPackage ./amp-message/0.1.2.nix {};
     ansi = callPackage ./ansi/0.3.0.nix {};
     ansi_0-3-0 = callPackage ./ansi/0.3.0.nix {};
     ansi-escapes = callPackage ./ansi-escapes/1.1.0.nix {};
@@ -127,6 +131,7 @@
     astw_2-0-0 = callPackage ./astw/2.0.0.nix {};
     async = callPackage ./async/1.5.0.nix {};
     async_1-5-0 = callPackage ./async/1.5.0.nix {};
+    async_1-4-2 = callPackage ./async/1.4.2.nix {};
     async_1-0-0 = callPackage ./async/1.0.0.nix {};
     async_0-9-0 = callPackage ./async/0.9.0.nix {};
     async_0-2-10 = callPackage ./async/0.2.10.nix {};
@@ -400,6 +405,8 @@
     chalk_0-4-0 = callPackage ./chalk/0.4.0.nix {};
     character-parser = callPackage ./character-parser/1.2.1.nix {};
     character-parser_1-2-1 = callPackage ./character-parser/1.2.1.nix {};
+    charm = callPackage ./charm/0.1.2.nix {};
+    charm_0-1-2 = callPackage ./charm/0.1.2.nix {};
     cheerio = callPackage ./cheerio/0.19.0.nix {};
     cheerio_0-19-0 = callPackage ./cheerio/0.19.0.nix {};
     child-process-promise = callPackage ./child-process-promise/1.1.0.nix {};
@@ -407,7 +414,8 @@
     chmodr = callPackage ./chmodr/1.0.2.nix {};
     chmodr_1-0-2 = callPackage ./chmodr/1.0.2.nix {};
     chmodr_0-1-0 = callPackage ./chmodr/0.1.0.nix {};
-    chokidar = callPackage ./chokidar/1.3.0.nix {};
+    chokidar = callPackage ./chokidar/1.4.2.nix {};
+    chokidar_1-4-2 = callPackage ./chokidar/1.4.2.nix {};
     chokidar_1-3-0 = callPackage ./chokidar/1.3.0.nix {};
     chownr = callPackage ./chownr/1.0.1.nix {};
     chownr_1-0-1 = callPackage ./chownr/1.0.1.nix {};
@@ -472,6 +480,7 @@
     commander_2-6-0 = callPackage ./commander/2.6.0.nix {};
     commander_2-3-0 = callPackage ./commander/2.3.0.nix {};
     commander_2-0-0 = callPackage ./commander/2.0.0.nix {};
+    commander_1-0-5 = callPackage ./commander/1.0.5.nix {};
     commander_0-6-1 = callPackage ./commander/0.6.1.nix {};
     commander_0-5-2 = callPackage ./commander/0.5.2.nix {};
     commondir = callPackage ./commondir/1.0.1.nix {};
@@ -501,6 +510,8 @@
     configstore = callPackage ./configstore/1.3.0.nix {};
     configstore_1-3-0 = callPackage ./configstore/1.3.0.nix {};
     configstore_0-3-2 = callPackage ./configstore/0.3.2.nix {};
+    configurable = callPackage ./configurable/0.0.1.nix {};
+    configurable_0-0-1 = callPackage ./configurable/0.0.1.nix {};
     connect = callPackage ./connect/3.4.0.nix {};
     connect_3-4-0 = callPackage ./connect/3.4.0.nix {};
     connect-flash = callPackage ./connect-flash/0.1.1.nix {};
@@ -559,6 +570,8 @@
     create-hash_1-1-2 = callPackage ./create-hash/1.1.2.nix {};
     create-hmac = callPackage ./create-hmac/1.1.4.nix {};
     create-hmac_1-1-4 = callPackage ./create-hmac/1.1.4.nix {};
+    cron = callPackage ./cron/1.1.0.nix {};
+    cron_1-1-0 = callPackage ./cron/1.1.0.nix {};
     cross-spawn = callPackage ./cross-spawn/2.0.0.nix {};
     cross-spawn_2-0-0 = callPackage ./cross-spawn/2.0.0.nix {};
     cross-spawn-async = callPackage ./cross-spawn-async/2.0.0.nix {};
@@ -770,6 +783,8 @@
     escape-html = callPackage ./escape-html/1.0.2.nix {};
     escape-html_1-0-2 = callPackage ./escape-html/1.0.2.nix {};
     escape-html_1-0-1 = callPackage ./escape-html/1.0.1.nix {};
+    escape-regexp = callPackage ./escape-regexp/0.0.1.nix {};
+    escape-regexp_0-0-1 = callPackage ./escape-regexp/0.0.1.nix {};
     escape-string-regexp = callPackage ./escape-string-regexp/1.0.3.nix {};
     escape-string-regexp_1-0-3 = callPackage ./escape-string-regexp/1.0.3.nix {};
     escape-string-regexp_1-0-2 = callPackage ./escape-string-regexp/1.0.2.nix {};
@@ -1357,6 +1372,8 @@
     kerberos_0-0-17 = callPackage ./kerberos/0.0.17.nix {};
     keygrip = callPackage ./keygrip/1.0.1.nix {};
     keygrip_1-0-1 = callPackage ./keygrip/1.0.1.nix {};
+    keypress = callPackage ./keypress/0.1.0.nix {};
+    keypress_0-1-0 = callPackage ./keypress/0.1.0.nix {};
     kind-of = callPackage ./kind-of/3.0.2.nix {};
     kind-of_3-0-2 = callPackage ./kind-of/3.0.2.nix {};
     kind-of_2-0-1 = callPackage ./kind-of/2.0.1.nix {};
@@ -1666,7 +1683,8 @@
     moment_2-10-6 = callPackage ./moment/2.10.6.nix {};
     moment_2-1-0 = callPackage ./moment/2.1.0.nix {};
     moment_2-0-0 = callPackage ./moment/2.0.0.nix {};
-    moment-timezone = callPackage ./moment-timezone/0.0.2.nix {};
+    moment-timezone = callPackage ./moment-timezone/0.3.1.nix {};
+    moment-timezone_0-3-1 = callPackage ./moment-timezone/0.3.1.nix {};
     moment-timezone_0-0-2 = callPackage ./moment-timezone/0.0.2.nix {};
     mongodb = callPackage ./mongodb/2.0.49.nix {};
     mongodb_2-0-49 = callPackage ./mongodb/2.0.49.nix {};
@@ -1785,6 +1803,8 @@
     npmlog = callPackage ./npmlog/2.0.0.nix {};
     npmlog_2-0-0 = callPackage ./npmlog/2.0.0.nix {};
     npmlog_1-2-1 = callPackage ./npmlog/1.2.1.nix {};
+    nssocket = callPackage ./nssocket/0.6.0.nix {};
+    nssocket_0-6-0 = callPackage ./nssocket/0.6.0.nix {};
     nth-check = callPackage ./nth-check/1.0.1.nix {};
     nth-check_1-0-1 = callPackage ./nth-check/1.0.1.nix {};
     nub = callPackage ./nub/0.0.0.nix {};
@@ -1961,6 +1981,8 @@
     pg-types_1-10-0 = callPackage ./pg-types/1.10.0.nix {};
     pgpass = callPackage ./pgpass/0.0.3.nix {};
     pgpass_0-0-3 = callPackage ./pgpass/0.0.3.nix {};
+    pidusage = callPackage ./pidusage/1.0.1.nix {};
+    pidusage_1-0-1 = callPackage ./pidusage/1.0.1.nix {};
     pify = callPackage ./pify/2.3.0.nix {};
     pify_2-3-0 = callPackage ./pify/2.3.0.nix {};
     pinkie = callPackage ./pinkie/2.0.1.nix {};
@@ -1974,6 +1996,18 @@
     pkginfo_0-2-3 = callPackage ./pkginfo/0.2.3.nix {};
     plur = callPackage ./plur/1.0.0.nix {};
     plur_1-0-0 = callPackage ./plur/1.0.0.nix {};
+    pm2 = callPackage ./pm2/1.0.0.nix {};
+    pm2_1-0-0 = callPackage ./pm2/1.0.0.nix {};
+    pm2-axon = callPackage ./pm2-axon/2.0.9.nix {};
+    pm2-axon_2-0-9 = callPackage ./pm2-axon/2.0.9.nix {};
+    pm2-axon-rpc = callPackage ./pm2-axon-rpc/0.3.6.nix {};
+    pm2-axon-rpc_0-3-6 = callPackage ./pm2-axon-rpc/0.3.6.nix {};
+    pm2-deploy = callPackage ./pm2-deploy/0.2.1.nix {};
+    pm2-deploy_0-2-1 = callPackage ./pm2-deploy/0.2.1.nix {};
+    pm2-multimeter = callPackage ./pm2-multimeter/0.1.2.nix {};
+    pm2-multimeter_0-1-2 = callPackage ./pm2-multimeter/0.1.2.nix {};
+    pmx = callPackage ./pmx/0.5.8.nix {};
+    pmx_0-5-8 = callPackage ./pmx/0.5.8.nix {};
     pool2 = callPackage ./pool2/1.3.0.nix {};
     pool2_1-3-0 = callPackage ./pool2/1.3.0.nix {};
     pop-iterate = callPackage ./pop-iterate/1.0.1.nix {};
@@ -2258,6 +2292,14 @@
     shell-quote_0-0-1 = callPackage ./shell-quote/0.0.1.nix {};
     shelljs = callPackage ./shelljs/0.5.3.nix {};
     shelljs_0-5-3 = callPackage ./shelljs/0.5.3.nix {};
+    should = callPackage ./should/7.1.1.nix {};
+    should_7-1-1 = callPackage ./should/7.1.1.nix {};
+    should-equal = callPackage ./should-equal/0.5.0.nix {};
+    should-equal_0-5-0 = callPackage ./should-equal/0.5.0.nix {};
+    should-format = callPackage ./should-format/0.3.1.nix {};
+    should-format_0-3-1 = callPackage ./should-format/0.3.1.nix {};
+    should-type = callPackage ./should-type/0.2.0.nix {};
+    should-type_0-2-0 = callPackage ./should-type/0.2.0.nix {};
     showdown = callPackage ./showdown/1.3.0.nix {};
     showdown_1-3-0 = callPackage ./showdown/1.3.0.nix {};
     sigmund = callPackage ./sigmund/1.0.1.nix {};
@@ -2532,6 +2574,8 @@
     tty-browserify_0-0-0 = callPackage ./tty-browserify/0.0.0.nix {};
     tunnel-agent = callPackage ./tunnel-agent/0.4.1.nix {};
     tunnel-agent_0-4-1 = callPackage ./tunnel-agent/0.4.1.nix {};
+    tv4 = callPackage ./tv4/1.0.18.nix {};
+    tv4_1-0-18 = callPackage ./tv4/1.0.18.nix {};
     tweetnacl = callPackage ./tweetnacl/0.13.2.nix {};
     tweetnacl_0-13-2 = callPackage ./tweetnacl/0.13.2.nix {};
     type-check = callPackage ./type-check/0.3.1.nix {};
@@ -2655,6 +2699,8 @@
     vinyl-fs_2-2-1 = callPackage ./vinyl-fs/2.2.1.nix {};
     vinyl-fs_0-3-14 = callPackage ./vinyl-fs/0.3.14.nix {};
     vinyl-fs_0-1-4 = callPackage ./vinyl-fs/0.1.4.nix {};
+    vizion = callPackage ./vizion/0.2.12.nix {};
+    vizion_0-2-12 = callPackage ./vizion/0.2.12.nix {};
     vm-browserify = callPackage ./vm-browserify/0.0.4.nix {};
     vm-browserify_0-0-4 = callPackage ./vm-browserify/0.0.4.nix {};
     void-elements = callPackage ./void-elements/2.0.1.nix {};
