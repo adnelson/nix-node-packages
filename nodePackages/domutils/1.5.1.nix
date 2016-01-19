@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       dom-serializer_0-1-0
-      domelementtype_1-1-3
+      domelementtype_1-3-0
     ];
     meta = {
       homepage = "https://github.com/FB55/domutils";

@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       jsprim_1-2-2
       assert-plus_0-1-5
-      sshpk_1-7-0
+      sshpk_1-7-3
     ];
     meta = {
       homepage = "https://github.com/joyent/node-http-signature/";
