@@ -11,10 +11,6 @@ buildNodePackage {
       vizion_0-2-12
       async_1-5-0
       pm2-axon-rpc_0-3-6
-      (brokenPackage {
-        name = "ikt";
-        reason = "NotYetImplemented \"nixfromnpm can't fetch arbitrary git repos yet (git+http://ikt.pm2.io/ikt.git#master)\"";
-      })
       shelljs_0-5-3
       pidusage_1-0-1
       eventemitter2_0-4-14
@@ -32,12 +28,6 @@ buildNodePackage {
       moment_2-10-6
       pm2-multimeter_0-1-2
       semver_5-1-0
-    ];
-    optionalDependencies = with nodePackages; [
-      (brokenPackage {
-        name = "ikt";
-        reason = "NotYetImplemented \"nixfromnpm can't fetch arbitrary git repos yet (git+http://ikt.pm2.io/ikt.git#master)\"";
-      })
     ];
     devDependencies = with nodePackages; [
       better-assert_1-0-2

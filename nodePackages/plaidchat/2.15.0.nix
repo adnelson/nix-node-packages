@@ -6,6 +6,11 @@ buildNodePackage {
       url = "http://registry.npmjs.org/plaidchat/-/plaidchat-2.15.0.tgz";
       sha1 = "23b54fe5dea0394659877c13c2fa20f6988ae6e4";
     };
+    preConfigure = ''
+      mkdir -p node_modules
+      cp -r ${nodePackages.nw_0-12-3}/lib/node_modules/nw node_modules/nw
+      chmod -R +w node_modules/nw
+    '';
     deps = with nodePackages; [
       electron-prebuilt_0-30-8
       get-uri_0-1-4
