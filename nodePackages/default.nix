@@ -1077,6 +1077,8 @@
     growl_1-5-1 = callPackage ./growl/1.5.1.nix {};
     grunt = callPackage ./grunt/0.4.5.nix {};
     grunt_0-4-5 = callPackage ./grunt/0.4.5.nix {};
+    grunt-cli = callPackage ./grunt-cli/0.1.13.nix {};
+    grunt-cli_0-1-13 = callPackage ./grunt-cli/0.1.13.nix {};
     grunt-coffeelint = callPackage ./grunt-coffeelint/0.0.13.nix {};
     grunt-coffeelint_0-0-13 = callPackage ./grunt-coffeelint/0.0.13.nix {};
     grunt-concurrent = callPackage ./grunt-concurrent/1.0.1.nix {};
@@ -2298,6 +2300,7 @@
     resolve = callPackage ./resolve/1.1.6.nix {};
     resolve_1-1-6 = callPackage ./resolve/1.1.6.nix {};
     resolve_0-6-3 = callPackage ./resolve/0.6.3.nix {};
+    resolve_0-3-1 = callPackage ./resolve/0.3.1.nix {};
     resolve_0-2-8 = callPackage ./resolve/0.2.8.nix {};
     resolve-from = callPackage ./resolve-from/1.0.1.nix {};
     resolve-from_1-0-1 = callPackage ./resolve-from/1.0.1.nix {};
