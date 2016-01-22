@@ -60,10 +60,14 @@ in
   # Source of the package; can be a tarball or a folder on the filesystem.
   src,
 
-  # The prefix to the name as it appears in `nix-env -q` and the nix store. By
-  # default, the name of nodejs interpreter e.g. "nodejs-<version>-${name}".
-  namePrefix ? "${nodejs.name}-" +
-               (if namespace == null then "" else "${namespace}-"),
+  # The suffix to the name as it appears in `nix-env -q` and the nix store. By
+  # default, the name of nodejs interpreter e.g:
+  # "<package name>-<package version>-nodejs-<nodejs version>"
+  nameSuffix ? "-${nodejs.name}",
+
+  # If there's a namespace, by default it will be prepended to the package
+  # name. Otherwise, a prefix can be given explicitly.
+  namePrefix ? (if namespace == null then "" else "${namespace}-"),
 
   # List or attribute set of (runtime) dependencies.
   deps ? {},
@@ -481,7 +485,7 @@ let
         overrideNodePackage = newArgs: buildNodePackage (args // newArgs);
       });
     } // (removeAttrs args attrsToRemove) // {
-      name = "${namePrefix}${name}-${version}";
+      name = "${namePrefix}${name}-${version}${nameSuffix}";
 
       # Pass the required dependencies and
       propagatedBuildInputs = propagatedBuildInputs ++
