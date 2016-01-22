@@ -155,7 +155,8 @@ rec {
       };
     in
     {
-      inherit nodePackages callPackage namespaceTokens pkgs;
+      inherit callPackage namespaceTokens pkgs;
+      nodePackages = nodePackages // {inherit nodejs;};
       nodeLib = self;
       npm3 = _npm3;
     };
