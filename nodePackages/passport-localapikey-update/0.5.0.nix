@@ -7,6 +7,7 @@ buildNodePackage {
       sha1 = "e7203e4e768277eee803b71193c0617a83d26264";
     };
     deps = with nodePackages; [
+      passport
       passport-strategy_1-0-0
       pkginfo_0-2-3
     ];
