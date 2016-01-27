@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       inherits_2-0-1
       typedarray_0-0-6
-      readable-stream_2-0-4
+      readable-stream_2-0-5
     ];
     meta = {
       homepage = "https://github.com/maxogden/concat-stream#readme";

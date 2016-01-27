@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "da184c535d18d8ee7ba2aa229b914009fae11309";
     };
     deps = with nodePackages; [
-      es5-ext_0-10-8
+      es5-ext_0-10-11
     ];
     meta = {
       homepage = "https://github.com/medikoo/d";

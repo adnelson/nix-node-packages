@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "540572d34f7ac3119f8f76c30cbc1b1e037affbe";
     };
     deps = with nodePackages; [
-      builtin-modules_1-1-0
+      builtin-modules_1-1-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/is-builtin-module";

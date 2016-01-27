@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "4b3073d933ff51f3912f03ac5519498a4150db40";
     };
     deps = with nodePackages; [
-      spdx-license-ids_1-1-0
+      spdx-license-ids_1-2-0
     ];
     meta = {
       homepage = "https://github.com/kemitchell/spdx-correct.js#readme";

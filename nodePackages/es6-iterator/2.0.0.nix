@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "bd968567d61635e33c0b80727613c9cb4b096bac";
     };
     deps = with nodePackages; [
-      es5-ext_0-10-8
+      es5-ext_0-10-11
       d_0-1-1
-      es6-symbol_3-0-1
+      es6-symbol_3-0-2
     ];
     meta = {
       homepage = "https://github.com/medikoo/es6-iterator#readme";

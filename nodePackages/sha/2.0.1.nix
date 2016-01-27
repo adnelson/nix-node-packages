@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       graceful-fs_4-1-2
-      readable-stream_2-0-4
+      readable-stream_2-0-5
     ];
     meta = {
       homepage = "https://github.com/ForbesLindesay/sha";

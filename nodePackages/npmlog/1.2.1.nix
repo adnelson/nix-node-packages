@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "28e7be619609b53f7ad1dd300a10d64d716268b6";
     };
     deps = with nodePackages; [
-      ansi_0-3-0
-      gauge_1-2-2
-      are-we-there-yet_1-0-4
+      ansi_0-3-1
+      gauge_1-2-5
+      are-we-there-yet_1-0-5
     ];
     meta = {
       homepage = "https://github.com/isaacs/npmlog#readme";

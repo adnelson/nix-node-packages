@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       inherits_2-0-1
       mkdirp_0-5-1
-      rimraf_2-4-4
+      rimraf_2-5-1
       graceful-fs_4-1-2
     ];
     meta = {

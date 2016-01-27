@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       spdx-correct_1-0-2
-      spdx-expression-parse_1-0-1
+      spdx-expression-parse_1-0-2
     ];
     meta = {
       homepage = "https://github.com/kemitchell/validate-npm-package-license.js#readme";

@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       combined-stream_1-0-5
-      async_1-5-0
-      mime-types_2-1-7
+      async_1-5-2
+      mime-types_2-1-9
     ];
     meta = {
       homepage = "https://github.com/form-data/form-data#readme";

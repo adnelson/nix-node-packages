@@ -1,4 +1,4 @@
-{ buildNodePackage, nodePackages, pkgs }:
+{ brokenPackage, buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "request";
     version = "2.67.0";
@@ -12,15 +12,15 @@ buildNodePackage {
       extend_3-0-0
       isstream_0-1-2
       bl_1-0-1
-      har-validator_2-0-5
+      har-validator_2-0-6
       tough-cookie_2-2-1
-      http-signature_1-1-0
+      http-signature_1-1-1
       aws-sign2_0-6-0
       stringstream_0-0-5
       qs_5-2-0
       forever-agent_0-6-1
       tunnel-agent_0-4-2
-      hawk_3-1-2
+      hawk_3-1-3
       node-uuid_1-4-7
       oauth-sign_0-8-0
       is-typedarray_1-0-0

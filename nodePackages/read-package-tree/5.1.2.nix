@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       debuglog_1-0-1
       once_1-3-3
-      read-package-json_2-0-2
+      read-package-json_2-0-3
       readdir-scoped-modules_1-0-2
       dezalgo_1-0-3
     ];

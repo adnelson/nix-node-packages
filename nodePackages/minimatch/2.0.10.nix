@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8d087c39c6b38c001b97fca7ce6d0e1e80afbac7";
     };
     deps = with nodePackages; [
-      brace-expansion_1-1-1
+      brace-expansion_1-1-2
     ];
     meta = {
       homepage = "https://github.com/isaacs/minimatch#readme";

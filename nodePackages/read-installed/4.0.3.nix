@@ -8,9 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       debuglog_1-0-1
-      util-extend_1-0-1
+      util-extend_1-0-3
       slide_1-1-6
-      read-package-json_2-0-2
+      read-package-json_2-0-3
       readdir-scoped-modules_1-0-2
       graceful-fs_4-1-2
       semver_5-1-0

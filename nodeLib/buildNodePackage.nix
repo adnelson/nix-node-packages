@@ -318,25 +318,44 @@ let
           link = dep: ''
             if ! [[ -e ${pathInModulePath dep} ]]; then
               ${linkCmd dep} ${dep}/lib/${pathInModulePath dep} ${modulePath dep}
+              if [[ -d ${dep}/bin ]]; then
+                find ${dep}/bin -type f -executable | while read exec_file; do
+                  echo "Symlinking $exec_file binary to node_modules/.bin"
+                  mkdir -p node_modules/.bin
+                  ln -s $exec_file node_modules/.bin/$(basename $exec_file)
+                done
+              fi
             fi
           '';
         in
-        flip concatMapStrings (attrValues requiredDependencies) (dep: ''
+        flip concatMapStrings (attrValues requiredDependencies) (dep:
+        # Create symlinks (or copies) of all of the required dependencies.
+        ''
           mkdir -p ${modulePath dep}
           ${link dep}
           ${concatMapStrings link (attrValues dep.peerDependencies)}
         '')}
-      # Create shims for recursive dependenceies
-      ${concatMapStrings (dep: ''
-        echo "Creating shim for recursive dependency ${dep.uniqueName}"
-        mkdir -pv ${pathInModulePath dep}
-        cat > ${pathInModulePath dep}/package.json <<EOF
-        {
-            "name": "${dep.uniqueName}",
-            "version": "${dep.version}"
-        }
+
+      # Remove recursive dependencies from package.json
+      ${if recursiveDependencies == {} then "" else ''
+        python <<EOF
+        import json
+        with open("package.json") as f:
+            package_json = json.load(f)
+        dep_names = [${concatStringsSep ", "
+                       (map (d: "'${d.packageJsonName}'")
+                         (attrValues recursiveDependencies))}]
+        for name in dep_names:
+            print("Removing recursive dependency on {} from package.json"
+                  .format(name))
+            for k in ("dependencies", "devDependencies", "peerDependencies",
+                      "optionalDependencies"):
+                package_json[k] = package_json.setdefault(k, {})
+                package_json[k].pop(name, None)
+        with open("package.json", "w") as f:
+            f.write(json.dumps(package_json))
         EOF
-      '') (attrValues recursiveDependencies)}
+        ''}
 
       runHook postConfigure
     '';
@@ -366,12 +385,6 @@ let
     installPhase = ''
       runHook preInstall
 
-      # Remove shims
-      ${concatMapStrings (dep: ''
-        echo "Removing shim for recursive dependency ${dep.uniqueName}"
-        rm -rvf ${pathInModulePath dep}/package.json
-      '') (attrValues recursiveDependencies)}
-
       # Install the package that we just built.
       mkdir -p $out/lib/${modulePath self}
 
@@ -399,14 +412,6 @@ let
 
       # Install binaries using the `bin` object in the package.json
       python ${./installBinaries.py}
-
-      # Install binaries and patch shebangs. These are always found in
-      # node_modules/.bin, regardless of a package namespace.
-      mv node_modules/.bin $out/lib/node_modules 2>/dev/null || true
-      if [ -d "$out/lib/node_modules/.bin" ]; then
-        ln -sv $out/lib/node_modules/.bin $out/bin
-        patchShebangs $out/lib/node_modules/.bin
-      fi
 
       runHook postInstall
     '';
@@ -458,7 +463,7 @@ let
       # Propagate pieces of information about the package so that downstream
       # packages can reflect on them.
       passthru = (passthru // {
-        inherit uniqueName namespace version;
+        inherit uniqueName packageJsonName namespace version;
         # The basic name is the name without namespace or version.
         basicName = name;
         peerDependencies = _peerDependencies.requiredDeps;

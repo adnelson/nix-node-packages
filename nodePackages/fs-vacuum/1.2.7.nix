@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "75e501f9d2889ba2fe9fe12f936ba5dad50ca35a";
     };
     deps = with nodePackages; [
-      rimraf_2-4-4
+      rimraf_2-5-1
       graceful-fs_4-1-2
       path-is-inside_1-0-1
     ];
