@@ -3,8 +3,6 @@
   stdenv,
   # System packages.
   pkgs,
-  # Lets us run a command.
-  runCommand,
   # Derivation for nodejs and npm.
   nodejs,
   # Which version of npm to use.
@@ -13,6 +11,9 @@
   neededNatives,
   # Self-reference for overriding purposes.
   buildNodePackage,
+  # Collection of nodejs source files, used by packages that link against
+  # the node C libraries.
+  nodejsSources
 }:
 
 let
@@ -164,11 +165,6 @@ let
   # We create a `self` object for self-referential expressions. It
   # bottoms out in a call to `mkDerivation` at the end.
   self = let
-    sources = runCommand "node-sources" {} ''
-      tar --no-same-owner --no-same-permissions -xf ${nodejs.src}
-      mv $(find . -type d -mindepth 1 -maxdepth 1) $out
-    '';
-
     platforms = if os == [] then nodejs.meta.platforms else
       fold (entry: platforms:
         let
@@ -184,6 +180,9 @@ let
               platforms ++ (intersectLists filterPlatforms nodejs.meta.platforms)
       ) [] os;
 
+
+    strict = x: builtins.seq x x;
+
     toAttrSet = obj: if isAttrs obj then obj else
       (listToAttrs (map (x: nameValuePair x.name x) obj));
 
@@ -192,55 +191,55 @@ let
       in rec {
         # All required node modules, without already resolved dependencies
         # Also override with already resolved dependencies
-        requiredDeps = mapAttrs (name: dep:
+        requiredDeps = strict (mapAttrs (name: dep:
           dep.overrideNodePackage {
             resolvedDeps = resolvedDeps // {"${name}" = self;};
           }
         ) (filterAttrs filterFunc
-            (removeAttrs attrDeps (attrNames resolvedDeps)));
+            (removeAttrs attrDeps (attrNames resolvedDeps))));
 
         # Recursive dependencies that we want to avoid with shim creation
-        recursiveDeps = filterAttrs filterFunc
-                          (removeAttrs attrDeps (attrNames requiredDeps));
+        recursiveDeps = strict (filterAttrs filterFunc
+                          (removeAttrs attrDeps (attrNames requiredDeps)));
       };
 
     # Filter out self-referential dependencies.
-    _dependencies = mapDependencies deps (name: dep: dep.uniqueName != uniqueName);
+    _dependencies = strict (mapDependencies deps (name: dep: dep.uniqueName != uniqueName));
 
     # Filter out self-referential peer dependencies.
-    _peerDependencies = mapDependencies peerDependencies (name: dep:
-      dep.uniqueName != uniqueName);
+    _peerDependencies = strict (mapDependencies peerDependencies (name: dep:
+      dep.uniqueName != uniqueName));
 
     # Filter out any optional dependencies which don't build correctly.
-    _optionalDependencies = mapDependencies optionalDependencies (name: dep:
+    _optionalDependencies = strict (mapDependencies optionalDependencies (name: dep:
       (builtins.tryEval dep).success &&
       !(elem dep.basicName skipOptionalDependencies)
-    );
+    ));
 
     # Grab development dependencies if doCheck is true.
     _devDependencies = let
         filterFunc = name: dep: dep.uniqueName != uniqueName;
         depSet = if doCheck then devDependencies else [];
       in
-      mapDependencies depSet filterFunc;
+      strict (mapDependencies depSet filterFunc);
 
     # Depencencies we need to propagate (all except devDependencies)
-    propagatedDependencies =
+    propagatedDependencies = strict (
       _dependencies.requiredDeps //
       _optionalDependencies.requiredDeps //
-      _peerDependencies.requiredDeps;
+      _peerDependencies.requiredDeps);
 
     # Required dependencies are those that we haven't filtered yet.
     requiredDependencies =
-      _devDependencies.requiredDeps // propagatedDependencies;
+      strict (_devDependencies.requiredDeps // propagatedDependencies);
 
     # Recursive dependencies. These are turned into "shims" or fake packages,
     # which allows us to have dependency cycles, something npm allows.
-    recursiveDependencies =
+    recursiveDependencies = strict (
       _devDependencies.recursiveDeps //
       _dependencies.recursiveDeps //
       _optionalDependencies.recursiveDeps //
-      _peerDependencies.recursiveDeps;
+      _peerDependencies.recursiveDeps);
 
     # Flags that we will pass to `npm install`.
     npmFlags = concatStringsSep " " ([
@@ -253,7 +252,7 @@ let
       # This will disable any user-level npm configuration.
       "--userconfig=/dev/null"
       # This flag is used for packages which link against the node headers.
-      "--nodedir=${sources}"
+      "--nodedir=${nodejsSources}"
       # This will tell npm not to run pre/post publish hooks
       # "--ignore-scripts"
       ] ++

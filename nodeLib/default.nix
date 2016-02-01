@@ -68,9 +68,14 @@ in
 rec {
   inherit nodejs;
 
+  nodejsSources = pkgs.runCommand "node-sources" {} ''
+    tar --no-same-owner --no-same-permissions -xf ${nodejs.src}
+    mv $(find . -type d -mindepth 1 -maxdepth 1) $out
+  '';
+
   buildNodePackage = import ./buildNodePackage.nix ({
-    inherit pkgs;
-    inherit (pkgs) stdenv runCommand;
+    inherit pkgs nodejsSources;
+    inherit (pkgs) stdenv;
     inherit nodejs buildNodePackage;
     neededNatives = [pkgs.python] ++ optionals isLinux [pkgs.utillinux];
   } // (if npm3 then {npm = _npm3;} else {}));
