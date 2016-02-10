@@ -729,6 +729,8 @@
     diff_1-0-2 = callPackage ./diff/1.0.2.nix {};
     diffie-hellman = callPackage ./diffie-hellman/5.0.0.nix {};
     diffie-hellman_5-0-0 = callPackage ./diffie-hellman/5.0.0.nix {};
+    docopt = callPackage ./docopt/0.6.2.nix {};
+    docopt_0-6-2 = callPackage ./docopt/0.6.2.nix {};
     dom-serializer = callPackage ./dom-serializer/0.1.0.nix {};
     dom-serializer_0-1-0 = callPackage ./dom-serializer/0.1.0.nix {};
     domain-browser = callPackage ./domain-browser/1.1.4.nix {};
