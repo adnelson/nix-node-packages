@@ -318,10 +318,11 @@ let
             if ! [[ -e ${pathInModulePath dep} ]]; then
               ${linkCmd dep} ${dep}/lib/${pathInModulePath dep} ${modulePath dep}
               if [[ -d ${dep}/bin ]]; then
-                find ${dep}/bin -type f -executable | while read exec_file; do
-                  echo "Symlinking $exec_file binary to node_modules/.bin"
-                  mkdir -p node_modules/.bin
-                  ln -s $exec_file node_modules/.bin/$(basename $exec_file)
+                find -L ${dep}/bin -maxdepth 1 -type f -executable \
+                  | while read exec_file; do
+                    echo "Symlinking $exec_file binary to node_modules/.bin"
+                    mkdir -p node_modules/.bin
+                    ln -s $exec_file node_modules/.bin/$(basename $exec_file)
                 done
               fi
             fi
@@ -448,6 +449,7 @@ let
           eval "$configurePhase"
         )
         echo "Installed dependencies in $TMPDIR/$UNIQNAME."
+        export PATH=$TMPDIR/$UNIQNAME/node_modules/.bin:$PATH
         export NODE_PATH=$TMPDIR/$UNIQNAME/node_modules
         runHook postShellHook
       '';
