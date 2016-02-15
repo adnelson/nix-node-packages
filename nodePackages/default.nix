@@ -5,6 +5,8 @@
     JSONStream = callPackage ./JSONStream/1.0.7.nix {};
     JSONStream_1-0-7 = callPackage ./JSONStream/1.0.7.nix {};
     JSONStream_0-10-0 = callPackage ./JSONStream/0.10.0.nix {};
+    JSV = callPackage ./JSV/4.0.2.nix {};
+    JSV_4-0-2 = callPackage ./JSV/4.0.2.nix {};
     abab = callPackage ./abab/1.0.1.nix {};
     abab_1-0-1 = callPackage ./abab/1.0.1.nix {};
     abbrev = callPackage ./abbrev/1.0.7.nix {};
@@ -1447,6 +1449,8 @@
     jsonify_0-0-0 = callPackage ./jsonify/0.0.0.nix {};
     jsonist = callPackage ./jsonist/1.1.0.nix {};
     jsonist_1-1-0 = callPackage ./jsonist/1.1.0.nix {};
+    jsonlint = callPackage ./jsonlint/1.6.2.nix {};
+    jsonlint_1-6-2 = callPackage ./jsonlint/1.6.2.nix {};
     jsonparse = callPackage ./jsonparse/1.2.0.nix {};
     jsonparse_1-2-0 = callPackage ./jsonparse/1.2.0.nix {};
     jsonparse_0-0-5 = callPackage ./jsonparse/0.0.5.nix {};
@@ -1918,6 +1922,8 @@
     nodemon = callPackage ./nodemon/1.8.1.nix {};
     nodemon_1-8-1 = callPackage ./nodemon/1.8.1.nix {};
     nodemon_1-3-0-7 = callPackage ./nodemon/1.3.0-7.nix {};
+    nomnom = callPackage ./nomnom/1.8.1.nix {};
+    nomnom_1-8-1 = callPackage ./nomnom/1.8.1.nix {};
     nopt = callPackage ./nopt/3.0.6.nix {};
     nopt_3-0-6 = callPackage ./nopt/3.0.6.nix {};
     nopt_2-2-1 = callPackage ./nopt/2.2.1.nix {};
@@ -2806,6 +2812,7 @@
     underscore = callPackage ./underscore/1.8.3.nix {};
     underscore_1-8-3 = callPackage ./underscore/1.8.3.nix {};
     underscore_1-7-0 = callPackage ./underscore/1.7.0.nix {};
+    underscore_1-6-0 = callPackage ./underscore/1.6.0.nix {};
     underscore_1-5-2 = callPackage ./underscore/1.5.2.nix {};
     underscore-string = callPackage ./underscore-string/3.2.2.nix {};
     underscore-string_3-2-2 = callPackage ./underscore-string/3.2.2.nix {};
