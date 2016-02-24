@@ -1540,7 +1540,8 @@
     lock_0-1-2 = callPackage ./lock/0.1.2.nix {};
     lockfile = callPackage ./lockfile/1.0.1.nix {};
     lockfile_1-0-1 = callPackage ./lockfile/1.0.1.nix {};
-    lodash = callPackage ./lodash/3.10.1.nix {};
+    lodash = callPackage ./lodash/4.5.1.nix {};
+    lodash_4-5-1 = callPackage ./lodash/4.5.1.nix {};
     lodash_3-10-1 = callPackage ./lodash/3.10.1.nix {};
     lodash_3-8-0 = callPackage ./lodash/3.8.0.nix {};
     lodash_3-1-0 = callPackage ./lodash/3.1.0.nix {};
@@ -2381,7 +2382,8 @@
     request-progress = callPackage ./request-progress/0.3.1.nix {};
     request-progress_0-3-1 = callPackage ./request-progress/0.3.1.nix {};
     request-progress_0-3-0 = callPackage ./request-progress/0.3.0.nix {};
-    request-promise = callPackage ./request-promise/0.4.3.nix {};
+    request-promise = callPackage ./request-promise/2.0.1.nix {};
+    request-promise_2-0-1 = callPackage ./request-promise/2.0.1.nix {};
     request-promise_0-4-3 = callPackage ./request-promise/0.4.3.nix {};
     request-replay = callPackage ./request-replay/0.2.0.nix {};
     request-replay_0-2-0 = callPackage ./request-replay/0.2.0.nix {};
