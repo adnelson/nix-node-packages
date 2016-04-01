@@ -23,26 +23,34 @@ var packageObj = JSON.parse(fs.readFileSync('./package.json'));
 // * That a package with the given name exists in the node_modules folder.
 // * That its version satisfies the given version bounds.
 function checkDependency(name, versionRange, dependencyType) {
-  process.stdout.write("Checking dependency " + name + "@" + versionRange +
+  process.stderr.write("Checking dependency " + name + "@" + versionRange +
 		       "(from " + dependencyType + ")...");
   var dependencyPackageObj;
   var pkgJsonPath = process.cwd() + "/node_modules/" + name + "/package.json";
+  var errorKey = name + "@" + versionRange;
   try {
     dependencyPackageObj = JSON.parse(fs.readFileSync(pkgJsonPath));
   } catch (e) {
+    var message = "Not found in node_modules";
     // Case: the file didn't exist
-    fail("Package " + name + " is listed in " + dependencyType + ", but " +
-         pkgJsonPath + " could not be found or parsed (" + e + ")");
+    errorsFound[errorKey] = message;
+    console.error("ERROR: " + message);
+    return
   }
   // Check that the version matches
   var version = dependencyPackageObj.version;
   if (!semver.satisfies(version, versionRange)) {
-    fail("Package " + name + ", listed in " + dependencyType + ", has " +
-         "version " + version + ", which does not match the version range " +
-         versionRange);
+    var message = "version " + version + " doesn't match range " + versionRange;
+    errorsFound[errorKey] = message
+    console.error("ERROR: " + message);
+    return
   }
-  console.log("OK");
+  console.error("OK");
 }
+
+// This will be keyed on the dependency name and version, and valued with
+// the error.
+var errorsFound = {}
 
 // Verify that all of the declared dependencies in a package.json file
 // are satisfied by the environment.
@@ -58,4 +66,12 @@ for (var depTypeIdx in depTypes) {
       checkDependency(depName, packageObj[depType][depName], depType);
     }
   }
+}
+
+if (JSON.stringify(errorsFound) !== "{}") { //!Object.keys(errorsFound).length === 0) {
+  console.error("Found the following errors:");
+  for (depName in errorsFound) {
+    console.error(depName + ":  " + errorsFound[depName]);
+  }
+  fail("One or more dependencies were unsatisfied. :(");
 }
