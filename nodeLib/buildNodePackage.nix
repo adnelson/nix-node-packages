@@ -356,6 +356,10 @@ let
                       "optionalDependencies"):
                 package_json[k] = package_json.setdefault(k, {})
                 package_json[k].pop(name, None)
+        ${if devDependencies != null then "" else ''
+        print "Deleting dev dependencies..."
+        del package_json["devDependencies"]
+          ''}
         with open("package.json", "w") as f:
             f.write(json.dumps(package_json))
         EOF
@@ -372,9 +376,14 @@ let
         export HOME=$PWD
         echo npm install $npmFlags
 
-        npm install $npmFlags || {
-          echo "NPM installation of ${name}@${version} failed!"
-          echo "Rerunning with verbose logging:"
+        # Try doing the install first. If it fails, first check the
+        # dependencies, and if we don't uncover anything there just rerun it
+        # with verbose output.
+        npm install $npmFlags >/dev/null 2>&1 || {
+	  echo "Installation of ${name}@${version} failed!"
+	  echo "Checking dependencies to see if any aren't satisfied..."
+          node ${./checkDependencies.js}
+          echo "Dependencies seem ok. Rerunning with verbose logging:"
           npm install . $npmFlags --loglevel=verbose
           if [[ -d node_modules ]]; then
             echo "node_modules contains these files:"
@@ -431,6 +440,9 @@ let
         installPhase
         doCheck;
 
+      # Informs lower scripts not to check dev dependencies
+      NO_DEV_DEPENDENCIES = devDependencies == null;
+
       # Tell mkDerivation to run `setVariables` prior to other phases.
       prePhases = ["setVariables"];
 
@@ -441,6 +453,7 @@ let
         export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
         export BUILD_DIR=$TMPDIR/$UNIQNAME-build
         export npmFlags="${npmFlags}"
+	export SEMVER_PATH=${npm}/lib/node_modules/npm/node_modules/semver
       '';
 
       shellHook = ''
@@ -495,7 +508,11 @@ let
         overrideNodePackage = newArgs: buildNodePackage (args // newArgs);
       });
     } // (removeAttrs args attrsToRemove) // {
-      name = "${namePrefix}${name}-${version}${nameSuffix}";
+      name = if namePrefix == null then throw "Name prefix is null"
+             else if name == null then throw "Name is null"
+             else if version == null then throw "Version of ${name} is null"
+             else if nameSuffix == null then throw "Name suffix is null"
+             else "${namePrefix}${name}-${version}${nameSuffix}";
 
       # Pass the required dependencies and
       propagatedBuildInputs = propagatedBuildInputs ++
