@@ -1411,7 +1411,8 @@
     js-tokens = callPackage ./js-tokens/1.0.2.nix {};
     js-tokens_1-0-2 = callPackage ./js-tokens/1.0.2.nix {};
     js-tokens_1-0-1 = callPackage ./js-tokens/1.0.1.nix {};
-    js-yaml = callPackage ./js-yaml/3.4.4.nix {};
+    js-yaml = callPackage ./js-yaml/3.5.5.nix {};
+    js-yaml_3-5-5 = callPackage ./js-yaml/3.5.5.nix {};
     js-yaml_3-4-4 = callPackage ./js-yaml/3.4.4.nix {};
     js-yaml_2-0-5 = callPackage ./js-yaml/2.0.5.nix {};
     jsbn = callPackage ./jsbn/0.1.0.nix {};
