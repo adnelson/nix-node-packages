@@ -3,7 +3,7 @@ buildNodePackage {
     name = "socket.io-parser";
     version = "2.2.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz";
+      url = "https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz";
       sha1 = "3d7af6b64497e956b7d9fe775f999716027f9417";
     };
     deps = with nodePackages; [
