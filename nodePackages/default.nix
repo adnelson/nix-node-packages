@@ -615,6 +615,8 @@
     css-stringify_1-0-5 = callPackage ./css-stringify/1.0.5.nix {};
     css-what = callPackage ./css-what/1.0.0.nix {};
     css-what_1-0-0 = callPackage ./css-what/1.0.0.nix {};
+    cssmin = callPackage ./cssmin/0.4.3.nix {};
+    cssmin_0-4-3 = callPackage ./cssmin/0.4.3.nix {};
     cssom = callPackage ./cssom/0.3.0.nix {};
     cssom_0-3-0 = callPackage ./cssom/0.3.0.nix {};
     cssom_0-2-5 = callPackage ./cssom/0.2.5.nix {};
