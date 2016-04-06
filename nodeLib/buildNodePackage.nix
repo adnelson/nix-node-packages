@@ -128,6 +128,11 @@ in
   # A set of dependencies to patch.
   patchDependencies ? {},
 
+  # We attempt to automatically remove dev dependencies from the node_modules
+  # folder prior to copying to the nix store. If this isn't desired (for
+  # example, custom behavior is needed), then set this to true.
+  skipDevDependencyCleanup ? false,
+
   # Any remaining flags are passed through to mkDerivation.
   ...
 } @ args:
@@ -164,7 +169,8 @@ let
   # to be passed through to mkDerivation. They are removed below.
   attrsToRemove = ["deps" "resolvedDeps" "flags" "os" "skipOptionalDependencies"
                    "passthru" "doCheck" "installDevDependencies" "version"
-                   "namespace" "patchDependencies"] ++ dependencyTypes;
+                   "namespace" "patchDependencies" "skipDevDependencyCleanup"]
+                   ++ dependencyTypes;
 
   # We create a `self` object for self-referential expressions. It
   # bottoms out in a call to `mkDerivation` at the end.
@@ -404,9 +410,32 @@ let
 
       # Remove all of the dev dependencies which do not appear in other
       # dependency sets.
-      ${flip concatMapStrings (attrValues _devDependencies.requiredDeps) (dep:
-          if hasAttr dep.basicName propagatedDependencies then ""
-          else "rm -rfv ${pathInModulePath dep}; ")}
+      ${if skipDevDependencyCleanup then "" else
+        flip concatMapStrings (attrValues _devDependencies.requiredDeps) (dep:
+         let
+           rm = dep:
+             if !hasAttr dep.basicName propagatedDependencies
+             then ''
+               # Remove the dependency from node modules
+               rm -rfv ${pathInModulePath dep}
+               # Remove any binaries it generated from node_modules/.bin
+               if [[ -d ${dep}/bin ]]; then
+                 find -L ${dep}/bin -maxdepth 1 -type f -executable \
+                   | while read exec_file; do
+                     rm -fv node_modules/.bin/$(basename $exec_file)
+                 done
+               fi
+
+               # Remove any peer dependencies that package might have brought
+               # with it.
+               ${concatMapStrings rm (attrValues dep.peerDependencies)}
+             ''
+             else ''
+               echo "Retaining ${dep.basicName} since it " \
+                    "appears in the set of dependencies to propagate"
+             '';
+         in
+         rm dep)}
 
       # Copy the folder that was created for this path to $out/lib.
       cp -r $PWD $out/lib/${pathInModulePath self}
