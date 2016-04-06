@@ -152,7 +152,7 @@ else
 
 let
   inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists isList flip
-                       intersectLists isAttrs listToAttrs nameValuePair
+                       intersectLists isAttrs listToAttrs nameValuePair hasAttr
                        mapAttrs filterAttrs attrNames elem concatMapStrings
                        attrValues getVersion flatten remove concatStringsSep;
 
@@ -287,7 +287,10 @@ let
             package_json = json.load(f)
         ${flip concatMapStrings (attrNames patchDependencies) (name: let
             version = patchDependencies.${name};
-          in flip concatMapStrings dependencyTypes (depType: ''
+          in
+          # Iterate through all of the dependencies we're patching, and for
+          # each one either remove it or set it to something else.
+          flip concatMapStrings dependencyTypes (depType: ''
             if "${name}" in package_json.setdefault("${depType}", {}):
                 ${if version == null then ''
                     print("removing ${name} from ${depType}")
@@ -398,6 +401,12 @@ let
 
       # Install the package that we just built.
       mkdir -p $out/lib/${modulePath self}
+
+      # Remove all of the dev dependencies which do not appear in other
+      # dependency sets.
+      ${flip concatMapStrings (attrValues _devDependencies.requiredDeps) (dep:
+          if hasAttr dep.basicName propagatedDependencies then ""
+          else "rm -rfv ${pathInModulePath dep}; ")}
 
       # Copy the folder that was created for this path to $out/lib.
       cp -r $PWD $out/lib/${pathInModulePath self}
