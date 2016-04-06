@@ -250,7 +250,7 @@ let
       # We point the registry at something that doesn't exist. This will
       # mean that NPM will fail if any of the dependencies aren't met, as it
       # will attempt to hit this registry for the missing dependency.
-      "--registry=http://notaregistry.$UNIQNAME.derp"
+      "--registry=http://notaregistry.$UNIQNAME.com"
       # These flags make failure fast, as otherwise NPM will spin for a while.
       "--fetch-retry-mintimeout=0" "--fetch-retry-maxtimeout=10" "--fetch-retries=0"
       # This will disable any user-level npm configuration.
@@ -266,17 +266,12 @@ let
       # Add any extra headers that the user has passed in.
       extraNpmFlags);
 
-    # A bit of bash to check that variables are set.
-    checkSet = vars: concatStringsSep "\n" (flip map vars (var: ''
-      [[ -z $${var} ]] && { echo "${var} is not set."; exit 1; }
-    ''));
-
     patchPhase = ''
       runHook prePatch
       patchShebangs $PWD
 
       # Ensure that the package name matches what is in the package.json.
-      node ${./checkPackageJson.js} ${packageJsonName}
+      node ${./checkPackageJson.js} checkPackageName ${packageJsonName}
 
       # Remove any impure dependencies from the package.json (see script
       # for details)
@@ -382,7 +377,7 @@ let
         npm install $npmFlags >/dev/null 2>&1 || {
 	  echo "Installation of ${name}@${version} failed!"
 	  echo "Checking dependencies to see if any aren't satisfied..."
-          node ${./checkDependencies.js}
+          node ${./checkPackageJson.js} checkDependencies
           echo "Dependencies seem ok. Rerunning with verbose logging:"
           npm install . $npmFlags --loglevel=verbose
           if [[ -d node_modules ]]; then
@@ -397,6 +392,9 @@ let
 
     installPhase = ''
       runHook preInstall
+
+      # Ensure that the main entry point appears post-build.
+      node ${./checkPackageJson.js} checkMainEntryPoint
 
       # Install the package that we just built.
       mkdir -p $out/lib/${modulePath self}
