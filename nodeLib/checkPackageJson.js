@@ -86,7 +86,7 @@ function checkDependencies() {
     }
     console.log("Checking " + depType);
     if (packageObj[depType]) {
-      for (depName in packageObj[depType]) {
+      for (var depName in packageObj[depType]) {
         checkDependency(depName, packageObj[depType][depName], depType);
       }
     }
@@ -94,7 +94,7 @@ function checkDependencies() {
 
   if (JSON.stringify(errorsFound) !== "{}") {
     console.error("Found the following errors:");
-    for (depName in errorsFound) {
+    for (var depName in errorsFound) {
       console.error(depName + ":  " + errorsFound[depName]);
     }
     fail("One or more dependencies were unsatisfied. :(");
