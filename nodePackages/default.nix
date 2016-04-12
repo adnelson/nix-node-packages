@@ -1602,6 +1602,8 @@
     jasminewd_1-1-0 = callPackage ./jasminewd/1.1.0.nix {};
     jasminewd2 = callPackage ./jasminewd2/0.0.5.nix {};
     jasminewd2_0-0-5 = callPackage ./jasminewd2/0.0.5.nix {};
+    jit-grunt = callPackage ./jit-grunt/0.10.0.nix {};
+    jit-grunt_0-10-0 = callPackage ./jit-grunt/0.10.0.nix {};
     jju = callPackage ./jju/1.2.1.nix {};
     jju_1-2-1 = callPackage ./jju/1.2.1.nix {};
     jodid25519 = callPackage ./jodid25519/1.0.2.nix {};
