@@ -12,6 +12,20 @@ buildNodePackage {
     peerDependencies = with nodePackages; [
       grunt_0-4-5
     ];
+
+    # The package.json for this lists as its main entry point a file which is
+    # not actually included in the download tarball. It seems that the real
+    # entry point is in tasks/nodemon.js, so we patch that here.
+    patchPhase = ''
+      python <<EOF
+      import json
+      with open("package.json") as f:
+          pkg_json = json.load(f)
+      pkg_json["main"] = "tasks/nodemon.js"
+      with open("package.json", "w") as f:
+          f.write(json.dumps(pkg_json))
+      EOF
+    '';
     meta = {
       homepage = "https://github.com/ChrisWren/grunt-nodemon";
       description = "Grunt task to run a nodemon monitor of your node.js server";

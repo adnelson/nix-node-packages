@@ -7,6 +7,10 @@ buildNodePackage {
       sha1 = "b0f4cc51b0f163112309b2135ec1c441fd9076dc";
     };
     deps = [];
+    devDependencies = [nodePackages.coffee-script];
+    preBuild = ''
+      coffee -c index.coffee
+    '';
     peerDependencies = with nodePackages; [
       coffeelint_1-14-1
     ];
