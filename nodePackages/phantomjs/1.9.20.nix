@@ -16,6 +16,14 @@ buildNodePackage {
       extract-zip_1-5-0
       hasha_2-2-0
     ];
+
+    # PhantomJS for node attempts to discover the phantomjs binary in the path,
+    # and if it doesn't find it it will fetch a prebuilt binary. We don't want
+    # to use the prebuilt binary because it links against global paths like
+    # /usr/lib64 for shared libraries. So to prevent this, we list phantomjs
+    # as a propagated build input.
+    propagatedBuildInputs = [pkgs.phantomjs];
+
     meta = {
       homepage = "https://github.com/Medium/phantomjs";
       description = "Headless WebKit with JS API";
