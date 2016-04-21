@@ -74,6 +74,10 @@ in
   # name. Otherwise, a prefix can be given explicitly.
   namePrefix ? (if namespace == null then "" else "${namespace}-"),
 
+  # List of names of circular dependencies (dependencies which
+  # reflexively depend on this package).
+  circularDependencies ? [],
+
   # List or attribute set of (runtime) dependencies.
   deps ? {},
 
@@ -156,10 +160,10 @@ then throw ("${uniqueName}: Can't run tests because devDependencies have " +
 else
 
 let
-  inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists isList flip
+  inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
                        mapAttrs filterAttrs attrNames elem concatMapStrings
-                       attrValues getVersion flatten remove concatStringsSep;
+                       attrValues concatStringsSep;
 
   dependencyTypes = ["dependencies" "devDependencies" "peerDependencies"
                      "optionalDependencies"];
@@ -175,81 +179,19 @@ let
   # We create a `self` object for self-referential expressions. It
   # bottoms out in a call to `mkDerivation` at the end.
   self = let
-    platforms = if os == [] then nodejs.meta.platforms else
-      fold (entry: platforms:
-        let
-          filterPlatforms =
-            stdenv.lib.platforms.${removePrefix "!" entry} or [];
-        in
-          # Ignore unknown platforms
-          if filterPlatforms == [] then (if platforms == [] then nodejs.meta.platforms else platforms)
-          else
-            if hasPrefix "!" entry then
-              subtractLists (intersectLists filterPlatforms nodejs.meta.platforms) platforms
-            else
-              platforms ++ (intersectLists filterPlatforms nodejs.meta.platforms)
-      ) [] os;
-
-
-    strict = x: builtins.seq x x;
-
-    toAttrSet = obj: if isAttrs obj then obj else
+    toAttrSet = obj: if isAttrs obj then obj else if obj == null then {} else
       (listToAttrs (map (x: nameValuePair x.name x) obj));
 
-    mapDependencies = deps: filterFunc: let
-        attrDeps = toAttrSet deps;
-      in rec {
-        # All required node modules, without already resolved dependencies
-        # Also override with already resolved dependencies
-        requiredDeps = strict (mapAttrs (name: dep:
-          dep.overrideNodePackage {
-            resolvedDeps = resolvedDeps // {"${name}" = self;};
-          }
-        ) (filterAttrs filterFunc
-            (removeAttrs attrDeps (attrNames resolvedDeps))));
-
-        # Recursive dependencies that we want to avoid with shim creation
-        recursiveDeps = strict (filterAttrs filterFunc
-                          (removeAttrs attrDeps (attrNames requiredDeps)));
-      };
-
-    # Filter out self-referential dependencies.
-    _dependencies = strict (mapDependencies deps (name: dep: dep.uniqueName != uniqueName));
-
-    # Filter out self-referential peer dependencies.
-    _peerDependencies = strict (mapDependencies peerDependencies (name: dep:
-      dep.uniqueName != uniqueName));
-
-    # Filter out any optional dependencies which don't build correctly.
-    _optionalDependencies = strict (mapDependencies optionalDependencies (name: dep:
-      (builtins.tryEval dep).success &&
-      !(elem dep.basicName skipOptionalDependencies)
-    ));
-
-    # Grab development dependencies if doCheck is true.
-    _devDependencies = let
-        filterFunc = name: dep: dep.uniqueName != uniqueName;
-        depSet = if doCheck then devDependencies else [];
-      in
-      strict (mapDependencies depSet filterFunc);
+    _dependencies = toAttrSet deps;
+    _optionalDependencies = toAttrSet optionalDependencies;
+    _peerDependencies = toAttrSet peerDependencies;
+    _devDependencies = if !doCheck then {} else toAttrSet devDependencies;
 
     # Depencencies we need to propagate (all except devDependencies)
-    propagatedDependencies = strict (
-      _dependencies.requiredDeps //
-      _optionalDependencies.requiredDeps //
-      _peerDependencies.requiredDeps);
+    propagatedDependencies = _dependencies // _optionalDependencies // _peerDependencies;
 
     # Required dependencies are those that we haven't filtered yet.
-    requiredDependencies =
-      strict (_devDependencies.requiredDeps // propagatedDependencies);
-
-    # Recursive dependencies. These are turned into "shims" or fake packages,
-    # which allows us to have dependency cycles, something npm allows.
-    recursiveDependencies = strict (
-      _devDependencies.recursiveDeps //
-      _dependencies.recursiveDeps //
-      _optionalDependencies.recursiveDeps //
-      _peerDependencies.recursiveDeps);
+    requiredDependencies = _devDependencies // propagatedDependencies;
 
     # Flags that we will pass to `npm install`.
     npmFlags = concatStringsSep " " ([
@@ -316,15 +258,12 @@ let
 
     configurePhase = ''
       runHook preConfigure
-      # Symlink or copy dependencies for node modules
-      # copy is needed if dependency has recursive dependencies,
-      # because node can't follow symlinks while resolving recursive deps.
       ${
         let
-          linkCmd = p: if p.recursiveDeps == [] then "ln -sv" else "cp -r";
+          # Symlink dependencies for node modules.
           link = dep: ''
             if ! [[ -e ${pathInModulePath dep} ]]; then
-              ${linkCmd dep} ${dep}/lib/${pathInModulePath dep} ${modulePath dep}
+              ln -sv ${dep}/lib/${pathInModulePath dep} ${modulePath dep}
               if [[ -d ${dep}/bin ]]; then
                 find -L ${dep}/bin -maxdepth 1 -type f -executable \
                   | while read exec_file; do
@@ -343,31 +282,6 @@ let
           ${link dep}
           ${concatMapStrings link (attrValues dep.peerDependencies)}
         '')}
-
-      # Remove recursive dependencies from package.json
-      ${if recursiveDependencies == {} then "" else ''
-        python <<EOF
-        import json
-        with open("package.json") as f:
-            package_json = json.load(f)
-        dep_names = [${concatStringsSep ", "
-                       (map (d: "'${d.packageJsonName}'")
-                         (attrValues recursiveDependencies))}]
-        for name in dep_names:
-            print("Removing recursive dependency on {} from package.json"
-                  .format(name))
-            for k in ("dependencies", "devDependencies", "peerDependencies",
-                      "optionalDependencies"):
-                package_json[k] = package_json.setdefault(k, {})
-                package_json[k].pop(name, None)
-        ${if devDependencies != null then "" else ''
-        print "Deleting dev dependencies..."
-        del package_json["devDependencies"]
-          ''}
-        with open("package.json", "w") as f:
-            f.write(json.dumps(package_json))
-        EOF
-        ''}
 
       runHook postConfigure
     '';
@@ -411,7 +325,7 @@ let
       # Remove all of the dev dependencies which do not appear in other
       # dependency sets.
       ${if skipDevDependencyCleanup then "" else
-        flip concatMapStrings (attrValues _devDependencies.requiredDeps) (dep:
+        flip concatMapStrings (attrValues _devDependencies) (dep:
          let
            rm = dep:
              if !hasAttr dep.basicName propagatedDependencies
@@ -457,7 +371,7 @@ let
       ${concatMapStrings (dep: ''
         mkdir -p ${modulePath dep}
         mv ${pathInModulePath dep} $out/lib/${modulePath dep}
-      '') (attrValues _peerDependencies.requiredDeps)}
+      '') (attrValues _peerDependencies)}
 
       # Install binaries using the `bin` object in the package.json
       python ${./installBinaries.py}
@@ -474,7 +388,8 @@ let
         buildPhase
         checkPhase
         installPhase
-        doCheck;
+        doCheck
+        circularDependencies;
 
       # Informs lower scripts not to check dev dependencies
       NO_DEV_DEPENDENCIES = devDependencies == null;
@@ -510,9 +425,8 @@ let
       inherit dontStrip dontPatchELF;
 
       meta = {
-        inherit platforms;
         maintainers = [ stdenv.lib.maintainers.offline ];
-      };
+      } // (args.meta or {});
 
       # Propagate pieces of information about the package so that downstream
       # packages can reflect on them.
@@ -520,16 +434,7 @@ let
         inherit uniqueName packageJsonName namespace version;
         # The basic name is the name without namespace or version.
         basicName = name;
-        peerDependencies = _peerDependencies.requiredDeps;
-
-        # Expose a list of recursive dependencies to upstream packages, so that
-        # they can be shimmed out.
-        recursiveDeps = let
-          required = attrValues requiredDependencies;
-          recursive = attrNames recursiveDependencies;
-        in
-          flatten (map (dep: remove name dep.recursiveDeps) required) ++
-          recursive;
+        peerDependencies = _peerDependencies;
 
         # The `env` attribute is meant to be used with `nix-shell` (although
         # that's not required). It will build the package with its dev
@@ -557,16 +462,8 @@ let
 
 
       buildInputs = [npm] ++ buildInputs ++
-                    attrValues (_devDependencies.requiredDeps) ++
+                    attrValues _devDependencies ++
                     neededNatives;
-
-      # Expose list of recursive dependencies upstream, up to the package that
-      # caused recursive dependency
-      recursiveDeps =
-        (flatten (
-          map (dep: remove name dep.recursiveDeps) (attrValues requiredDependencies)
-        )) ++
-        (attrNames recursiveDependencies);
     };
 
     in stdenv.mkDerivation mkDerivationArgs;
