@@ -10,6 +10,7 @@ buildNodePackage {
       nan_2-0-5
       bindings_1-2-1
     ];
+    buildInputs = if pkgs.stdenv.isDarwin then [pkgs.xcodeenv.xcodewrapper] else [];
     meta = {
       homepage = "https://github.com/ncb000gt/node.bcrypt.js#readme";
       description = "A bcrypt library for NodeJS.";
