@@ -111,10 +111,6 @@ in
   # Same as https://docs.npmjs.com/files/package.json#os
   os ? [],
 
-  # Attribute set of already resolved dependencies, for avoiding infinite
-  # recursion. Used internally (don't use this argument explicitly).
-  resolvedDeps ? {},
-
   # Build inputs to propagate in addition to nodejs and non-dev dependencies.
   propagatedBuildInputs ? [],
 
@@ -171,7 +167,7 @@ let
 
   # These arguments are intended as directives to this function and not
   # to be passed through to mkDerivation. They are removed below.
-  attrsToRemove = ["deps" "resolvedDeps" "flags" "os" "skipOptionalDependencies"
+  attrsToRemove = ["deps" "flags" "os" "skipOptionalDependencies"
                    "passthru" "doCheck" "installDevDependencies" "version"
                    "namespace" "patchDependencies" "skipDevDependencyCleanup"]
                    ++ dependencyTypes;
