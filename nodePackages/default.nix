@@ -168,9 +168,12 @@
     async-some_1-0-2 = callPackage ./async-some/1.0.2.nix {};
     autorequire = callPackage ./autorequire/0.3.4.nix {};
     autorequire_0-3-4 = callPackage ./autorequire/0.3.4.nix {};
-    aws-sdk = callPackage ./aws-sdk/2.2.35.nix {};
+    aws-sdk = callPackage ./aws-sdk/2.3.8.nix {};
+    aws-sdk_2-3-8 = callPackage ./aws-sdk/2.3.8.nix {};
     aws-sdk_2-2-35 = callPackage ./aws-sdk/2.2.35.nix {};
     aws-sdk_2-2-18 = callPackage ./aws-sdk/2.2.18.nix {};
+    aws-sdk-mock = callPackage ./aws-sdk-mock/1.0.10.nix {};
+    aws-sdk-mock_1-0-10 = callPackage ./aws-sdk-mock/1.0.10.nix {};
     aws-sign2 = callPackage ./aws-sign2/0.6.0.nix {};
     aws-sign2_0-6-0 = callPackage ./aws-sign2/0.6.0.nix {};
     aws-sign2_0-5-0 = callPackage ./aws-sign2/0.5.0.nix {};
@@ -272,7 +275,8 @@
     blob_0-0-4 = callPackage ./blob/0.0.4.nix {};
     block-stream = callPackage ./block-stream/0.0.8.nix {};
     block-stream_0-0-8 = callPackage ./block-stream/0.0.8.nix {};
-    bluebird = callPackage ./bluebird/3.3.4.nix {};
+    bluebird = callPackage ./bluebird/3.3.5.nix {};
+    bluebird_3-3-5 = callPackage ./bluebird/3.3.5.nix {};
     bluebird_3-3-4 = callPackage ./bluebird/3.3.4.nix {};
     bluebird_3-0-5 = callPackage ./bluebird/3.0.5.nix {};
     bluebird_2-10-2 = callPackage ./bluebird/2.10.2.nix {};
@@ -647,6 +651,7 @@
     create-hmac_1-1-4 = callPackage ./create-hmac/1.1.4.nix {};
     credstash = callPackage ./credstash/1.0.18.nix {};
     credstash_1-0-18 = callPackage ./credstash/1.0.18.nix {};
+    credstash_1-0-1 = callPackage ./credstash/1.0.1.nix {};
     cron = callPackage ./cron/1.1.0.nix {};
     cron_1-1-0 = callPackage ./cron/1.1.0.nix {};
     cross-spawn = callPackage ./cross-spawn/2.0.0.nix {};
@@ -1611,6 +1616,8 @@
     jit-grunt_0-10-0 = callPackage ./jit-grunt/0.10.0.nix {};
     jju = callPackage ./jju/1.2.1.nix {};
     jju_1-2-1 = callPackage ./jju/1.2.1.nix {};
+    jmespath = callPackage ./jmespath/0.15.0.nix {};
+    jmespath_0-15-0 = callPackage ./jmespath/0.15.0.nix {};
     jodid25519 = callPackage ./jodid25519/1.0.2.nix {};
     jodid25519_1-0-2 = callPackage ./jodid25519/1.0.2.nix {};
     joi = callPackage ./joi/7.0.0.nix {};
@@ -1782,10 +1789,12 @@
     lock_0-1-2 = callPackage ./lock/0.1.2.nix {};
     lockfile = callPackage ./lockfile/1.0.1.nix {};
     lockfile_1-0-1 = callPackage ./lockfile/1.0.1.nix {};
-    lodash = callPackage ./lodash/4.5.1.nix {};
+    lodash = callPackage ./lodash/4.11.2.nix {};
+    lodash_4-11-2 = callPackage ./lodash/4.11.2.nix {};
     lodash_4-5-1 = callPackage ./lodash/4.5.1.nix {};
     lodash_3-10-1 = callPackage ./lodash/3.10.1.nix {};
     lodash_3-8-0 = callPackage ./lodash/3.8.0.nix {};
+    lodash_3-5-0 = callPackage ./lodash/3.5.0.nix {};
     lodash_3-1-0 = callPackage ./lodash/3.1.0.nix {};
     lodash_3-0-1 = callPackage ./lodash/3.0.1.nix {};
     lodash_2-4-2 = callPackage ./lodash/2.4.2.nix {};
@@ -2696,7 +2705,8 @@
     request-progress_2-0-1 = callPackage ./request-progress/2.0.1.nix {};
     request-progress_0-3-1 = callPackage ./request-progress/0.3.1.nix {};
     request-progress_0-3-0 = callPackage ./request-progress/0.3.0.nix {};
-    request-promise = callPackage ./request-promise/2.0.1.nix {};
+    request-promise = callPackage ./request-promise/3.0.0.nix {};
+    request-promise_3-0-0 = callPackage ./request-promise/3.0.0.nix {};
     request-promise_2-0-1 = callPackage ./request-promise/2.0.1.nix {};
     request-promise_0-4-3 = callPackage ./request-promise/0.4.3.nix {};
     request-replay = callPackage ./request-replay/0.2.0.nix {};
@@ -2828,7 +2838,8 @@
     simple-mime_0-1-0 = callPackage ./simple-mime/0.1.0.nix {};
     single-line-log = callPackage ./single-line-log/0.4.1.nix {};
     single-line-log_0-4-1 = callPackage ./single-line-log/0.4.1.nix {};
-    sinon = callPackage ./sinon/1.17.2.nix {};
+    sinon = callPackage ./sinon/1.17.4.nix {};
+    sinon_1-17-4 = callPackage ./sinon/1.17.4.nix {};
     sinon_1-17-2 = callPackage ./sinon/1.17.2.nix {};
     sinon_1-12-2 = callPackage ./sinon/1.12.2.nix {};
     sinon_1-9-1 = callPackage ./sinon/1.9.1.nix {};
@@ -3366,6 +3377,7 @@
     xmlbuilder = callPackage ./xmlbuilder/4.2.1.nix {};
     xmlbuilder_4-2-1 = callPackage ./xmlbuilder/4.2.1.nix {};
     xmlbuilder_4-1-0 = callPackage ./xmlbuilder/4.1.0.nix {};
+    xmlbuilder_2-6-2 = callPackage ./xmlbuilder/2.6.2.nix {};
     xmlbuilder_2-1-0 = callPackage ./xmlbuilder/2.1.0.nix {};
     xmlbuilder_0-4-2 = callPackage ./xmlbuilder/0.4.2.nix {};
     xmlhttprequest = callPackage ./xmlhttprequest/1.8.0.nix {};
