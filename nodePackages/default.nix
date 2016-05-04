@@ -36,6 +36,8 @@
     adm-zip_0-4-4 = callPackage ./adm-zip/0.4.4.nix {};
     advisable = callPackage ./advisable/0.2.0.nix {};
     advisable_0-2-0 = callPackage ./advisable/0.2.0.nix {};
+    aes-js = callPackage ./aes-js/0.2.2.nix {};
+    aes-js_0-2-2 = callPackage ./aes-js/0.2.2.nix {};
     after = callPackage ./after/0.8.1.nix {};
     after_0-8-1 = callPackage ./after/0.8.1.nix {};
     agent-base = callPackage ./agent-base/1.0.2.nix {};
@@ -166,7 +168,8 @@
     async-some_1-0-2 = callPackage ./async-some/1.0.2.nix {};
     autorequire = callPackage ./autorequire/0.3.4.nix {};
     autorequire_0-3-4 = callPackage ./autorequire/0.3.4.nix {};
-    aws-sdk = callPackage ./aws-sdk/2.2.18.nix {};
+    aws-sdk = callPackage ./aws-sdk/2.2.35.nix {};
+    aws-sdk_2-2-35 = callPackage ./aws-sdk/2.2.35.nix {};
     aws-sdk_2-2-18 = callPackage ./aws-sdk/2.2.18.nix {};
     aws-sign2 = callPackage ./aws-sign2/0.6.0.nix {};
     aws-sign2_0-6-0 = callPackage ./aws-sign2/0.6.0.nix {};
@@ -642,6 +645,8 @@
     create-hash_1-1-2 = callPackage ./create-hash/1.1.2.nix {};
     create-hmac = callPackage ./create-hmac/1.1.4.nix {};
     create-hmac_1-1-4 = callPackage ./create-hmac/1.1.4.nix {};
+    credstash = callPackage ./credstash/1.0.18.nix {};
+    credstash_1-0-18 = callPackage ./credstash/1.0.18.nix {};
     cron = callPackage ./cron/1.1.0.nix {};
     cron_1-1-0 = callPackage ./cron/1.1.0.nix {};
     cross-spawn = callPackage ./cross-spawn/2.0.0.nix {};
@@ -2743,7 +2748,8 @@
     samsam_1-1-2 = callPackage ./samsam/1.1.2.nix {};
     saucelabs = callPackage ./saucelabs/0.1.1.nix {};
     saucelabs_0-1-1 = callPackage ./saucelabs/0.1.1.nix {};
-    sax = callPackage ./sax/1.1.4.nix {};
+    sax = callPackage ./sax/1.1.5.nix {};
+    sax_1-1-5 = callPackage ./sax/1.1.5.nix {};
     sax_1-1-4 = callPackage ./sax/1.1.4.nix {};
     sax_0-6-1 = callPackage ./sax/0.6.1.nix {};
     sax_0-5-3 = callPackage ./sax/0.5.3.nix {};
@@ -3352,11 +3358,13 @@
     xml-name-validator = callPackage ./xml-name-validator/2.0.1.nix {};
     xml-name-validator_2-0-1 = callPackage ./xml-name-validator/2.0.1.nix {};
     xml-name-validator_1-0-0 = callPackage ./xml-name-validator/1.0.0.nix {};
-    xml2js = callPackage ./xml2js/0.4.15.nix {};
+    xml2js = callPackage ./xml2js/0.4.16.nix {};
+    xml2js_0-4-16 = callPackage ./xml2js/0.4.16.nix {};
     xml2js_0-4-15 = callPackage ./xml2js/0.4.15.nix {};
     xml2js_0-4-4 = callPackage ./xml2js/0.4.4.nix {};
     xml2js_0-2-8 = callPackage ./xml2js/0.2.8.nix {};
-    xmlbuilder = callPackage ./xmlbuilder/4.1.0.nix {};
+    xmlbuilder = callPackage ./xmlbuilder/4.2.1.nix {};
+    xmlbuilder_4-2-1 = callPackage ./xmlbuilder/4.2.1.nix {};
     xmlbuilder_4-1-0 = callPackage ./xmlbuilder/4.1.0.nix {};
     xmlbuilder_2-1-0 = callPackage ./xmlbuilder/2.1.0.nix {};
     xmlbuilder_0-4-2 = callPackage ./xmlbuilder/0.4.2.nix {};
