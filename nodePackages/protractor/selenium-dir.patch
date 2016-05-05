@@ -1,0 +1,20 @@
+--- webdriver-manager	2016-05-05 23:26:29.260250697 +0000
++++ webdriver-manager-new	2016-05-05 23:26:06.551250697 +0000
+@@ -11,9 +11,15 @@
+ var childProcess = require('child_process');
+ 
+ /**
+- * Download the requested binaries to node_modules/protractor/selenium/
++ * Download the requested binaries to $SELENIUM_DIR or a home directory
+  */
+-var SELENIUM_DIR = path.resolve(__dirname, '../selenium');
++var SELENIUM_DIR;
++if (process.env.SELENIUM_DIR) {
++  SELENIUM_DIR = process.env.SELENIUM_DIR;
++} else {
++  var _home = process.env.HOME || process.env.USERPROFILE;
++  SELENIUM_DIR = path.join(_home, '.webdriver-selenium');
++}
+ 
+ var versions = require('../config.json').webdriverVersions;
+ 

@@ -6,6 +6,21 @@ buildNodePackage {
       url = "https://registry.npmjs.org/protractor/-/protractor-2.5.1.tgz";
       sha1 = "03d6c93cd7c268f4250177d55a2fec8a198372cd";
     };
+    buildInputs = [pkgs.makeWrapper];
+    propagatedBuildInputs = [pkgs.openjdk];
+    # Apply a patch which prevents the webdriver manager from attempting to
+    # mutate the nix store. Instead, it reads a SELENIUM_DIR environment
+    # variable, and defaults to ~/.webdriver-selenium.
+    # The webdriver requires java to be in the path, so make a wrapper for
+    # the binary which adds openjdk's bin folder to the PATH.
+    postInstall = ''
+      (
+        cd $out/lib/node_modules/protractor/bin
+        patch -p0 -i ${./selenium-dir.patch}
+      )
+      wrapProgram $out/bin/webdriver-manager \
+        --prefix PATH : "${pkgs.openjdk}/bin"
+    '';
     deps = with nodePackages; [
       jasminewd_1-1-0
       lodash_2-4-2
