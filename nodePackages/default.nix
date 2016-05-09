@@ -96,7 +96,8 @@
     are-we-there-yet = callPackage ./are-we-there-yet/1.0.5.nix {};
     are-we-there-yet_1-0-5 = callPackage ./are-we-there-yet/1.0.5.nix {};
     are-we-there-yet_1-0-4 = callPackage ./are-we-there-yet/1.0.4.nix {};
-    argparse = callPackage ./argparse/1.0.3.nix {};
+    argparse = callPackage ./argparse/1.0.7.nix {};
+    argparse_1-0-7 = callPackage ./argparse/1.0.7.nix {};
     argparse_1-0-3 = callPackage ./argparse/1.0.3.nix {};
     argparse_0-1-16 = callPackage ./argparse/0.1.16.nix {};
     arr-diff = callPackage ./arr-diff/1.1.0.nix {};
@@ -699,6 +700,8 @@
     csv-parse_1-0-4 = callPackage ./csv-parse/1.0.4.nix {};
     csv-stringify = callPackage ./csv-stringify/0.0.8.nix {};
     csv-stringify_0-0-8 = callPackage ./csv-stringify/0.0.8.nix {};
+    csv-write-stream = callPackage ./csv-write-stream/2.0.0.nix {};
+    csv-write-stream_2-0-0 = callPackage ./csv-write-stream/2.0.0.nix {};
     ctype = callPackage ./ctype/0.5.3.nix {};
     ctype_0-5-3 = callPackage ./ctype/0.5.3.nix {};
     curl-trace-parser = callPackage ./curl-trace-parser/0.0.8.nix {};
@@ -1011,6 +1014,8 @@
     extsprintf_1-0-2 = callPackage ./extsprintf/1.0.2.nix {};
     eyes = callPackage ./eyes/0.1.8.nix {};
     eyes_0-1-8 = callPackage ./eyes/0.1.8.nix {};
+    faker = callPackage ./faker/3.1.0.nix {};
+    faker_3-1-0 = callPackage ./faker/3.1.0.nix {};
     fancy-log = callPackage ./fancy-log/1.1.0.nix {};
     fancy-log_1-1-0 = callPackage ./fancy-log/1.1.0.nix {};
     fast-future = callPackage ./fast-future/1.0.1.nix {};
@@ -2166,6 +2171,8 @@
     ncp = callPackage ./ncp/0.6.0.nix {};
     ncp_0-6-0 = callPackage ./ncp/0.6.0.nix {};
     ncp_0-4-2 = callPackage ./ncp/0.4.2.nix {};
+    ndjson = callPackage ./ndjson/1.4.3.nix {};
+    ndjson_1-4-3 = callPackage ./ndjson/1.4.3.nix {};
     needle = callPackage ./needle/0.11.0.nix {};
     needle_0-11-0 = callPackage ./needle/0.11.0.nix {};
     needle_0-10-0 = callPackage ./needle/0.10.0.nix {};
@@ -2938,6 +2945,8 @@
     split = callPackage ./split/0.3.3.nix {};
     split_0-3-3 = callPackage ./split/0.3.3.nix {};
     split_0-2-10 = callPackage ./split/0.2.10.nix {};
+    split2 = callPackage ./split2/0.2.1.nix {};
+    split2_0-2-1 = callPackage ./split2/0.2.1.nix {};
     sprintf = callPackage ./sprintf/0.1.5.nix {};
     sprintf_0-1-5 = callPackage ./sprintf/0.1.5.nix {};
     sprintf-js = callPackage ./sprintf-js/1.0.3.nix {};
