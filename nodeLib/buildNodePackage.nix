@@ -22,22 +22,16 @@ let
     mv $(find . -type d -mindepth 1 -maxdepth 1) $out
   '';
 
-  # The path within $out/lib to find a package. If the package does not
-  # have a namespace, it will simply be in `node_modules`, and otherwise it
-  # will appear in `node_modules/@namespace`.
-  modulePath = pkg:
+  # Checks a derivation's structure; if it doesn't have certain attributes then
+  # it isn't a node package and we error. Otherwise return the package.
+  verifyNodePackage = pkg:
     if !(builtins.hasAttr "namespace" pkg)
     then throw ''
       Package dependency does not appear to be a node package: ${showVal pkg}.
       Use "buildInputs" or "propagatedBuildInputs" for non-node dependencies,
       instead of "deps".
     ''
-    else if pkg.namespace == null then "node_modules"
-    else "node_modules/@${pkg.namespace}";
-
-  # The path to the package within its modulePath. Just appending the name
-  # of the package.
-  pathInModulePath = pkg: "${modulePath pkg}/${pkg.basicName}";
+    else pkg;
 
   # By default, when checking we'll run npm test.
   defaultCheckPhase = ''
@@ -78,15 +72,15 @@ in
   # reflexively depend on this package).
   circularDependencies ? [],
 
-  # List or attribute set of (runtime) dependencies.
-  deps ? {},
+  # List of (runtime) dependencies.
+  deps ? [],
 
-  # List or attribute set of peer dependencies. See:
+  # List of peer dependencies. See:
   # https://nodejs.org/en/blog/npm/peer-dependencies/
-  peerDependencies ? {},
+  peerDependencies ? [],
 
-  # List or attribute set of optional dependencies.
-  optionalDependencies ? {},
+  # List of optional dependencies.
+  optionalDependencies ? [],
 
   # List of optional dependencies to skip. List of strings, where a string
   # should contain the `name` of the derivation to skip (not a version or
@@ -141,12 +135,12 @@ let
   # The package name as it appears in the package.json. This contains a
   # namespace if there is one, so it will be a distinct identifier for
   # different packages.
-  packageJsonName = if namespace == null then name
+  fullName = if namespace == null then name
                     else "@${namespace}/${name}";
 
   # The package name with a version appended. This should be unique amongst
   # all packages.
-  uniqueName = "${packageJsonName}@${version}";
+  uniqueName = "${fullName}@${version}";
 
 in
 
@@ -178,10 +172,11 @@ let
     toAttrSet = obj: if isAttrs obj then obj else if obj == null then {} else
       (listToAttrs (map (x: nameValuePair x.name x) obj));
 
-    _dependencies = toAttrSet deps;
-    _optionalDependencies = toAttrSet optionalDependencies;
-    _peerDependencies = toAttrSet peerDependencies;
-    _devDependencies = if !doCheck then {} else toAttrSet devDependencies;
+    _dependencies = toAttrSet (map verifyNodePackage deps);
+    _optionalDependencies = toAttrSet (map verifyNodePackage optionalDependencies);
+    _peerDependencies = toAttrSet (map verifyNodePackage peerDependencies);
+    _devDependencies = if !doCheck then {}
+                       else toAttrSet (map verifyNodePackage devDependencies);
 
     # Depencencies we need to propagate (all except devDependencies)
     propagatedDependencies = _dependencies // _optionalDependencies // _peerDependencies;
@@ -215,7 +210,7 @@ let
       patchShebangs $PWD
 
       # Ensure that the package name matches what is in the package.json.
-      node ${./checkPackageJson.js} checkPackageName ${packageJsonName}
+      node ${./checkPackageJson.js} checkPackageName ${fullName}
 
       # Remove any impure dependencies from the package.json (see script
       # for details)
@@ -258,8 +253,8 @@ let
         let
           # Symlink dependencies for node modules.
           link = dep: ''
-            if ! [[ -e ${pathInModulePath dep} ]]; then
-              ln -sv ${dep}/lib/${pathInModulePath dep} ${modulePath dep}
+            if ! [[ -e node_modules/${dep.fullName} ]]; then
+              ln -sv ${dep.fullPath} ${dep.modulePath}
               if [[ -d ${dep}/bin ]]; then
                 find -L ${dep}/bin -maxdepth 1 -type f -executable \
                   | while read exec_file; do
@@ -274,7 +269,7 @@ let
         flip concatMapStrings (attrValues requiredDependencies) (dep:
         # Create symlinks (or copies) of all of the required dependencies.
         ''
-          mkdir -p ${modulePath dep}
+          mkdir -p ${dep.modulePath}
           ${link dep}
           ${concatMapStrings link (attrValues dep.peerDependencies)}
         '')}
@@ -316,7 +311,7 @@ let
       node ${./checkPackageJson.js} checkMainEntryPoint
 
       # Install the package that we just built.
-      mkdir -p $out/lib/${modulePath self}
+      mkdir -p $out/lib/${self.modulePath}
 
       # Remove all of the dev dependencies which do not appear in other
       # dependency sets.
@@ -327,7 +322,7 @@ let
              if !hasAttr dep.basicName propagatedDependencies
              then ''
                # Remove the dependency from node modules
-               rm -rfv ${pathInModulePath dep}
+               rm -rfv node_modules/${dep.fullName}
                # Remove any binaries it generated from node_modules/.bin
                if [[ -d ${dep}/bin ]]; then
                  find -L ${dep}/bin -maxdepth 1 -type f -executable \
@@ -348,14 +343,14 @@ let
          rm dep)}
 
       # Copy the folder that was created for this path to $out/lib.
-      cp -r $PWD $out/lib/${pathInModulePath self}
+      cp -r $PWD $out/lib/node_modules/${self.fullName}
 
       # Remove the node_modules subfolder from there, and instead put things
       # in $PWD/node_modules into that folder.
-      if [ -e "$out/lib/${pathInModulePath self}/man" ]; then
+      if [ -e "$out/lib/node_modules/${self.fullName}/man" ]; then
         echo "Linking manpages..."
         mkdir -p $out/share
-        for dir in $out/lib/${pathInModulePath self}/man/*; do          #*/
+        for dir in $out/lib/node_modules/${self.fullName}/man/*; do          #*/
           mkdir -p $out/share/man/$(basename "$dir")
           for page in $dir/*; do                                        #*/
             ln -sv $page $out/share/man/$(basename "$dir")
@@ -365,8 +360,8 @@ let
 
       # Move peer dependencies to node_modules
       ${concatMapStrings (dep: ''
-        mkdir -p ${modulePath dep}
-        mv ${pathInModulePath dep} $out/lib/${modulePath dep}
+        mkdir -p ${dep.modulePath}
+        mv node_modules/${dep.fullName} $out/lib/${dep.modulePath}
       '') (attrValues _peerDependencies)}
 
       # Install binaries using the `bin` object in the package.json
@@ -427,9 +422,23 @@ let
       # Propagate pieces of information about the package so that downstream
       # packages can reflect on them.
       passthru = (passthru // {
-        inherit uniqueName packageJsonName namespace version;
-        # The basic name is the name without namespace or version.
+        inherit uniqueName fullName namespace version requiredDependencies;
+        # The basic name is the name without namespace or version, in contrast
+        # to the fullName which might have a namespace attached, or the
+        # uniqueName which has a version attached.
         basicName = name;
+
+        # The path within $out/lib to find the package. If the package does not
+        # have a namespace, it will simply be in `node_modules`, and otherwise
+        # it will appear in `node_modules/@namespace`.
+        modulePath = if namespace == null then "node_modules"
+                     else "node_modules/@${namespace}";
+
+        # The full path to the package's code (i.e. folder containing
+        # package.json) within the nix store.
+        fullPath = "${self}/lib/node_modules/${self.fullName}";
+
+        # Downstream packages need to have access to peer dependencies.
         peerDependencies = _peerDependencies;
 
         # The `env` attribute is meant to be used with `nix-shell` (although
