@@ -225,6 +225,8 @@
     backbone_0-9-10 = callPackage ./backbone/0.9.10.nix {};
     backo2 = callPackage ./backo2/1.0.2.nix {};
     backo2_1-0-2 = callPackage ./backo2/1.0.2.nix {};
+    backoff = callPackage ./backoff/2.4.1.nix {};
+    backoff_2-4-1 = callPackage ./backoff/2.4.1.nix {};
     balanced-match = callPackage ./balanced-match/0.3.0.nix {};
     balanced-match_0-3-0 = callPackage ./balanced-match/0.3.0.nix {};
     balanced-match_0-2-1 = callPackage ./balanced-match/0.2.1.nix {};
@@ -1010,7 +1012,8 @@
     extract-zip = callPackage ./extract-zip/1.5.0.nix {};
     extract-zip_1-5-0 = callPackage ./extract-zip/1.5.0.nix {};
     extract-zip_1-4-1 = callPackage ./extract-zip/1.4.1.nix {};
-    extsprintf = callPackage ./extsprintf/1.0.2.nix {};
+    extsprintf = callPackage ./extsprintf/1.2.0.nix {};
+    extsprintf_1-2-0 = callPackage ./extsprintf/1.2.0.nix {};
     extsprintf_1-0-2 = callPackage ./extsprintf/1.0.2.nix {};
     eyes = callPackage ./eyes/0.1.8.nix {};
     eyes_0-1-8 = callPackage ./eyes/0.1.8.nix {};
@@ -1753,6 +1756,10 @@
     lazy-cache_0-2-4 = callPackage ./lazy-cache/0.2.4.nix {};
     lcid = callPackage ./lcid/1.0.0.nix {};
     lcid_1-0-0 = callPackage ./lcid/1.0.0.nix {};
+    ldap-filter = callPackage ./ldap-filter/0.2.2.nix {};
+    ldap-filter_0-2-2 = callPackage ./ldap-filter/0.2.2.nix {};
+    ldapjs = callPackage ./ldapjs/1.0.0.nix {};
+    ldapjs_1-0-0 = callPackage ./ldapjs/1.0.0.nix {};
     left-pad = callPackage ./left-pad/0.0.3.nix {};
     left-pad_0-0-3 = callPackage ./left-pad/0.0.3.nix {};
     less = callPackage ./less/2.5.3.nix {};
@@ -2298,6 +2305,7 @@
     on-headers_1-0-1 = callPackage ./on-headers/1.0.1.nix {};
     once = callPackage ./once/1.3.3.nix {};
     once_1-3-3 = callPackage ./once/1.3.3.nix {};
+    once_1-3-2 = callPackage ./once/1.3.2.nix {};
     once_1-2-0 = callPackage ./once/1.2.0.nix {};
     once_1-1-1 = callPackage ./once/1.1.1.nix {};
     onetime = callPackage ./onetime/1.0.0.nix {};
@@ -2388,6 +2396,8 @@
     passport_0-3-2 = callPackage ./passport/0.3.2.nix {};
     passport_0-2-2 = callPackage ./passport/0.2.2.nix {};
     passport_0-1-18 = callPackage ./passport/0.1.18.nix {};
+    passport-client-cert = callPackage ./passport-client-cert/2.0.0.nix {};
+    passport-client-cert_2-0-0 = callPackage ./passport-client-cert/2.0.0.nix {};
     passport-google-oauth = callPackage ./passport-google-oauth/0.1.5.nix {};
     passport-google-oauth_0-1-5 = callPackage ./passport-google-oauth/0.1.5.nix {};
     passport-local = callPackage ./passport-local/1.0.0.nix {};
@@ -2506,6 +2516,8 @@
     postgres-interval_1-0-0 = callPackage ./postgres-interval/1.0.0.nix {};
     prebuild = callPackage ./prebuild/2.7.1.nix {};
     prebuild_2-7-1 = callPackage ./prebuild/2.7.1.nix {};
+    precond = callPackage ./precond/0.2.3.nix {};
+    precond_0-2-3 = callPackage ./precond/0.2.3.nix {};
     prelude-ls = callPackage ./prelude-ls/1.1.2.nix {};
     prelude-ls_1-1-2 = callPackage ./prelude-ls/1.1.2.nix {};
     prepend-http = callPackage ./prepend-http/1.0.3.nix {};
@@ -3295,9 +3307,12 @@
     vary = callPackage ./vary/1.1.0.nix {};
     vary_1-1-0 = callPackage ./vary/1.1.0.nix {};
     vary_1-0-1 = callPackage ./vary/1.0.1.nix {};
+    vasync = callPackage ./vasync/1.6.3.nix {};
+    vasync_1-6-3 = callPackage ./vasync/1.6.3.nix {};
     ver-compare = callPackage ./ver-compare/0.1.1.nix {};
     ver-compare_0-1-1 = callPackage ./ver-compare/0.1.1.nix {};
-    verror = callPackage ./verror/1.3.6.nix {};
+    verror = callPackage ./verror/1.6.0.nix {};
+    verror_1-6-0 = callPackage ./verror/1.6.0.nix {};
     verror_1-3-6 = callPackage ./verror/1.3.6.nix {};
     vhost = callPackage ./vhost/3.0.2.nix {};
     vhost_3-0-2 = callPackage ./vhost/3.0.2.nix {};
