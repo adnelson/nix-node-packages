@@ -176,7 +176,8 @@
     aws-sdk_2-3-8 = callPackage ./aws-sdk/2.3.8.nix {};
     aws-sdk_2-2-35 = callPackage ./aws-sdk/2.2.35.nix {};
     aws-sdk_2-2-18 = callPackage ./aws-sdk/2.2.18.nix {};
-    aws-sdk-mock = callPackage ./aws-sdk-mock/1.0.10.nix {};
+    aws-sdk-mock = callPackage ./aws-sdk-mock/1.1.0.nix {};
+    aws-sdk-mock_1-1-0 = callPackage ./aws-sdk-mock/1.1.0.nix {};
     aws-sdk-mock_1-0-10 = callPackage ./aws-sdk-mock/1.0.10.nix {};
     aws-sign2 = callPackage ./aws-sign2/0.6.0.nix {};
     aws-sign2_0-6-0 = callPackage ./aws-sign2/0.6.0.nix {};
@@ -2102,6 +2103,7 @@
     mocha_2-3-4 = callPackage ./mocha/2.3.4.nix {};
     mocha_2-2-5 = callPackage ./mocha/2.2.5.nix {};
     mocha_2-1-0 = callPackage ./mocha/2.1.0.nix {};
+    mocha_1-21-5 = callPackage ./mocha/1.21.5.nix {};
     mocha_1-18-2 = callPackage ./mocha/1.18.2.nix {};
     mocha_1-17-1 = callPackage ./mocha/1.17.1.nix {};
     mocha_1-0-3 = callPackage ./mocha/1.0.3.nix {};
