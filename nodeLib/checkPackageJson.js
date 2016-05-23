@@ -52,7 +52,7 @@ function checkDependencies() {
   // * That its version satisfies the given version bounds.
   function checkDependency(name, versionRange, dependencyType) {
     process.stderr.write("Checking dependency " + name + "@" + versionRange +
-  		       "(from " + dependencyType + ")...");
+                         "(from " + dependencyType + ")...");
     var dependencyPackageObj;
     var pkgJsonPath = process.cwd() + "/node_modules/" + name + "/package.json";
     var errorKey = name + "@" + versionRange;

@@ -289,8 +289,8 @@ let
         # dependencies, and if we don't uncover anything there just rerun it
         # with verbose output.
         npm install $npmFlags >/dev/null 2>&1 || {
-	  echo "Installation of ${name}@${version} failed!"
-	  echo "Checking dependencies to see if any aren't satisfied..."
+          echo "Installation of ${name}@${version} failed!"
+          echo "Checking dependencies to see if any aren't satisfied..."
           node ${./checkPackageJson.js} checkDependencies
           echo "Dependencies seem ok. Rerunning with verbose logging:"
           npm install . $npmFlags --loglevel=verbose
@@ -395,7 +395,7 @@ let
         export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
         export BUILD_DIR=$TMPDIR/$UNIQNAME-build
         export npmFlags="${npmFlags}"
-	export SEMVER_PATH=${npm}/lib/node_modules/npm/node_modules/semver
+        export SEMVER_PATH=${npm}/lib/node_modules/npm/node_modules/semver
       '';
 
       shellHook = ''
