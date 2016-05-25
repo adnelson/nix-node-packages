@@ -319,7 +319,7 @@ let
         flip concatMapStrings (attrValues _devDependencies) (dep:
          let
            rm = dep:
-             if !hasAttr dep.basicName propagatedDependencies
+             if !hasAttr dep.name propagatedDependencies
              then ''
                # Remove the dependency from node modules
                rm -rfv node_modules/${dep.fullName}
