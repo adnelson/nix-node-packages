@@ -644,6 +644,8 @@
     core-js_1-2-6 = callPackage ./core-js/1.2.6.nix {};
     core-util-is = callPackage ./core-util-is/1.0.2.nix {};
     core-util-is_1-0-2 = callPackage ./core-util-is/1.0.2.nix {};
+    cors = callPackage ./cors/2.7.1.nix {};
+    cors_2-7-1 = callPackage ./cors/2.7.1.nix {};
     coverage-collector = callPackage ./coverage-collector/0.0.5.nix {};
     coverage-collector_0-0-5 = callPackage ./coverage-collector/0.0.5.nix {};
     crc = callPackage ./crc/3.3.0.nix {};
