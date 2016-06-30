@@ -1659,6 +1659,8 @@
     jsbn = callPackage ./jsbn/0.1.0.nix {};
     jsbn_0-1-0 = callPackage ./jsbn/0.1.0.nix {};
     jsbn_0-0-0 = callPackage ./jsbn/0.0.0.nix {};
+    jschardet = callPackage ./jschardet/1.4.1.nix {};
+    jschardet_1-4-1 = callPackage ./jschardet/1.4.1.nix {};
     jsdom = callPackage ./jsdom/7.0.2.nix {};
     jsdom_7-0-2 = callPackage ./jsdom/7.0.2.nix {};
     jsdom_5-6-1 = callPackage ./jsdom/5.6.1.nix {};
