@@ -1726,7 +1726,8 @@
     karma-mocha_0-1-10 = callPackage ./karma-mocha/0.1.10.nix {};
     karma-mocha-reporter = callPackage ./karma-mocha-reporter/2.0.0.nix {};
     karma-mocha-reporter_2-0-0 = callPackage ./karma-mocha-reporter/2.0.0.nix {};
-    karma-phantomjs-launcher = callPackage ./karma-phantomjs-launcher/0.1.4.nix {};
+    karma-phantomjs-launcher = callPackage ./karma-phantomjs-launcher/1.0.1.nix {};
+    karma-phantomjs-launcher_1-0-1 = callPackage ./karma-phantomjs-launcher/1.0.1.nix {};
     karma-phantomjs-launcher_0-1-4 = callPackage ./karma-phantomjs-launcher/0.1.4.nix {};
     karma-sinon = callPackage ./karma-sinon/1.0.4.nix {};
     karma-sinon_1-0-4 = callPackage ./karma-sinon/1.0.4.nix {};
@@ -2470,6 +2471,8 @@
     pgpass_0-0-3 = callPackage ./pgpass/0.0.3.nix {};
     phantomjs = callPackage ./phantomjs/1.9.20.nix {};
     phantomjs_1-9-20 = callPackage ./phantomjs/1.9.20.nix {};
+    phantomjs-prebuilt = callPackage ./phantomjs-prebuilt/2.1.7.nix {};
+    phantomjs-prebuilt_2-1-7 = callPackage ./phantomjs-prebuilt/2.1.7.nix {};
     pidusage = callPackage ./pidusage/1.0.1.nix {};
     pidusage_1-0-1 = callPackage ./pidusage/1.0.1.nix {};
     pidusage_0-1-1 = callPackage ./pidusage/0.1.1.nix {};
