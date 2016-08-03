@@ -449,7 +449,8 @@
     chai_1-10-0 = callPackage ./chai/1.10.0.nix {};
     chai_1-9-2 = callPackage ./chai/1.9.2.nix {};
     chai_1-8-1 = callPackage ./chai/1.8.1.nix {};
-    chai-as-promised = callPackage ./chai-as-promised/4.3.0.nix {};
+    chai-as-promised = callPackage ./chai-as-promised/5.3.0.nix {};
+    chai-as-promised_5-3-0 = callPackage ./chai-as-promised/5.3.0.nix {};
     chai-as-promised_4-3-0 = callPackage ./chai-as-promised/4.3.0.nix {};
     chai-as-promised_4-1-1 = callPackage ./chai-as-promised/4.1.1.nix {};
     chainsaw = callPackage ./chainsaw/0.1.0.nix {};
