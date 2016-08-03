@@ -1114,6 +1114,8 @@
     fresh_0-2-4 = callPackage ./fresh/0.2.4.nix {};
     from = callPackage ./from/0.0.2.nix {};
     from_0-0-2 = callPackage ./from/0.0.2.nix {};
+    fs-access = callPackage ./fs-access/1.0.0.nix {};
+    fs-access_1-0-0 = callPackage ./fs-access/1.0.0.nix {};
     fs-extra = callPackage ./fs-extra/0.26.7.nix {};
     fs-extra_0-26-7 = callPackage ./fs-extra/0.26.7.nix {};
     fs-extra_0-26-2 = callPackage ./fs-extra/0.26.2.nix {};
@@ -2275,6 +2277,8 @@
     nue_0-7-1 = callPackage ./nue/0.7.1.nix {};
     nugget = callPackage ./nugget/1.6.0.nix {};
     nugget_1-6-0 = callPackage ./nugget/1.6.0.nix {};
+    null-check = callPackage ./null-check/1.0.0.nix {};
+    null-check_1-0-0 = callPackage ./null-check/1.0.0.nix {};
     number-is-nan = callPackage ./number-is-nan/1.0.0.nix {};
     number-is-nan_1-0-0 = callPackage ./number-is-nan/1.0.0.nix {};
     nw = callPackage ./nw/0.12.3.nix {};
