@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = [];
     peerDependencies = with nodePackages; [
-      chai_3-4-1
+      chai_3-5-0
     ];
     meta = {
       homepage = "https://github.com/domenic/chai-as-promised#readme";

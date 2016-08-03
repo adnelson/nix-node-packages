@@ -443,7 +443,8 @@
     caw_1-1-0 = callPackage ./caw/1.1.0.nix {};
     center-align = callPackage ./center-align/0.1.2.nix {};
     center-align_0-1-2 = callPackage ./center-align/0.1.2.nix {};
-    chai = callPackage ./chai/3.4.1.nix {};
+    chai = callPackage ./chai/3.5.0.nix {};
+    chai_3-5-0 = callPackage ./chai/3.5.0.nix {};
     chai_3-4-1 = callPackage ./chai/3.4.1.nix {};
     chai_2-3-0 = callPackage ./chai/2.3.0.nix {};
     chai_1-10-0 = callPackage ./chai/1.10.0.nix {};
