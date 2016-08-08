@@ -124,6 +124,10 @@ in
   # example, custom behavior is needed), then set this to true.
   skipDevDependencyCleanup ? false,
 
+  # Indicates the package is broken. Not super user-friendly but
+  # better than nothing.
+  isBroken ? false,
+
   # Metadata about the package.
   meta ? {},
 
@@ -155,6 +159,8 @@ else if includeDevDependencies && (devDependencies == null)
 then throw ("${uniqueName}: Can't include dev dependencies since they have " +
             "not been defined. You can pass in `devDependencies = [];` if " +
             "there are no dev dependencies.")
+else if isBroken
+then throw "${uniqueName}: listed as broken, see definition for details"
 else
 
 let
@@ -169,7 +175,7 @@ let
 
   # These arguments are intended as directives to this function and not
   # to be passed through to mkDerivation. They are removed below.
-  attrsToRemove = ["deps" "flags" "skipOptionalDependencies"
+  attrsToRemove = ["deps" "flags" "skipOptionalDependencies" "isBroken"
                    "passthru" "doCheck" "includeDevDependencies" "version"
                    "namespace" "patchDependencies" "skipDevDependencyCleanup"]
                    ++ dependencyTypes;
