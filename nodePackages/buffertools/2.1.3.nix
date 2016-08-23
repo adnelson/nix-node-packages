@@ -6,7 +6,6 @@ buildNodePackage {
       url = "http://registry.npmjs.org/buffertools/-/buffertools-2.1.3.tgz";
       sha1 = "34d3bf0565ed79e29877c2a6217ccfce9a3b3423";
     };
-    buildInputs = if pkgs.stdenv.isDarwin then [pkgs.xcodeenv.xcodewrapper] else [];
     deps = [];
     devDependencies = [];
     meta = {
