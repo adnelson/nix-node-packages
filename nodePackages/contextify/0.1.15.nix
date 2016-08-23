@@ -2,6 +2,7 @@
 buildNodePackage {
     name = "contextify";
     version = "0.1.15";
+    buildInputs = if pkgs.stdenv.isDarwin then [pkgs.xcodeenv.xcodewrapper] else [];
     src = pkgs.fetchurl {
       url = "http://registry.npmjs.org/contextify/-/contextify-0.1.15.tgz";
       sha1 = "3d34681d14a5ccbbe609c9ee11eda206b8cf266f";
