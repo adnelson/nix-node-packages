@@ -59,6 +59,7 @@
     ansi = callPackage ./ansi/0.3.1.nix {};
     ansi_0-3-1 = callPackage ./ansi/0.3.1.nix {};
     ansi_0-3-0 = callPackage ./ansi/0.3.0.nix {};
+    ansi_0-2-1 = callPackage ./ansi/0.2.1.nix {};
     ansi-escapes = callPackage ./ansi-escapes/1.1.0.nix {};
     ansi-escapes_1-1-0 = callPackage ./ansi-escapes/1.1.0.nix {};
     ansi-green = callPackage ./ansi-green/0.1.1.nix {};
@@ -179,6 +180,9 @@
     aws-sdk-mock = callPackage ./aws-sdk-mock/1.1.0.nix {};
     aws-sdk-mock_1-1-0 = callPackage ./aws-sdk-mock/1.1.0.nix {};
     aws-sdk-mock_1-0-10 = callPackage ./aws-sdk-mock/1.0.10.nix {};
+    aws-sign = callPackage ./aws-sign/0.3.0.nix {};
+    aws-sign_0-3-0 = callPackage ./aws-sign/0.3.0.nix {};
+    aws-sign_0-2-0 = callPackage ./aws-sign/0.2.0.nix {};
     aws-sign2 = callPackage ./aws-sign2/0.6.0.nix {};
     aws-sign2_0-6-0 = callPackage ./aws-sign2/0.6.0.nix {};
     aws-sign2_0-5-0 = callPackage ./aws-sign2/0.5.0.nix {};
@@ -249,6 +253,7 @@
     batch = callPackage ./batch/0.5.3.nix {};
     batch_0-5-3 = callPackage ./batch/0.5.3.nix {};
     batch_0-5-2 = callPackage ./batch/0.5.2.nix {};
+    batch_0-5-0 = callPackage ./batch/0.5.0.nix {};
     bcrypt = callPackage ./bcrypt/0.8.5.nix {};
     bcrypt_0-8-5 = callPackage ./bcrypt/0.8.5.nix {};
     bcrypt-as-promised = callPackage ./bcrypt-as-promised/1.0.1.nix {};
@@ -263,6 +268,7 @@
     big-js_3-1-3 = callPackage ./big-js/3.1.3.nix {};
     bignumber-js = callPackage ./bignumber-js/2.0.7.nix {};
     bignumber-js_2-0-7 = callPackage ./bignumber-js/2.0.7.nix {};
+    bignumber-js_1-1-1 = callPackage ./bignumber-js/1.1.1.nix {};
     binary = callPackage ./binary/0.3.0.nix {};
     binary_0-3-0 = callPackage ./binary/0.3.0.nix {};
     binary-extensions = callPackage ./binary-extensions/1.4.0.nix {};
@@ -282,6 +288,7 @@
     blob_0-0-4 = callPackage ./blob/0.0.4.nix {};
     block-stream = callPackage ./block-stream/0.0.8.nix {};
     block-stream_0-0-8 = callPackage ./block-stream/0.0.8.nix {};
+    block-stream_0-0-7 = callPackage ./block-stream/0.0.7.nix {};
     bluebird = callPackage ./bluebird/3.3.5.nix {};
     bluebird_3-3-5 = callPackage ./bluebird/3.3.5.nix {};
     bluebird_3-3-4 = callPackage ./bluebird/3.3.4.nix {};
@@ -301,6 +308,7 @@
     boom = callPackage ./boom/2.10.1.nix {};
     boom_2-10-1 = callPackage ./boom/2.10.1.nix {};
     boom_0-4-2 = callPackage ./boom/0.4.2.nix {};
+    boom_0-3-8 = callPackage ./boom/0.3.8.nix {};
     bops = callPackage ./bops/0.1.1.nix {};
     bops_0-1-1 = callPackage ./bops/0.1.1.nix {};
     bops_0-0-6 = callPackage ./bops/0.0.6.nix {};
@@ -379,6 +387,7 @@
     buffer-browserify_0-0-5 = callPackage ./buffer-browserify/0.0.5.nix {};
     buffer-crc32 = callPackage ./buffer-crc32/0.2.5.nix {};
     buffer-crc32_0-2-5 = callPackage ./buffer-crc32/0.2.5.nix {};
+    buffer-crc32_0-2-1 = callPackage ./buffer-crc32/0.2.1.nix {};
     buffer-to-vinyl = callPackage ./buffer-to-vinyl/1.1.0.nix {};
     buffer-to-vinyl_1-1-0 = callPackage ./buffer-to-vinyl/1.1.0.nix {};
     buffer-writer = callPackage ./buffer-writer/1.0.0.nix {};
@@ -416,6 +425,7 @@
     bytes = callPackage ./bytes/2.1.0.nix {};
     bytes_2-1-0 = callPackage ./bytes/2.1.0.nix {};
     bytes_1-0-0 = callPackage ./bytes/1.0.0.nix {};
+    bytes_0-2-1 = callPackage ./bytes/0.2.1.nix {};
     bytewise = callPackage ./bytewise/0.7.1.nix {};
     bytewise_0-7-1 = callPackage ./bytewise/0.7.1.nix {};
     callsite = callPackage ./callsite/1.0.0.nix {};
@@ -471,6 +481,8 @@
     charm_0-1-2 = callPackage ./charm/0.1.2.nix {};
     cheerio = callPackage ./cheerio/0.19.0.nix {};
     cheerio_0-19-0 = callPackage ./cheerio/0.19.0.nix {};
+    child-process-close = callPackage ./child-process-close/0.1.1.nix {};
+    child-process-close_0-1-1 = callPackage ./child-process-close/0.1.1.nix {};
     child-process-promise = callPackage ./child-process-promise/1.1.0.nix {};
     child-process-promise_1-1-0 = callPackage ./child-process-promise/1.1.0.nix {};
     chmodr = callPackage ./chmodr/1.0.2.nix {};
@@ -481,6 +493,7 @@
     chokidar_1-3-0 = callPackage ./chokidar/1.3.0.nix {};
     chownr = callPackage ./chownr/1.0.1.nix {};
     chownr_1-0-1 = callPackage ./chownr/1.0.1.nix {};
+    chownr_0-0-2 = callPackage ./chownr/0.0.2.nix {};
     cipher-base = callPackage ./cipher-base/1.0.2.nix {};
     cipher-base_1-0-2 = callPackage ./cipher-base/1.0.2.nix {};
     class-extend = callPackage ./class-extend/0.1.2.nix {};
@@ -508,8 +521,11 @@
     clone_0-2-0 = callPackage ./clone/0.2.0.nix {};
     clone-stats = callPackage ./clone-stats/0.0.1.nix {};
     clone-stats_0-0-1 = callPackage ./clone-stats/0.0.1.nix {};
+    cluster2 = callPackage ./cluster2/0.4.26.nix {};
+    cluster2_0-4-26 = callPackage ./cluster2/0.4.26.nix {};
     cmd-shim = callPackage ./cmd-shim/2.0.1.nix {};
     cmd-shim_2-0-1 = callPackage ./cmd-shim/2.0.1.nix {};
+    cmd-shim_1-1-2 = callPackage ./cmd-shim/1.1.2.nix {};
     co = callPackage ./co/3.1.0.nix {};
     co_3-1-0 = callPackage ./co/3.1.0.nix {};
     code-point-at = callPackage ./code-point-at/1.0.0.nix {};
@@ -538,6 +554,7 @@
     columnify = callPackage ./columnify/1.5.4.nix {};
     columnify_1-5-4 = callPackage ./columnify/1.5.4.nix {};
     columnify_1-5-2 = callPackage ./columnify/1.5.2.nix {};
+    columnify_0-1-2 = callPackage ./columnify/0.1.2.nix {};
     combine-source-map = callPackage ./combine-source-map/0.7.1.nix {};
     combine-source-map_0-7-1 = callPackage ./combine-source-map/0.7.1.nix {};
     combine-source-map_0-6-1 = callPackage ./combine-source-map/0.6.1.nix {};
@@ -552,6 +569,7 @@
     commander_2-2-0 = callPackage ./commander/2.2.0.nix {};
     commander_2-1-0 = callPackage ./commander/2.1.0.nix {};
     commander_2-0-0 = callPackage ./commander/2.0.0.nix {};
+    commander_1-3-2 = callPackage ./commander/1.3.2.nix {};
     commander_1-2-0 = callPackage ./commander/1.2.0.nix {};
     commander_1-0-5 = callPackage ./commander/1.0.5.nix {};
     commander_0-6-1 = callPackage ./commander/0.6.1.nix {};
@@ -593,6 +611,8 @@
     connect_3-4-0 = callPackage ./connect/3.4.0.nix {};
     connect_3-3-5 = callPackage ./connect/3.3.5.nix {};
     connect_2-30-2 = callPackage ./connect/2.30.2.nix {};
+    connect_2-12-0 = callPackage ./connect/2.12.0.nix {};
+    connect_1-9-2 = callPackage ./connect/1.9.2.nix {};
     connect-flash = callPackage ./connect-flash/0.1.1.nix {};
     connect-flash_0-1-1 = callPackage ./connect-flash/0.1.1.nix {};
     connect-history-api-fallback = callPackage ./connect-history-api-fallback/1.1.0.nix {};
@@ -627,6 +647,9 @@
     cookie_0-1-3 = callPackage ./cookie/0.1.3.nix {};
     cookie_0-1-2 = callPackage ./cookie/0.1.2.nix {};
     cookie_0-1-0 = callPackage ./cookie/0.1.0.nix {};
+    cookie-jar = callPackage ./cookie-jar/0.3.0.nix {};
+    cookie-jar_0-3-0 = callPackage ./cookie-jar/0.3.0.nix {};
+    cookie-jar_0-2-0 = callPackage ./cookie-jar/0.2.0.nix {};
     cookie-parser = callPackage ./cookie-parser/1.4.0.nix {};
     cookie-parser_1-4-0 = callPackage ./cookie-parser/1.4.0.nix {};
     cookie-parser_1-3-5 = callPackage ./cookie-parser/1.3.5.nix {};
@@ -635,6 +658,7 @@
     cookie-signature = callPackage ./cookie-signature/1.0.6.nix {};
     cookie-signature_1-0-6 = callPackage ./cookie-signature/1.0.6.nix {};
     cookie-signature_1-0-5 = callPackage ./cookie-signature/1.0.5.nix {};
+    cookie-signature_1-0-1 = callPackage ./cookie-signature/1.0.1.nix {};
     cookiejar = callPackage ./cookiejar/2.0.1.nix {};
     cookiejar_2-0-1 = callPackage ./cookiejar/2.0.1.nix {};
     cookies = callPackage ./cookies/0.5.0.nix {};
@@ -673,6 +697,7 @@
     cryptiles = callPackage ./cryptiles/2.0.5.nix {};
     cryptiles_2-0-5 = callPackage ./cryptiles/2.0.5.nix {};
     cryptiles_0-2-2 = callPackage ./cryptiles/0.2.2.nix {};
+    cryptiles_0-1-3 = callPackage ./cryptiles/0.1.3.nix {};
     crypto-browserify = callPackage ./crypto-browserify/3.11.0.nix {};
     crypto-browserify_3-11-0 = callPackage ./crypto-browserify/3.11.0.nix {};
     crypto-browserify_3-2-8 = callPackage ./crypto-browserify/3.2.8.nix {};
@@ -878,11 +903,13 @@
     ecc-jsbn_0-0-1 = callPackage ./ecc-jsbn/0.0.1.nix {};
     editor = callPackage ./editor/1.0.0.nix {};
     editor_1-0-0 = callPackage ./editor/1.0.0.nix {};
+    editor_0-0-5 = callPackage ./editor/0.0.5.nix {};
     ee-first = callPackage ./ee-first/1.1.1.nix {};
     ee-first_1-1-1 = callPackage ./ee-first/1.1.1.nix {};
     ee-first_1-1-0 = callPackage ./ee-first/1.1.0.nix {};
     ejs = callPackage ./ejs/2.3.4.nix {};
     ejs_2-3-4 = callPackage ./ejs/2.3.4.nix {};
+    ejs_0-8-8 = callPackage ./ejs/0.8.8.nix {};
     electron-download = callPackage ./electron-download/1.4.1.nix {};
     electron-download_1-4-1 = callPackage ./electron-download/1.4.1.nix {};
     electron-prebuilt = callPackage ./electron-prebuilt/0.30.8.nix {};
@@ -1001,9 +1028,13 @@
     express = callPackage ./express/4.13.3.nix {};
     express_4-13-3 = callPackage ./express/4.13.3.nix {};
     express_4-11-2 = callPackage ./express/4.11.2.nix {};
+    express_3-4-8 = callPackage ./express/3.4.8.nix {};
+    express_2-5-11 = callPackage ./express/2.5.11.nix {};
     express-session = callPackage ./express-session/1.12.1.nix {};
     express-session_1-12-1 = callPackage ./express-session/1.12.1.nix {};
     express-session_1-11-3 = callPackage ./express-session/1.11.3.nix {};
+    express-winston = callPackage ./express-winston/0.2.12.nix {};
+    express-winston_0-2-12 = callPackage ./express-winston/0.2.12.nix {};
     extend = callPackage ./extend/3.0.0.nix {};
     extend_3-0-0 = callPackage ./extend/3.0.0.nix {};
     extend_2-0-1 = callPackage ./extend/2.0.1.nix {};
@@ -1099,11 +1130,13 @@
     forever-agent = callPackage ./forever-agent/0.6.1.nix {};
     forever-agent_0-6-1 = callPackage ./forever-agent/0.6.1.nix {};
     forever-agent_0-5-2 = callPackage ./forever-agent/0.5.2.nix {};
+    forever-agent_0-2-0 = callPackage ./forever-agent/0.2.0.nix {};
     form-data = callPackage ./form-data/1.0.0-rc3.nix {};
     form-data_1-0-0-rc3 = callPackage ./form-data/1.0.0-rc3.nix {};
     form-data_0-2-0 = callPackage ./form-data/0.2.0.nix {};
     form-data_0-1-4 = callPackage ./form-data/0.1.4.nix {};
     form-data_0-1-3 = callPackage ./form-data/0.1.3.nix {};
+    form-data_0-0-10 = callPackage ./form-data/0.0.10.nix {};
     formatio = callPackage ./formatio/1.1.1.nix {};
     formatio_1-1-1 = callPackage ./formatio/1.1.1.nix {};
     formatio_1-0-2 = callPackage ./formatio/1.0.2.nix {};
@@ -1114,6 +1147,7 @@
     fresh = callPackage ./fresh/0.3.0.nix {};
     fresh_0-3-0 = callPackage ./fresh/0.3.0.nix {};
     fresh_0-2-4 = callPackage ./fresh/0.2.4.nix {};
+    fresh_0-2-0 = callPackage ./fresh/0.2.0.nix {};
     from = callPackage ./from/0.0.2.nix {};
     from_0-0-2 = callPackage ./from/0.0.2.nix {};
     fs-access = callPackage ./fs-access/1.0.0.nix {};
@@ -1136,10 +1170,12 @@
     fsevents_1-0-5 = callPackage ./fsevents/1.0.5.nix {};
     fstream = callPackage ./fstream/1.0.8.nix {};
     fstream_1-0-8 = callPackage ./fstream/1.0.8.nix {};
+    fstream_0-1-31 = callPackage ./fstream/0.1.31.nix {};
     fstream-ignore = callPackage ./fstream-ignore/1.0.3.nix {};
     fstream-ignore_1-0-3 = callPackage ./fstream-ignore/1.0.3.nix {};
     fstream-npm = callPackage ./fstream-npm/1.0.7.nix {};
     fstream-npm_1-0-7 = callPackage ./fstream-npm/1.0.7.nix {};
+    fstream-npm_0-1-8 = callPackage ./fstream-npm/0.1.8.nix {};
     ftp = callPackage ./ftp/0.3.10.nix {};
     ftp_0-3-10 = callPackage ./ftp/0.3.10.nix {};
     function-bind = callPackage ./function-bind/1.0.2.nix {};
@@ -1153,6 +1189,8 @@
     gavel_0-5-2 = callPackage ./gavel/0.5.2.nix {};
     gaze = callPackage ./gaze/0.5.2.nix {};
     gaze_0-5-2 = callPackage ./gaze/0.5.2.nix {};
+    gc-stats = callPackage ./gc-stats/0.0.6.nix {};
+    gc-stats_0-0-6 = callPackage ./gc-stats/0.0.6.nix {};
     generate-function = callPackage ./generate-function/2.0.0.nix {};
     generate-function_2-0-0 = callPackage ./generate-function/2.0.0.nix {};
     generate-object-property = callPackage ./generate-object-property/1.2.0.nix {};
@@ -1182,6 +1220,13 @@
     github_0-2-4 = callPackage ./github/0.2.4.nix {};
     github-from-package = callPackage ./github-from-package/0.0.0.nix {};
     github-from-package_0-0-0 = callPackage ./github-from-package/0.0.0.nix {};
+    github-url-from-git = callPackage ./github-url-from-git/1.4.0.nix {};
+    github-url-from-git_1-4-0 = callPackage ./github-url-from-git/1.4.0.nix {};
+    github-url-from-git_1-1-1 = callPackage ./github-url-from-git/1.1.1.nix {};
+    github-url-from-username-repo = callPackage ./github-url-from-username-repo/1.0.2.nix {};
+    github-url-from-username-repo_1-0-2 = callPackage ./github-url-from-username-repo/1.0.2.nix {};
+    github-url-from-username-repo_0-1-0 = callPackage ./github-url-from-username-repo/0.1.0.nix {};
+    github-url-from-username-repo_0-0-2 = callPackage ./github-url-from-username-repo/0.0.2.nix {};
     github-username = callPackage ./github-username/2.1.0.nix {};
     github-username_2-1-0 = callPackage ./github-username/2.1.0.nix {};
     glob = callPackage ./glob/7.0.3.nix {};
@@ -1388,10 +1433,13 @@
     hawk_3-1-2 = callPackage ./hawk/3.1.2.nix {};
     hawk_2-3-1 = callPackage ./hawk/2.3.1.nix {};
     hawk_1-1-1 = callPackage ./hawk/1.1.1.nix {};
+    hawk_1-0-0 = callPackage ./hawk/1.0.0.nix {};
+    hawk_0-10-2 = callPackage ./hawk/0.10.2.nix {};
     hoek = callPackage ./hoek/3.0.4.nix {};
     hoek_3-0-4 = callPackage ./hoek/3.0.4.nix {};
     hoek_2-16-3 = callPackage ./hoek/2.16.3.nix {};
     hoek_0-9-1 = callPackage ./hoek/0.9.1.nix {};
+    hoek_0-7-6 = callPackage ./hoek/0.7.6.nix {};
     home-dir = callPackage ./home-dir/1.0.0.nix {};
     home-dir_1-0-0 = callPackage ./home-dir/1.0.0.nix {};
     home-or-tmp = callPackage ./home-or-tmp/1.0.0.nix {};
@@ -1484,9 +1532,11 @@
     inherits_1-0-2 = callPackage ./inherits/1.0.2.nix {};
     ini = callPackage ./ini/1.3.4.nix {};
     ini_1-3-4 = callPackage ./ini/1.3.4.nix {};
+    ini_1-1-0 = callPackage ./ini/1.1.0.nix {};
     init-package-json = callPackage ./init-package-json/1.9.3.nix {};
     init-package-json_1-9-3 = callPackage ./init-package-json/1.9.3.nix {};
     init-package-json_1-9-1 = callPackage ./init-package-json/1.9.1.nix {};
+    init-package-json_0-0-14 = callPackage ./init-package-json/0.0.14.nix {};
     inline-source-map = callPackage ./inline-source-map/0.6.1.nix {};
     inline-source-map_0-6-1 = callPackage ./inline-source-map/0.6.1.nix {};
     inline-source-map_0-5-0 = callPackage ./inline-source-map/0.5.0.nix {};
@@ -1686,6 +1736,7 @@
     json-stable-stringify_0-0-1 = callPackage ./json-stable-stringify/0.0.1.nix {};
     json-stringify-safe = callPackage ./json-stringify-safe/5.0.1.nix {};
     json-stringify-safe_5-0-1 = callPackage ./json-stringify-safe/5.0.1.nix {};
+    json-stringify-safe_3-0-0 = callPackage ./json-stringify-safe/3.0.0.nix {};
     json3 = callPackage ./json3/3.3.2.nix {};
     json3_3-3-2 = callPackage ./json3/3.3.2.nix {};
     json3_3-2-6 = callPackage ./json3/3.2.6.nix {};
@@ -1821,6 +1872,7 @@
     lock_0-1-2 = callPackage ./lock/0.1.2.nix {};
     lockfile = callPackage ./lockfile/1.0.1.nix {};
     lockfile_1-0-1 = callPackage ./lockfile/1.0.1.nix {};
+    lockfile_0-4-3 = callPackage ./lockfile/0.4.3.nix {};
     lodash = callPackage ./lodash/4.11.2.nix {};
     lodash_4-11-2 = callPackage ./lodash/4.11.2.nix {};
     lodash_4-5-1 = callPackage ./lodash/4.5.1.nix {};
@@ -2059,6 +2111,7 @@
     merge-descriptors = callPackage ./merge-descriptors/1.0.0.nix {};
     merge-descriptors_1-0-0 = callPackage ./merge-descriptors/1.0.0.nix {};
     merge-descriptors_0-0-2 = callPackage ./merge-descriptors/0.0.2.nix {};
+    merge-descriptors_0-0-1 = callPackage ./merge-descriptors/0.0.1.nix {};
     merge-stream = callPackage ./merge-stream/1.0.0.nix {};
     merge-stream_1-0-0 = callPackage ./merge-stream/1.0.0.nix {};
     merge-stream_0-1-8 = callPackage ./merge-stream/0.1.8.nix {};
@@ -2067,6 +2120,7 @@
     methods = callPackage ./methods/1.1.1.nix {};
     methods_1-1-1 = callPackage ./methods/1.1.1.nix {};
     methods_1-0-1 = callPackage ./methods/1.0.1.nix {};
+    methods_0-1-0 = callPackage ./methods/0.1.0.nix {};
     micromatch = callPackage ./micromatch/2.3.2.nix {};
     micromatch_2-3-2 = callPackage ./micromatch/2.3.2.nix {};
     miller-rabin = callPackage ./miller-rabin/4.0.0.nix {};
@@ -2074,6 +2128,7 @@
     mime = callPackage ./mime/1.3.4.nix {};
     mime_1-3-4 = callPackage ./mime/1.3.4.nix {};
     mime_1-2-11 = callPackage ./mime/1.2.11.nix {};
+    mime_1-2-4 = callPackage ./mime/1.2.4.nix {};
     mime-db = callPackage ./mime-db/1.21.0.nix {};
     mime-db_1-21-0 = callPackage ./mime-db/1.21.0.nix {};
     mime-db_1-19-0 = callPackage ./mime-db/1.19.0.nix {};
@@ -2162,6 +2217,7 @@
     multimeter_0-1-1 = callPackage ./multimeter/0.1.1.nix {};
     multiparty = callPackage ./multiparty/3.3.2.nix {};
     multiparty_3-3-2 = callPackage ./multiparty/3.3.2.nix {};
+    multiparty_2-2-0 = callPackage ./multiparty/2.2.0.nix {};
     multipipe = callPackage ./multipipe/0.1.2.nix {};
     multipipe_0-1-2 = callPackage ./multipipe/0.1.2.nix {};
     muri = callPackage ./muri/1.0.0.nix {};
@@ -2198,6 +2254,7 @@
     negotiator_0-6-0 = callPackage ./negotiator/0.6.0.nix {};
     negotiator_0-5-3 = callPackage ./negotiator/0.5.3.nix {};
     negotiator_0-4-9 = callPackage ./negotiator/0.4.9.nix {};
+    negotiator_0-3-0 = callPackage ./negotiator/0.3.0.nix {};
     nested-error-stacks = callPackage ./nested-error-stacks/1.0.2.nix {};
     nested-error-stacks_1-0-2 = callPackage ./nested-error-stacks/1.0.2.nix {};
     newrelic = callPackage ./newrelic/1.25.0.nix {};
@@ -2209,6 +2266,7 @@
     node-gyp = callPackage ./node-gyp/3.2.1.nix {};
     node-gyp_3-2-1 = callPackage ./node-gyp/3.2.1.nix {};
     node-gyp_3-0-3 = callPackage ./node-gyp/3.0.3.nix {};
+    node-gyp_0-12-2 = callPackage ./node-gyp/0.12.2.nix {};
     node-libs-browser = callPackage ./node-libs-browser/0.5.3.nix {};
     node-libs-browser_0-5-3 = callPackage ./node-libs-browser/0.5.3.nix {};
     node-notifier = callPackage ./node-notifier/1.2.1.nix {};
@@ -2239,6 +2297,7 @@
     nopt = callPackage ./nopt/3.0.6.nix {};
     nopt_3-0-6 = callPackage ./nopt/3.0.6.nix {};
     nopt_2-2-1 = callPackage ./nopt/2.2.1.nix {};
+    nopt_2-1-2 = callPackage ./nopt/2.1.2.nix {};
     nopt_2-0-0 = callPackage ./nopt/2.0.0.nix {};
     nopt_1-0-10 = callPackage ./nopt/1.0.10.nix {};
     noptify = callPackage ./noptify/0.0.3.nix {};
@@ -2247,11 +2306,14 @@
     normalize-git-url_3-0-1 = callPackage ./normalize-git-url/3.0.1.nix {};
     normalize-package-data = callPackage ./normalize-package-data/2.3.5.nix {};
     normalize-package-data_2-3-5 = callPackage ./normalize-package-data/2.3.5.nix {};
+    normalize-package-data_1-0-3 = callPackage ./normalize-package-data/1.0.3.nix {};
+    normalize-package-data_0-2-13 = callPackage ./normalize-package-data/0.2.13.nix {};
     normalize-path = callPackage ./normalize-path/2.0.1.nix {};
     normalize-path_2-0-1 = callPackage ./normalize-path/2.0.1.nix {};
     npm = callPackage ./npm/3.6.0.nix {};
     npm_3-6-0 = callPackage ./npm/3.6.0.nix {};
     npm_3-5-0 = callPackage ./npm/3.5.0.nix {};
+    npm_1-3-26 = callPackage ./npm/1.3.26.nix {};
     npm-cache-filename = callPackage ./npm-cache-filename/1.0.2.nix {};
     npm-cache-filename_1-0-2 = callPackage ./npm-cache-filename/1.0.2.nix {};
     npm-install-checks = callPackage ./npm-install-checks/3.0.0.nix {};
@@ -2261,14 +2323,18 @@
     npm-package-arg_4-1-0 = callPackage ./npm-package-arg/4.1.0.nix {};
     npm-registry-client = callPackage ./npm-registry-client/7.0.9.nix {};
     npm-registry-client_7-0-9 = callPackage ./npm-registry-client/7.0.9.nix {};
+    npm-registry-client_0-3-6 = callPackage ./npm-registry-client/0.3.6.nix {};
     npm-user-validate = callPackage ./npm-user-validate/0.1.2.nix {};
     npm-user-validate_0-1-2 = callPackage ./npm-user-validate/0.1.2.nix {};
+    npm-user-validate_0-0-3 = callPackage ./npm-user-validate/0.0.3.nix {};
     npmconf = callPackage ./npmconf/2.1.2.nix {};
     npmconf_2-1-2 = callPackage ./npmconf/2.1.2.nix {};
+    npmconf_0-1-16 = callPackage ./npmconf/0.1.16.nix {};
     npmlog = callPackage ./npmlog/2.0.1.nix {};
     npmlog_2-0-1 = callPackage ./npmlog/2.0.1.nix {};
     npmlog_2-0-0 = callPackage ./npmlog/2.0.0.nix {};
     npmlog_1-2-1 = callPackage ./npmlog/1.2.1.nix {};
+    npmlog_0-0-6 = callPackage ./npmlog/0.0.6.nix {};
     nssocket = callPackage ./nssocket/0.6.0.nix {};
     nssocket_0-6-0 = callPackage ./nssocket/0.6.0.nix {};
     nth-check = callPackage ./nth-check/1.0.1.nix {};
@@ -2295,6 +2361,7 @@
     oauth-sign_0-5-0 = callPackage ./oauth-sign/0.5.0.nix {};
     oauth-sign_0-4-0 = callPackage ./oauth-sign/0.4.0.nix {};
     oauth-sign_0-3-0 = callPackage ./oauth-sign/0.3.0.nix {};
+    oauth-sign_0-2-0 = callPackage ./oauth-sign/0.2.0.nix {};
     object-assign = callPackage ./object-assign/4.0.1.nix {};
     object-assign_4-0-1 = callPackage ./object-assign/4.0.1.nix {};
     object-assign_3-0-0 = callPackage ./object-assign/3.0.0.nix {};
@@ -2327,6 +2394,7 @@
     open_0-0-5 = callPackage ./open/0.0.5.nix {};
     opener = callPackage ./opener/1.4.1.nix {};
     opener_1-4-1 = callPackage ./opener/1.4.1.nix {};
+    opener_1-3-0 = callPackage ./opener/1.3.0.nix {};
     opn = callPackage ./opn/1.0.2.nix {};
     opn_1-0-2 = callPackage ./opn/1.0.2.nix {};
     optimist = callPackage ./optimist/0.6.1.nix {};
@@ -2571,6 +2639,7 @@
     promptly_0-2-0 = callPackage ./promptly/0.2.0.nix {};
     promzard = callPackage ./promzard/0.3.0.nix {};
     promzard_0-3-0 = callPackage ./promzard/0.3.0.nix {};
+    promzard_0-2-2 = callPackage ./promzard/0.2.2.nix {};
     propprop = callPackage ./propprop/0.3.0.nix {};
     propprop_0-3-0 = callPackage ./propprop/0.3.0.nix {};
     protagonist = callPackage ./protagonist/0.20.1.nix {};
@@ -2626,7 +2695,9 @@
     qs_1-2-2 = callPackage ./qs/1.2.2.nix {};
     qs_1-2-0 = callPackage ./qs/1.2.0.nix {};
     qs_1-0-2 = callPackage ./qs/1.0.2.nix {};
+    qs_0-6-6 = callPackage ./qs/0.6.6.nix {};
     qs_0-5-6 = callPackage ./qs/0.5.6.nix {};
+    qs_0-4-2 = callPackage ./qs/0.4.2.nix {};
     querystring = callPackage ./querystring/0.2.0.nix {};
     querystring_0-2-0 = callPackage ./querystring/0.2.0.nix {};
     querystring-es3 = callPackage ./querystring-es3/0.2.1.nix {};
@@ -2641,11 +2712,13 @@
     randombytes_2-0-1 = callPackage ./randombytes/2.0.1.nix {};
     range-parser = callPackage ./range-parser/1.0.3.nix {};
     range-parser_1-0-3 = callPackage ./range-parser/1.0.3.nix {};
+    range-parser_0-0-4 = callPackage ./range-parser/0.0.4.nix {};
     raven = callPackage ./raven/0.8.1.nix {};
     raven_0-8-1 = callPackage ./raven/0.8.1.nix {};
     raw-body = callPackage ./raw-body/2.1.4.nix {};
     raw-body_2-1-4 = callPackage ./raw-body/2.1.4.nix {};
     raw-body_2-0-2 = callPackage ./raw-body/2.0.2.nix {};
+    raw-body_1-1-2 = callPackage ./raw-body/1.1.2.nix {};
     rc = callPackage ./rc/1.1.5.nix {};
     rc_1-1-5 = callPackage ./rc/1.1.5.nix {};
     rc_0-5-5 = callPackage ./rc/0.5.5.nix {};
@@ -2662,12 +2735,15 @@
     read-cmd-shim_1-0-1 = callPackage ./read-cmd-shim/1.0.1.nix {};
     read-installed = callPackage ./read-installed/4.0.3.nix {};
     read-installed_4-0-3 = callPackage ./read-installed/4.0.3.nix {};
+    read-installed_0-2-5 = callPackage ./read-installed/0.2.5.nix {};
     read-only-stream = callPackage ./read-only-stream/2.0.0.nix {};
     read-only-stream_2-0-0 = callPackage ./read-only-stream/2.0.0.nix {};
     read-only-stream_1-1-1 = callPackage ./read-only-stream/1.1.1.nix {};
     read-package-json = callPackage ./read-package-json/2.0.3.nix {};
     read-package-json_2-0-3 = callPackage ./read-package-json/2.0.3.nix {};
     read-package-json_2-0-2 = callPackage ./read-package-json/2.0.2.nix {};
+    read-package-json_1-3-3 = callPackage ./read-package-json/1.3.3.nix {};
+    read-package-json_1-1-9 = callPackage ./read-package-json/1.1.9.nix {};
     read-package-tree = callPackage ./read-package-tree/5.1.2.nix {};
     read-package-tree_5-1-2 = callPackage ./read-package-tree/5.1.2.nix {};
     read-pkg = callPackage ./read-pkg/1.1.0.nix {};
@@ -2747,6 +2823,9 @@
     request_2-51-0 = callPackage ./request/2.51.0.nix {};
     request_2-42-0 = callPackage ./request/2.42.0.nix {};
     request_2-40-0 = callPackage ./request/2.40.0.nix {};
+    request_2-30-0 = callPackage ./request/2.30.0.nix {};
+    request_2-27-0 = callPackage ./request/2.27.0.nix {};
+    request_2-16-6 = callPackage ./request/2.16.6.nix {};
     request-progress = callPackage ./request-progress/2.0.1.nix {};
     request-progress_2-0-1 = callPackage ./request-progress/2.0.1.nix {};
     request-progress_0-3-1 = callPackage ./request-progress/0.3.1.nix {};
@@ -2824,6 +2903,7 @@
     semver_5-0-3 = callPackage ./semver/5.0.3.nix {};
     semver_4-3-6 = callPackage ./semver/4.3.6.nix {};
     semver_2-3-2 = callPackage ./semver/2.3.2.nix {};
+    semver_2-2-1 = callPackage ./semver/2.2.1.nix {};
     semver_1-0-14 = callPackage ./semver/1.0.14.nix {};
     semver-diff = callPackage ./semver-diff/2.1.0.nix {};
     semver-diff_2-1-0 = callPackage ./semver-diff/2.1.0.nix {};
@@ -2831,6 +2911,7 @@
     send = callPackage ./send/0.13.0.nix {};
     send_0-13-0 = callPackage ./send/0.13.0.nix {};
     send_0-11-1 = callPackage ./send/0.11.1.nix {};
+    send_0-1-4 = callPackage ./send/0.1.4.nix {};
     sentence-case = callPackage ./sentence-case/1.1.3.nix {};
     sentence-case_1-1-3 = callPackage ./sentence-case/1.1.3.nix {};
     sequencify = callPackage ./sequencify/0.0.7.nix {};
@@ -2848,6 +2929,7 @@
     setimmediate_1-0-4 = callPackage ./setimmediate/1.0.4.nix {};
     sha = callPackage ./sha/2.0.1.nix {};
     sha_2-0-1 = callPackage ./sha/2.0.1.nix {};
+    sha_1-2-4 = callPackage ./sha/1.2.4.nix {};
     sha-js = callPackage ./sha-js/2.4.4.nix {};
     sha-js_2-4-4 = callPackage ./sha-js/2.4.4.nix {};
     sha-js_2-2-6 = callPackage ./sha-js/2.2.6.nix {};
@@ -2916,6 +2998,7 @@
     sntp = callPackage ./sntp/1.0.9.nix {};
     sntp_1-0-9 = callPackage ./sntp/1.0.9.nix {};
     sntp_0-2-4 = callPackage ./sntp/0.2.4.nix {};
+    sntp_0-1-4 = callPackage ./sntp/0.1.4.nix {};
     socket-io = callPackage ./socket-io/1.4.5.nix {};
     socket-io_1-4-5 = callPackage ./socket-io/1.4.5.nix {};
     socket-io_1-3-7 = callPackage ./socket-io/1.3.7.nix {};
@@ -3096,6 +3179,7 @@
     tar = callPackage ./tar/2.2.1.nix {};
     tar_2-2-1 = callPackage ./tar/2.2.1.nix {};
     tar_1-0-3 = callPackage ./tar/1.0.3.nix {};
+    tar_0-1-20 = callPackage ./tar/0.1.20.nix {};
     tar-fs = callPackage ./tar-fs/1.8.1.nix {};
     tar-fs_1-8-1 = callPackage ./tar-fs/1.8.1.nix {};
     tar-fs_0-5-2 = callPackage ./tar-fs/0.5.2.nix {};
@@ -3166,6 +3250,7 @@
     tough-cookie_2-2-1 = callPackage ./tough-cookie/2.2.1.nix {};
     tough-cookie_1-2-0 = callPackage ./tough-cookie/1.2.0.nix {};
     tough-cookie_0-12-1 = callPackage ./tough-cookie/0.12.1.nix {};
+    tough-cookie_0-9-15 = callPackage ./tough-cookie/0.9.15.nix {};
     tr46 = callPackage ./tr46/0.0.2.nix {};
     tr46_0-0-2 = callPackage ./tr46/0.0.2.nix {};
     transformers = callPackage ./transformers/2.1.0.nix {};
@@ -3190,6 +3275,8 @@
     tunnel-agent = callPackage ./tunnel-agent/0.4.2.nix {};
     tunnel-agent_0-4-2 = callPackage ./tunnel-agent/0.4.2.nix {};
     tunnel-agent_0-4-1 = callPackage ./tunnel-agent/0.4.1.nix {};
+    tunnel-agent_0-3-0 = callPackage ./tunnel-agent/0.3.0.nix {};
+    tunnel-agent_0-2-0 = callPackage ./tunnel-agent/0.2.0.nix {};
     tv4 = callPackage ./tv4/1.1.12.nix {};
     tv4_1-1-12 = callPackage ./tv4/1.1.12.nix {};
     tv4_1-0-18 = callPackage ./tv4/1.0.18.nix {};
@@ -3229,6 +3316,8 @@
     uid-number_0-0-3 = callPackage ./uid-number/0.0.3.nix {};
     uid-safe = callPackage ./uid-safe/2.0.0.nix {};
     uid-safe_2-0-0 = callPackage ./uid-safe/2.0.0.nix {};
+    uid2 = callPackage ./uid2/0.0.3.nix {};
+    uid2_0-0-3 = callPackage ./uid2/0.0.3.nix {};
     ultron = callPackage ./ultron/1.0.2.nix {};
     ultron_1-0-2 = callPackage ./ultron/1.0.2.nix {};
     umask = callPackage ./umask/1.1.0.nix {};
@@ -3242,6 +3331,7 @@
     underscore_1-7-0 = callPackage ./underscore/1.7.0.nix {};
     underscore_1-6-0 = callPackage ./underscore/1.6.0.nix {};
     underscore_1-5-2 = callPackage ./underscore/1.5.2.nix {};
+    underscore_1-4-4 = callPackage ./underscore/1.4.4.nix {};
     underscore-string = callPackage ./underscore-string/3.2.2.nix {};
     underscore-string_3-2-2 = callPackage ./underscore-string/3.2.2.nix {};
     underscore-string_2-4-0 = callPackage ./underscore-string/2.4.0.nix {};
@@ -3288,6 +3378,8 @@
     url-regex_2-1-3 = callPackage ./url-regex/2.1.3.nix {};
     url-template = callPackage ./url-template/2.0.6.nix {};
     url-template_2-0-6 = callPackage ./url-template/2.0.6.nix {};
+    usage = callPackage ./usage/0.3.10.nix {};
+    usage_0-3-10 = callPackage ./usage/0.3.10.nix {};
     user-home = callPackage ./user-home/2.0.0.nix {};
     user-home_2-0-0 = callPackage ./user-home/2.0.0.nix {};
     user-home_1-1-1 = callPackage ./user-home/1.1.1.nix {};
@@ -3381,6 +3473,7 @@
     whatwg-url-compat_0-6-5 = callPackage ./whatwg-url-compat/0.6.5.nix {};
     when = callPackage ./when/3.7.5.nix {};
     when_3-7-5 = callPackage ./when/3.7.5.nix {};
+    when_2-4-0 = callPackage ./when/2.4.0.nix {};
     which = callPackage ./which/1.2.4.nix {};
     which_1-2-4 = callPackage ./which/1.2.4.nix {};
     which_1-2-0 = callPackage ./which/1.2.0.nix {};
@@ -3395,6 +3488,7 @@
     winston_1-1-2 = callPackage ./winston/1.1.2.nix {};
     winston_0-9-0 = callPackage ./winston/0.9.0.nix {};
     winston_0-8-3 = callPackage ./winston/0.8.3.nix {};
+    winston_0-7-3 = callPackage ./winston/0.7.3.nix {};
     wiredep = callPackage ./wiredep/2.2.2.nix {};
     wiredep_2-2-2 = callPackage ./wiredep/2.2.2.nix {};
     "with" = callPackage ./with/4.0.3.nix {};
