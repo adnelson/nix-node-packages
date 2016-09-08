@@ -6,6 +6,15 @@ buildNodePackage {
       url = "https://registry.npmjs.org/npm/-/npm-1.3.26.tgz";
       sha1 = "bc07bf7cb58710078141c885c2d492fd570f606d";
     };
+    patchPhase = ''
+      python <<EOF
+      import json
+      pkg_json = json.load(open('package.json'))
+      del pkg_json['scripts']
+      open('package.json', 'w').write(json.dumps(pkg_json))
+      print("Removed scripts from package json file")
+      EOF
+    '';
     deps = with nodePackages; [
       fstream-npm_0-1-8
       lockfile_0-4-3
@@ -54,6 +63,7 @@ buildNodePackage {
       semver_2-2-1
       opener_1-3-0
       path-is-inside_1-0-1
+      normalize-package-data_2-3-5
     ];
     meta = {
       homepage = "https://npmjs.org/doc/";

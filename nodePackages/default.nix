@@ -521,7 +521,8 @@
     clone_0-2-0 = callPackage ./clone/0.2.0.nix {};
     clone-stats = callPackage ./clone-stats/0.0.1.nix {};
     clone-stats_0-0-1 = callPackage ./clone-stats/0.0.1.nix {};
-    cluster2 = callPackage ./cluster2/0.4.26.nix {};
+    cluster2 = callPackage ./cluster2/0.5.0.nix {};
+    cluster2_0-5-0 = callPackage ./cluster2/0.5.0.nix {};
     cluster2_0-4-26 = callPackage ./cluster2/0.4.26.nix {};
     cmd-shim = callPackage ./cmd-shim/2.0.1.nix {};
     cmd-shim_2-0-1 = callPackage ./cmd-shim/2.0.1.nix {};
@@ -2116,6 +2117,8 @@
     memory-fs = callPackage ./memory-fs/0.3.0.nix {};
     memory-fs_0-3-0 = callPackage ./memory-fs/0.3.0.nix {};
     memory-fs_0-2-0 = callPackage ./memory-fs/0.2.0.nix {};
+    memwatch = callPackage ./memwatch/0.2.2.nix {};
+    memwatch_0-2-2 = callPackage ./memwatch/0.2.2.nix {};
     meow = callPackage ./meow/3.6.0.nix {};
     meow_3-6-0 = callPackage ./meow/3.6.0.nix {};
     meow_2-1-0 = callPackage ./meow/2.1.0.nix {};
@@ -3399,7 +3402,8 @@
     url-regex_2-1-3 = callPackage ./url-regex/2.1.3.nix {};
     url-template = callPackage ./url-template/2.0.6.nix {};
     url-template_2-0-6 = callPackage ./url-template/2.0.6.nix {};
-    usage = callPackage ./usage/0.3.10.nix {};
+    usage = callPackage ./usage/0.7.1.nix {};
+    usage_0-7-1 = callPackage ./usage/0.7.1.nix {};
     usage_0-3-10 = callPackage ./usage/0.3.10.nix {};
     user-home = callPackage ./user-home/2.0.0.nix {};
     user-home_2-0-0 = callPackage ./user-home/2.0.0.nix {};

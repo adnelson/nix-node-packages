@@ -2,9 +2,10 @@
 buildNodePackage {
     name = "grunt-nodemon";
     version = "0.1.2";
+    buildInputs = [pkgs.unzip];
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/grunt-nodemon/-/grunt-nodemon-0.1.2.tgz";
-      sha1 = "fe79eedb23a14ebc120e5b2e22b2389f2e16a474";
+      url = "https://github.com/ChrisWren/grunt-nodemon/archive/0.1.2.zip";
+      sha1 = "kf3gg0ahfkhngz77hpq58xkz1bdq8lis";
     };
     deps = with nodePackages; [
       nodemon_0-7-10
