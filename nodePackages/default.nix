@@ -540,6 +540,7 @@
     coffee-script_1-8-0 = callPackage ./coffee-script/1.8.0.nix {};
     coffee-script_1-7-1 = callPackage ./coffee-script/1.7.1.nix {};
     coffee-script_1-7-0 = callPackage ./coffee-script/1.7.0.nix {};
+    coffee-script_1-6-3 = callPackage ./coffee-script/1.6.3.nix {};
     coffee-script_1-3-3 = callPackage ./coffee-script/1.3.3.nix {};
     coffeelint = callPackage ./coffeelint/1.14.1.nix {};
     coffeelint_1-14-1 = callPackage ./coffeelint/1.14.1.nix {};
@@ -661,6 +662,7 @@
     cookie-signature_1-0-1 = callPackage ./cookie-signature/1.0.1.nix {};
     cookiejar = callPackage ./cookiejar/2.0.1.nix {};
     cookiejar_2-0-1 = callPackage ./cookiejar/2.0.1.nix {};
+    cookiejar_1-3-2 = callPackage ./cookiejar/1.3.2.nix {};
     cookies = callPackage ./cookies/0.5.0.nix {};
     cookies_0-5-0 = callPackage ./cookies/0.5.0.nix {};
     copy-dereference = callPackage ./copy-dereference/1.0.0.nix {};
@@ -1136,6 +1138,7 @@
     form-data_0-2-0 = callPackage ./form-data/0.2.0.nix {};
     form-data_0-1-4 = callPackage ./form-data/0.1.4.nix {};
     form-data_0-1-3 = callPackage ./form-data/0.1.3.nix {};
+    form-data_0-1-2 = callPackage ./form-data/0.1.2.nix {};
     form-data_0-0-10 = callPackage ./form-data/0.0.10.nix {};
     formatio = callPackage ./formatio/1.1.1.nix {};
     formatio_1-1-1 = callPackage ./formatio/1.1.1.nix {};
@@ -1189,6 +1192,7 @@
     gavel_0-5-2 = callPackage ./gavel/0.5.2.nix {};
     gaze = callPackage ./gaze/0.5.2.nix {};
     gaze_0-5-2 = callPackage ./gaze/0.5.2.nix {};
+    gaze_0-4-3 = callPackage ./gaze/0.4.3.nix {};
     gc-stats = callPackage ./gc-stats/0.0.6.nix {};
     gc-stats_0-0-6 = callPackage ./gc-stats/0.0.6.nix {};
     generate-function = callPackage ./generate-function/2.0.0.nix {};
@@ -1296,12 +1300,15 @@
     grunt-coffeelint_0-0-13 = callPackage ./grunt-coffeelint/0.0.13.nix {};
     grunt-concurrent = callPackage ./grunt-concurrent/1.0.1.nix {};
     grunt-concurrent_1-0-1 = callPackage ./grunt-concurrent/1.0.1.nix {};
+    grunt-concurrent_0-3-1 = callPackage ./grunt-concurrent/0.3.1.nix {};
     grunt-continue = callPackage ./grunt-continue/0.1.0.nix {};
     grunt-continue_0-1-0 = callPackage ./grunt-continue/0.1.0.nix {};
     grunt-contrib-clean = callPackage ./grunt-contrib-clean/0.6.0.nix {};
     grunt-contrib-clean_0-6-0 = callPackage ./grunt-contrib-clean/0.6.0.nix {};
+    grunt-contrib-clean_0-5-0 = callPackage ./grunt-contrib-clean/0.5.0.nix {};
     grunt-contrib-coffee = callPackage ./grunt-contrib-coffee/0.12.0.nix {};
     grunt-contrib-coffee_0-12-0 = callPackage ./grunt-contrib-coffee/0.12.0.nix {};
+    grunt-contrib-coffee_0-7-0 = callPackage ./grunt-contrib-coffee/0.7.0.nix {};
     grunt-contrib-concat = callPackage ./grunt-contrib-concat/0.5.1.nix {};
     grunt-contrib-concat_0-5-1 = callPackage ./grunt-contrib-concat/0.5.1.nix {};
     grunt-contrib-connect = callPackage ./grunt-contrib-connect/0.11.2.nix {};
@@ -1316,6 +1323,7 @@
     grunt-contrib-uglify_0-7-0 = callPackage ./grunt-contrib-uglify/0.7.0.nix {};
     grunt-contrib-watch = callPackage ./grunt-contrib-watch/0.6.1.nix {};
     grunt-contrib-watch_0-6-1 = callPackage ./grunt-contrib-watch/0.6.1.nix {};
+    grunt-contrib-watch_0-5-3 = callPackage ./grunt-contrib-watch/0.5.3.nix {};
     grunt-install-dependencies = callPackage ./grunt-install-dependencies/0.2.0.nix {};
     grunt-install-dependencies_0-2-0 = callPackage ./grunt-install-dependencies/0.2.0.nix {};
     grunt-istanbul = callPackage ./grunt-istanbul/0.6.2.nix {};
@@ -1334,6 +1342,7 @@
     grunt-newer_1-1-2 = callPackage ./grunt-newer/1.1.2.nix {};
     grunt-nodemon = callPackage ./grunt-nodemon/0.4.1.nix {};
     grunt-nodemon_0-4-1 = callPackage ./grunt-nodemon/0.4.1.nix {};
+    grunt-nodemon_0-1-2 = callPackage ./grunt-nodemon/0.1.2.nix {};
     grunt-nose = callPackage ./grunt-nose/1.0.1.nix {};
     grunt-nose_1-0-1 = callPackage ./grunt-nose/1.0.1.nix {};
     grunt-protractor-coverage = callPackage ./grunt-protractor-coverage/0.2.17.nix {};
@@ -1862,6 +1871,8 @@
     line-numbers_0-2-0 = callPackage ./line-numbers/0.2.0.nix {};
     linkify-it = callPackage ./linkify-it/1.2.0.nix {};
     linkify-it_1-2-0 = callPackage ./linkify-it/1.2.0.nix {};
+    load-grunt-tasks = callPackage ./load-grunt-tasks/0.1.3.nix {};
+    load-grunt-tasks_0-1-3 = callPackage ./load-grunt-tasks/0.1.3.nix {};
     load-json-file = callPackage ./load-json-file/1.1.0.nix {};
     load-json-file_1-1-0 = callPackage ./load-json-file/1.1.0.nix {};
     loader-utils = callPackage ./loader-utils/0.2.12.nix {};
@@ -1882,6 +1893,7 @@
     lodash_3-1-0 = callPackage ./lodash/3.1.0.nix {};
     lodash_3-0-1 = callPackage ./lodash/3.0.1.nix {};
     lodash_2-4-2 = callPackage ./lodash/2.4.2.nix {};
+    lodash_2-2-1 = callPackage ./lodash/2.2.1.nix {};
     lodash_1-0-2 = callPackage ./lodash/1.0.2.nix {};
     lodash_0-9-2 = callPackage ./lodash/0.9.2.nix {};
     lodash-_arraycopy = callPackage ./lodash-_arraycopy/3.0.0.nix {};
@@ -2052,6 +2064,7 @@
     lpad = callPackage ./lpad/2.0.1.nix {};
     lpad_2-0-1 = callPackage ./lpad/2.0.1.nix {};
     lpad_1-0-0 = callPackage ./lpad/1.0.0.nix {};
+    lpad_0-1-0 = callPackage ./lpad/0.1.0.nix {};
     lpad-align = callPackage ./lpad-align/1.1.0.nix {};
     lpad-align_1-1-0 = callPackage ./lpad-align/1.1.0.nix {};
     lru-cache = callPackage ./lru-cache/2.7.3.nix {};
@@ -2120,7 +2133,9 @@
     methods = callPackage ./methods/1.1.1.nix {};
     methods_1-1-1 = callPackage ./methods/1.1.1.nix {};
     methods_1-0-1 = callPackage ./methods/1.0.1.nix {};
+    methods_1-0-0 = callPackage ./methods/1.0.0.nix {};
     methods_0-1-0 = callPackage ./methods/0.1.0.nix {};
+    methods_0-0-1 = callPackage ./methods/0.0.1.nix {};
     micromatch = callPackage ./micromatch/2.3.2.nix {};
     micromatch_2-3-2 = callPackage ./micromatch/2.3.2.nix {};
     miller-rabin = callPackage ./miller-rabin/4.0.0.nix {};
@@ -2128,6 +2143,7 @@
     mime = callPackage ./mime/1.3.4.nix {};
     mime_1-3-4 = callPackage ./mime/1.3.4.nix {};
     mime_1-2-11 = callPackage ./mime/1.2.11.nix {};
+    mime_1-2-5 = callPackage ./mime/1.2.5.nix {};
     mime_1-2-4 = callPackage ./mime/1.2.4.nix {};
     mime-db = callPackage ./mime-db/1.21.0.nix {};
     mime-db_1-21-0 = callPackage ./mime-db/1.21.0.nix {};
@@ -2292,6 +2308,7 @@
     nodemon = callPackage ./nodemon/1.8.1.nix {};
     nodemon_1-8-1 = callPackage ./nodemon/1.8.1.nix {};
     nodemon_1-3-0-7 = callPackage ./nodemon/1.3.0-7.nix {};
+    nodemon_0-7-10 = callPackage ./nodemon/0.7.10.nix {};
     nomnom = callPackage ./nomnom/1.8.1.nix {};
     nomnom_1-8-1 = callPackage ./nomnom/1.8.1.nix {};
     nopt = callPackage ./nopt/3.0.6.nix {};
@@ -3151,8 +3168,10 @@
     superagent = callPackage ./superagent/1.4.0.nix {};
     superagent_1-4-0 = callPackage ./superagent/1.4.0.nix {};
     superagent_0-21-0 = callPackage ./superagent/0.21.0.nix {};
+    superagent_0-18-0 = callPackage ./superagent/0.18.0.nix {};
     supertest = callPackage ./supertest/0.15.0.nix {};
     supertest_0-15-0 = callPackage ./supertest/0.15.0.nix {};
+    supertest_0-12-1 = callPackage ./supertest/0.12.1.nix {};
     supports-color = callPackage ./supports-color/3.1.2.nix {};
     supports-color_3-1-2 = callPackage ./supports-color/3.1.2.nix {};
     supports-color_2-0-0 = callPackage ./supports-color/2.0.0.nix {};
@@ -3219,6 +3238,8 @@
     timers-browserify_1-4-1 = callPackage ./timers-browserify/1.4.1.nix {};
     timers-ext = callPackage ./timers-ext/0.1.0.nix {};
     timers-ext_0-1-0 = callPackage ./timers-ext/0.1.0.nix {};
+    tiny-lr = callPackage ./tiny-lr/0.0.4.nix {};
+    tiny-lr_0-0-4 = callPackage ./tiny-lr/0.0.4.nix {};
     tiny-lr-fork = callPackage ./tiny-lr-fork/0.0.5.nix {};
     tiny-lr-fork_0-0-5 = callPackage ./tiny-lr-fork/0.0.5.nix {};
     tinycolor = callPackage ./tinycolor/0.0.1.nix {};
