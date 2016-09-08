@@ -1,0 +1,12 @@
+--- lib/jsdom/level1/core.js	2014-07-01 00:20:36.000000000 +0000
++++ lib/jsdom/level1/core.js.new	2016-09-08 18:55:59.385000000 +0000
+@@ -233,6 +233,9 @@
+     this._update();
+     return this._length || 0;
+   },
++  set length(length) {
++    return this._length;
++  },
+   item: function(index) {
+     this._update();
+     return this[index] || null;
