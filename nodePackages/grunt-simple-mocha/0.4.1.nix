@@ -6,6 +6,7 @@ buildNodePackage {
       url = "https://registry.npmjs.org/grunt-simple-mocha/-/grunt-simple-mocha-0.4.1.tgz";
       sha1 = "579449249eaf0a81878fa72f3edab5145d45fd77";
     };
+    postPatch = "touch grunt.js";
     deps = with nodePackages; [
       mocha_2-4-5
     ];

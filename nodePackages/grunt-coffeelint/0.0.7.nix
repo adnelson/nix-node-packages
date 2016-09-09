@@ -6,6 +6,7 @@ buildNodePackage {
       url = "https://registry.npmjs.org/grunt-coffeelint/-/grunt-coffeelint-0.0.7.tgz";
       sha1 = "0cc59bb103935d02f228a6548d30c844131ae8a2";
     };
+    postPatch = "touch grunt.js";
     deps = with nodePackages; [
       coffeelint_0-5-7
     ];
