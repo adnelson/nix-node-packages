@@ -381,6 +381,7 @@
     browserify-zlib_0-1-4 = callPackage ./browserify-zlib/0.1.4.nix {};
     bson = callPackage ./bson/0.4.19.nix {};
     bson_0-4-19 = callPackage ./bson/0.4.19.nix {};
+    bson_0-2-22 = callPackage ./bson/0.2.22.nix {};
     buffer = callPackage ./buffer/3.5.2.nix {};
     buffer_3-5-2 = callPackage ./buffer/3.5.2.nix {};
     buffer-browserify = callPackage ./buffer-browserify/0.0.5.nix {};
@@ -389,6 +390,8 @@
     buffer-crc32_0-2-5 = callPackage ./buffer-crc32/0.2.5.nix {};
     buffer-crc32_0-2-1 = callPackage ./buffer-crc32/0.2.1.nix {};
     buffer-crc32_0-1-1 = callPackage ./buffer-crc32/0.1.1.nix {};
+    buffer-shims = callPackage ./buffer-shims/1.0.0.nix {};
+    buffer-shims_1-0-0 = callPackage ./buffer-shims/1.0.0.nix {};
     buffer-to-vinyl = callPackage ./buffer-to-vinyl/1.1.0.nix {};
     buffer-to-vinyl_1-1-0 = callPackage ./buffer-to-vinyl/1.1.0.nix {};
     buffer-writer = callPackage ./buffer-writer/1.0.0.nix {};
@@ -1677,7 +1680,8 @@
     is-valid-glob_0-3-0 = callPackage ./is-valid-glob/0.3.0.nix {};
     is-zip = callPackage ./is-zip/1.0.0.nix {};
     is-zip_1-0-0 = callPackage ./is-zip/1.0.0.nix {};
-    isarray = callPackage ./isarray/0.0.1.nix {};
+    isarray = callPackage ./isarray/1.0.0.nix {};
+    isarray_1-0-0 = callPackage ./isarray/1.0.0.nix {};
     isarray_0-0-1 = callPackage ./isarray/0.0.1.nix {};
     isbinaryfile = callPackage ./isbinaryfile/3.0.0.nix {};
     isbinaryfile_3-0-0 = callPackage ./isbinaryfile/3.0.0.nix {};
@@ -1819,6 +1823,7 @@
     karma-sinon-chai_0-3-2 = callPackage ./karma-sinon-chai/0.3.2.nix {};
     kerberos = callPackage ./kerberos/0.0.17.nix {};
     kerberos_0-0-17 = callPackage ./kerberos/0.0.17.nix {};
+    kerberos_0-0-4 = callPackage ./kerberos/0.0.4.nix {};
     kew = callPackage ./kew/0.7.0.nix {};
     kew_0-7-0 = callPackage ./kew/0.7.0.nix {};
     key-mirror = callPackage ./key-mirror/1.0.1.nix {};
@@ -2234,8 +2239,11 @@
     moment-timezone_0-0-2 = callPackage ./moment-timezone/0.0.2.nix {};
     mongodb = callPackage ./mongodb/2.0.49.nix {};
     mongodb_2-0-49 = callPackage ./mongodb/2.0.49.nix {};
+    mongodb_1-4-15 = callPackage ./mongodb/1.4.15.nix {};
     mongodb-core = callPackage ./mongodb-core/1.2.24.nix {};
     mongodb-core_1-2-24 = callPackage ./mongodb-core/1.2.24.nix {};
+    mongojs = callPackage ./mongojs/0.14.2.nix {};
+    mongojs_0-14-2 = callPackage ./mongojs/0.14.2.nix {};
     mongoose = callPackage ./mongoose/4.2.7.nix {};
     mongoose_4-2-7 = callPackage ./mongoose/4.2.7.nix {};
     morgan = callPackage ./morgan/1.6.1.nix {};
@@ -2767,6 +2775,7 @@
     range-parser_0-0-4 = callPackage ./range-parser/0.0.4.nix {};
     raven = callPackage ./raven/0.8.1.nix {};
     raven_0-8-1 = callPackage ./raven/0.8.1.nix {};
+    raven_0-7-3 = callPackage ./raven/0.7.3.nix {};
     raw-body = callPackage ./raw-body/2.1.4.nix {};
     raw-body_2-1-4 = callPackage ./raw-body/2.1.4.nix {};
     raw-body_2-0-2 = callPackage ./raw-body/2.0.2.nix {};
@@ -2802,7 +2811,8 @@
     read-pkg_1-1-0 = callPackage ./read-pkg/1.1.0.nix {};
     read-pkg-up = callPackage ./read-pkg-up/1.0.1.nix {};
     read-pkg-up_1-0-1 = callPackage ./read-pkg-up/1.0.1.nix {};
-    readable-stream = callPackage ./readable-stream/2.0.5.nix {};
+    readable-stream = callPackage ./readable-stream/2.1.5.nix {};
+    readable-stream_2-1-5 = callPackage ./readable-stream/2.1.5.nix {};
     readable-stream_2-0-5 = callPackage ./readable-stream/2.0.5.nix {};
     readable-stream_2-0-4 = callPackage ./readable-stream/2.0.4.nix {};
     readable-stream_1-1-13-1 = callPackage ./readable-stream/1.1.13-1.nix {};
@@ -3269,6 +3279,8 @@
     through2_0-2-3 = callPackage ./through2/0.2.3.nix {};
     through2-filter = callPackage ./through2-filter/2.0.0.nix {};
     through2-filter_2-0-0 = callPackage ./through2-filter/2.0.0.nix {};
+    thunky = callPackage ./thunky/0.1.0.nix {};
+    thunky_0-1-0 = callPackage ./thunky/0.1.0.nix {};
     tildify = callPackage ./tildify/1.1.2.nix {};
     tildify_1-1-2 = callPackage ./tildify/1.1.2.nix {};
     tildify_1-0-0 = callPackage ./tildify/1.0.0.nix {};
