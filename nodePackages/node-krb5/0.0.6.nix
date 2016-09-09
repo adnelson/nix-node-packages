@@ -1,14 +1,15 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "node-krb5";
-    version = "0.0.6";
+    version = "0.0.6-nanv2";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/node-krb5/-/node-krb5-0.0.6.tgz";
-      sha1 = "92d1a65e72f831032ea614c026ab8c1f3029002c";
+      url = "https://github.com/NarrativeScience/node-krb5/archive/nan_v2.tar.gz";
+      sha1 = "bb9bm036snapayy6fy2mmhrv93kbfpv3";
     };
+    propagatedBuildInputs = [pkgs.libkrb5];
     deps = with nodePackages; [
       node-gyp_0-13-1
-      nan_1-8-4
+      nan_2-2-0
     ];
     devDependencies = [];
     meta = {

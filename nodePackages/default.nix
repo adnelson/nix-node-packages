@@ -2480,7 +2480,6 @@
     node-gyp_0-12-2 = callPackage ./node-gyp/0.12.2.nix {};
     node-krb5 = callPackage ./node-krb5/0.0.6.nix {};
     node-krb5_0-0-6 = callPackage ./node-krb5/0.0.6.nix {};
-    node-krb5_0-0-5 = callPackage ./node-krb5/0.0.5.nix {};
     node-libs-browser = callPackage ./node-libs-browser/0.5.3.nix {};
     node-libs-browser_0-5-3 = callPackage ./node-libs-browser/0.5.3.nix {};
     node-notifier = callPackage ./node-notifier/1.2.1.nix {};

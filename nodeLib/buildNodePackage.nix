@@ -11,7 +11,7 @@
 }:
 
 let
-  inherit (pkgs) stdenv python;
+  inherit (pkgs) stdenv python file;
   inherit (pkgs.lib) showVal optional foldl;
   inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
@@ -129,10 +129,10 @@ in
   # Build inputs in addition to npm and dev dependencies.
   buildInputs ? [],
 
-  # Whether to strip debugging symbols from binaries and patch ELF executables.
-  # These should both probably be true but can be overridden.
+  # Whether to strip debugging symbols from binaries.
+  # This normally shouldn't be necessary but it can be enabled if desired.
   # Doc for details: https://nixos.org/wiki/NixPkgs_Standard_Environment.
-  dontStrip ? true, dontPatchELF ? true,
+  dontStrip ? true,
 
   # Optional attributes to pass through to downstream derivations.
   passthru ? {},
@@ -488,7 +488,6 @@ let
         checkPhase
         configurePhase
         doCheck
-        dontPatchELF
         dontStrip
         fullName
         installPhase
@@ -617,7 +616,7 @@ let
       # additional specified build inputs. In addition, on darwin we
       # provide XCode, since node-gyp will use it, and on linux we add
       # utillinux.
-      buildInputs = [npm python] ++
+      buildInputs = [npm python file] ++
                     attrValues _devDependencies ++
                     buildInputs ++
                     (optional stdenv.isLinux pkgs.utillinux) ++
