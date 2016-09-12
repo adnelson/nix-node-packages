@@ -10,6 +10,7 @@ buildNodePackage {
       browserify-shim_2-0-10
       browserify_2-27-1
     ];
+    postPatch = "touch grunt.js";
     peerDependencies = with nodePackages; [
       grunt_0-4-5
     ];

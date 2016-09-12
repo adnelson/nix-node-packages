@@ -17,7 +17,7 @@ buildNodePackage {
       browser-resolve_1-2-4
       detective_3-1-0
       parents_0-0-2
-      readable-stream_1-1-13-1
+      readable-stream_1-0-27-1
       stream-combiner_0-1-0
     ];
     meta = {
