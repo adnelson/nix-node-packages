@@ -5,6 +5,9 @@
     JSONStream = callPackage ./JSONStream/1.0.7.nix {};
     JSONStream_1-0-7 = callPackage ./JSONStream/1.0.7.nix {};
     JSONStream_0-10-0 = callPackage ./JSONStream/0.10.0.nix {};
+    JSONStream_0-7-4 = callPackage ./JSONStream/0.7.4.nix {};
+    JSONStream_0-6-4 = callPackage ./JSONStream/0.6.4.nix {};
+    JSONStream_0-4-4 = callPackage ./JSONStream/0.4.4.nix {};
     JSV = callPackage ./JSV/4.0.2.nix {};
     JSV_4-0-2 = callPackage ./JSV/4.0.2.nix {};
     abab = callPackage ./abab/1.0.1.nix {};
@@ -93,6 +96,10 @@
     aproba_1-0-1 = callPackage ./aproba/1.0.1.nix {};
     archive-type = callPackage ./archive-type/3.0.2.nix {};
     archive-type_3-0-2 = callPackage ./archive-type/3.0.2.nix {};
+    archiver = callPackage ./archiver/1.0.1.nix {};
+    archiver_1-0-1 = callPackage ./archiver/1.0.1.nix {};
+    archiver-utils = callPackage ./archiver-utils/1.3.0.nix {};
+    archiver-utils_1-3-0 = callPackage ./archiver-utils/1.3.0.nix {};
     archy = callPackage ./archy/1.0.0.nix {};
     archy_1-0-0 = callPackage ./archy/1.0.0.nix {};
     archy_0-0-2 = callPackage ./archy/0.0.2.nix {};
@@ -147,6 +154,7 @@
     asn1-js_4-0-0 = callPackage ./asn1-js/4.0.0.nix {};
     "assert" = callPackage ./assert/1.3.0.nix {};
     assert_1-3-0 = callPackage ./assert/1.3.0.nix {};
+    assert_1-1-2 = callPackage ./assert/1.1.2.nix {};
     assert-plus = callPackage ./assert-plus/0.2.0.nix {};
     assert-plus_0-2-0 = callPackage ./assert-plus/0.2.0.nix {};
     assert-plus_0-1-5 = callPackage ./assert-plus/0.1.5.nix {};
@@ -161,6 +169,7 @@
     ast-types_0-8-12 = callPackage ./ast-types/0.8.12.nix {};
     astw = callPackage ./astw/2.0.0.nix {};
     astw_2-0-0 = callPackage ./astw/2.0.0.nix {};
+    astw_0-0-0 = callPackage ./astw/0.0.0.nix {};
     async = callPackage ./async/2.0.1.nix {};
     async_2-0-1 = callPackage ./async/2.0.1.nix {};
     async_1-5-2 = callPackage ./async/1.5.2.nix {};
@@ -183,6 +192,7 @@
     aws-sdk_2-3-8 = callPackage ./aws-sdk/2.3.8.nix {};
     aws-sdk_2-2-35 = callPackage ./aws-sdk/2.2.35.nix {};
     aws-sdk_2-2-18 = callPackage ./aws-sdk/2.2.18.nix {};
+    aws-sdk_2-0-31 = callPackage ./aws-sdk/2.0.31.nix {};
     aws-sdk_1-13-0 = callPackage ./aws-sdk/1.13.0.nix {};
     aws-sdk-mock = callPackage ./aws-sdk-mock/1.1.0.nix {};
     aws-sdk-mock_1-1-0 = callPackage ./aws-sdk-mock/1.1.0.nix {};
@@ -321,6 +331,7 @@
     bluebird_3-4-6 = callPackage ./bluebird/3.4.6.nix {};
     bluebird_3-3-5 = callPackage ./bluebird/3.3.5.nix {};
     bluebird_3-3-4 = callPackage ./bluebird/3.3.4.nix {};
+    bluebird_3-1-5 = callPackage ./bluebird/3.1.5.nix {};
     bluebird_3-0-5 = callPackage ./bluebird/3.0.5.nix {};
     bluebird_2-10-2 = callPackage ./bluebird/2.10.2.nix {};
     bluebird_2-9-26 = callPackage ./bluebird/2.9.26.nix {};
@@ -380,17 +391,25 @@
     broccoli-plugin_1-2-1 = callPackage ./broccoli-plugin/1.2.1.nix {};
     brorand = callPackage ./brorand/1.0.5.nix {};
     brorand_1-0-5 = callPackage ./brorand/1.0.5.nix {};
+    browser-builtins = callPackage ./browser-builtins/1.0.7.nix {};
+    browser-builtins_1-0-7 = callPackage ./browser-builtins/1.0.7.nix {};
     browser-pack = callPackage ./browser-pack/6.0.1.nix {};
     browser-pack_6-0-1 = callPackage ./browser-pack/6.0.1.nix {};
     browser-pack_5-0-1 = callPackage ./browser-pack/5.0.1.nix {};
+    browser-pack_2-0-1 = callPackage ./browser-pack/2.0.1.nix {};
+    browser-pack_0-10-2 = callPackage ./browser-pack/0.10.2.nix {};
     browser-request = callPackage ./browser-request/0.3.3.nix {};
     browser-request_0-3-3 = callPackage ./browser-request/0.3.3.nix {};
     browser-resolve = callPackage ./browser-resolve/1.10.1.nix {};
     browser-resolve_1-10-1 = callPackage ./browser-resolve/1.10.1.nix {};
+    browser-resolve_1-2-4 = callPackage ./browser-resolve/1.2.4.nix {};
+    browser-resolve_1-1-4 = callPackage ./browser-resolve/1.1.4.nix {};
     browserify = callPackage ./browserify/12.0.1.nix {};
     browserify_12-0-1 = callPackage ./browserify/12.0.1.nix {};
     browserify_11-2-0 = callPackage ./browserify/11.2.0.nix {};
     browserify_10-2-6 = callPackage ./browserify/10.2.6.nix {};
+    browserify_3-46-1 = callPackage ./browserify/3.46.1.nix {};
+    browserify_2-27-1 = callPackage ./browserify/2.27.1.nix {};
     browserify_1-18-0 = callPackage ./browserify/1.18.0.nix {};
     browserify-aes = callPackage ./browserify-aes/1.0.5.nix {};
     browserify-aes_1-0-5 = callPackage ./browserify-aes/1.0.5.nix {};
@@ -404,6 +423,8 @@
     browserify-incremental_3-0-1 = callPackage ./browserify-incremental/3.0.1.nix {};
     browserify-rsa = callPackage ./browserify-rsa/4.0.0.nix {};
     browserify-rsa_4-0-0 = callPackage ./browserify-rsa/4.0.0.nix {};
+    browserify-shim = callPackage ./browserify-shim/2.0.10.nix {};
+    browserify-shim_2-0-10 = callPackage ./browserify-shim/2.0.10.nix {};
     browserify-sign = callPackage ./browserify-sign/4.0.0.nix {};
     browserify-sign_4-0-0 = callPackage ./browserify-sign/4.0.0.nix {};
     browserify-zlib = callPackage ./browserify-zlib/0.1.4.nix {};
@@ -413,7 +434,9 @@
     bson_0-2-22 = callPackage ./bson/0.2.22.nix {};
     buffer = callPackage ./buffer/3.5.2.nix {};
     buffer_3-5-2 = callPackage ./buffer/3.5.2.nix {};
-    buffer-browserify = callPackage ./buffer-browserify/0.0.5.nix {};
+    buffer_2-1-13 = callPackage ./buffer/2.1.13.nix {};
+    buffer-browserify = callPackage ./buffer-browserify/0.1.0.nix {};
+    buffer-browserify_0-1-0 = callPackage ./buffer-browserify/0.1.0.nix {};
     buffer-browserify_0-0-5 = callPackage ./buffer-browserify/0.0.5.nix {};
     buffer-crc32 = callPackage ./buffer-crc32/0.2.5.nix {};
     buffer-crc32_0-2-5 = callPackage ./buffer-crc32/0.2.5.nix {};
@@ -515,6 +538,7 @@
     chalk_0-4-0 = callPackage ./chalk/0.4.0.nix {};
     change-case = callPackage ./change-case/2.3.1.nix {};
     change-case_2-3-1 = callPackage ./change-case/2.3.1.nix {};
+    change-case_2-1-6 = callPackage ./change-case/2.1.6.nix {};
     character-parser = callPackage ./character-parser/1.2.1.nix {};
     character-parser_1-2-1 = callPackage ./character-parser/1.2.1.nix {};
     charm = callPackage ./charm/0.1.2.nix {};
@@ -589,6 +613,8 @@
     coffee-script_1-6-3 = callPackage ./coffee-script/1.6.3.nix {};
     coffee-script_1-4-0 = callPackage ./coffee-script/1.4.0.nix {};
     coffee-script_1-3-3 = callPackage ./coffee-script/1.3.3.nix {};
+    coffeeify = callPackage ./coffeeify/1.0.0.nix {};
+    coffeeify_1-0-0 = callPackage ./coffeeify/1.0.0.nix {};
     coffeelint = callPackage ./coffeelint/1.14.1.nix {};
     coffeelint_1-14-1 = callPackage ./coffeelint/1.14.1.nix {};
     coffeelint_0-5-7 = callPackage ./coffeelint/0.5.7.nix {};
@@ -596,6 +622,12 @@
     coffeelint-min-colon-spacing_0-1-2 = callPackage ./coffeelint-min-colon-spacing/0.1.2.nix {};
     coffeelint-stylish = callPackage ./coffeelint-stylish/0.1.2.nix {};
     coffeelint-stylish_0-1-2 = callPackage ./coffeelint-stylish/0.1.2.nix {};
+    color = callPackage ./color/0.6.0.nix {};
+    color_0-6-0 = callPackage ./color/0.6.0.nix {};
+    color-convert = callPackage ./color-convert/0.2.1.nix {};
+    color-convert_0-2-1 = callPackage ./color-convert/0.2.1.nix {};
+    color-string = callPackage ./color-string/0.1.3.nix {};
+    color-string_0-1-3 = callPackage ./color-string/0.1.3.nix {};
     color-support = callPackage ./color-support/1.1.1.nix {};
     color-support_1-1-1 = callPackage ./color-support/1.1.1.nix {};
     colors = callPackage ./colors/1.1.2.nix {};
@@ -610,6 +642,8 @@
     combine-source-map = callPackage ./combine-source-map/0.7.1.nix {};
     combine-source-map_0-7-1 = callPackage ./combine-source-map/0.7.1.nix {};
     combine-source-map_0-6-1 = callPackage ./combine-source-map/0.6.1.nix {};
+    combine-source-map_0-3-0 = callPackage ./combine-source-map/0.3.0.nix {};
+    combine-source-map_0-1-3 = callPackage ./combine-source-map/0.1.3.nix {};
     combined-stream = callPackage ./combined-stream/1.0.5.nix {};
     combined-stream_1-0-5 = callPackage ./combined-stream/1.0.5.nix {};
     combined-stream_0-0-7 = callPackage ./combined-stream/0.0.7.nix {};
@@ -638,6 +672,8 @@
     component-emitter_1-1-2 = callPackage ./component-emitter/1.1.2.nix {};
     component-inherit = callPackage ./component-inherit/0.0.3.nix {};
     component-inherit_0-0-3 = callPackage ./component-inherit/0.0.3.nix {};
+    compress-commons = callPackage ./compress-commons/1.1.0.nix {};
+    compress-commons_1-1-0 = callPackage ./compress-commons/1.1.0.nix {};
     compressible = callPackage ./compressible/2.0.6.nix {};
     compressible_2-0-6 = callPackage ./compressible/2.0.6.nix {};
     compression = callPackage ./compression/1.6.0.nix {};
@@ -683,6 +719,7 @@
     connection-parse_0-0-7 = callPackage ./connection-parse/0.0.7.nix {};
     console-browserify = callPackage ./console-browserify/1.1.0.nix {};
     console-browserify_1-1-0 = callPackage ./console-browserify/1.1.0.nix {};
+    console-browserify_1-0-3 = callPackage ./console-browserify/1.0.3.nix {};
     console-browserify_0-1-6 = callPackage ./console-browserify/0.1.6.nix {};
     consolidate = callPackage ./consolidate/0.9.1.nix {};
     consolidate_0-9-1 = callPackage ./consolidate/0.9.1.nix {};
@@ -702,6 +739,9 @@
     convert-source-map = callPackage ./convert-source-map/1.3.0.nix {};
     convert-source-map_1-3-0 = callPackage ./convert-source-map/1.3.0.nix {};
     convert-source-map_1-1-2 = callPackage ./convert-source-map/1.1.2.nix {};
+    convert-source-map_0-4-1 = callPackage ./convert-source-map/0.4.1.nix {};
+    convert-source-map_0-3-5 = callPackage ./convert-source-map/0.3.5.nix {};
+    convert-source-map_0-2-6 = callPackage ./convert-source-map/0.2.6.nix {};
     cookie = callPackage ./cookie/0.2.3.nix {};
     cookie_0-2-3 = callPackage ./cookie/0.2.3.nix {};
     cookie_0-2-2 = callPackage ./cookie/0.2.2.nix {};
@@ -746,6 +786,8 @@
     crc = callPackage ./crc/3.3.0.nix {};
     crc_3-3-0 = callPackage ./crc/3.3.0.nix {};
     crc_3-2-1 = callPackage ./crc/3.2.1.nix {};
+    crc32-stream = callPackage ./crc32-stream/1.0.0.nix {};
+    crc32-stream_1-0-0 = callPackage ./crc32-stream/1.0.0.nix {};
     create-ecdh = callPackage ./create-ecdh/4.0.0.nix {};
     create-ecdh_4-0-0 = callPackage ./create-ecdh/4.0.0.nix {};
     create-error-class = callPackage ./create-error-class/2.0.1.nix {};
@@ -771,6 +813,7 @@
     crypto-browserify = callPackage ./crypto-browserify/3.11.0.nix {};
     crypto-browserify_3-11-0 = callPackage ./crypto-browserify/3.11.0.nix {};
     crypto-browserify_3-2-8 = callPackage ./crypto-browserify/3.2.8.nix {};
+    crypto-browserify_1-0-9 = callPackage ./crypto-browserify/1.0.9.nix {};
     crypto-browserify_0-0-1 = callPackage ./crypto-browserify/0.0.1.nix {};
     csrf = callPackage ./csrf/3.0.0.nix {};
     csrf_3-0-0 = callPackage ./csrf/3.0.0.nix {};
@@ -866,6 +909,7 @@
     deep-eql_0-1-3 = callPackage ./deep-eql/0.1.3.nix {};
     deep-equal = callPackage ./deep-equal/1.0.1.nix {};
     deep-equal_1-0-1 = callPackage ./deep-equal/1.0.1.nix {};
+    deep-equal_0-1-2 = callPackage ./deep-equal/0.1.2.nix {};
     deep-equal_0-0-0 = callPackage ./deep-equal/0.0.0.nix {};
     deep-extend = callPackage ./deep-extend/0.4.0.nix {};
     deep-extend_0-4-0 = callPackage ./deep-extend/0.4.0.nix {};
@@ -901,8 +945,11 @@
     deps-sort = callPackage ./deps-sort/2.0.0.nix {};
     deps-sort_2-0-0 = callPackage ./deps-sort/2.0.0.nix {};
     deps-sort_1-3-9 = callPackage ./deps-sort/1.3.9.nix {};
+    deps-sort_0-1-2 = callPackage ./deps-sort/0.1.2.nix {};
     deputy = callPackage ./deputy/0.0.4.nix {};
     deputy_0-0-4 = callPackage ./deputy/0.0.4.nix {};
+    derequire = callPackage ./derequire/0.8.0.nix {};
+    derequire_0-8-0 = callPackage ./derequire/0.8.0.nix {};
     des-js = callPackage ./des-js/1.0.0.nix {};
     des-js_1-0-0 = callPackage ./des-js/1.0.0.nix {};
     destroy = callPackage ./destroy/1.0.3.nix {};
@@ -915,6 +962,8 @@
     detect-newline_1-0-3 = callPackage ./detect-newline/1.0.3.nix {};
     detective = callPackage ./detective/4.3.1.nix {};
     detective_4-3-1 = callPackage ./detective/4.3.1.nix {};
+    detective_3-1-0 = callPackage ./detective/3.1.0.nix {};
+    detective_2-1-2 = callPackage ./detective/2.1.2.nix {};
     detective_0-2-1 = callPackage ./detective/0.2.1.nix {};
     dezalgo = callPackage ./dezalgo/1.0.3.nix {};
     dezalgo_1-0-3 = callPackage ./dezalgo/1.0.3.nix {};
@@ -968,6 +1017,7 @@
     dtrace-provider_0-2-8 = callPackage ./dtrace-provider/0.2.8.nix {};
     duplexer = callPackage ./duplexer/0.1.1.nix {};
     duplexer_0-1-1 = callPackage ./duplexer/0.1.1.nix {};
+    duplexer_0-0-4 = callPackage ./duplexer/0.0.4.nix {};
     duplexer2 = callPackage ./duplexer2/0.1.4.nix {};
     duplexer2_0-1-4 = callPackage ./duplexer2/0.1.4.nix {};
     duplexer2_0-0-2 = callPackage ./duplexer2/0.0.2.nix {};
@@ -1055,22 +1105,33 @@
     escodegen = callPackage ./escodegen/1.8.0.nix {};
     escodegen_1-8-0 = callPackage ./escodegen/1.8.0.nix {};
     escodegen_1-7-0 = callPackage ./escodegen/1.7.0.nix {};
+    escodegen_1-1-0 = callPackage ./escodegen/1.1.0.nix {};
+    escodegen_0-0-15 = callPackage ./escodegen/0.0.15.nix {};
+    escope = callPackage ./escope/0.0.16.nix {};
+    escope_0-0-16 = callPackage ./escope/0.0.16.nix {};
     esprima = callPackage ./esprima/2.7.2.nix {};
     esprima_2-7-2 = callPackage ./esprima/2.7.2.nix {};
     esprima_2-7-0 = callPackage ./esprima/2.7.0.nix {};
     esprima_2-5-0 = callPackage ./esprima/2.5.0.nix {};
     esprima_1-2-5 = callPackage ./esprima/1.2.5.nix {};
     esprima_1-0-4 = callPackage ./esprima/1.0.4.nix {};
+    esprima_1-0-2 = callPackage ./esprima/1.0.2.nix {};
     esprima_0-9-9 = callPackage ./esprima/0.9.9.nix {};
     esprima-fb = callPackage ./esprima-fb/15001.1001.0-dev-harmony-fb.nix {};
     esprima-fb_15001-1001-0-dev-harmony-fb = callPackage ./esprima-fb/15001.1001.0-dev-harmony-fb.nix {};
     esprima-fb_13001-1001-0-dev-harmony-fb = callPackage ./esprima-fb/13001.1001.0-dev-harmony-fb.nix {};
+    esprima-fb_3001-1-0-dev-harmony-fb = callPackage ./esprima-fb/3001.1.0-dev-harmony-fb.nix {};
+    esrefactor = callPackage ./esrefactor/0.1.0.nix {};
+    esrefactor_0-1-0 = callPackage ./esrefactor/0.1.0.nix {};
     estraverse = callPackage ./estraverse/4.1.1.nix {};
     estraverse_4-1-1 = callPackage ./estraverse/4.1.1.nix {};
     estraverse_1-9-3 = callPackage ./estraverse/1.9.3.nix {};
     estraverse_1-8-0 = callPackage ./estraverse/1.8.0.nix {};
+    estraverse_1-5-1 = callPackage ./estraverse/1.5.1.nix {};
+    estraverse_0-0-4 = callPackage ./estraverse/0.0.4.nix {};
     esutils = callPackage ./esutils/2.0.2.nix {};
     esutils_2-0-2 = callPackage ./esutils/2.0.2.nix {};
+    esutils_1-0-0 = callPackage ./esutils/1.0.0.nix {};
     etag = callPackage ./etag/1.7.0.nix {};
     etag_1-7-0 = callPackage ./etag/1.7.0.nix {};
     etag_1-5-1 = callPackage ./etag/1.5.1.nix {};
@@ -1079,6 +1140,7 @@
     event-stream = callPackage ./event-stream/3.3.2.nix {};
     event-stream_3-3-2 = callPackage ./event-stream/3.3.2.nix {};
     event-stream_3-1-7 = callPackage ./event-stream/3.1.7.nix {};
+    event-stream_3-0-20 = callPackage ./event-stream/3.0.20.nix {};
     event-stream_0-5-3 = callPackage ./event-stream/0.5.3.nix {};
     eventemitter2 = callPackage ./eventemitter2/0.4.14.nix {};
     eventemitter2_0-4-14 = callPackage ./eventemitter2/0.4.14.nix {};
@@ -1206,6 +1268,8 @@
     findup-sync_0-3-0 = callPackage ./findup-sync/0.3.0.nix {};
     findup-sync_0-2-1 = callPackage ./findup-sync/0.2.1.nix {};
     findup-sync_0-1-3 = callPackage ./findup-sync/0.1.3.nix {};
+    firefox-profile = callPackage ./firefox-profile/0.3.13.nix {};
+    firefox-profile_0-3-13 = callPackage ./firefox-profile/0.3.13.nix {};
     first-chunk-stream = callPackage ./first-chunk-stream/1.0.0.nix {};
     first-chunk-stream_1-0-0 = callPackage ./first-chunk-stream/1.0.0.nix {};
     flagged-respawn = callPackage ./flagged-respawn/0.3.1.nix {};
@@ -1251,7 +1315,8 @@
     from_0-0-2 = callPackage ./from/0.0.2.nix {};
     fs-access = callPackage ./fs-access/1.0.0.nix {};
     fs-access_1-0-0 = callPackage ./fs-access/1.0.0.nix {};
-    fs-extra = callPackage ./fs-extra/0.26.7.nix {};
+    fs-extra = callPackage ./fs-extra/0.28.0.nix {};
+    fs-extra_0-28-0 = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-26-7 = callPackage ./fs-extra/0.26.7.nix {};
     fs-extra_0-26-2 = callPackage ./fs-extra/0.26.2.nix {};
     fs-readdir-recursive = callPackage ./fs-readdir-recursive/0.1.2.nix {};
@@ -1398,6 +1463,8 @@
     grunt_0-4-5 = callPackage ./grunt/0.4.5.nix {};
     grunt-angular-templates = callPackage ./grunt-angular-templates/1.0.3.nix {};
     grunt-angular-templates_1-0-3 = callPackage ./grunt-angular-templates/1.0.3.nix {};
+    grunt-browserify = callPackage ./grunt-browserify/1.2.5.nix {};
+    grunt-browserify_1-2-5 = callPackage ./grunt-browserify/1.2.5.nix {};
     grunt-cli = callPackage ./grunt-cli/0.1.13.nix {};
     grunt-cli_0-1-13 = callPackage ./grunt-cli/0.1.13.nix {};
     grunt-coffeelint = callPackage ./grunt-coffeelint/0.0.13.nix {};
@@ -1417,6 +1484,7 @@
     grunt-contrib-coffee_0-7-0 = callPackage ./grunt-contrib-coffee/0.7.0.nix {};
     grunt-contrib-concat = callPackage ./grunt-contrib-concat/0.5.1.nix {};
     grunt-contrib-concat_0-5-1 = callPackage ./grunt-contrib-concat/0.5.1.nix {};
+    grunt-contrib-concat_0-3-0 = callPackage ./grunt-contrib-concat/0.3.0.nix {};
     grunt-contrib-connect = callPackage ./grunt-contrib-connect/0.11.2.nix {};
     grunt-contrib-connect_0-11-2 = callPackage ./grunt-contrib-connect/0.11.2.nix {};
     grunt-contrib-copy = callPackage ./grunt-contrib-copy/0.7.0.nix {};
@@ -1430,6 +1498,7 @@
     grunt-contrib-jshint_0-11-3 = callPackage ./grunt-contrib-jshint/0.11.3.nix {};
     grunt-contrib-less = callPackage ./grunt-contrib-less/0.12.0.nix {};
     grunt-contrib-less_0-12-0 = callPackage ./grunt-contrib-less/0.12.0.nix {};
+    grunt-contrib-less_0-7-0 = callPackage ./grunt-contrib-less/0.7.0.nix {};
     grunt-contrib-nodeunit = callPackage ./grunt-contrib-nodeunit/0.4.1.nix {};
     grunt-contrib-nodeunit_0-4-1 = callPackage ./grunt-contrib-nodeunit/0.4.1.nix {};
     grunt-contrib-uglify = callPackage ./grunt-contrib-uglify/0.7.0.nix {};
@@ -1439,6 +1508,8 @@
     grunt-contrib-watch_0-5-3 = callPackage ./grunt-contrib-watch/0.5.3.nix {};
     grunt-develop = callPackage ./grunt-develop/0.1.1.nix {};
     grunt-develop_0-1-1 = callPackage ./grunt-develop/0.1.1.nix {};
+    grunt-html2js = callPackage ./grunt-html2js/0.2.9.nix {};
+    grunt-html2js_0-2-9 = callPackage ./grunt-html2js/0.2.9.nix {};
     grunt-install-dependencies = callPackage ./grunt-install-dependencies/0.2.0.nix {};
     grunt-install-dependencies_0-2-0 = callPackage ./grunt-install-dependencies/0.2.0.nix {};
     grunt-istanbul = callPackage ./grunt-istanbul/0.6.2.nix {};
@@ -1452,6 +1523,8 @@
     grunt-legacy-log-utils_0-1-1 = callPackage ./grunt-legacy-log-utils/0.1.1.nix {};
     grunt-legacy-util = callPackage ./grunt-legacy-util/0.2.0.nix {};
     grunt-legacy-util_0-2-0 = callPackage ./grunt-legacy-util/0.2.0.nix {};
+    grunt-lib-contrib = callPackage ./grunt-lib-contrib/0.6.1.nix {};
+    grunt-lib-contrib_0-6-1 = callPackage ./grunt-lib-contrib/0.6.1.nix {};
     grunt-mocha-test = callPackage ./grunt-mocha-test/0.12.7.nix {};
     grunt-mocha-test_0-12-7 = callPackage ./grunt-mocha-test/0.12.7.nix {};
     grunt-newer = callPackage ./grunt-newer/1.1.2.nix {};
@@ -1465,6 +1538,7 @@
     grunt-protractor-coverage_0-2-17 = callPackage ./grunt-protractor-coverage/0.2.17.nix {};
     grunt-protractor-runner = callPackage ./grunt-protractor-runner/2.1.2.nix {};
     grunt-protractor-runner_2-1-2 = callPackage ./grunt-protractor-runner/2.1.2.nix {};
+    grunt-protractor-runner_1-1-4 = callPackage ./grunt-protractor-runner/1.1.4.nix {};
     grunt-run = callPackage ./grunt-run/0.3.0.nix {};
     grunt-run_0-3-0 = callPackage ./grunt-run/0.3.0.nix {};
     grunt-simple-mocha = callPackage ./grunt-simple-mocha/0.4.1.nix {};
@@ -1588,6 +1662,7 @@
     html-entities_1-1-3 = callPackage ./html-entities/1.1.3.nix {};
     html-minifier = callPackage ./html-minifier/1.1.1.nix {};
     html-minifier_1-1-1 = callPackage ./html-minifier/1.1.1.nix {};
+    html-minifier_0-6-9 = callPackage ./html-minifier/0.6.9.nix {};
     html-wiring = callPackage ./html-wiring/1.2.0.nix {};
     html-wiring_1-2-0 = callPackage ./html-wiring/1.2.0.nix {};
     htmlencode = callPackage ./htmlencode/0.0.4.nix {};
@@ -1601,6 +1676,7 @@
     htmlparser2_3-8-3 = callPackage ./htmlparser2/3.8.3.nix {};
     http-browserify = callPackage ./http-browserify/1.7.0.nix {};
     http-browserify_1-7-0 = callPackage ./http-browserify/1.7.0.nix {};
+    http-browserify_1-3-2 = callPackage ./http-browserify/1.3.2.nix {};
     http-browserify_0-1-14 = callPackage ./http-browserify/0.1.14.nix {};
     http-errors = callPackage ./http-errors/1.3.1.nix {};
     http-errors_1-3-1 = callPackage ./http-errors/1.3.1.nix {};
@@ -1671,6 +1747,8 @@
     inline-source-map = callPackage ./inline-source-map/0.6.1.nix {};
     inline-source-map_0-6-1 = callPackage ./inline-source-map/0.6.1.nix {};
     inline-source-map_0-5-0 = callPackage ./inline-source-map/0.5.0.nix {};
+    inline-source-map_0-3-1 = callPackage ./inline-source-map/0.3.1.nix {};
+    inline-source-map_0-2-5 = callPackage ./inline-source-map/0.2.5.nix {};
     inquirer = callPackage ./inquirer/0.11.0.nix {};
     inquirer_0-11-0 = callPackage ./inquirer/0.11.0.nix {};
     inquirer_0-10-1 = callPackage ./inquirer/0.10.1.nix {};
@@ -1681,6 +1759,8 @@
     insert-module-globals = callPackage ./insert-module-globals/7.0.1.nix {};
     insert-module-globals_7-0-1 = callPackage ./insert-module-globals/7.0.1.nix {};
     insert-module-globals_6-6-3 = callPackage ./insert-module-globals/6.6.3.nix {};
+    insert-module-globals_6-0-0 = callPackage ./insert-module-globals/6.0.0.nix {};
+    insert-module-globals_1-2-1 = callPackage ./insert-module-globals/1.2.1.nix {};
     insight = callPackage ./insight/0.7.0.nix {};
     insight_0-7-0 = callPackage ./insight/0.7.0.nix {};
     insight_0-4-3 = callPackage ./insight/0.4.3.nix {};
@@ -1822,9 +1902,13 @@
     jasmine_2-4-1 = callPackage ./jasmine/2.4.1.nix {};
     jasmine_2-3-2 = callPackage ./jasmine/2.3.2.nix {};
     jasmine_2-3-1 = callPackage ./jasmine/2.3.1.nix {};
+    jasmine_2-1-1 = callPackage ./jasmine/2.1.1.nix {};
     jasmine-core = callPackage ./jasmine-core/2.4.1.nix {};
     jasmine-core_2-4-1 = callPackage ./jasmine-core/2.4.1.nix {};
     jasmine-core_2-3-4 = callPackage ./jasmine-core/2.3.4.nix {};
+    jasmine-core_2-1-3 = callPackage ./jasmine-core/2.1.3.nix {};
+    jasmine-reporters = callPackage ./jasmine-reporters/1.1.0.nix {};
+    jasmine-reporters_1-1-0 = callPackage ./jasmine-reporters/1.1.0.nix {};
     jasmine-spec-reporter = callPackage ./jasmine-spec-reporter/2.4.0.nix {};
     jasmine-spec-reporter_2-4-0 = callPackage ./jasmine-spec-reporter/2.4.0.nix {};
     jasminewd = callPackage ./jasminewd/1.1.0.nix {};
@@ -1833,6 +1917,9 @@
     jasminewd2_0-0-9 = callPackage ./jasminewd2/0.0.9.nix {};
     jasminewd2_0-0-6 = callPackage ./jasminewd2/0.0.6.nix {};
     jasminewd2_0-0-5 = callPackage ./jasminewd2/0.0.5.nix {};
+    jasminewd2_0-0-2 = callPackage ./jasminewd2/0.0.2.nix {};
+    jetpack-id = callPackage ./jetpack-id/1.0.0.nix {};
+    jetpack-id_1-0-0 = callPackage ./jetpack-id/1.0.0.nix {};
     jit-grunt = callPackage ./jit-grunt/0.10.0.nix {};
     jit-grunt_0-10-0 = callPackage ./jit-grunt/0.10.0.nix {};
     jju = callPackage ./jju/1.2.1.nix {};
@@ -1917,6 +2004,8 @@
     jstransform_10-1-0 = callPackage ./jstransform/10.1.0.nix {};
     jstransformer = callPackage ./jstransformer/0.0.2.nix {};
     jstransformer_0-0-2 = callPackage ./jstransformer/0.0.2.nix {};
+    jszip = callPackage ./jszip/2.5.0.nix {};
+    jszip_2-5-0 = callPackage ./jszip/2.5.0.nix {};
     junk = callPackage ./junk/1.0.2.nix {};
     junk_1-0-2 = callPackage ./junk/1.0.2.nix {};
     kareem = callPackage ./kareem/1.0.1.nix {};
@@ -1986,6 +2075,8 @@
     lazy_1-0-11 = callPackage ./lazy/1.0.11.nix {};
     lazy-cache = callPackage ./lazy-cache/0.2.4.nix {};
     lazy-cache_0-2-4 = callPackage ./lazy-cache/0.2.4.nix {};
+    lazystream = callPackage ./lazystream/1.0.0.nix {};
+    lazystream_1-0-0 = callPackage ./lazystream/1.0.0.nix {};
     lcid = callPackage ./lcid/1.0.0.nix {};
     lcid_1-0-0 = callPackage ./lcid/1.0.0.nix {};
     lcov-parse = callPackage ./lcov-parse/0.0.6.nix {};
@@ -2000,6 +2091,7 @@
     less = callPackage ./less/2.5.3.nix {};
     less_2-5-3 = callPackage ./less/2.5.3.nix {};
     less_1-7-5 = callPackage ./less/1.7.5.nix {};
+    less_1-4-2 = callPackage ./less/1.4.2.nix {};
     level-codec = callPackage ./level-codec/6.1.0.nix {};
     level-codec_6-1-0 = callPackage ./level-codec/6.1.0.nix {};
     level-errors = callPackage ./level-errors/1.0.4.nix {};
@@ -2020,6 +2112,8 @@
     levn_0-2-5 = callPackage ./levn/0.2.5.nix {};
     lexical-scope = callPackage ./lexical-scope/1.2.0.nix {};
     lexical-scope_1-2-0 = callPackage ./lexical-scope/1.2.0.nix {};
+    lexical-scope_1-1-1 = callPackage ./lexical-scope/1.1.1.nix {};
+    lexical-scope_0-0-15 = callPackage ./lexical-scope/0.0.15.nix {};
     libbase64 = callPackage ./libbase64/0.1.0.nix {};
     libbase64_0-1-0 = callPackage ./libbase64/0.1.0.nix {};
     libmime = callPackage ./libmime/1.2.0.nix {};
@@ -2259,6 +2353,7 @@
     map-obj_1-0-1 = callPackage ./map-obj/1.0.1.nix {};
     map-stream = callPackage ./map-stream/0.1.0.nix {};
     map-stream_0-1-0 = callPackage ./map-stream/0.1.0.nix {};
+    map-stream_0-0-6 = callPackage ./map-stream/0.0.6.nix {};
     markdown-it = callPackage ./markdown-it/7.0.1.nix {};
     markdown-it_7-0-1 = callPackage ./markdown-it/7.0.1.nix {};
     markdown-it_4-4-0 = callPackage ./markdown-it/4.4.0.nix {};
@@ -2351,6 +2446,7 @@
     minimist_1-2-0 = callPackage ./minimist/1.2.0.nix {};
     minimist_1-1-3 = callPackage ./minimist/1.1.3.nix {};
     minimist_0-2-0 = callPackage ./minimist/0.2.0.nix {};
+    minimist_0-0-10 = callPackage ./minimist/0.0.10.nix {};
     minimist_0-0-8 = callPackage ./minimist/0.0.8.nix {};
     mkdirp = callPackage ./mkdirp/0.5.1.nix {};
     mkdirp_0-5-1 = callPackage ./mkdirp/0.5.1.nix {};
@@ -2381,11 +2477,14 @@
     module-deps = callPackage ./module-deps/4.0.2.nix {};
     module-deps_4-0-2 = callPackage ./module-deps/4.0.2.nix {};
     module-deps_3-9-1 = callPackage ./module-deps/3.9.1.nix {};
+    module-deps_2-0-6 = callPackage ./module-deps/2.0.6.nix {};
+    module-deps_1-0-2 = callPackage ./module-deps/1.0.2.nix {};
     module-not-found-error = callPackage ./module-not-found-error/1.0.1.nix {};
     module-not-found-error_1-0-1 = callPackage ./module-not-found-error/1.0.1.nix {};
     moment = callPackage ./moment/2.12.0.nix {};
     moment_2-12-0 = callPackage ./moment/2.12.0.nix {};
     moment_2-10-6 = callPackage ./moment/2.10.6.nix {};
+    moment_2-2-1 = callPackage ./moment/2.2.1.nix {};
     moment_2-1-0 = callPackage ./moment/2.1.0.nix {};
     moment_2-0-0 = callPackage ./moment/2.0.0.nix {};
     moment-timezone = callPackage ./moment-timezone/0.3.1.nix {};
@@ -2480,6 +2579,7 @@
     node-gyp_0-12-2 = callPackage ./node-gyp/0.12.2.nix {};
     node-krb5 = callPackage ./node-krb5/0.0.6.nix {};
     node-krb5_0-0-6 = callPackage ./node-krb5/0.0.6.nix {};
+    node-krb5_0-0-5 = callPackage ./node-krb5/0.0.5.nix {};
     node-libs-browser = callPackage ./node-libs-browser/0.5.3.nix {};
     node-libs-browser_0-5-3 = callPackage ./node-libs-browser/0.5.3.nix {};
     node-notifier = callPackage ./node-notifier/1.2.1.nix {};
@@ -2627,6 +2727,7 @@
     opn_1-0-2 = callPackage ./opn/1.0.2.nix {};
     optimist = callPackage ./optimist/0.6.1.nix {};
     optimist_0-6-1 = callPackage ./optimist/0.6.1.nix {};
+    optimist_0-5-2 = callPackage ./optimist/0.5.2.nix {};
     optimist_0-4-0 = callPackage ./optimist/0.4.0.nix {};
     optimist_0-3-7 = callPackage ./optimist/0.3.7.nix {};
     optimist_0-2-8 = callPackage ./optimist/0.2.8.nix {};
@@ -2684,8 +2785,11 @@
     param-case_1-1-2 = callPackage ./param-case/1.1.2.nix {};
     parents = callPackage ./parents/1.0.1.nix {};
     parents_1-0-1 = callPackage ./parents/1.0.1.nix {};
+    parents_0-0-2 = callPackage ./parents/0.0.2.nix {};
     parse-asn1 = callPackage ./parse-asn1/5.0.0.nix {};
     parse-asn1_5-0-0 = callPackage ./parse-asn1/5.0.0.nix {};
+    parse-base64vlq-mappings = callPackage ./parse-base64vlq-mappings/0.1.4.nix {};
+    parse-base64vlq-mappings_0-1-4 = callPackage ./parse-base64vlq-mappings/0.1.4.nix {};
     parse-glob = callPackage ./parse-glob/3.0.4.nix {};
     parse-glob_3-0-4 = callPackage ./parse-glob/3.0.4.nix {};
     parse-json = callPackage ./parse-json/2.2.0.nix {};
@@ -2869,6 +2973,9 @@
     private_0-1-6 = callPackage ./private/0.1.6.nix {};
     process = callPackage ./process/0.11.2.nix {};
     process_0-11-2 = callPackage ./process/0.11.2.nix {};
+    process_0-7-0 = callPackage ./process/0.7.0.nix {};
+    process_0-6-0 = callPackage ./process/0.6.0.nix {};
+    process_0-5-2 = callPackage ./process/0.5.2.nix {};
     process-nextick-args = callPackage ./process-nextick-args/1.0.6.nix {};
     process-nextick-args_1-0-6 = callPackage ./process-nextick-args/1.0.6.nix {};
     process-nextick-args_1-0-3 = callPackage ./process-nextick-args/1.0.3.nix {};
@@ -2899,8 +3006,11 @@
     protractor_3-3-0 = callPackage ./protractor/3.3.0.nix {};
     protractor_2-5-1 = callPackage ./protractor/2.5.1.nix {};
     protractor_2-2-0 = callPackage ./protractor/2.2.0.nix {};
+    protractor_1-8-0 = callPackage ./protractor/1.8.0.nix {};
     protractor-jasmine2-screenshot-reporter = callPackage ./protractor-jasmine2-screenshot-reporter/0.1.7.nix {};
     protractor-jasmine2-screenshot-reporter_0-1-7 = callPackage ./protractor-jasmine2-screenshot-reporter/0.1.7.nix {};
+    protractor-screenshot-reporter = callPackage ./protractor-screenshot-reporter/0.0.5.nix {};
+    protractor-screenshot-reporter_0-0-5 = callPackage ./protractor-screenshot-reporter/0.0.5.nix {};
     proxy-addr = callPackage ./proxy-addr/1.0.8.nix {};
     proxy-addr_1-0-8 = callPackage ./proxy-addr/1.0.8.nix {};
     proxyquire = callPackage ./proxyquire/1.7.3.nix {};
@@ -2927,6 +3037,7 @@
     pump_0-3-5 = callPackage ./pump/0.3.5.nix {};
     punycode = callPackage ./punycode/1.3.2.nix {};
     punycode_1-3-2 = callPackage ./punycode/1.3.2.nix {};
+    punycode_1-2-4 = callPackage ./punycode/1.2.4.nix {};
     purs-loader = callPackage ./purs-loader/0.3.4.nix {};
     purs-loader_0-3-4 = callPackage ./purs-loader/0.3.4.nix {};
     q = callPackage ./q/2.0.3.nix {};
@@ -2956,6 +3067,7 @@
     querystring_0-2-0 = callPackage ./querystring/0.2.0.nix {};
     querystring-es3 = callPackage ./querystring-es3/0.2.1.nix {};
     querystring-es3_0-2-1 = callPackage ./querystring-es3/0.2.1.nix {};
+    querystring-es3_0-2-0 = callPackage ./querystring-es3/0.2.0.nix {};
     querystringify = callPackage ./querystringify/0.0.3.nix {};
     querystringify_0-0-3 = callPackage ./querystringify/0.0.3.nix {};
     quick-temp = callPackage ./quick-temp/0.1.3.nix {};
@@ -3084,6 +3196,7 @@
     request_2-51-0 = callPackage ./request/2.51.0.nix {};
     request_2-42-0 = callPackage ./request/2.42.0.nix {};
     request_2-40-0 = callPackage ./request/2.40.0.nix {};
+    request_2-36-0 = callPackage ./request/2.36.0.nix {};
     request_2-30-0 = callPackage ./request/2.30.0.nix {};
     request_2-27-0 = callPackage ./request/2.27.0.nix {};
     request_2-16-6 = callPackage ./request/2.16.6.nix {};
@@ -3104,12 +3217,15 @@
     require-main-filename_1-0-1 = callPackage ./require-main-filename/1.0.1.nix {};
     requirejs = callPackage ./requirejs/2.3.1.nix {};
     requirejs_2-3-1 = callPackage ./requirejs/2.3.1.nix {};
+    requirejs_2-1-22 = callPackage ./requirejs/2.1.22.nix {};
     requires-port = callPackage ./requires-port/1.0.0.nix {};
     requires-port_1-0-0 = callPackage ./requires-port/1.0.0.nix {};
     requires-port_0-0-1 = callPackage ./requires-port/0.0.1.nix {};
     resolve = callPackage ./resolve/1.1.6.nix {};
     resolve_1-1-6 = callPackage ./resolve/1.1.6.nix {};
     resolve_0-6-3 = callPackage ./resolve/0.6.3.nix {};
+    resolve_0-5-1 = callPackage ./resolve/0.5.1.nix {};
+    resolve_0-4-3 = callPackage ./resolve/0.4.3.nix {};
     resolve_0-3-1 = callPackage ./resolve/0.3.1.nix {};
     resolve_0-2-8 = callPackage ./resolve/0.2.8.nix {};
     resolve-from = callPackage ./resolve-from/2.0.0.nix {};
@@ -3125,6 +3241,8 @@
     retry_0-6-0 = callPackage ./retry/0.6.0.nix {};
     revalidator = callPackage ./revalidator/0.1.8.nix {};
     revalidator_0-1-8 = callPackage ./revalidator/0.1.8.nix {};
+    rfile = callPackage ./rfile/1.0.0.nix {};
+    rfile_1-0-0 = callPackage ./rfile/1.0.0.nix {};
     right-align = callPackage ./right-align/0.1.3.nix {};
     right-align_0-1-3 = callPackage ./right-align/0.1.3.nix {};
     rimraf = callPackage ./rimraf/2.5.4.nix {};
@@ -3140,6 +3258,8 @@
     rndm_1-1-1 = callPackage ./rndm/1.1.1.nix {};
     rsvp = callPackage ./rsvp/3.1.0.nix {};
     rsvp_3-1-0 = callPackage ./rsvp/3.1.0.nix {};
+    ruglify = callPackage ./ruglify/1.0.0.nix {};
+    ruglify_1-0-0 = callPackage ./ruglify/1.0.0.nix {};
     run-async = callPackage ./run-async/0.1.0.nix {};
     run-async_0-1-0 = callPackage ./run-async/0.1.0.nix {};
     rx = callPackage ./rx/4.0.7.nix {};
@@ -3160,6 +3280,7 @@
     sax_1-1-4 = callPackage ./sax/1.1.4.nix {};
     sax_0-6-1 = callPackage ./sax/0.6.1.nix {};
     sax_0-5-3 = callPackage ./sax/0.5.3.nix {};
+    sax_0-4-2 = callPackage ./sax/0.4.2.nix {};
     scmp = callPackage ./scmp/1.0.0.nix {};
     scmp_1-0-0 = callPackage ./scmp/1.0.0.nix {};
     seek-bzip = callPackage ./seek-bzip/1.0.5.nix {};
@@ -3169,6 +3290,7 @@
     selenium-webdriver_2-52-0 = callPackage ./selenium-webdriver/2.52.0.nix {};
     selenium-webdriver_2-47-0 = callPackage ./selenium-webdriver/2.47.0.nix {};
     selenium-webdriver_2-45-1 = callPackage ./selenium-webdriver/2.45.1.nix {};
+    selenium-webdriver_2-44-0 = callPackage ./selenium-webdriver/2.44.0.nix {};
     semver = callPackage ./semver/5.1.0.nix {};
     semver_5-1-0 = callPackage ./semver/5.1.0.nix {};
     semver_5-0-3 = callPackage ./semver/5.0.3.nix {};
@@ -3203,12 +3325,16 @@
     set-immediate-shim_1-0-1 = callPackage ./set-immediate-shim/1.0.1.nix {};
     setimmediate = callPackage ./setimmediate/1.0.4.nix {};
     setimmediate_1-0-4 = callPackage ./setimmediate/1.0.4.nix {};
+    sftps = callPackage ./sftps/0.2.8.nix {};
+    sftps_0-2-8 = callPackage ./sftps/0.2.8.nix {};
     sha = callPackage ./sha/2.0.1.nix {};
     sha_2-0-1 = callPackage ./sha/2.0.1.nix {};
     sha_1-2-4 = callPackage ./sha/1.2.4.nix {};
     sha-js = callPackage ./sha-js/2.4.4.nix {};
     sha-js_2-4-4 = callPackage ./sha-js/2.4.4.nix {};
     sha-js_2-2-6 = callPackage ./sha-js/2.2.6.nix {};
+    shallow-copy = callPackage ./shallow-copy/0.0.1.nix {};
+    shallow-copy_0-0-1 = callPackage ./shallow-copy/0.0.1.nix {};
     shasum = callPackage ./shasum/1.0.2.nix {};
     shasum_1-0-2 = callPackage ./shasum/1.0.2.nix {};
     shebang-regex = callPackage ./shebang-regex/1.0.0.nix {};
@@ -3343,6 +3469,8 @@
     sprintf_0-1-5 = callPackage ./sprintf/0.1.5.nix {};
     sprintf-js = callPackage ./sprintf-js/1.0.3.nix {};
     sprintf-js_1-0-3 = callPackage ./sprintf-js/1.0.3.nix {};
+    ssh2 = callPackage ./ssh2/0.2.25.nix {};
+    ssh2_0-2-25 = callPackage ./ssh2/0.2.25.nix {};
     sshpk = callPackage ./sshpk/1.7.3.nix {};
     sshpk_1-7-3 = callPackage ./sshpk/1.7.3.nix {};
     sshpk_1-7-0 = callPackage ./sshpk/1.7.0.nix {};
@@ -3362,10 +3490,12 @@
     stream-browserify = callPackage ./stream-browserify/2.0.1.nix {};
     stream-browserify_2-0-1 = callPackage ./stream-browserify/2.0.1.nix {};
     stream-browserify_1-0-0 = callPackage ./stream-browserify/1.0.0.nix {};
+    stream-browserify_0-1-3 = callPackage ./stream-browserify/0.1.3.nix {};
     stream-cache = callPackage ./stream-cache/0.0.2.nix {};
     stream-cache_0-0-2 = callPackage ./stream-cache/0.0.2.nix {};
     stream-combiner = callPackage ./stream-combiner/0.2.2.nix {};
     stream-combiner_0-2-2 = callPackage ./stream-combiner/0.2.2.nix {};
+    stream-combiner_0-1-0 = callPackage ./stream-combiner/0.1.0.nix {};
     stream-combiner_0-0-4 = callPackage ./stream-combiner/0.0.4.nix {};
     stream-combiner2 = callPackage ./stream-combiner2/1.1.1.nix {};
     stream-combiner2_1-1-1 = callPackage ./stream-combiner2/1.1.1.nix {};
@@ -3386,6 +3516,8 @@
     streamsearch_0-1-2 = callPackage ./streamsearch/0.1.2.nix {};
     strftime = callPackage ./strftime/0.6.2.nix {};
     strftime_0-6-2 = callPackage ./strftime/0.6.2.nix {};
+    string = callPackage ./string/1.8.1.nix {};
+    string_1-8-1 = callPackage ./string/1.8.1.nix {};
     string-length = callPackage ./string-length/1.0.1.nix {};
     string-length_1-0-1 = callPackage ./string-length/1.0.1.nix {};
     string-length_0-1-2 = callPackage ./string-length/0.1.2.nix {};
@@ -3397,6 +3529,7 @@
     string-width_1-0-1 = callPackage ./string-width/1.0.1.nix {};
     string_decoder = callPackage ./string_decoder/0.10.31.nix {};
     string_decoder_0-10-31 = callPackage ./string_decoder/0.10.31.nix {};
+    string_decoder_0-0-1 = callPackage ./string_decoder/0.0.1.nix {};
     stringify-object = callPackage ./stringify-object/1.0.1.nix {};
     stringify-object_1-0-1 = callPackage ./stringify-object/1.0.1.nix {};
     stringmap = callPackage ./stringmap/0.2.2.nix {};
@@ -3431,6 +3564,7 @@
     stylus_0-52-4 = callPackage ./stylus/0.52.4.nix {};
     subarg = callPackage ./subarg/1.0.0.nix {};
     subarg_1-0-0 = callPackage ./subarg/1.0.0.nix {};
+    subarg_0-0-1 = callPackage ./subarg/0.0.1.nix {};
     success-symbol = callPackage ./success-symbol/0.1.0.nix {};
     success-symbol_0-1-0 = callPackage ./success-symbol/0.1.0.nix {};
     sum-up = callPackage ./sum-up/1.0.2.nix {};
@@ -3480,7 +3614,8 @@
     tar-fs_0-5-2 = callPackage ./tar-fs/0.5.2.nix {};
     tar-pack = callPackage ./tar-pack/3.1.0.nix {};
     tar-pack_3-1-0 = callPackage ./tar-pack/3.1.0.nix {};
-    tar-stream = callPackage ./tar-stream/1.3.1.nix {};
+    tar-stream = callPackage ./tar-stream/1.5.2.nix {};
+    tar-stream_1-5-2 = callPackage ./tar-stream/1.5.2.nix {};
     tar-stream_1-3-1 = callPackage ./tar-stream/1.3.1.nix {};
     tar-stream_0-4-7 = callPackage ./tar-stream/0.4.7.nix {};
     temp = callPackage ./temp/0.8.3.nix {};
@@ -3498,6 +3633,7 @@
     throttleit_0-0-2 = callPackage ./throttleit/0.0.2.nix {};
     through = callPackage ./through/2.3.8.nix {};
     through_2-3-8 = callPackage ./through/2.3.8.nix {};
+    through_2-2-7 = callPackage ./through/2.2.7.nix {};
     through2 = callPackage ./through2/2.0.0.nix {};
     through2_2-0-0 = callPackage ./through2/2.0.0.nix {};
     through2_1-1-1 = callPackage ./through2/1.1.1.nix {};
@@ -3517,6 +3653,7 @@
     timed-out_2-0-0 = callPackage ./timed-out/2.0.0.nix {};
     timers-browserify = callPackage ./timers-browserify/1.4.1.nix {};
     timers-browserify_1-4-1 = callPackage ./timers-browserify/1.4.1.nix {};
+    timers-browserify_1-0-3 = callPackage ./timers-browserify/1.0.3.nix {};
     timers-ext = callPackage ./timers-ext/0.1.0.nix {};
     timers-ext_0-1-0 = callPackage ./timers-ext/0.1.0.nix {};
     tiny-lr = callPackage ./tiny-lr/0.0.4.nix {};
@@ -3631,6 +3768,8 @@
     umask_1-1-0 = callPackage ./umask/1.1.0.nix {};
     umd = callPackage ./umd/3.0.1.nix {};
     umd_3-0-1 = callPackage ./umd/3.0.1.nix {};
+    umd_2-0-0 = callPackage ./umd/2.0.0.nix {};
+    umd_1-1-1 = callPackage ./umd/1.1.1.nix {};
     undefsafe = callPackage ./undefsafe/0.0.3.nix {};
     undefsafe_0-0-3 = callPackage ./undefsafe/0.0.3.nix {};
     underscore = callPackage ./underscore/1.8.3.nix {};
@@ -3849,6 +3988,7 @@
     xml2js_0-4-15 = callPackage ./xml2js/0.4.15.nix {};
     xml2js_0-4-4 = callPackage ./xml2js/0.4.4.nix {};
     xml2js_0-2-8 = callPackage ./xml2js/0.2.8.nix {};
+    xml2js_0-2-6 = callPackage ./xml2js/0.2.6.nix {};
     xml2js_0-2-4 = callPackage ./xml2js/0.2.4.nix {};
     xmlbuilder = callPackage ./xmlbuilder/4.2.1.nix {};
     xmlbuilder_4-2-1 = callPackage ./xmlbuilder/4.2.1.nix {};
@@ -3888,6 +4028,8 @@
     yauzl = callPackage ./yauzl/2.4.1.nix {};
     yauzl_2-4-1 = callPackage ./yauzl/2.4.1.nix {};
     yauzl_2-3-1 = callPackage ./yauzl/2.3.1.nix {};
+    ycssmin = callPackage ./ycssmin/1.0.1.nix {};
+    ycssmin_1-0-1 = callPackage ./ycssmin/1.0.1.nix {};
     yeast = callPackage ./yeast/0.1.2.nix {};
     yeast_0-1-2 = callPackage ./yeast/0.1.2.nix {};
     yeoman-assert = callPackage ./yeoman-assert/2.1.0.nix {};
@@ -3902,6 +4044,9 @@
     yosay_1-1-0 = callPackage ./yosay/1.1.0.nix {};
     zeparser = callPackage ./zeparser/0.0.5.nix {};
     zeparser_0-0-5 = callPackage ./zeparser/0.0.5.nix {};
+    zip-stream = callPackage ./zip-stream/1.1.0.nix {};
+    zip-stream_1-1-0 = callPackage ./zip-stream/1.1.0.nix {};
     zlib-browserify = callPackage ./zlib-browserify/0.0.3.nix {};
     zlib-browserify_0-0-3 = callPackage ./zlib-browserify/0.0.3.nix {};
+    zlib-browserify_0-0-1 = callPackage ./zlib-browserify/0.0.1.nix {};
   }
