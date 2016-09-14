@@ -90,6 +90,8 @@
     ap_0-2-0 = callPackage ./ap/0.2.0.nix {};
     api-blueprint-http-formatter = callPackage ./api-blueprint-http-formatter/0.0.1.nix {};
     api-blueprint-http-formatter_0-0-1 = callPackage ./api-blueprint-http-formatter/0.0.1.nix {};
+    append-field = callPackage ./append-field/0.1.0.nix {};
+    append-field_0-1-0 = callPackage ./append-field/0.1.0.nix {};
     append-transform = callPackage ./append-transform/0.3.0.nix {};
     append-transform_0-3-0 = callPackage ./append-transform/0.3.0.nix {};
     aproba = callPackage ./aproba/1.0.1.nix {};
@@ -2517,7 +2519,8 @@
     ms_0-7-0 = callPackage ./ms/0.7.0.nix {};
     ms_0-6-2 = callPackage ./ms/0.6.2.nix {};
     ms_0-3-0 = callPackage ./ms/0.3.0.nix {};
-    multer = callPackage ./multer/0.1.8.nix {};
+    multer = callPackage ./multer/1.2.0.nix {};
+    multer_1-2-0 = callPackage ./multer/1.2.0.nix {};
     multer_0-1-8 = callPackage ./multer/0.1.8.nix {};
     multimatch = callPackage ./multimatch/2.1.0.nix {};
     multimatch_2-1-0 = callPackage ./multimatch/2.1.0.nix {};
