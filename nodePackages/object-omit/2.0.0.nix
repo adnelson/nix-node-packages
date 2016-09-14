@@ -3,7 +3,7 @@ buildNodePackage {
     name = "object.omit";
     version = "2.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/object.omit/-/object.omit-2.0.0.tgz";
+      url = "https://registry.npmjs.org/object.omit/-/object.omit-2.0.0.tgz";
       sha1 = "868597333d54e60662940bb458605dd6ae12fe94";
     };
     deps = with nodePackages; [
