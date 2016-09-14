@@ -954,6 +954,8 @@
     des-js_1-0-0 = callPackage ./des-js/1.0.0.nix {};
     destroy = callPackage ./destroy/1.0.3.nix {};
     destroy_1-0-3 = callPackage ./destroy/1.0.3.nix {};
+    detect-character-encoding = callPackage ./detect-character-encoding/0.2.1.nix {};
+    detect-character-encoding_0-2-1 = callPackage ./detect-character-encoding/0.2.1.nix {};
     detect-conflict = callPackage ./detect-conflict/1.0.0.nix {};
     detect-conflict_1-0-0 = callPackage ./detect-conflict/1.0.0.nix {};
     detect-indent = callPackage ./detect-indent/3.0.1.nix {};
