@@ -1547,6 +1547,8 @@
     grunt-run_0-3-0 = callPackage ./grunt-run/0.3.0.nix {};
     grunt-simple-mocha = callPackage ./grunt-simple-mocha/0.4.1.nix {};
     grunt-simple-mocha_0-4-1 = callPackage ./grunt-simple-mocha/0.4.1.nix {};
+    grunt-simple-watch = callPackage ./grunt-simple-watch/0.1.3.nix {};
+    grunt-simple-watch_0-1-3 = callPackage ./grunt-simple-watch/0.1.3.nix {};
     grunt-swigtemplates = callPackage ./grunt-swigtemplates/0.1.2.nix {};
     grunt-swigtemplates_0-1-2 = callPackage ./grunt-swigtemplates/0.1.2.nix {};
     grunt-touch = callPackage ./grunt-touch/0.1.0.nix {};
