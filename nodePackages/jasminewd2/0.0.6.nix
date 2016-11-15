@@ -6,7 +6,7 @@ buildNodePackage {
       url = "https://registry.npmjs.org/jasminewd2/-/jasminewd2-0.0.6.tgz";
       sha1 = "259157f06d2d149fbecb96302c80aa322a377222";
     };
-    deps = [];
+    deps = [nodePackages.selenium-webdriver];
     meta = {
       homepage = "https://github.com/angular/jasminewd";
       description = "WebDriverJS adapter for Jasmine2.";
