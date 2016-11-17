@@ -16,7 +16,8 @@ let
   inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
                        mapAttrs filterAttrs attrNames elem concatMapStrings
-                       attrValues concatStringsSep optionalString;
+                       attrValues concatStringsSep optionalString
+                       optionalAttrs;
 
   # Map a function and concatenate with newlines.
   concatMapLines = list: func: concatStringsSep "\n" (map func list);
@@ -623,6 +624,8 @@ let
                     (optional stdenv.isDarwin xcode-wrapper);
     };
 
-    in stdenv.mkDerivation mkDerivationArgs;
+    in stdenv.mkDerivation (mkDerivationArgs // (optionalAttrs stdenv.isLinux {
+      LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
+    }));
 
 in self

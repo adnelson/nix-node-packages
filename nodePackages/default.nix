@@ -2348,7 +2348,8 @@
     lru-cache_2-2-4 = callPackage ./lru-cache/2.2.4.nix {};
     lru-queue = callPackage ./lru-queue/0.1.0.nix {};
     lru-queue_0-1-0 = callPackage ./lru-queue/0.1.0.nix {};
-    lsmod = callPackage ./lsmod/0.0.3.nix {};
+    lsmod = callPackage ./lsmod/1.0.0.nix {};
+    lsmod_1-0-0 = callPackage ./lsmod/1.0.0.nix {};
     lsmod_0-0-3 = callPackage ./lsmod/0.0.3.nix {};
     ltgt = callPackage ./ltgt/2.1.2.nix {};
     ltgt_2-1-2 = callPackage ./ltgt/2.1.2.nix {};
@@ -2573,7 +2574,8 @@
     negotiator_0-3-0 = callPackage ./negotiator/0.3.0.nix {};
     nested-error-stacks = callPackage ./nested-error-stacks/1.0.2.nix {};
     nested-error-stacks_1-0-2 = callPackage ./nested-error-stacks/1.0.2.nix {};
-    newrelic = callPackage ./newrelic/1.25.0.nix {};
+    newrelic = callPackage ./newrelic/1.34.0.nix {};
+    newrelic_1-34-0 = callPackage ./newrelic/1.34.0.nix {};
     newrelic_1-25-0 = callPackage ./newrelic/1.25.0.nix {};
     next-tick = callPackage ./next-tick/0.2.2.nix {};
     next-tick_0-2-2 = callPackage ./next-tick/0.2.2.nix {};
@@ -3086,7 +3088,8 @@
     range-parser = callPackage ./range-parser/1.0.3.nix {};
     range-parser_1-0-3 = callPackage ./range-parser/1.0.3.nix {};
     range-parser_0-0-4 = callPackage ./range-parser/0.0.4.nix {};
-    raven = callPackage ./raven/0.8.1.nix {};
+    raven = callPackage ./raven/0.12.1.nix {};
+    raven_0-12-1 = callPackage ./raven/0.12.1.nix {};
     raven_0-8-1 = callPackage ./raven/0.8.1.nix {};
     raven_0-7-3 = callPackage ./raven/0.7.3.nix {};
     raw-body = callPackage ./raw-body/2.1.4.nix {};
@@ -3298,7 +3301,8 @@
     selenium-webdriver_2-47-0 = callPackage ./selenium-webdriver/2.47.0.nix {};
     selenium-webdriver_2-45-1 = callPackage ./selenium-webdriver/2.45.1.nix {};
     selenium-webdriver_2-44-0 = callPackage ./selenium-webdriver/2.44.0.nix {};
-    semver = callPackage ./semver/5.1.0.nix {};
+    semver = callPackage ./semver/5.3.0.nix {};
+    semver_5-3-0 = callPackage ./semver/5.3.0.nix {};
     semver_5-1-0 = callPackage ./semver/5.1.0.nix {};
     semver_5-0-3 = callPackage ./semver/5.0.3.nix {};
     semver_4-3-6 = callPackage ./semver/4.3.6.nix {};
