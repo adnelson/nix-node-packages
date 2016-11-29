@@ -91,9 +91,9 @@ let
       link /usr/bin/xcode-select
       link /usr/bin/security
       link /usr/bin/codesign
-      link ${xcodeBaseDir}/Contents/Developer/usr/bin/xcodebuild
-      link ${xcodeBaseDir}/Contents/Developer/usr/bin/xcrun
-      link "${xcodeBaseDir}/Contents/Developer/Applications/iOS Simulator.app/Contents/MacOS/iOS Simulator"
+      link /usr/bin/xcodebuild
+      link /usr/bin/xcrun
+      link "${xcodeBaseDir}/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator"
 
       cd $out
       link "${xcodeBaseDir}/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs"
