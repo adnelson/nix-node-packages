@@ -2581,6 +2581,7 @@
     next-tick_0-2-2 = callPackage ./next-tick/0.2.2.nix {};
     node-cache = callPackage ./node-cache/1.1.0.nix {};
     node-cache_1-1-0 = callPackage ./node-cache/1.1.0.nix {};
+    node-esapi_0-0-1 = callPackage ./node-esapi/0.0.1.nix {};
     node-gyp = callPackage ./node-gyp/3.2.1.nix {};
     node-gyp_3-2-1 = callPackage ./node-gyp/3.2.1.nix {};
     node-gyp_3-0-3 = callPackage ./node-gyp/3.0.3.nix {};
