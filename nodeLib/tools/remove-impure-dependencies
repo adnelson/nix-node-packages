@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // These packages come packaged with nodejs.
 var fs = require('fs');
 var url = require('url');

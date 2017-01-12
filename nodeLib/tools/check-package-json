@@ -1,6 +1,10 @@
+#!/usr/bin/env node
 'use strict'
 var fs = require('fs');
-var semver = require(process.env.SEMVER_PATH);
+
+if (!fs.existsSync('./package.json')) {
+  throw new Error('This must be run in a directory with a package.json');
+}
 
 // Load up the package object.
 var packageObj = JSON.parse(fs.readFileSync('./package.json'));
@@ -45,6 +49,10 @@ function checkMainEntryPoint() {
 // should only be called when npm fails, assuming it failed because of
 // a missing dependency.
 function checkDependencies() {
+  if (!process.env.SEMVER_PATH) {
+    throw new Error("No path to the semver module is set.");
+  };
+  var semver = require(process.env.SEMVER_PATH);
   // This will be keyed on the dependency name and version, and valued with
   // the error.
   var errorsFound = {}
@@ -103,6 +111,7 @@ function checkDependencies() {
   }
 }
 
+var commands = ['checkPackageName', 'checkMainEntryPoint', 'checkDependencies'];
 switch (process.argv[2]) {
   case 'checkPackageName': {
     if (!process.argv[3]) {
@@ -115,5 +124,9 @@ switch (process.argv[2]) {
   }
   case 'checkDependencies': {
     checkDependencies(); break;
+  }
+  default: {
+    fail('No command, or unrecognized command given. Commands are: '
+         + commands.join(", "));
   }
 }

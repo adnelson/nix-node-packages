@@ -7,11 +7,14 @@
   npm ? nodejs,
   # Self-reference for overriding purposes.
   buildNodePackage,
+  # Provides xcode binaries to OSX builds (for native packages).
   xcode-wrapper,
+  # Scripts that we use during the npm builds.
+  node-build-tools,
 }:
 
 let
-  inherit (pkgs) stdenv python file;
+  inherit (pkgs) stdenv python2 file;
   inherit (pkgs.lib) showVal optional foldl;
   inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
@@ -256,11 +259,11 @@ let
       patchShebangs $PWD >/dev/null
 
       # Ensure that the package name matches what is in the package.json.
-      node ${./checkPackageJson.js} checkPackageName ${fullName}
+      check-package-json checkPackageName ${fullName}
 
       # Remove any impure dependencies from the package.json (see script
       # for details)
-      node ${./removeImpureDependencies.js}
+      remove-impure-dependencies
 
       # We do not handle shrinkwraps yet
       rm npm-shrinkwrap.json 2>/dev/null || true
@@ -282,7 +285,7 @@ let
                     package_json["${depType}"].pop("${name}", None)
                   '' else ''
                     print("Patching ${depType} ${name} to version ${version}")
-                    package_json["dependencies"]["${name}"] = "${version}"
+                    package_json["${depType}"]["${name}"] = "${version}"
                   ''}
             ''))}
         with open("package.json", "w") as f:
@@ -391,7 +394,7 @@ let
         npm install ${npmFlags} >/dev/null 2>&1 || {
           echo "Installation of ${name}@${version} failed!"
           echo "Checking dependencies to see if any aren't satisfied..."
-          node ${./checkPackageJson.js} checkDependencies
+          check-package-json checkDependencies
           echo "Dependencies seem ok. Rerunning with verbose logging:"
           npm install . ${npmFlags} --loglevel=verbose
           if [[ -d node_modules ]]; then
@@ -417,7 +420,7 @@ let
       runHook preInstall
 
       # Ensure that the main entry point appears post-build.
-      node ${./checkPackageJson.js} checkMainEntryPoint
+      check-package-json checkMainEntryPoint
 
       # Install the package that we just built.
       mkdir -p $out/lib/${self.modulePath}
@@ -477,7 +480,7 @@ let
       '') (attrValues _peerDependencies)}
 
       # Install binaries using the `bin` object in the package.json
-      python ${./installBinaries.py}
+      install-binaries
 
       runHook postInstall
     '';
@@ -514,11 +517,6 @@ let
         # This appends the package name and version to the hash string
         # we defined above, so that it is more human-readable.
         export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
-
-        # This is used by the checkPackageJson script so that it can
-        # confirm that version ranges are satisfied by installed
-        # versions.
-        export SEMVER_PATH=${npm}/lib/node_modules/npm/node_modules/semver
       '';
 
       shellHook = ''
@@ -546,6 +544,7 @@ let
           echo "Symlinking current directory into node modules folder..."
           mkdir -p $(dirname $NODE_MODULES/$fullName)
           ln -s $(pwd) $NODE_MODULES/$fullName
+          runHook preShellPackageValidityCheck
           if echo "require('$fullName')" | node; then
             echo "Successfully set up $fullName in local environment."
           else
@@ -617,7 +616,7 @@ let
       # additional specified build inputs. In addition, on darwin we
       # provide XCode, since node-gyp will use it, and on linux we add
       # utillinux.
-      buildInputs = [npm python file] ++
+      buildInputs = [npm python2 file node-build-tools] ++
                     attrValues _devDependencies ++
                     buildInputs ++
                     (optional stdenv.isLinux pkgs.utillinux) ++
