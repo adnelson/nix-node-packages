@@ -536,29 +536,43 @@ let
         export NODE_PATH=$NODE_MODULES:$NODE_PATH
         # Check if the current directory contains the package.json for
         # this package.
-        if python -c "import json; assert json.load(open('package.json'))['name'] == '$fullName'" 2>/dev/null; then
+        py_cmd='import json; print(json.load(open("package.json"))["name"])'
+        if [[ -e package.json ]] && \
+            [[ $(python -c "$py_cmd" 2>/dev/null) == "$fullName" ]]; then
+          IN_PACKAGE_DIR=true
           # If we're in the package directory, symlink it into the
           # temporary node modules folder we're building and then
           # attempt to import it. Issue a warning if we're not
           # successful.
           echo "Symlinking current directory into node modules folder..."
-          mkdir -p $(dirname $NODE_MODULES/$fullName)
-          ln -s $(pwd) $NODE_MODULES/$fullName
-          runHook preShellPackageValidityCheck
-          if echo "require('$fullName')" | node; then
-            echo "Successfully set up $fullName in local environment."
+          mkdir -pv $(dirname $NODE_MODULES/$fullName)
+          ln -sv $(pwd) $NODE_MODULES/$fullName
+          # Symlink the node modules folder to whatever has been built.
+          # Don't do this if there is a node_modules directory because this
+          # could break current directory state. However, issue a warning in
+          # this case.
+          if [[ -e node_modules ]] && [[ ! -L node_modules ]]; then
+            echo "Warning: node_modules exists but is not a symlink." >&2
+            echo "You can remove it (rm -r node_modules) and re-enter the" >&2
+            echo 'shell, or run `ln -sf $NODE_MODULES node_modules`' >&2
           else
-            echo "WARNING: could not set up $fullName in local environment."
+            rm -fv node_modules
+            ln -sfv $NODE_MODULES node_modules
           fi
         else
-          echo "WARNING: you are not in the directory for package $fullName," \
-               "so the shell hook can't symlink the local source code into" \
-               "the temporary node_modules directory. This might, for" \
-               "example, prevent you from being able to" \
-               "\`require('$fullName')\` in a node REPL. You might need to" \
-               "do something manually to set this up; for example if this" \
-               "package's source is a tarball, the command" '`tar -xf $src;' \
-               'ln -s $PWD/package $NODE_MODULES/$fullName` might work.'
+          echo >&2
+          echo "WARNING:" >&2
+          echo "You are not in the directory for $fullName, so the shell"\
+               "hook can't symlink the local source code into the temporary"\
+               "node_modules directory. This will probably prevent you from"\
+               "using $fullName in a node REPL or running its code." >&2
+          echo "You might be able to do something manually to"\
+               "set this up. For example if this package's source is a "\
+               "tarball, running these commands might work:" >&2
+          echo >&2
+          echo '  $ tar -xf $src' >&2
+          echo '  $ ln -s $PWD/package $NODE_MODULES/$fullName' >&2
+          echo >&2
         fi
         runHook postShellHook
       '';
