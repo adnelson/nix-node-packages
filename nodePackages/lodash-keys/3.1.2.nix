@@ -3,12 +3,12 @@ buildNodePackage {
     name = "lodash.keys";
     version = "3.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash.keys/-/lodash.keys-3.1.2.tgz";
+      url = "https://registry.npmjs.org/lodash.keys/-/lodash.keys-3.1.2.tgz";
       sha1 = "4dbc0472b156be50a0b286855d1bd0b0c656098a";
     };
     deps = with nodePackages; [
       lodash-isarray_3-0-4
-      lodash-isarguments_3-0-5
+      lodash-isarguments_3-1-0
       lodash-_getnative_3-9-1
     ];
     devDependencies = [];
