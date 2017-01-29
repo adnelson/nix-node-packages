@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash.isarray";
     version = "3.0.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz";
+      url = "https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz";
       sha1 = "79e4eb88c36a8122af86f844aa9bcd851b5fbb55";
     };
     deps = [];

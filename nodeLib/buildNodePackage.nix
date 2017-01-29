@@ -7,16 +7,20 @@
   npm ? nodejs,
   # Self-reference for overriding purposes.
   buildNodePackage,
+  # Provides xcode binaries to OSX builds (for native packages).
   xcode-wrapper,
+  # Scripts that we use during the npm builds.
+  node-build-tools,
 }:
 
 let
-  inherit (pkgs) stdenv python file;
+  inherit (pkgs) stdenv python2 file;
   inherit (pkgs.lib) showVal optional foldl;
   inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
                        mapAttrs filterAttrs attrNames elem concatMapStrings
-                       attrValues concatStringsSep optionalString;
+                       attrValues concatStringsSep optionalString
+                       optionalAttrs;
 
   # Map a function and concatenate with newlines.
   concatMapLines = list: func: concatStringsSep "\n" (map func list);
@@ -255,11 +259,11 @@ let
       patchShebangs $PWD >/dev/null
 
       # Ensure that the package name matches what is in the package.json.
-      node ${./checkPackageJson.js} checkPackageName ${fullName}
+      check-package-json checkPackageName ${fullName}
 
       # Remove any impure dependencies from the package.json (see script
       # for details)
-      node ${./removeImpureDependencies.js}
+      remove-impure-dependencies
 
       # We do not handle shrinkwraps yet
       rm npm-shrinkwrap.json 2>/dev/null || true
@@ -281,7 +285,7 @@ let
                     package_json["${depType}"].pop("${name}", None)
                   '' else ''
                     print("Patching ${depType} ${name} to version ${version}")
-                    package_json["dependencies"]["${name}"] = "${version}"
+                    package_json["${depType}"]["${name}"] = "${version}"
                   ''}
             ''))}
         with open("package.json", "w") as f:
@@ -390,7 +394,7 @@ let
         npm install ${npmFlags} >/dev/null 2>&1 || {
           echo "Installation of ${name}@${version} failed!"
           echo "Checking dependencies to see if any aren't satisfied..."
-          node ${./checkPackageJson.js} checkDependencies
+          check-package-json checkDependencies
           echo "Dependencies seem ok. Rerunning with verbose logging:"
           npm install . ${npmFlags} --loglevel=verbose
           if [[ -d node_modules ]]; then
@@ -416,7 +420,7 @@ let
       runHook preInstall
 
       # Ensure that the main entry point appears post-build.
-      node ${./checkPackageJson.js} checkMainEntryPoint
+      check-package-json checkMainEntryPoint
 
       # Install the package that we just built.
       mkdir -p $out/lib/${self.modulePath}
@@ -476,7 +480,7 @@ let
       '') (attrValues _peerDependencies)}
 
       # Install binaries using the `bin` object in the package.json
-      python ${./installBinaries.py}
+      install-binaries
 
       runHook postInstall
     '';
@@ -513,11 +517,6 @@ let
         # This appends the package name and version to the hash string
         # we defined above, so that it is more human-readable.
         export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
-
-        # This is used by the checkPackageJson script so that it can
-        # confirm that version ranges are satisfied by installed
-        # versions.
-        export SEMVER_PATH=${npm}/lib/node_modules/npm/node_modules/semver
       '';
 
       shellHook = ''
@@ -537,28 +536,43 @@ let
         export NODE_PATH=$NODE_MODULES:$NODE_PATH
         # Check if the current directory contains the package.json for
         # this package.
-        if python -c "import json; assert json.load(open('package.json'))['name'] == '$fullName'" 2>/dev/null; then
+        py_cmd='import json; print(json.load(open("package.json"))["name"])'
+        if [[ -e package.json ]] && \
+            [[ $(python -c "$py_cmd" 2>/dev/null) == "$fullName" ]]; then
+          IN_PACKAGE_DIR=true
           # If we're in the package directory, symlink it into the
           # temporary node modules folder we're building and then
           # attempt to import it. Issue a warning if we're not
           # successful.
           echo "Symlinking current directory into node modules folder..."
-          mkdir -p $(dirname $NODE_MODULES/$fullName)
-          ln -s $(pwd) $NODE_MODULES/$fullName
-          if echo "require('$fullName')" | node; then
-            echo "Successfully set up $fullName in local environment."
+          mkdir -pv $(dirname $NODE_MODULES/$fullName)
+          ln -sv $(pwd) $NODE_MODULES/$fullName
+          # Symlink the node modules folder to whatever has been built.
+          # Don't do this if there is a node_modules directory because this
+          # could break current directory state. However, issue a warning in
+          # this case.
+          if [[ -e node_modules ]] && [[ ! -L node_modules ]]; then
+            echo "Warning: node_modules exists but is not a symlink." >&2
+            echo "You can remove it (rm -r node_modules) and re-enter the" >&2
+            echo 'shell, or run `ln -sf $NODE_MODULES node_modules`' >&2
           else
-            echo "WARNING: could not set up $fullName in local environment."
+            rm -fv node_modules
+            ln -sfv $NODE_MODULES node_modules
           fi
         else
-          echo "WARNING: you are not in the directory for package $fullName," \
-               "so the shell hook can't symlink the local source code into" \
-               "the temporary node_modules directory. This might, for" \
-               "example, prevent you from being able to" \
-               "\`require('$fullName')\` in a node REPL. You might need to" \
-               "do something manually to set this up; for example if this" \
-               "package's source is a tarball, the command" '`tar -xf $src;' \
-               'ln -s $PWD/package $NODE_MODULES/$fullName` might work.'
+          echo >&2
+          echo "WARNING:" >&2
+          echo "You are not in the directory for $fullName, so the shell"\
+               "hook can't symlink the local source code into the temporary"\
+               "node_modules directory. This will probably prevent you from"\
+               "using $fullName in a node REPL or running its code." >&2
+          echo "You might be able to do something manually to"\
+               "set this up. For example if this package's source is a "\
+               "tarball, running these commands might work:" >&2
+          echo >&2
+          echo '  $ tar -xf $src' >&2
+          echo '  $ ln -s $PWD/package $NODE_MODULES/$fullName' >&2
+          echo >&2
         fi
         runHook postShellHook
       '';
@@ -616,13 +630,15 @@ let
       # additional specified build inputs. In addition, on darwin we
       # provide XCode, since node-gyp will use it, and on linux we add
       # utillinux.
-      buildInputs = [npm python file] ++
+      buildInputs = [npm python2 file node-build-tools] ++
                     attrValues _devDependencies ++
                     buildInputs ++
                     (optional stdenv.isLinux pkgs.utillinux) ++
                     (optional stdenv.isDarwin xcode-wrapper);
     };
 
-    in stdenv.mkDerivation mkDerivationArgs;
+    in stdenv.mkDerivation (mkDerivationArgs // (optionalAttrs stdenv.isLinux {
+      LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
+    }));
 
 in self

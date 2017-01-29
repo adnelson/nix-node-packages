@@ -10,6 +10,26 @@ buildNodePackage {
       nan_2-2-0
       bindings_1-2-1
     ];
+    # This patch forces the bundled icu library to be built as a
+    # shared object. Subsequently after we build, we use patchelf to
+    # replace the icu with one from nixpkgs.
+    postPatch = ''
+      patch -p0 -i ${./shared_library.patch}
+    '';
+    postBuild = let
+      # These two derivations provide shared libraries which we want
+      # to put in the RPATH of the generated binary.
+      libgcc = pkgs.stdenv.cc.cc.lib;
+      libicu = pkgs.icu_54_1.out;
+    in
+    ''
+      (
+      set -x
+      cd build/Release
+      patchelf --set-rpath ${libicu}/lib:${libgcc}/lib icuWrapper.node
+      patchelf  --replace-needed icui18n.so libicui18n.so icuWrapper.node
+      )
+    '';
     meta = {
       homepage = "https://github.com/SonicHedgehog/detect-character-encoding#readme";
       description = "Detect character encoding using ICU.";
