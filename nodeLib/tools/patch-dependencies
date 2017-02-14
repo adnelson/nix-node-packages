@@ -21,7 +21,8 @@ function versionSpecIsImpure(versionSpec) {
 var packageObj = JSON.parse(fs.readFileSync('./package.json'));
 
 // Purify dependencies.
-var depTypes = ['dependencies', 'devDependencies', 'optionalDependencies'];
+var depTypes = ['dependencies', 'devDependencies', 'optionalDependencies',
+                'peerDependencies'];
 for (var i in depTypes) {
   var depType = depTypes[i];
   var depSet = packageObj[depType];
@@ -65,6 +66,35 @@ if (process.env.removePeerDependencies && packageObj.peerDependencies) {
     console.log("  " + key + ": " + packageObj.peerDependencies[key]);
   }
   delete packageObj.peerDependencies;
+}
+
+/* Patch dependencies as set by the patchDependencies variable */
+var patches = JSON.parse(process.env.patchDependencies || "{}");
+if (Object.keys(patches).length > 0) {
+  console.log("Applying patches from patchDependencies argument...");
+  var errors = false;
+  // Iterate through all of the dependencies we're patching, and for
+  // each one either remove it or set it to something else.
+  for (dep_name in patches) {
+    var version = patches[dep_name];
+    var found = false;
+    for (dep_type_idx in depTypes) {
+      var dep_type = depTypes[dep_type_idx];
+      if (packageObj[dep_type] && packageObj[dep_type][dep_name] != null) {
+        found = true;
+        console.log("Found " + dep_name + " in " + dep_type + ". " +
+                    (version === null ? "Removing"
+                                      : ("Setting to version " + version)));
+        if (version === null) delete packageObj[dep_type][dep_name];
+        else packageObj[dep_type][dep_name] = version;
+      }
+    }
+    if (!found) {
+      console.log("No dependency named " + dep_name + " was found.");
+      errors = true;
+    }
+  }
+  if (errors) process.exit(1);
 }
 
 /* Write the fixed JSON file */
