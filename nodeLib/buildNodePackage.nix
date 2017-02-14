@@ -464,7 +464,7 @@ let
     '';
 
     # These are the arguments that we will pass to `stdenv.mkDerivation`.
-    mkDerivationArgs = {
+    mkDerivationArgs = removeAttrs args attrsToRemove // {
       inherit
         buildPhase
         checkPhase
@@ -592,7 +592,7 @@ let
         # if the derivation is the result of a `callPackage` application.
         overrideNodePackage = newArgs: buildNodePackage (args // newArgs);
       });
-    } // (removeAttrs args attrsToRemove) // {
+    } // {
       name = if namePrefix == null then throw "Name prefix is null"
              else if name == null then throw "Name is null"
              else if version == null then throw "Version of ${name} is null"
