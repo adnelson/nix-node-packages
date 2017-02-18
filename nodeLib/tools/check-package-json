@@ -61,8 +61,7 @@ function checkDependencies() {
   // * That a package with the given name exists in the node_modules folder.
   // * That its version satisfies the given version bounds.
   function checkDependency(name, versionRange, dependencyType) {
-    process.stderr.write("Checking dependency " + name + "@" + versionRange +
-                         "(from " + dependencyType + ")...");
+    process.stderr.write("  " + name + "@" + versionRange + " -> ");
     var dependencyPackageObj;
     var pkgJsonPath = process.cwd() + "/node_modules/" + name + "/package.json";
     var errorKey = name + "@" + versionRange;
@@ -83,7 +82,7 @@ function checkDependencies() {
       console.error("ERROR: " + message);
       return
     }
-    console.error("OK");
+    console.error("OK (found version " + dependencyPackageObj.version + ")");
   }
 
   // Verify that all of the declared dependencies in a package.json file
@@ -94,8 +93,8 @@ function checkDependencies() {
     if (depType === "devDependencies" && process.env.NO_DEV_DEPENDENCIES) {
       continue;
     }
-    console.log("Checking " + depType);
     if (packageObj[depType]) {
+      console.log("Checking " + depType);
       for (var depName in packageObj[depType]) {
         checkDependency(depName, packageObj[depType][depName], depType);
       }
