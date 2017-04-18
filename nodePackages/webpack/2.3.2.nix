@@ -28,6 +28,9 @@ buildNodePackage {
       acorn_4-0-11
       webpack-sources_0-2-3
     ];
+    patchDependencies = {
+      yargs = "6.6.1-candidate.4";
+    };
     meta = {
       homepage = "https://github.com/webpack/webpack";
       description = "Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.";

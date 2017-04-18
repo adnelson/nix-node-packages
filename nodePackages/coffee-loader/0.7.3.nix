@@ -9,9 +9,6 @@ buildNodePackage {
     deps = with nodePackages; [
       loader-utils_1-1-0
     ];
-    peerDependencies = with nodePackages; [
-      coffee-script_1-12-2
-    ];
     devDependencies = [];
     meta = {
       homepage = "https://github.com/webpack/coffee-loader#readme";

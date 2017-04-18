@@ -21,6 +21,9 @@ buildNodePackage {
       which-module_1-0-0
       camelcase_3-0-0
     ];
+    patchDependencies = {
+      yargs-parser = "4.2.1-candidate.1";
+    };
     meta = {
       homepage = "http://yargs.js.org/";
       description = "yargs the modern, pirate-themed, successor to optimist.";
