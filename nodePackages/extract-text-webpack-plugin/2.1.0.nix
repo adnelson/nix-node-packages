@@ -12,6 +12,9 @@ buildNodePackage {
       ajv_4-11-6
       webpack-sources_0-1-5
     ];
+    peerDependencies = with nodePackages; [
+      webpack_2-3-2
+    ];
     meta = {
       homepage = "http://github.com/webpack/extract-text-webpack-plugin";
       description = "Extract text from bundle into a file.";
