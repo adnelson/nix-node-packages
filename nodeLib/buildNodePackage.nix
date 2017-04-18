@@ -19,11 +19,14 @@ let
   inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
                        mapAttrs filterAttrs attrNames elem concatMapStrings
-                       attrValues concatStringsSep optionalString
+                       attrValues concatStringsSep optionalString filter
                        optionalAttrs;
 
+  # Join a list of strings with newlines, filtering out empty lines.
+  joinLines = strings: concatStringsSep "\n" (filter (s: s != "") strings);
+
   # Map a function and concatenate with newlines.
-  concatMapLines = list: func: concatStringsSep "\n" (map func list);
+  concatMapLines = list: func: joinLines (map func list);
 
   # This expression builds the raw C headers and source files for the base
   # node.js installation. Node packages which use the C API for node need to
@@ -141,7 +144,10 @@ in
   # Optional attributes to pass through to downstream derivations.
   passthru ? {},
 
-  # A set of dependencies to patch.
+  # A set of dependencies to patch, changing the version given in the
+  # package.json. Keys are dependency names, values are new
+  # versions. Alternatively, a value can be `null`, which will have
+  # the effect of removing the dependency from the package.json.
   patchDependencies ? {},
 
   # We attempt to automatically remove dev dependencies from the node_modules
@@ -197,7 +203,7 @@ let
   # to be passed through to mkDerivation. They are removed below.
   attrsToRemove = ["deps" "flags" "skipOptionalDependencies" "isBroken"
                    "passthru" "doCheck" "includeDevDependencies" "version"
-                   "namespace" "patchDependencies" "skipDevDependencyCleanup"
+                   "namespace" "skipDevDependencyCleanup" "patchDependencies"
                    "circularDependencies"] ++ dependencyTypes;
 
   # We create a `self` object for self-referential expressions. It
@@ -254,47 +260,19 @@ let
       # Add any extra headers that the user has passed in.
       extraNpmFlags);
 
-    patchPhase = ''
-      runHook prePatch
-      patchShebangs $PWD >/dev/null
-
+    patchPhase = joinLines [
+      "runHook prePatch"
+      "patchShebangs $PWD >/dev/null"
       # Ensure that the package name matches what is in the package.json.
-      check-package-json checkPackageName ${fullName}
-
+      "check-package-json checkPackageName ${fullName}"
       # Remove any impure dependencies from the package.json (see script
-      # for details)
-      remove-impure-dependencies
-
+      # for details). Apply patches in patchDependencies arguments.
+      "patch-dependencies"
       # We do not handle shrinkwraps yet
-      rm npm-shrinkwrap.json 2>/dev/null || true
-
-      ${if patchDependencies == {} then "" else ''
-        cat <<EOF | python
-        import json
-        with open("package.json") as f:
-            package_json = json.load(f)
-        ${concatMapLines (attrNames patchDependencies) (name: let
-            version = patchDependencies."${name}";
-          in
-          # Iterate through all of the dependencies we're patching, and for
-          # each one either remove it or set it to something else.
-          concatMapLines dependencyTypes (depType: ''
-            if "${name}" in package_json.setdefault("${depType}", {}):
-                ${if version == null then ''
-                    print("removing ${name} from ${depType}")
-                    package_json["${depType}"].pop("${name}", None)
-                  '' else ''
-                    print("Patching ${depType} ${name} to version ${version}")
-                    package_json["${depType}"]["${name}"] = "${version}"
-                  ''}
-            ''))}
-        with open("package.json", "w") as f:
-            f.write(json.dumps(package_json))
-        EOF
-      ''}
-
-      runHook postPatch
-    '';
+      "rm -fv npm-shrinkwrap.json"
+      (args.patchPhase or "")
+      "runHook postPatch"
+    ];
 
     # Computes the "circular closure" of a package.
     # See ./circular_dependencies.md for details.
@@ -486,7 +464,7 @@ let
     '';
 
     # These are the arguments that we will pass to `stdenv.mkDerivation`.
-    mkDerivationArgs = {
+    mkDerivationArgs = removeAttrs args attrsToRemove // {
       inherit
         buildPhase
         checkPhase
@@ -499,6 +477,8 @@ let
         npmFlags
         patchPhase
         src;
+
+      patchDependencies = builtins.toJSON patchDependencies;
 
       # Informs lower scripts not to check dev dependencies
       NO_DEV_DEPENDENCIES = devDependencies == null;
@@ -612,7 +592,7 @@ let
         # if the derivation is the result of a `callPackage` application.
         overrideNodePackage = newArgs: buildNodePackage (args // newArgs);
       });
-    } // (removeAttrs args attrsToRemove) // {
+    } // {
       name = if namePrefix == null then throw "Name prefix is null"
              else if name == null then throw "Name is null"
              else if version == null then throw "Version of ${name} is null"

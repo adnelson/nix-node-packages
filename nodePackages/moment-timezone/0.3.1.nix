@@ -4,7 +4,7 @@ buildNodePackage {
     version = "0.3.1";
     src = pkgs.fetchurl {
       url = "http://registry.npmjs.org/moment-timezone/-/moment-timezone-0.3.1.tgz";
-      sha1 = "3ef47856b02d53b718a10a5ec2023aa299e07bf5";
+      sha256 = "0rslgm00pnb45gvsj8aj0b152yp1lnpk1gaa7z4r3135r759vfq1";
     };
     deps = with nodePackages; [
       moment_2-10-6
