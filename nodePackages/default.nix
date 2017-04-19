@@ -3402,6 +3402,8 @@
     raw-body_2-1-4 = callPackage ./raw-body/2.1.4.nix {};
     raw-body_2-0-2 = callPackage ./raw-body/2.0.2.nix {};
     raw-body_1-1-2 = callPackage ./raw-body/1.1.2.nix {};
+    raw-loader = callPackage ./raw-loader/0.5.1.nix {};
+    raw-loader_0-5-1 = callPackage ./raw-loader/0.5.1.nix {};
     rc = callPackage ./rc/1.1.5.nix {};
     rc_1-1-5 = callPackage ./rc/1.1.5.nix {};
     rc_0-5-5 = callPackage ./rc/0.5.5.nix {};
