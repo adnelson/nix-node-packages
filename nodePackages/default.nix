@@ -1794,6 +1794,8 @@
     html-minifier_3-4-3 = callPackage ./html-minifier/3.4.3.nix {};
     html-minifier_1-1-1 = callPackage ./html-minifier/1.1.1.nix {};
     html-minifier_0-6-9 = callPackage ./html-minifier/0.6.9.nix {};
+    html-minifier-loader = callPackage ./html-minifier-loader/1.3.4.nix {};
+    html-minifier-loader_1-3-4 = callPackage ./html-minifier-loader/1.3.4.nix {};
     html-wiring = callPackage ./html-wiring/1.2.0.nix {};
     html-wiring_1-2-0 = callPackage ./html-wiring/1.2.0.nix {};
     htmlencode = callPackage ./htmlencode/0.0.4.nix {};
