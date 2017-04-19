@@ -1,16 +1,16 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
-    name = "lodash.restparam";
-    version = "3.6.1";
+    name = "lodash.isobject";
+    version = "3.0.2";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz";
-      sha1 = "936a4e309ef330a7645ed4145986c85ae5b20805";
+      url = "https://registry.npmjs.org/lodash.isobject/-/lodash.isobject-3.0.2.tgz";
+      sha1 = "3c8fb8d5b5bf4bf90ae06e14f2a530a4ed935e1d";
     };
     deps = [];
     devDependencies = [];
     meta = {
       homepage = "https://lodash.com/";
-      description = "The modern build of lodash’s `_.restParam` as a module.";
+      description = "The modern build of lodash’s `_.isObject` as a module.";
       keywords = [
         "lodash"
         "lodash-modularized"
