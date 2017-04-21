@@ -2469,6 +2469,8 @@
     karma-sinon_1-0-4 = callPackage ./karma-sinon/1.0.4.nix {};
     karma-sinon-chai = callPackage ./karma-sinon-chai/0.3.2.nix {};
     karma-sinon-chai_0-3-2 = callPackage ./karma-sinon-chai/0.3.2.nix {};
+    karma-webpack = callPackage ./karma-webpack/2.0.3.nix {};
+    karma-webpack_2-0-3 = callPackage ./karma-webpack/2.0.3.nix {};
     kerberos = callPackage ./kerberos/0.0.17.nix {};
     kerberos_0-0-17 = callPackage ./kerberos/0.0.17.nix {};
     kerberos_0-0-4 = callPackage ./kerberos/0.0.4.nix {};
@@ -4122,6 +4124,7 @@
     source-map_0-4-2 = callPackage ./source-map/0.4.2.nix {};
     source-map_0-3-0 = callPackage ./source-map/0.3.0.nix {};
     source-map_0-2-0 = callPackage ./source-map/0.2.0.nix {};
+    source-map_0-1-43 = callPackage ./source-map/0.1.43.nix {};
     source-map_0-1-34 = callPackage ./source-map/0.1.34.nix {};
     source-map_0-1-32 = callPackage ./source-map/0.1.32.nix {};
     source-map_0-1-31 = callPackage ./source-map/0.1.31.nix {};
