@@ -43,7 +43,7 @@ if not isdir(bin_folder):
 print("Creating binaries in {}".format(bin_folder))
 
 for bin_name, bin_path in _bin.items():
-    bin_name = bin_name.strip()
+    bin_name = (bin_name or "").strip()
     if bin_name == "":
         sys.exit("Blank binary name for package {}".format(pname))
     # Get the absolute path of the script being pointed to.
@@ -53,6 +53,18 @@ for bin_name, bin_path in _bin.items():
         sys.exit("Package {} version {} declares a binary {} at path {}, "
                  "but there is no such file at that path.".format(
                      package["name"], package["version"], bin_name, bin_path))
+    # If a shebang isn't present, add a node shebang.
+    with open(bin_abs_path) as f:
+        bin_contents = f.read()
+        lines = bin_contents.strip().splitlines()
+    if len(lines) == 0:
+        sys.exit("Bin file {} is empty.".format(bin_name))
+    elif not lines[0].strip().startswith("#!"):
+        print("Adding node shebang to bin file {}".format(bin_name))
+        with open(bin_abs_path, "w") as f:
+            f.write("#!/usr/bin/env node\n")
+            f.write(bin_contents)
+
     print("Linking binary {} to {}".format(bin_name, bin_abs_path))
     # Add executable permissions to the binary.
     bin_stats = os.stat(bin_abs_path)
