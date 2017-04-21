@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._createassigner";
     version = "3.1.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._createassigner/-/lodash._createassigner-3.1.1.tgz";
+      url = "https://registry.npmjs.org/lodash._createassigner/-/lodash._createassigner-3.1.1.tgz";
       sha1 = "838a5bae2fdaca63ac22dee8e19fa4e6d6970b11";
     };
     deps = with nodePackages; [

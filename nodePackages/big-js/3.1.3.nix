@@ -3,7 +3,7 @@ buildNodePackage {
     name = "big.js";
     version = "3.1.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/big.js/-/big.js-3.1.3.tgz";
+      url = "https://registry.npmjs.org/big.js/-/big.js-3.1.3.tgz";
       sha1 = "4cada2193652eb3ca9ec8e55c9015669c9806978";
     };
     deps = [];
