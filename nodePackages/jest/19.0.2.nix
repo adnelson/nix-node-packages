@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "b794faaf8ff461e7388f28beef559a54f20b2c10";
     };
     deps = with nodePackages; [
-      jest-cli_19-1-0-alpha-eed82034
+      jest-cli_19-0-2
     ];
     devDependencies = [];
     meta = {
