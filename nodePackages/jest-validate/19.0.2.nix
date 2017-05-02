@@ -1,16 +1,16 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "jest-validate";
-    version = "19.1.0-alpha.eed82034";
+    version = "19.0.2";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/jest-validate/-/jest-validate-19.1.0-alpha.eed82034.tgz";
-      sha1 = "0a7c101a92ba5e380f4a00155a9ea95965f2a541";
+      url = "https://registry.npmjs.org/jest-validate/-/jest-validate-19.0.2.tgz";
+      sha1 = "dc534df5f1278d5b63df32b14241d4dbf7244c0c";
     };
     deps = with nodePackages; [
       leven_2-1-0
       chalk_1-1-3
-      pretty-format_19-1-0-alpha-eed82034
-      jest-matcher-utils_19-1-0-alpha-eed82034
+      pretty-format_19-0-0
+      jest-matcher-utils_19-0-0
     ];
     devDependencies = [];
     meta = {

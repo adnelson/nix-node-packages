@@ -1,13 +1,13 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "jest-resolve-dependencies";
-    version = "19.1.0-alpha.eed82034";
+    version = "19.0.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/jest-resolve-dependencies/-/jest-resolve-dependencies-19.1.0-alpha.eed82034.tgz";
-      sha1 = "2dd96b3e2a945321bb914492cd92ba1e253ac5d0";
+      url = "https://registry.npmjs.org/jest-resolve-dependencies/-/jest-resolve-dependencies-19.0.0.tgz";
+      sha1 = "a741ad1fa094140e64ecf2642a504f834ece22ee";
     };
     deps = with nodePackages; [
-      jest-regex-util_19-1-0-alpha-eed82034
+      jest-file-exists_19-0-0
     ];
     devDependencies = [];
     meta = {

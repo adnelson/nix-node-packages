@@ -1,13 +1,13 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "babel-preset-jest";
-    version = "19.1.0-alpha.eed82034";
+    version = "19.0.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/babel-preset-jest/-/babel-preset-jest-19.1.0-alpha.eed82034.tgz";
-      sha1 = "1924ee9755629ff939e7bc348e42266cc869b9b3";
+      url = "https://registry.npmjs.org/babel-preset-jest/-/babel-preset-jest-19.0.0.tgz";
+      sha1 = "22d67201d02324a195811288eb38294bb3cac396";
     };
     deps = with nodePackages; [
-      babel-plugin-jest-hoist_19-1-0-alpha-eed82034
+      babel-plugin-jest-hoist_19-0-0
     ];
     devDependencies = [];
     meta = {

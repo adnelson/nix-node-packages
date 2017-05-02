@@ -1,14 +1,13 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "jest-message-util";
-    version = "19.1.0-alpha.eed82034";
+    version = "19.0.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/jest-message-util/-/jest-message-util-19.1.0-alpha.eed82034.tgz";
-      sha1 = "86bc121f8f59825cf789e32c7c654eee3546e5c6";
+      url = "https://registry.npmjs.org/jest-message-util/-/jest-message-util-19.0.0.tgz";
+      sha1 = "721796b89c0e4d761606f9ba8cb828a3b6246416";
     };
     deps = with nodePackages; [
       micromatch_2-3-11
-      slash_1-0-0
       chalk_1-1-3
     ];
     devDependencies = [];

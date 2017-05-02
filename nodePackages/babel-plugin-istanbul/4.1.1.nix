@@ -1,10 +1,10 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "babel-plugin-istanbul";
-    version = "4.1.2-candidate.0";
+    version = "4.1.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.2-candidate.0.tgz";
-      sha1 = "0e25f89a977ff9ffb247b54626a584c86e371982";
+      url = "https://registry.npmjs.org/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.1.tgz";
+      sha1 = "c12de0fc6fe42adfb16be56f1ad11e4a9782eca9";
     };
     deps = with nodePackages; [
       test-exclude_4-0-3

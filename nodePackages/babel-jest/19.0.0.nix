@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "59323ced99a3a84d359da219ca881074ffc6ce3f";
     };
     deps = with nodePackages; [
-      babel-preset-jest_19-1-0-alpha-eed82034
+      babel-preset-jest_19-0-0
       babel-core_6-24-1
-      babel-plugin-istanbul_4-1-2-candidate-0
+      babel-plugin-istanbul_4-1-1
     ];
     devDependencies = [];
     meta = {

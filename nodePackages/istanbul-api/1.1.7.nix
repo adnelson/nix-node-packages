@@ -13,7 +13,7 @@ buildNodePackage {
       once_1-4-0
       mkdirp_0-5-1
       istanbul-lib-coverage_1-0-2
-      istanbul-lib-report_1-0-0-alpha-3
+      istanbul-lib-report_1-0-0
       istanbul-lib-hook_1-0-5
       istanbul-lib-instrument_1-7-0
       istanbul-lib-source-maps_1-1-1
