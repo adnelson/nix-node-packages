@@ -3090,10 +3090,14 @@
     moment = callPackage ./moment/2.12.0.nix {};
     moment_2-12-0 = callPackage ./moment/2.12.0.nix {};
     moment_2-10-6 = callPackage ./moment/2.10.6.nix {};
+    moment_2-9-0 = callPackage ./moment/2.9.0.nix {};
     moment_2-2-1 = callPackage ./moment/2.2.1.nix {};
     moment_2-1-0 = callPackage ./moment/2.1.0.nix {};
     moment_2-0-0 = callPackage ./moment/2.0.0.nix {};
-    moment-timezone = callPackage ./moment-timezone/0.3.1.nix {};
+    moment-range = callPackage ./moment-range/3.0.3.nix {};
+    moment-range_3-0-3 = callPackage ./moment-range/3.0.3.nix {};
+    moment-timezone = callPackage ./moment-timezone/0.4.1.nix {};
+    moment-timezone_0-4-1 = callPackage ./moment-timezone/0.4.1.nix {};
     moment-timezone_0-3-1 = callPackage ./moment-timezone/0.3.1.nix {};
     moment-timezone_0-0-2 = callPackage ./moment-timezone/0.0.2.nix {};
     mongodb = callPackage ./mongodb/2.0.49.nix {};
