@@ -3935,8 +3935,12 @@
     reduce-css-calc_1-3-0 = callPackage ./reduce-css-calc/1.3.0.nix {};
     reduce-function-call = callPackage ./reduce-function-call/1.0.2.nix {};
     reduce-function-call_1-0-2 = callPackage ./reduce-function-call/1.0.2.nix {};
+    reduce-reducers = callPackage ./reduce-reducers/0.1.2.nix {};
+    reduce-reducers_0-1-2 = callPackage ./reduce-reducers/0.1.2.nix {};
     redux = callPackage ./redux/3.6.0.nix {};
     redux_3-6-0 = callPackage ./redux/3.6.0.nix {};
+    redux-actions = callPackage ./redux-actions/2.0.2.nix {};
+    redux-actions_2-0-2 = callPackage ./redux-actions/2.0.2.nix {};
     redux-saga = callPackage ./redux-saga/0.14.7.nix {};
     redux-saga_0-14-7 = callPackage ./redux-saga/0.14.7.nix {};
     regenerate = callPackage ./regenerate/1.2.1.nix {};
@@ -4015,6 +4019,8 @@
     requires-port_0-0-1 = callPackage ./requires-port/0.0.1.nix {};
     reqwest = callPackage ./reqwest/2.0.5.nix {};
     reqwest_2-0-5 = callPackage ./reqwest/2.0.5.nix {};
+    reselect = callPackage ./reselect/3.0.0.nix {};
+    reselect_3-0-0 = callPackage ./reselect/3.0.0.nix {};
     resolve = callPackage ./resolve/1.3.3.nix {};
     resolve_1-3-3 = callPackage ./resolve/1.3.3.nix {};
     resolve_1-1-7 = callPackage ./resolve/1.1.7.nix {};
