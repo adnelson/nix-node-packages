@@ -1032,6 +1032,8 @@
     core-util-is_1-0-2 = callPackage ./core-util-is/1.0.2.nix {};
     cors = callPackage ./cors/2.7.1.nix {};
     cors_2-7-1 = callPackage ./cors/2.7.1.nix {};
+    cosmiconfig = callPackage ./cosmiconfig/2.1.3.nix {};
+    cosmiconfig_2-1-3 = callPackage ./cosmiconfig/2.1.3.nix {};
     coverage-collector = callPackage ./coverage-collector/0.0.5.nix {};
     coverage-collector_0-0-5 = callPackage ./coverage-collector/0.0.5.nix {};
     coveralls = callPackage ./coveralls/2.11.12.nix {};
@@ -2225,6 +2227,8 @@
     is-ci_1-0-10 = callPackage ./is-ci/1.0.10.nix {};
     is-date-object = callPackage ./is-date-object/1.0.1.nix {};
     is-date-object_1-0-1 = callPackage ./is-date-object/1.0.1.nix {};
+    is-directory = callPackage ./is-directory/0.3.1.nix {};
+    is-directory_0-3-1 = callPackage ./is-directory/0.3.1.nix {};
     is-dotfile = callPackage ./is-dotfile/1.0.2.nix {};
     is-dotfile_1-0-2 = callPackage ./is-dotfile/1.0.2.nix {};
     is-equal-shallow = callPackage ./is-equal-shallow/0.1.3.nix {};
@@ -3637,6 +3641,14 @@
     postcss-discard-unused_2-2-3 = callPackage ./postcss-discard-unused/2.2.3.nix {};
     postcss-filter-plugins = callPackage ./postcss-filter-plugins/2.0.2.nix {};
     postcss-filter-plugins_2-0-2 = callPackage ./postcss-filter-plugins/2.0.2.nix {};
+    postcss-load-config = callPackage ./postcss-load-config/1.2.0.nix {};
+    postcss-load-config_1-2-0 = callPackage ./postcss-load-config/1.2.0.nix {};
+    postcss-load-options = callPackage ./postcss-load-options/1.2.0.nix {};
+    postcss-load-options_1-2-0 = callPackage ./postcss-load-options/1.2.0.nix {};
+    postcss-load-plugins = callPackage ./postcss-load-plugins/2.3.0.nix {};
+    postcss-load-plugins_2-3-0 = callPackage ./postcss-load-plugins/2.3.0.nix {};
+    postcss-loader = callPackage ./postcss-loader/1.3.3.nix {};
+    postcss-loader_1-3-3 = callPackage ./postcss-loader/1.3.3.nix {};
     postcss-merge-idents = callPackage ./postcss-merge-idents/2.1.7.nix {};
     postcss-merge-idents_2-1-7 = callPackage ./postcss-merge-idents/2.1.7.nix {};
     postcss-merge-longhand = callPackage ./postcss-merge-longhand/2.0.2.nix {};
@@ -3941,6 +3953,8 @@
     redux_3-6-0 = callPackage ./redux/3.6.0.nix {};
     redux-actions = callPackage ./redux-actions/2.0.2.nix {};
     redux-actions_2-0-2 = callPackage ./redux-actions/2.0.2.nix {};
+    redux-mock-store = callPackage ./redux-mock-store/1.2.3.nix {};
+    redux-mock-store_1-2-3 = callPackage ./redux-mock-store/1.2.3.nix {};
     redux-saga = callPackage ./redux-saga/0.14.7.nix {};
     redux-saga_0-14-7 = callPackage ./redux-saga/0.14.7.nix {};
     regenerate = callPackage ./regenerate/1.2.1.nix {};
@@ -4007,6 +4021,8 @@
     request-replay_0-2-0 = callPackage ./request-replay/0.2.0.nix {};
     require-directory = callPackage ./require-directory/2.1.1.nix {};
     require-directory_2-1-1 = callPackage ./require-directory/2.1.1.nix {};
+    require-from-string = callPackage ./require-from-string/1.2.1.nix {};
+    require-from-string_1-2-1 = callPackage ./require-from-string/1.2.1.nix {};
     require-main-filename = callPackage ./require-main-filename/1.0.1.nix {};
     require-main-filename_1-0-1 = callPackage ./require-main-filename/1.0.1.nix {};
     require-uncached = callPackage ./require-uncached/1.0.3.nix {};
