@@ -3876,6 +3876,8 @@
     react-redux_5-0-4 = callPackage ./react-redux/5.0.4.nix {};
     react-test-renderer = callPackage ./react-test-renderer/15.5.4.nix {};
     react-test-renderer_15-5-4 = callPackage ./react-test-renderer/15.5.4.nix {};
+    react-tooltip = callPackage ./react-tooltip/3.3.0.nix {};
+    react-tooltip_3-3-0 = callPackage ./react-tooltip/3.3.0.nix {};
     read = callPackage ./read/1.0.7.nix {};
     read_1-0-7 = callPackage ./read/1.0.7.nix {};
     read-all-stream = callPackage ./read-all-stream/3.0.1.nix {};
