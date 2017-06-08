@@ -1693,6 +1693,8 @@
     fresh_0-1-0 = callPackage ./fresh/0.1.0.nix {};
     from = callPackage ./from/0.0.2.nix {};
     from_0-0-2 = callPackage ./from/0.0.2.nix {};
+    fs-access = callPackage ./fs-access/1.0.0.nix {};
+    fs-access_1-0-0 = callPackage ./fs-access/1.0.0.nix {};
     fs-extra = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-28-0 = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-26-7 = callPackage ./fs-extra/0.26.7.nix {};
