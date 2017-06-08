@@ -1322,6 +1322,8 @@
     dynalite_0-17-1 = callPackage ./dynalite/0.17.1.nix {};
     each-async = callPackage ./each-async/1.1.1.nix {};
     each-async_1-1-1 = callPackage ./each-async/1.1.1.nix {};
+    easing-js = callPackage ./easing-js/1.1.2.nix {};
+    easing-js_1-1-2 = callPackage ./easing-js/1.1.2.nix {};
     ecc-jsbn = callPackage ./ecc-jsbn/0.1.1.nix {};
     ecc-jsbn_0-1-1 = callPackage ./ecc-jsbn/0.1.1.nix {};
     ecc-jsbn_0-0-1 = callPackage ./ecc-jsbn/0.0.1.nix {};
@@ -1590,6 +1592,7 @@
     fbemitter_2-0-1 = callPackage ./fbemitter/2.0.1.nix {};
     fbjs = callPackage ./fbjs/0.8.12.nix {};
     fbjs_0-8-12 = callPackage ./fbjs/0.8.12.nix {};
+    fbjs_0-7-2 = callPackage ./fbjs/0.7.2.nix {};
     fbjs_0-6-1 = callPackage ./fbjs/0.6.1.nix {};
     fbjs_0-3-2 = callPackage ./fbjs/0.3.2.nix {};
     fbjs_0-1-0-alpha-7 = callPackage ./fbjs/0.1.0-alpha.7.nix {};
@@ -1690,8 +1693,6 @@
     fresh_0-1-0 = callPackage ./fresh/0.1.0.nix {};
     from = callPackage ./from/0.0.2.nix {};
     from_0-0-2 = callPackage ./from/0.0.2.nix {};
-    fs-access = callPackage ./fs-access/1.0.0.nix {};
-    fs-access_1-0-0 = callPackage ./fs-access/1.0.0.nix {};
     fs-extra = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-28-0 = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-26-7 = callPackage ./fs-extra/0.26.7.nix {};
@@ -2780,6 +2781,8 @@
     lodash-_reinterpolate_2-4-1 = callPackage ./lodash-_reinterpolate/2.4.1.nix {};
     lodash-_reunescapedhtml = callPackage ./lodash-_reunescapedhtml/2.4.1.nix {};
     lodash-_reunescapedhtml_2-4-1 = callPackage ./lodash-_reunescapedhtml/2.4.1.nix {};
+    lodash-_root = callPackage ./lodash-_root/3.0.1.nix {};
+    lodash-_root_3-0-1 = callPackage ./lodash-_root/3.0.1.nix {};
     lodash-_setcache = callPackage ./lodash-_setcache/4.0.1.nix {};
     lodash-_setcache_4-0-1 = callPackage ./lodash-_setcache/4.0.1.nix {};
     lodash-_shimkeys = callPackage ./lodash-_shimkeys/2.4.1.nix {};
@@ -2896,6 +2899,8 @@
     lodash-uniq_4-5-0 = callPackage ./lodash-uniq/4.5.0.nix {};
     lodash-uniq_4-0-1 = callPackage ./lodash-uniq/4.0.1.nix {};
     lodash-uniq_3-2-2 = callPackage ./lodash-uniq/3.2.2.nix {};
+    lodash-uniqueid = callPackage ./lodash-uniqueid/3.2.0.nix {};
+    lodash-uniqueid_3-2-0 = callPackage ./lodash-uniqueid/3.2.0.nix {};
     lodash-values = callPackage ./lodash-values/2.4.1.nix {};
     lodash-values_2-4-1 = callPackage ./lodash-values/2.4.1.nix {};
     lodash-without = callPackage ./lodash-without/4.0.1.nix {};
@@ -3550,7 +3555,8 @@
     pct-encode_1-0-2 = callPackage ./pct-encode/1.0.2.nix {};
     pend = callPackage ./pend/1.2.0.nix {};
     pend_1-2-0 = callPackage ./pend/1.2.0.nix {};
-    performance-now = callPackage ./performance-now/0.2.0.nix {};
+    performance-now = callPackage ./performance-now/2.1.0.nix {};
+    performance-now_2-1-0 = callPackage ./performance-now/2.1.0.nix {};
     performance-now_0-2-0 = callPackage ./performance-now/0.2.0.nix {};
     pg = callPackage ./pg/4.4.3.nix {};
     pg_4-4-3 = callPackage ./pg/4.4.3.nix {};
@@ -3785,6 +3791,16 @@
     pseudomap_1-0-2 = callPackage ./pseudomap/1.0.2.nix {};
     public-encrypt = callPackage ./public-encrypt/4.0.0.nix {};
     public-encrypt_4-0-0 = callPackage ./public-encrypt/4.0.0.nix {};
+    pui-css-tooltips = callPackage ./pui-css-tooltips/8.1.0.nix {};
+    pui-css-tooltips_8-1-0 = callPackage ./pui-css-tooltips/8.1.0.nix {};
+    pui-react-animation = callPackage ./pui-react-animation/0.2.1.nix {};
+    pui-react-animation_0-2-1 = callPackage ./pui-react-animation/0.2.1.nix {};
+    pui-react-mixins = callPackage ./pui-react-mixins/8.1.0.nix {};
+    pui-react-mixins_8-1-0 = callPackage ./pui-react-mixins/8.1.0.nix {};
+    pui-react-overlay-trigger = callPackage ./pui-react-overlay-trigger/8.1.0.nix {};
+    pui-react-overlay-trigger_8-1-0 = callPackage ./pui-react-overlay-trigger/8.1.0.nix {};
+    pui-react-tooltip = callPackage ./pui-react-tooltip/8.1.0.nix {};
+    pui-react-tooltip_8-1-0 = callPackage ./pui-react-tooltip/8.1.0.nix {};
     pull-core = callPackage ./pull-core/1.0.0.nix {};
     pull-core_1-0-0 = callPackage ./pull-core/1.0.0.nix {};
     pull-stream = callPackage ./pull-stream/2.21.0.nix {};
@@ -3837,6 +3853,8 @@
     querystringify_0-0-3 = callPackage ./querystringify/0.0.3.nix {};
     quick-temp = callPackage ./quick-temp/0.1.3.nix {};
     quick-temp_0-1-3 = callPackage ./quick-temp/0.1.3.nix {};
+    raf = callPackage ./raf/3.3.2.nix {};
+    raf_3-3-2 = callPackage ./raf/3.3.2.nix {};
     randomatic = callPackage ./randomatic/1.1.3.nix {};
     randomatic_1-1-3 = callPackage ./randomatic/1.1.3.nix {};
     randombytes = callPackage ./randombytes/2.0.1.nix {};
@@ -3864,6 +3882,8 @@
     react_0-13-3 = callPackage ./react/0.13.3.nix {};
     react-addons-css-transition-group = callPackage ./react-addons-css-transition-group/15.5.2.nix {};
     react-addons-css-transition-group_15-5-2 = callPackage ./react-addons-css-transition-group/15.5.2.nix {};
+    react-addons-shallow-compare = callPackage ./react-addons-shallow-compare/15.5.2.nix {};
+    react-addons-shallow-compare_15-5-2 = callPackage ./react-addons-shallow-compare/15.5.2.nix {};
     react-addons-update = callPackage ./react-addons-update/15.5.2.nix {};
     react-addons-update_15-5-2 = callPackage ./react-addons-update/15.5.2.nix {};
     react-autobind = callPackage ./react-autobind/1.0.6.nix {};
@@ -3876,6 +3896,8 @@
     react-redux_5-0-4 = callPackage ./react-redux/5.0.4.nix {};
     react-test-renderer = callPackage ./react-test-renderer/15.5.4.nix {};
     react-test-renderer_15-5-4 = callPackage ./react-test-renderer/15.5.4.nix {};
+    react-tether = callPackage ./react-tether/0.5.7.nix {};
+    react-tether_0-5-7 = callPackage ./react-tether/0.5.7.nix {};
     react-tooltip = callPackage ./react-tooltip/3.3.0.nix {};
     react-tooltip_3-3-0 = callPackage ./react-tooltip/3.3.0.nix {};
     read = callPackage ./read/1.0.7.nix {};
@@ -4501,6 +4523,8 @@
     test-exclude = callPackage ./test-exclude/4.0.3.nix {};
     test-exclude_4-0-3 = callPackage ./test-exclude/4.0.3.nix {};
     test-exclude_1-1-0 = callPackage ./test-exclude/1.1.0.nix {};
+    tether = callPackage ./tether/1.4.0.nix {};
+    tether_1-4-0 = callPackage ./tether/1.4.0.nix {};
     text-table = callPackage ./text-table/0.2.0.nix {};
     text-table_0-2-0 = callPackage ./text-table/0.2.0.nix {};
     textextensions = callPackage ./textextensions/1.0.1.nix {};
