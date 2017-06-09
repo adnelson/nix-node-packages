@@ -1693,6 +1693,8 @@
     fresh_0-1-0 = callPackage ./fresh/0.1.0.nix {};
     from = callPackage ./from/0.0.2.nix {};
     from_0-0-2 = callPackage ./from/0.0.2.nix {};
+    fs-access = callPackage ./fs-access/1.0.0.nix {};
+    fs-access_1-0-0 = callPackage ./fs-access/1.0.0.nix {};
     fs-extra = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-28-0 = callPackage ./fs-extra/0.28.0.nix {};
     fs-extra_0-26-7 = callPackage ./fs-extra/0.26.7.nix {};
@@ -3200,6 +3202,8 @@
     next-tick_0-2-2 = callPackage ./next-tick/0.2.2.nix {};
     ng-redux = callPackage ./ng-redux/3.4.0-beta.1.nix {};
     ng-redux_3-4-0-beta-1 = callPackage ./ng-redux/3.4.0-beta.1.nix {};
+    ng-tags-input = callPackage ./ng-tags-input/3.2.0.nix {};
+    ng-tags-input_3-2-0 = callPackage ./ng-tags-input/3.2.0.nix {};
     ngtemplate-loader = callPackage ./ngtemplate-loader/1.3.1.nix {};
     ngtemplate-loader_1-3-1 = callPackage ./ngtemplate-loader/1.3.1.nix {};
     no-case = callPackage ./no-case/2.3.1.nix {};
