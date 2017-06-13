@@ -10,7 +10,7 @@ buildNodePackage {
       es6-symbol_3-1-1
     ];
     peerDependencies = with nodePackages; [
-      moment_2-9-0
+      moment_2-18-1
     ];
     meta = {
       homepage = "https://github.com/gf3/moment-range";
