@@ -1668,6 +1668,7 @@
     forever-agent_0-2-0 = callPackage ./forever-agent/0.2.0.nix {};
     form-data = callPackage ./form-data/2.1.2.nix {};
     form-data_2-1-2 = callPackage ./form-data/2.1.2.nix {};
+    form-data_2-0-0 = callPackage ./form-data/2.0.0.nix {};
     form-data_1-0-1 = callPackage ./form-data/1.0.1.nix {};
     form-data_1-0-0-rc3 = callPackage ./form-data/1.0.0-rc3.nix {};
     form-data_0-2-0 = callPackage ./form-data/0.2.0.nix {};
@@ -1712,10 +1713,12 @@
     fsevents = callPackage ./fsevents/1.0.5.nix {};
     fsevents_1-0-5 = callPackage ./fsevents/1.0.5.nix {};
     fsevents_0-2-1 = callPackage ./fsevents/0.2.1.nix {};
-    fstream = callPackage ./fstream/1.0.8.nix {};
+    fstream = callPackage ./fstream/1.0.11.nix {};
+    fstream_1-0-11 = callPackage ./fstream/1.0.11.nix {};
     fstream_1-0-8 = callPackage ./fstream/1.0.8.nix {};
     fstream_0-1-31 = callPackage ./fstream/0.1.31.nix {};
-    fstream-ignore = callPackage ./fstream-ignore/1.0.3.nix {};
+    fstream-ignore = callPackage ./fstream-ignore/1.0.5.nix {};
+    fstream-ignore_1-0-5 = callPackage ./fstream-ignore/1.0.5.nix {};
     fstream-ignore_1-0-3 = callPackage ./fstream-ignore/1.0.3.nix {};
     fstream-npm = callPackage ./fstream-npm/1.0.7.nix {};
     fstream-npm_1-0-7 = callPackage ./fstream-npm/1.0.7.nix {};
@@ -3156,6 +3159,7 @@
     mysql_2-9-0 = callPackage ./mysql/2.9.0.nix {};
     nan = callPackage ./nan/2.6.2.nix {};
     nan_2-6-2 = callPackage ./nan/2.6.2.nix {};
+    nan_2-4-0 = callPackage ./nan/2.4.0.nix {};
     nan_2-2-0 = callPackage ./nan/2.2.0.nix {};
     nan_2-1-0 = callPackage ./nan/2.1.0.nix {};
     nan_2-0-9 = callPackage ./nan/2.0.9.nix {};
@@ -3222,7 +3226,8 @@
     node-notifier = callPackage ./node-notifier/5.1.2.nix {};
     node-notifier_5-1-2 = callPackage ./node-notifier/5.1.2.nix {};
     node-notifier_1-2-1 = callPackage ./node-notifier/1.2.1.nix {};
-    node-pre-gyp = callPackage ./node-pre-gyp/0.6.15.nix {};
+    node-pre-gyp = callPackage ./node-pre-gyp/0.6.31.nix {};
+    node-pre-gyp_0-6-31 = callPackage ./node-pre-gyp/0.6.31.nix {};
     node-pre-gyp_0-6-15 = callPackage ./node-pre-gyp/0.6.15.nix {};
     node-sass = callPackage ./node-sass/4.5.2.nix {};
     node-sass_4-5-2 = callPackage ./node-sass/4.5.2.nix {};
@@ -3855,7 +3860,8 @@
     raw-body_1-1-2 = callPackage ./raw-body/1.1.2.nix {};
     raw-loader = callPackage ./raw-loader/0.5.1.nix {};
     raw-loader_0-5-1 = callPackage ./raw-loader/0.5.1.nix {};
-    rc = callPackage ./rc/1.1.5.nix {};
+    rc = callPackage ./rc/1.1.6.nix {};
+    rc_1-1-6 = callPackage ./rc/1.1.6.nix {};
     rc_1-1-5 = callPackage ./rc/1.1.5.nix {};
     rc_0-5-5 = callPackage ./rc/0.5.5.nix {};
     react = callPackage ./react/15.5.4.nix {};
@@ -3998,6 +4004,7 @@
     replace-ext_0-0-1 = callPackage ./replace-ext/0.0.1.nix {};
     request = callPackage ./request/2.81.0.nix {};
     request_2-81-0 = callPackage ./request/2.81.0.nix {};
+    request_2-75-0 = callPackage ./request/2.75.0.nix {};
     request_2-74-0 = callPackage ./request/2.74.0.nix {};
     request_2-68-0 = callPackage ./request/2.68.0.nix {};
     request_2-67-0 = callPackage ./request/2.67.0.nix {};
@@ -4322,6 +4329,8 @@
     sprintf_0-1-5 = callPackage ./sprintf/0.1.5.nix {};
     sprintf-js = callPackage ./sprintf-js/1.0.3.nix {};
     sprintf-js_1-0-3 = callPackage ./sprintf-js/1.0.3.nix {};
+    sqlite3 = callPackage ./sqlite3/3.1.8.nix {};
+    sqlite3_3-1-8 = callPackage ./sqlite3/3.1.8.nix {};
     ssh2 = callPackage ./ssh2/0.2.25.nix {};
     ssh2_0-2-25 = callPackage ./ssh2/0.2.25.nix {};
     sshpk = callPackage ./sshpk/1.7.3.nix {};
@@ -4488,7 +4497,8 @@
     tar-fs = callPackage ./tar-fs/1.8.1.nix {};
     tar-fs_1-8-1 = callPackage ./tar-fs/1.8.1.nix {};
     tar-fs_0-5-2 = callPackage ./tar-fs/0.5.2.nix {};
-    tar-pack = callPackage ./tar-pack/3.1.0.nix {};
+    tar-pack = callPackage ./tar-pack/3.3.0.nix {};
+    tar-pack_3-3-0 = callPackage ./tar-pack/3.3.0.nix {};
     tar-pack_3-1-0 = callPackage ./tar-pack/3.1.0.nix {};
     tar-stream = callPackage ./tar-stream/1.5.2.nix {};
     tar-stream_1-5-2 = callPackage ./tar-stream/1.5.2.nix {};
