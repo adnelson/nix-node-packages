@@ -3098,7 +3098,7 @@
     module-deps_1-0-2 = callPackage ./module-deps/1.0.2.nix {};
     module-not-found-error = callPackage ./module-not-found-error/1.0.1.nix {};
     module-not-found-error_1-0-1 = callPackage ./module-not-found-error/1.0.1.nix {};
-    moment = callPackage ./moment/2.12.0.nix {};
+    moment = callPackage ./moment/2.18.1.nix {};
     moment_2-18-1 = callPackage ./moment/2.18.1.nix {};
     moment_2-12-0 = callPackage ./moment/2.12.0.nix {};
     moment_2-10-6 = callPackage ./moment/2.10.6.nix {};
