@@ -1,4 +1,4 @@
-{ nodejs ? pkgs.nodejs-4_x, npm3 ? true, pkgs ? import <nixpkgs> {} }:
+{ nodejs ? pkgs.nodejs-6_x, npm3 ? true, pkgs ? import <nixpkgs> {} }:
 let
   mkNodeLib = import ./nodeLib { self = mkNodeLib; };
   nodeLib = mkNodeLib {
