@@ -162,6 +162,12 @@ in
   # Metadata about the package.
   meta ? {},
 
+  # Overrides to the arguments to mkDerivation. This can be used to
+  # set custom values for the arguments that buildNodePackage would
+  # set, so it's only necessary for a certain set of keys (everything
+  # else can just be passed in directly).
+  derivationOverrides ? {},
+
   # Any remaining flags are passed through to mkDerivation.
   ...
 } @ args:
@@ -170,8 +176,7 @@ let
   # The package name as it appears in the package.json. This contains a
   # namespace if there is one, so it will be a distinct identifier for
   # different packages.
-  fullName = if namespace == null then name
-                    else "@${namespace}/${name}";
+  fullName = if namespace == null then name else "@${namespace}/${name}";
 
   # The package name with a version appended. This should be unique amongst
   # all packages.
@@ -204,7 +209,7 @@ let
   attrsToRemove = ["deps" "flags" "skipOptionalDependencies" "isBroken"
                    "passthru" "doCheck" "includeDevDependencies" "version"
                    "namespace" "skipDevDependencyCleanup" "patchDependencies"
-                   "circularDependencies"] ++ dependencyTypes;
+                   "circularDependencies" "derivationOverrides"] ++ dependencyTypes;
 
   # We create a `self` object for self-referential expressions. It
   # bottoms out in a call to `mkDerivation` at the end.
@@ -488,15 +493,19 @@ let
 
       # Define some environment variables that we will use in the build.
       setVariables = ''
+        # In case this was set by an upstream derivation.
+        unset NODE_PATH
+
         # This creates a string for this package which is unique but
         # deterministic. We can use it to create temporary directories
         # and URLs and be confident there will be no collisions.
-        export HASHEDNAME=$(echo "$propagatedNativeBuildInputs $name" \
-                          | md5sum | awk '{print $1}')
+        HASHEDNAME=$(echo "$propagatedNativeBuildInputs $name" \
+                     | md5sum | awk '{print $1}')
+        export HASHEDNAME
 
         # This appends the package name and version to the hash string
         # we defined above, so that it is more human-readable.
-        export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
+        export UNIQNAME="''${HASHEDNAME:0:10}-quill3"
       '';
 
       shellHook = ''
@@ -615,10 +624,9 @@ let
                     buildInputs ++
                     (optional stdenv.isLinux pkgs.utillinux) ++
                     (optional stdenv.isDarwin xcode-wrapper);
-    };
-
-    in stdenv.mkDerivation (mkDerivationArgs // (optionalAttrs stdenv.isLinux {
+    } // optionalAttrs stdenv.isLinux {
       LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
-    }));
+    } // derivationOverrides;
 
+    in stdenv.mkDerivation mkDerivationArgs;
 in self
