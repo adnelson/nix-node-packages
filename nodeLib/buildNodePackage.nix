@@ -505,7 +505,7 @@ let
 
         # This appends the package name and version to the hash string
         # we defined above, so that it is more human-readable.
-        export UNIQNAME="''${HASHEDNAME:0:10}-quill3"
+        export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
       '';
 
       shellHook = ''
