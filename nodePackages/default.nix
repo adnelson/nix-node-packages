@@ -459,7 +459,8 @@
     balanced-match_0-4-2 = callPackage ./balanced-match/0.4.2.nix {};
     balanced-match_0-3-0 = callPackage ./balanced-match/0.3.0.nix {};
     balanced-match_0-2-1 = callPackage ./balanced-match/0.2.1.nix {};
-    base62 = callPackage ./base62/0.1.1.nix {};
+    base62 = callPackage ./base62/1.2.0.nix {};
+    base62_1-2-0 = callPackage ./base62/1.2.0.nix {};
     base62_0-1-1 = callPackage ./base62/0.1.1.nix {};
     base64-arraybuffer = callPackage ./base64-arraybuffer/0.1.5.nix {};
     base64-arraybuffer_0-1-5 = callPackage ./base64-arraybuffer/0.1.5.nix {};
@@ -2953,9 +2954,10 @@
     lodash-templatesettings = callPackage ./lodash-templatesettings/3.1.0.nix {};
     lodash-templatesettings_3-1-0 = callPackage ./lodash-templatesettings/3.1.0.nix {};
     lodash-templatesettings_2-4-1 = callPackage ./lodash-templatesettings/2.4.1.nix {};
+    lodash-throttle = callPackage ./lodash-throttle/4.1.1.nix {};
+    lodash-throttle_4-1-1 = callPackage ./lodash-throttle/4.1.1.nix {};
     lodash-toarray = callPackage ./lodash-toarray/4.4.0.nix {};
     lodash-toarray_4-4-0 = callPackage ./lodash-toarray/4.4.0.nix {};
-    lodash-throttle_4-1-1 = callPackage ./lodash-throttle/4.1.1.nix {};
     lodash-union = callPackage ./lodash-union/4.0.1.nix {};
     lodash-union_4-0-1 = callPackage ./lodash-union/4.0.1.nix {};
     lodash-union_3-1-0 = callPackage ./lodash-union/3.1.0.nix {};
@@ -3799,6 +3801,8 @@
     precond_0-2-3 = callPackage ./precond/0.2.3.nix {};
     prelude-ls = callPackage ./prelude-ls/1.1.2.nix {};
     prelude-ls_1-1-2 = callPackage ./prelude-ls/1.1.2.nix {};
+    prepack = callPackage ./prepack/0.2.5.nix {};
+    prepack_0-2-5 = callPackage ./prepack/0.2.5.nix {};
     prepend-http = callPackage ./prepend-http/1.0.3.nix {};
     prepend-http_1-0-3 = callPackage ./prepend-http/1.0.3.nix {};
     preserve = callPackage ./preserve/0.2.0.nix {};
@@ -3845,10 +3849,10 @@
     prop-types = callPackage ./prop-types/15.5.10.nix {};
     prop-types_15-5-10 = callPackage ./prop-types/15.5.10.nix {};
     prop-types_15-5-8 = callPackage ./prop-types/15.5.8.nix {};
-    proper-lockfile = callPackage ./proper-lockfile/2.0.1.nix {};
-    proper-lockfile_2-0-1 = callPackage ./proper-lockfile/2.0.1.nix {};
     prop-types-exact = callPackage ./prop-types-exact/1.1.0.nix {};
     prop-types-exact_1-1-0 = callPackage ./prop-types-exact/1.1.0.nix {};
+    proper-lockfile = callPackage ./proper-lockfile/2.0.1.nix {};
+    proper-lockfile_2-0-1 = callPackage ./proper-lockfile/2.0.1.nix {};
     propprop = callPackage ./propprop/0.3.0.nix {};
     propprop_0-3-0 = callPackage ./propprop/0.3.0.nix {};
     protagonist = callPackage ./protagonist/0.20.1.nix {};
@@ -4246,6 +4250,8 @@
     sax_0-4-2 = callPackage ./sax/0.4.2.nix {};
     scmp = callPackage ./scmp/1.0.0.nix {};
     scmp_1-0-0 = callPackage ./scmp/1.0.0.nix {};
+    seedrandom = callPackage ./seedrandom/2.4.3.nix {};
+    seedrandom_2-4-3 = callPackage ./seedrandom/2.4.3.nix {};
     seek-bzip = callPackage ./seek-bzip/1.0.5.nix {};
     seek-bzip_1-0-5 = callPackage ./seek-bzip/1.0.5.nix {};
     selenium-webdriver = callPackage ./selenium-webdriver/2.53.2.nix {};
@@ -5140,9 +5146,9 @@
     yargs-parser_4-2-1-candidate-1 = callPackage ./yargs-parser/4.2.1-candidate.1.nix {};
     yargs-parser_4-2-1 = callPackage ./yargs-parser/4.2.1.nix {};
     yargs-parser_2-4-1 = callPackage ./yargs-parser/2.4.1.nix {};
-    yarn_0-27-5 = callPackage ./yarn/0.27.5.nix {};
     yarn = callPackage ./yarn/0.28.1.nix {};
     yarn_0-28-1 = callPackage ./yarn/0.28.1.nix {};
+    yarn_0-27-5 = callPackage ./yarn/0.27.5.nix {};
     yauzl = callPackage ./yauzl/2.4.1.nix {};
     yauzl_2-4-1 = callPackage ./yauzl/2.4.1.nix {};
     yauzl_2-3-1 = callPackage ./yauzl/2.3.1.nix {};
