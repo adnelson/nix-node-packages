@@ -493,6 +493,9 @@ let
 
       # Define some environment variables that we will use in the build.
       setVariables = ''
+        # In case this was set by an upstream derivation.
+        unset NODE_PATH
+
         # This creates a string for this package which is unique but
         # deterministic. We can use it to create temporary directories
         # and URLs and be confident there will be no collisions.
