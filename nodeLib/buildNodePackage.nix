@@ -364,6 +364,9 @@ let
 
     buildPhase = concatStringsSep "\n" [
       "runHook preBuild"
+      # Previous NODE_PATH should be empty, but it might have been set
+      # in the custom derivation steps.
+      "export NODE_PATH=$PWD/node_modules:$NODE_PATH"
       ''
       (
         # NPM reads the `HOME` environment variable and fails if it doesn't
@@ -446,9 +449,9 @@ let
         echo -n "Linking manpages... "
         NUM_MAN_PAGES=0
         mkdir -p $out/share
-        for dir in $out/lib/node_modules/${self.fullName}/man/*; do
+        for dir in $out/lib/node_modules/${self.fullName}/man/*; do         #*/
           mkdir -p $out/share/man/$(basename "$dir")
-          for page in $dir/*; do
+          for page in $dir/*; do                                            #*/
             ln -s $page $out/share/man/$(basename "$dir")
             NUM_MAN_PAGES=$(($NUM_MAN_PAGES + 1))
           done
