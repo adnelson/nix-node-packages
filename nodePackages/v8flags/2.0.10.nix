@@ -6,6 +6,10 @@ buildNodePackage {
       url = "http://registry.npmjs.org/v8flags/-/v8flags-2.0.10.tgz";
       sha1 = "64a161374e97491009c78def2f964900e96d9cef";
     };
+    # Stop v8flags from using the home directory for caching
+    patchPhase = ''
+      patch ./index.js ${./v8flags-homedir.diff}
+    '';
     deps = with nodePackages; [
       user-home_1-1-1
     ];

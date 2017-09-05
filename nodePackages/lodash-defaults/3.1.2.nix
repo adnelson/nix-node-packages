@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash.defaults";
     version = "3.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash.defaults/-/lodash.defaults-3.1.2.tgz";
+      url = "https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-3.1.2.tgz";
       sha1 = "c7308b18dbf8bc9372d701a73493c61192bd2e2c";
     };
     deps = with nodePackages; [

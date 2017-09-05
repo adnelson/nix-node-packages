@@ -52,7 +52,7 @@ buildNodePackage {
       shell-quote_1-4-3
       destroy_1-0-3
       bower-config_1-2-2
-      semver_2-3-2
+      semver_4-3-6
     ];
     meta = {
       homepage = "http://bower.io";
