@@ -1,0 +1,5 @@
+29,30c29
+<   var userHome = require('user-home');
+<   var configpath = path.join(userHome || os.tmpdir(), configfile);
+---
+>   var configpath = path.join(os.tmpdir(), configfile);
