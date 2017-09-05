@@ -20,12 +20,16 @@ buildNodePackage {
       # These two derivations provide shared libraries which we want
       # to put in the RPATH of the generated binary.
       libgcc = pkgs.stdenv.cc.cc.lib;
-      libicu = pkgs.icu_54_1.out;
+      libicu = pkgs.icu;
     in
     ''
       (
       set -x
       cd build/Release
+      if [[ ! -e ${libicu}/lib/libicui18n.so ]]; then
+        echo "Invalid ICU library, needs lib/libicui18n.so"
+        exit 1
+      fi
       patchelf --set-rpath ${libicu}/lib:${libgcc}/lib icuWrapper.node
       patchelf  --replace-needed icui18n.so libicui18n.so icuWrapper.node
       )

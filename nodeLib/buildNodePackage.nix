@@ -493,9 +493,6 @@ let
 
       # Define some environment variables that we will use in the build.
       setVariables = ''
-        # In case this was set by an upstream derivation.
-        unset NODE_PATH
-
         # This creates a string for this package which is unique but
         # deterministic. We can use it to create temporary directories
         # and URLs and be confident there will be no collisions.
@@ -505,7 +502,7 @@ let
 
         # This appends the package name and version to the hash string
         # we defined above, so that it is more human-readable.
-        export UNIQNAME="''${HASHEDNAME:0:10}-quill3"
+        export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
       '';
 
       shellHook = ''
