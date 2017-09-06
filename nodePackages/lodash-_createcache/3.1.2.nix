@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._createcache";
     version = "3.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._createcache/-/lodash._createcache-3.1.2.tgz";
+      url = "https://registry.npmjs.org/lodash._createcache/-/lodash._createcache-3.1.2.tgz";
       sha1 = "56d6a064017625e79ebca6b8018e17440bdcf093";
     };
     deps = with nodePackages; [

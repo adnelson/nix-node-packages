@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._basedifference";
     version = "3.0.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._basedifference/-/lodash._basedifference-3.0.3.tgz";
+      url = "https://registry.npmjs.org/lodash._basedifference/-/lodash._basedifference-3.0.3.tgz";
       sha1 = "f2c204296c2a78e02b389081b6edcac933cf629c";
     };
     deps = with nodePackages; [
