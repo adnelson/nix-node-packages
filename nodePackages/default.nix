@@ -2005,6 +2005,8 @@
     file-loader_0-11-1 = callPackage ./file-loader/0.11.1.nix {};
     file-loader_0-10-0 = callPackage ./file-loader/0.10.0.nix {};
     file-loader_0-9-0 = callPackage ./file-loader/0.9.0.nix {};
+    file-saver = callPackage ./file-saver/1.3.3.nix {};
+    file-saver_1-3-3 = callPackage ./file-saver/1.3.3.nix {};
     file-type = callPackage ./file-type/6.1.0.nix {};
     file-type_6-1-0 = callPackage ./file-type/6.1.0.nix {};
     file-type_5-2-0 = callPackage ./file-type/5.2.0.nix {};
