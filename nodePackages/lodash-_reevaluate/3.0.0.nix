@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._reevaluate";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._reevaluate/-/lodash._reevaluate-3.0.0.tgz";
+      url = "https://registry.npmjs.org/lodash._reevaluate/-/lodash._reevaluate-3.0.0.tgz";
       sha1 = "58bc74c40664953ae0b124d806996daca431e2ed";
     };
     deps = [];
