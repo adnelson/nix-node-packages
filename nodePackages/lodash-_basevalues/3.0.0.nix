@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._basevalues";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._basevalues/-/lodash._basevalues-3.0.0.tgz";
+      url = "https://registry.npmjs.org/lodash._basevalues/-/lodash._basevalues-3.0.0.tgz";
       sha1 = "5b775762802bde3d3297503e26300820fdf661b7";
     };
     deps = [];

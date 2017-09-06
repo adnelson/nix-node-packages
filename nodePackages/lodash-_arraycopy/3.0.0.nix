@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._arraycopy";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._arraycopy/-/lodash._arraycopy-3.0.0.tgz";
+      url = "https://registry.npmjs.org/lodash._arraycopy/-/lodash._arraycopy-3.0.0.tgz";
       sha1 = "76e7b7c1f1fb92547374878a562ed06a3e50f6e1";
     };
     deps = [];

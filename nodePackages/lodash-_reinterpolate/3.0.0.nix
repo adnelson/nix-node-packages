@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._reinterpolate";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz";
+      url = "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz";
       sha1 = "0ccf2d89166af03b3663c796538b75ac6e114d9d";
     };
     deps = [];

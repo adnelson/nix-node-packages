@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash.clonedeep";
     version = "3.0.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-3.0.2.tgz";
+      url = "https://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-3.0.2.tgz";
       sha1 = "a0a1e40d82a5ea89ff5b147b8444ed63d92827db";
     };
     deps = with nodePackages; [
