@@ -1,6 +1,6 @@
 { callPackage }: {
-    3scale = callPackage ./3scale/0.7.6.nix {};
-    3scale_0-7-6 = callPackage ./3scale/0.7.6.nix {};
+    _3scale = callPackage ./3scale/0.7.6.nix {};
+    _3scale_0-7-6 = callPackage ./3scale/0.7.6.nix {};
     Base64 = callPackage ./Base64/0.2.1.nix {};
     Base64_0-2-1 = callPackage ./Base64/0.2.1.nix {};
     Base64_0-1-4 = callPackage ./Base64/0.1.4.nix {};
