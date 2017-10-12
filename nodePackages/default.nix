@@ -1,6 +1,6 @@
 { callPackage }: {
-    _3scale = callPackage ./3scale/0.7.6.nix {};
-    _3scale_0-7-6 = callPackage ./3scale/0.7.6.nix {};
+    3scale = callPackage ./3scale/0.7.6.nix {};
+    3scale_0-7-6 = callPackage ./3scale/0.7.6.nix {};
     Base64 = callPackage ./Base64/0.2.1.nix {};
     Base64_0-2-1 = callPackage ./Base64/0.2.1.nix {};
     Base64_0-1-4 = callPackage ./Base64/0.1.4.nix {};
@@ -270,6 +270,8 @@
     async-some_1-0-2 = callPackage ./async-some/1.0.2.nix {};
     asynckit = callPackage ./asynckit/0.4.0.nix {};
     asynckit_0-4-0 = callPackage ./asynckit/0.4.0.nix {};
+    attr-accept = callPackage ./attr-accept/1.1.0.nix {};
+    attr-accept_1-1-0 = callPackage ./attr-accept/1.1.0.nix {};
     autoprefixer = callPackage ./autoprefixer/6.7.7.nix {};
     autoprefixer_6-7-7 = callPackage ./autoprefixer/6.7.7.nix {};
     autoprefixer_6-7-2 = callPackage ./autoprefixer/6.7.2.nix {};
@@ -4908,6 +4910,8 @@
     namespaces.types.react-dom_15-5-1 = callPackage (./. + "/@types/react-dom/15.5.1.nix") {};
     react-dom-factories = callPackage ./react-dom-factories/1.0.1.nix {};
     react-dom-factories_1-0-1 = callPackage ./react-dom-factories/1.0.1.nix {};
+    react-dropzone = callPackage ./react-dropzone/4.2.0.nix {};
+    react-dropzone_4-2-0 = callPackage ./react-dropzone/4.2.0.nix {};
     react-event-listener = callPackage ./react-event-listener/0.4.5.nix {};
     react-event-listener_0-4-5 = callPackage ./react-event-listener/0.4.5.nix {};
     react-hot-loader = callPackage ./react-hot-loader/3.0.0-beta.7.nix {};
@@ -4984,8 +4988,8 @@
     readable-stream_2-0-6 = callPackage ./readable-stream/2.0.6.nix {};
     readable-stream_2-0-5 = callPackage ./readable-stream/2.0.5.nix {};
     readable-stream_2-0-4 = callPackage ./readable-stream/2.0.4.nix {};
-    readable-stream_1-1-13-1 = callPackage ./readable-stream/1.1.13-1.nix {};
     readable-stream_1-1-13 = callPackage ./readable-stream/1.1.13.nix {};
+    readable-stream_1-1-13-1 = callPackage ./readable-stream/1.1.13-1.nix {};
     readable-stream_1-0-33 = callPackage ./readable-stream/1.0.33.nix {};
     readable-stream_1-0-31 = callPackage ./readable-stream/1.0.31.nix {};
     readable-stream_1-0-27-1 = callPackage ./readable-stream/1.0.27-1.nix {};
@@ -6344,8 +6348,8 @@
     yargs_1-3-3 = callPackage ./yargs/1.3.3.nix {};
     yargs-parser = callPackage ./yargs-parser/5.0.0.nix {};
     yargs-parser_5-0-0 = callPackage ./yargs-parser/5.0.0.nix {};
-    yargs-parser_4-2-1-candidate-1 = callPackage ./yargs-parser/4.2.1-candidate.1.nix {};
     yargs-parser_4-2-1 = callPackage ./yargs-parser/4.2.1.nix {};
+    yargs-parser_4-2-1-candidate-1 = callPackage ./yargs-parser/4.2.1-candidate.1.nix {};
     yargs-parser_2-4-1 = callPackage ./yargs-parser/2.4.1.nix {};
     yarn = callPackage ./yarn/0.28.1.nix {};
     yarn_0-28-1 = callPackage ./yarn/0.28.1.nix {};
