@@ -5644,6 +5644,8 @@
     strip-json-comments_0-1-3 = callPackage ./strip-json-comments/0.1.3.nix {};
     strip-outer = callPackage ./strip-outer/1.0.0.nix {};
     strip-outer_1-0-0 = callPackage ./strip-outer/1.0.0.nix {};
+    striptags = callPackage ./striptags/3.1.0.nix {};
+    striptags_3-1-0 = callPackage ./striptags/3.1.0.nix {};
     style-loader = callPackage ./style-loader/0.14.1.nix {};
     style-loader_0-14-1 = callPackage ./style-loader/0.14.1.nix {};
     style-loader_0-13-2 = callPackage ./style-loader/0.13.2.nix {};
