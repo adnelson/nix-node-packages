@@ -267,7 +267,7 @@ let
 
     patchPhase = joinLines [
       "runHook prePatch"
-      "patchShebangs $PWD >/dev/null"
+      "patchShebangs \"$PWD\" >/dev/null"
       # Ensure that the package name matches what is in the package.json.
       "check-package-json checkPackageName ${fullName}"
       # Remove any impure dependencies from the package.json (see script
@@ -358,7 +358,7 @@ let
         # Create a temporary symlink to the current package directory,
         # so that node knows that the dependency is satisfied when
         # checking the recursive dependencies (grumble grumble).
-        "ln -s $PWD node_modules/${self.fullName}"
+        "ln -s \"$PWD\" node_modules/${self.fullName}"
       ]
     )));
 
@@ -366,12 +366,12 @@ let
       "runHook preBuild"
       # Previous NODE_PATH should be empty, but it might have been set
       # in the custom derivation steps.
-      "export NODE_PATH=$PWD/node_modules:$NODE_PATH"
+      "export NODE_PATH=\"$PWD\"/node_modules:$NODE_PATH"
       ''
       (
         # NPM reads the `HOME` environment variable and fails if it doesn't
         # exist, so set it here.
-        export HOME=$PWD
+        export HOME="$PWD"
         echo npm install ${npmFlags}
 
         # Try doing the install first. If it fails, first check the
@@ -441,7 +441,7 @@ let
          rm dep)}
 
       # Copy the folder that was created for this path to $out/lib.
-      cp -r $PWD $out/lib/node_modules/${self.fullName}
+      cp -r "$PWD" $out/lib/node_modules/${self.fullName}
 
       # Remove the node_modules subfolder from there, and instead put things
       # in $PWD/node_modules into that folder.
