@@ -23,6 +23,9 @@ buildNodePackage {
       namespaces.types.jasmine_2-5-54
       optimist_0-6-1
     ];
+    patchDependencies = {
+      "@types/q" = "^0.0.37";
+    };
     meta = {
       homepage = "https://github.com/angular/protractor";
       description = "Webdriver E2E test wrapper for Angular.";
