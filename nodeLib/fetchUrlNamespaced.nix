@@ -30,7 +30,7 @@
 }:
 
 let
-  auth = if builtins.hasAttr namespace namespaceTokens
+  auth = if namespace != null && builtins.hasAttr namespace namespaceTokens
          then namespaceTokens.${namespace}
          else null;
   inherit (stdenv.lib) flip mapAttrs' nameValuePair;
