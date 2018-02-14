@@ -57,7 +57,9 @@ let
       else {"${elemAt kv 0}" = elemAt kv 1;}));
 
   # A function similar to fetchUrl but allows setting of custom headers.
-  fetchUrlWithHeaders = pkgs.callPackage ./fetchUrlWithHeaders.nix {};
+  fetchUrlWithHeaders = pkgs.callPackage ./fetchUrlWithHeaders.nix {
+    inherit namespaceTokens;
+  };
 
   # Uses the parsed namespace tokens to create a function that can
   # fetch a private package from an npm repo.
