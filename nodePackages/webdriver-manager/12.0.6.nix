@@ -19,6 +19,14 @@ buildNodePackage {
       xml2js_0-4-17
       semver_5-3-0
     ];
+    # We need to hack in a different directory so webdriver-manager doesn't
+    # try to mutate the nix store
+    postInstall = ''
+      (
+        cd $out/lib/node_modules/webdriver-manager
+        patch -p0 -i ${./selenium-dir-5.2.diff}
+      )
+    '';
     meta = {
       homepage = "https://github.com/angular/webdriver-manager#readme";
       description = "A selenium server and browser driver manager for your end to end tests.";

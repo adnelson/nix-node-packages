@@ -6,6 +6,8 @@ buildNodePackage {
       url = "https://registry.npmjs.org/protractor/-/protractor-4.0.14.tgz";
       sha1 = "efc4a877fac3a182a9dded26cd5869f4762fd172";
     };
+    buildInputs = [pkgs.makeWrapper];
+    propagatedBuildInputs = [pkgs.openjdk];
     deps = with nodePackages; [
       namespaces.types.node_6-0-88
       namespaces.types.q_0-0-37
@@ -26,6 +28,10 @@ buildNodePackage {
     patchDependencies = {
       "@types/q" = "^0.0.37";
     };
+    postInstall = ''
+      wrapProgram $out/bin/webdriver-manager \
+        --prefix PATH : "${pkgs.openjdk}/bin"
+    '';
     meta = {
       homepage = "https://github.com/angular/protractor";
       description = "Webdriver E2E test wrapper for Angular.";

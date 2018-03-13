@@ -26,6 +26,14 @@ buildNodePackage {
     patchDependencies = {
       "@types/q" = "^0.0.37";
     };
+    # We need the harmony flag here to use the `...` operator with node 4.6
+    prePatch = ''
+      (
+        cd bin
+        sed -i 's_#!/usr/bin/env node_#!/usr/bin/env node --harmony_' protractor
+        sed -i 's_#!/usr/bin/env node_#!/usr/bin/env node --harmony_' webdriver-manager
+      )
+    '';
     meta = {
       homepage = "https://github.com/angular/protractor";
       description = "Webdriver E2E test wrapper for Angular.";

@@ -1,0 +1,26 @@
+--- built/lib/config.js	2018-03-13 17:05:54.215189351 +0000
++++ ../package/built/lib/config.js	2016-12-20 21:17:11.000000000 +0000
+@@ -1,7 +1,6 @@
+ "use strict";
+ var os = require("os");
+ var path = require("path");
+-var process = require("process");
+ var cli_1 = require("./cli");
+ var logger = new cli_1.Logger('config');
+ /**
+@@ -36,7 +35,7 @@
+         return path.resolve(Config.dir, '..', Config.packageFile);
+     };
+     Config.getSeleniumDir = function () {
+-        return path.resolve(process.env.SELENIUM_DIR);
++        return path.resolve(Config.dir, '..', '..', 'selenium/');
+     };
+     Config.getBaseDir = function () {
+         return path.resolve(Config.dir, '..', '..');
+@@ -94,4 +93,4 @@
+ Config.httpsProxy_ = process.env.HTTPS_PROXY || process.env.https_proxy;
+ Config.httpProxy_ = process.env.HTTP_PROXY || process.env.http_proxy;
+ exports.Config = Config;
+-//# sourceMappingURL=config.js.map
++//# sourceMappingURL=config.js.map
+\ No newline at end of file
