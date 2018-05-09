@@ -15,6 +15,10 @@ buildNodePackage {
       colors_1-0-3
       pkginfo_0-3-1
     ];
+    # showLevel wasn't getting passed through on console transports
+    patchPhase = ''
+      patch ./lib/winston/transports/console.js ${./showLevel.diff}
+    '';
     meta = {
       homepage = "https://github.com/flatiron/winston";
       description = "A multi-transport async logging library for Node.js";
