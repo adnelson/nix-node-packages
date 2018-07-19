@@ -1,28 +1,32 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
-    name = "object-assign";
+    name = "object.assign";
     version = "4.1.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/object-assign/-/object-assign-4.1.0.tgz";
-      sha1 = "7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0";
+      url = "https://registry.npmjs.org/object.assign/-/object.assign-4.1.0.tgz";
+      sha1 = "968bf1100d7956bb3ca086f006f846b3bc4008da";
     };
-    deps = [];
+    deps = with nodePackages; [
+      has-symbols_1-0-0
+      object-keys_1-0-11
+      function-bind_1-1-1
+      define-properties_1-1-2
+    ];
     meta = {
-      homepage = "https://github.com/sindresorhus/object-assign#readme";
-      description = "ES2015 Object.assign() ponyfill";
+      homepage = "https://github.com/ljharb/object.assign#readme";
+      description = "ES6 spec-compliant Object.assign shim. From https://github.com/es-shims/es6-shim";
       keywords = [
-        "object"
+        "Object.assign"
         "assign"
+        "ES6"
         "extend"
-        "properties"
-        "es2015"
-        "ecmascript"
-        "harmony"
-        "ponyfill"
-        "prollyfill"
+        "\$.extend"
+        "jQuery"
+        "_.extend"
+        "Underscore"
+        "es-shim API"
         "polyfill"
         "shim"
-        "browser"
       ];
     };
   }
