@@ -571,7 +571,8 @@
     base64id = callPackage ./base64id/1.0.0.nix {};
     base64id_1-0-0 = callPackage ./base64id/1.0.0.nix {};
     base64id_0-1-0 = callPackage ./base64id/0.1.0.nix {};
-    basic-auth = callPackage ./basic-auth/1.0.3.nix {};
+    basic-auth = callPackage ./basic-auth/2.0.0.nix {};
+    basic-auth_2-0-0 = callPackage ./basic-auth/2.0.0.nix {};
     basic-auth_1-0-3 = callPackage ./basic-auth/1.0.3.nix {};
     basic-auth-connect = callPackage ./basic-auth-connect/1.0.0.nix {};
     basic-auth-connect_1-0-0 = callPackage ./basic-auth-connect/1.0.0.nix {};
@@ -1118,9 +1119,11 @@
     compress-commons = callPackage ./compress-commons/1.1.0.nix {};
     compress-commons_1-1-0 = callPackage ./compress-commons/1.1.0.nix {};
     compress-commons_0-2-9 = callPackage ./compress-commons/0.2.9.nix {};
-    compressible = callPackage ./compressible/2.0.6.nix {};
+    compressible = callPackage ./compressible/2.0.14.nix {};
+    compressible_2-0-14 = callPackage ./compressible/2.0.14.nix {};
     compressible_2-0-6 = callPackage ./compressible/2.0.6.nix {};
-    compression = callPackage ./compression/1.6.0.nix {};
+    compression = callPackage ./compression/1.7.3.nix {};
+    compression_1-7-3 = callPackage ./compression/1.7.3.nix {};
     compression_1-6-0 = callPackage ./compression/1.6.0.nix {};
     compression_1-5-2 = callPackage ./compression/1.5.2.nix {};
     compression_1-3-1 = callPackage ./compression/1.3.1.nix {};
@@ -3865,7 +3868,8 @@
     merge-stream = callPackage ./merge-stream/1.0.0.nix {};
     merge-stream_1-0-0 = callPackage ./merge-stream/1.0.0.nix {};
     merge-stream_0-1-8 = callPackage ./merge-stream/0.1.8.nix {};
-    method-override = callPackage ./method-override/2.3.5.nix {};
+    method-override = callPackage ./method-override/3.0.0.nix {};
+    method-override_3-0-0 = callPackage ./method-override/3.0.0.nix {};
     method-override_2-3-5 = callPackage ./method-override/2.3.5.nix {};
     methods = callPackage ./methods/1.1.2.nix {};
     methods_1-1-2 = callPackage ./methods/1.1.2.nix {};
@@ -3997,7 +4001,8 @@
     mongojs_0-14-2 = callPackage ./mongojs/0.14.2.nix {};
     mongoose = callPackage ./mongoose/4.2.7.nix {};
     mongoose_4-2-7 = callPackage ./mongoose/4.2.7.nix {};
-    morgan = callPackage ./morgan/1.6.1.nix {};
+    morgan = callPackage ./morgan/1.9.0.nix {};
+    morgan_1-9-0 = callPackage ./morgan/1.9.0.nix {};
     morgan_1-6-1 = callPackage ./morgan/1.6.1.nix {};
     mothership = callPackage ./mothership/0.2.0.nix {};
     mothership_0-2-0 = callPackage ./mothership/0.2.0.nix {};
@@ -4010,7 +4015,8 @@
     mpromise_0-5-4 = callPackage ./mpromise/0.5.4.nix {};
     mquery = callPackage ./mquery/1.6.3.nix {};
     mquery_1-6-3 = callPackage ./mquery/1.6.3.nix {};
-    ms = callPackage ./ms/2.0.0.nix {};
+    ms = callPackage ./ms/2.1.1.nix {};
+    ms_2-1-1 = callPackage ./ms/2.1.1.nix {};
     ms_2-0-0 = callPackage ./ms/2.0.0.nix {};
     ms_0-7-2 = callPackage ./ms/0.7.2.nix {};
     ms_0-7-1 = callPackage ./ms/0.7.1.nix {};
@@ -5441,7 +5447,8 @@
     sentence-case_1-1-3 = callPackage ./sentence-case/1.1.3.nix {};
     sequencify = callPackage ./sequencify/0.0.7.nix {};
     sequencify_0-0-7 = callPackage ./sequencify/0.0.7.nix {};
-    serve-favicon = callPackage ./serve-favicon/2.3.0.nix {};
+    serve-favicon = callPackage ./serve-favicon/2.5.0.nix {};
+    serve-favicon_2-5-0 = callPackage ./serve-favicon/2.5.0.nix {};
     serve-favicon_2-3-0 = callPackage ./serve-favicon/2.3.0.nix {};
     serve-index = callPackage ./serve-index/1.7.2.nix {};
     serve-index_1-7-2 = callPackage ./serve-index/1.7.2.nix {};
