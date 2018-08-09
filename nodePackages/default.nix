@@ -636,7 +636,8 @@
     block-stream_0-0-7 = callPackage ./block-stream/0.0.7.nix {};
     blocking-proxy = callPackage ./blocking-proxy/0.0.5.nix {};
     blocking-proxy_0-0-5 = callPackage ./blocking-proxy/0.0.5.nix {};
-    bluebird = callPackage ./bluebird/3.5.0.nix {};
+    bluebird = callPackage ./bluebird/3.5.1.nix {};
+    bluebird_3-5-1 = callPackage ./bluebird/3.5.1.nix {};
     bluebird_3-5-0 = callPackage ./bluebird/3.5.0.nix {};
     bluebird_3-4-6 = callPackage ./bluebird/3.4.6.nix {};
     bluebird_3-3-5 = callPackage ./bluebird/3.3.5.nix {};
@@ -4119,7 +4120,8 @@
     node-esapi_0-0-1 = callPackage ./node-esapi/0.0.1.nix {};
     node-extend = callPackage ./node-extend/1.1.6.nix {};
     node-extend_1-1-6 = callPackage ./node-extend/1.1.6.nix {};
-    node-fetch = callPackage ./node-fetch/1.6.3.nix {};
+    node-fetch = callPackage ./node-fetch/2.2.0.nix {};
+    node-fetch_2-2-0 = callPackage ./node-fetch/2.2.0.nix {};
     node-fetch_1-6-3 = callPackage ./node-fetch/1.6.3.nix {};
     node-gyp = callPackage ./node-gyp/3.6.0.nix {};
     node-gyp_3-6-0 = callPackage ./node-gyp/3.6.0.nix {};
