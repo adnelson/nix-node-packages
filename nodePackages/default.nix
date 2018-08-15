@@ -1894,7 +1894,8 @@
     eventemitter2 = callPackage ./eventemitter2/1.0.5.nix {};
     eventemitter2_1-0-5 = callPackage ./eventemitter2/1.0.5.nix {};
     eventemitter2_0-4-14 = callPackage ./eventemitter2/0.4.14.nix {};
-    eventemitter3 = callPackage ./eventemitter3/1.1.1.nix {};
+    eventemitter3 = callPackage ./eventemitter3/3.1.0.nix {};
+    eventemitter3_3-1-0 = callPackage ./eventemitter3/3.1.0.nix {};
     eventemitter3_1-1-1 = callPackage ./eventemitter3/1.1.1.nix {};
     eventemitter3_0-1-6 = callPackage ./eventemitter3/0.1.6.nix {};
     events = callPackage ./events/1.1.1.nix {};
@@ -2118,6 +2119,8 @@
     flux_2-1-1 = callPackage ./flux/2.1.1.nix {};
     flux-standard-action = callPackage ./flux-standard-action/0.6.1.nix {};
     flux-standard-action_0-6-1 = callPackage ./flux-standard-action/0.6.1.nix {};
+    follow-redirects = callPackage ./follow-redirects/1.5.5.nix {};
+    follow-redirects_1-5-5 = callPackage ./follow-redirects/1.5.5.nix {};
     font-awesome = callPackage ./font-awesome/4.7.0.nix {};
     font-awesome_4-7-0 = callPackage ./font-awesome/4.7.0.nix {};
     for-in = callPackage ./for-in/0.1.4.nix {};
@@ -2714,7 +2717,8 @@
     http-errors_1-6-2 = callPackage ./http-errors/1.6.2.nix {};
     http-errors_1-5-1 = callPackage ./http-errors/1.5.1.nix {};
     http-errors_1-3-1 = callPackage ./http-errors/1.3.1.nix {};
-    http-proxy = callPackage ./http-proxy/1.16.2.nix {};
+    http-proxy = callPackage ./http-proxy/1.17.0.nix {};
+    http-proxy_1-17-0 = callPackage ./http-proxy/1.17.0.nix {};
     http-proxy_1-16-2 = callPackage ./http-proxy/1.16.2.nix {};
     http-proxy_1-13-2 = callPackage ./http-proxy/1.13.2.nix {};
     http-proxy_1-12-0 = callPackage ./http-proxy/1.12.0.nix {};
