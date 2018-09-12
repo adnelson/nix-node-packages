@@ -244,7 +244,8 @@
     astw = callPackage ./astw/2.0.0.nix {};
     astw_2-0-0 = callPackage ./astw/2.0.0.nix {};
     astw_0-0-0 = callPackage ./astw/0.0.0.nix {};
-    async = callPackage ./async/2.5.0.nix {};
+    async = callPackage ./async/2.6.0.nix {};
+    async_2-6-0 = callPackage ./async/2.6.0.nix {};
     async_2-5-0 = callPackage ./async/2.5.0.nix {};
     async_2-3-0 = callPackage ./async/2.3.0.nix {};
     async_2-0-1 = callPackage ./async/2.0.1.nix {};
@@ -1902,6 +1903,8 @@
     events_1-1-1 = callPackage ./events/1.1.1.nix {};
     events_1-1-0 = callPackage ./events/1.1.0.nix {};
     events_1-0-2 = callPackage ./events/1.0.2.nix {};
+    namespaces.types.events = callPackage (./. + "/@types/events/1.2.0.nix") {};
+    namespaces.types.events_1-2-0 = callPackage (./. + "/@types/events/1.2.0.nix") {};
     events-to-array = callPackage ./events-to-array/1.0.2.nix {};
     events-to-array_1-0-2 = callPackage ./events-to-array/1.0.2.nix {};
     eventsource = callPackage ./eventsource/0.1.6.nix {};
@@ -2647,7 +2650,8 @@
     history = callPackage ./history/4.6.3.nix {};
     history_4-6-3 = callPackage ./history/4.6.3.nix {};
     history_3-3-0 = callPackage ./history/3.3.0.nix {};
-    hoek = callPackage ./hoek/3.0.4.nix {};
+    hoek = callPackage ./hoek/4.2.1.nix {};
+    hoek_4-2-1 = callPackage ./hoek/4.2.1.nix {};
     hoek_3-0-4 = callPackage ./hoek/3.0.4.nix {};
     hoek_2-16-3 = callPackage ./hoek/2.16.3.nix {};
     hoek_0-9-1 = callPackage ./hoek/0.9.1.nix {};
@@ -3380,6 +3384,8 @@
     ldapjs_1-0-1 = callPackage ./ldapjs/1.0.1.nix {};
     ldapjs_1-0-0 = callPackage ./ldapjs/1.0.0.nix {};
     ldapjs_0-7-1 = callPackage ./ldapjs/0.7.1.nix {};
+    ldclient-node = callPackage ./ldclient-node/5.4.2.nix {};
+    ldclient-node_5-4-2 = callPackage ./ldclient-node/5.4.2.nix {};
     ldjson-stream = callPackage ./ldjson-stream/1.2.1.nix {};
     ldjson-stream_1-2-1 = callPackage ./ldjson-stream/1.2.1.nix {};
     left-pad = callPackage ./left-pad/0.0.3.nix {};
@@ -3787,6 +3793,8 @@
     lru-memoizer_1-12-0 = callPackage ./lru-memoizer/1.12.0.nix {};
     lru-queue = callPackage ./lru-queue/0.1.0.nix {};
     lru-queue_0-1-0 = callPackage ./lru-queue/0.1.0.nix {};
+    lrucache = callPackage ./lrucache/1.0.3.nix {};
+    lrucache_1-0-3 = callPackage ./lrucache/1.0.3.nix {};
     lsmod = callPackage ./lsmod/1.0.0.nix {};
     lsmod_1-0-0 = callPackage ./lsmod/1.0.0.nix {};
     lsmod_0-0-3 = callPackage ./lsmod/0.0.3.nix {};
@@ -4157,6 +4165,8 @@
     node-sass_3-14-0-0 = callPackage ./node-sass/3.14.0-0.nix {};
     node-sass_3-13-1 = callPackage ./node-sass/3.13.1.nix {};
     node-sass_3-4-2 = callPackage ./node-sass/3.4.2.nix {};
+    node-sha1 = callPackage ./node-sha1/0.0.1.nix {};
+    node-sha1_0-0-1 = callPackage ./node-sha1/0.0.1.nix {};
     node-statsd = callPackage ./node-statsd/0.1.1.nix {};
     node-statsd_0-1-1 = callPackage ./node-statsd/0.1.1.nix {};
     node-status-codes = callPackage ./node-status-codes/1.0.0.nix {};
@@ -5162,9 +5172,16 @@
     redeyed = callPackage ./redeyed/1.0.1.nix {};
     redeyed_1-0-1 = callPackage ./redeyed/1.0.1.nix {};
     redeyed_0-4-4 = callPackage ./redeyed/0.4.4.nix {};
-    redis = callPackage ./redis/2.3.1.nix {};
+    redis = callPackage ./redis/2.8.0.nix {};
+    redis_2-8-0 = callPackage ./redis/2.8.0.nix {};
     redis_2-3-1 = callPackage ./redis/2.3.1.nix {};
     redis_0-7-3 = callPackage ./redis/0.7.3.nix {};
+    namespaces.types.redis = callPackage (./. + "/@types/redis/2.8.6.nix") {};
+    namespaces.types.redis_2-8-6 = callPackage (./. + "/@types/redis/2.8.6.nix") {};
+    redis-commands = callPackage ./redis-commands/1.3.5.nix {};
+    redis-commands_1-3-5 = callPackage ./redis-commands/1.3.5.nix {};
+    redis-parser = callPackage ./redis-parser/2.6.0.nix {};
+    redis-parser_2-6-0 = callPackage ./redis-parser/2.6.0.nix {};
     reduce-component = callPackage ./reduce-component/1.0.1.nix {};
     reduce-component_1-0-1 = callPackage ./reduce-component/1.0.1.nix {};
     reduce-css-calc = callPackage ./reduce-css-calc/1.3.0.nix {};
@@ -5276,6 +5293,8 @@
     request_2-12-0 = callPackage ./request/2.12.0.nix {};
     request-capture-har = callPackage ./request-capture-har/1.2.2.nix {};
     request-capture-har_1-2-2 = callPackage ./request-capture-har/1.2.2.nix {};
+    request-etag = callPackage ./request-etag/2.0.3.nix {};
+    request-etag_2-0-3 = callPackage ./request-etag/2.0.3.nix {};
     request-progress = callPackage ./request-progress/2.0.1.nix {};
     request-progress_2-0-1 = callPackage ./request-progress/2.0.1.nix {};
     request-progress_0-3-1 = callPackage ./request-progress/0.3.1.nix {};
@@ -5423,7 +5442,8 @@
     namespaces.types.selenium-webdriver = callPackage (./. + "/@types/selenium-webdriver/2.53.43.nix") {};
     namespaces.types.selenium-webdriver_2-53-43 = callPackage (./. + "/@types/selenium-webdriver/2.53.43.nix") {};
     namespaces.types.selenium-webdriver_2-53-37 = callPackage (./. + "/@types/selenium-webdriver/2.53.37.nix") {};
-    semver = callPackage ./semver/5.3.0.nix {};
+    semver = callPackage ./semver/5.5.0.nix {};
+    semver_5-5-0 = callPackage ./semver/5.5.0.nix {};
     semver_5-3-0 = callPackage ./semver/5.3.0.nix {};
     semver_5-1-0 = callPackage ./semver/5.1.0.nix {};
     semver_5-0-3 = callPackage ./semver/5.0.3.nix {};
@@ -6037,6 +6057,8 @@
     tsscmp_1-0-5 = callPackage ./tsscmp/1.0.5.nix {};
     tty-browserify = callPackage ./tty-browserify/0.0.0.nix {};
     tty-browserify_0-0-0 = callPackage ./tty-browserify/0.0.0.nix {};
+    tunnel = callPackage ./tunnel/0.0.4-pre.nix {};
+    tunnel_0-0-4-pre = callPackage ./tunnel/0.0.4-pre.nix {};
     tunnel-agent = callPackage ./tunnel-agent/0.6.0.nix {};
     tunnel-agent_0-6-0 = callPackage ./tunnel-agent/0.6.0.nix {};
     tunnel-agent_0-4-2 = callPackage ./tunnel-agent/0.4.2.nix {};
@@ -6397,7 +6419,8 @@
     window-size_0-2-0 = callPackage ./window-size/0.2.0.nix {};
     window-size_0-1-4 = callPackage ./window-size/0.1.4.nix {};
     window-size_0-1-0 = callPackage ./window-size/0.1.0.nix {};
-    winston = callPackage ./winston/2.3.1.nix {};
+    winston = callPackage ./winston/2.4.1.nix {};
+    winston_2-4-1 = callPackage ./winston/2.4.1.nix {};
     winston_2-3-1 = callPackage ./winston/2.3.1.nix {};
     winston_2-1-1 = callPackage ./winston/2.1.1.nix {};
     winston_1-1-2 = callPackage ./winston/1.1.2.nix {};
