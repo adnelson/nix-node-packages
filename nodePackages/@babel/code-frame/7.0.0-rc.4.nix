@@ -5,7 +5,6 @@ buildNodePackage {
     src = fetchUrlWithHeaders {
       url = "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.0.0-rc.4.tgz";
       sha1 = "e15e3ba1193bbb8d474c244446bffd8c6f804556";
-      headers.Authorization = "Bearer ${namespaceTokens.babel}";
     };
     namespace = "babel";
     deps = with nodePackages; [

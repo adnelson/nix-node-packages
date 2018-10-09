@@ -5,7 +5,6 @@ buildNodePackage {
     src = fetchUrlWithHeaders {
       url = "https://registry.npmjs.org/@babel/highlight/-/highlight-7.0.0-rc.4.tgz";
       sha1 = "63fb56721e08a166e6693ebd5ab03a08bcb370cb";
-      headers.Authorization = "Bearer ${namespaceTokens.babel}";
     };
     namespace = "babel";
     deps = with nodePackages; [
