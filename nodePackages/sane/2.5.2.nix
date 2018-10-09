@@ -11,14 +11,13 @@ buildNodePackage {
       minimist_1-2-0
       micromatch_3-1-10
       capture-exit_1-2-0
-      fsevents_1-2-4
       exec-sh_0-2-0
       walker_1-0-7
       watch_0-18-0
       fb-watchman_2-0-0
     ];
-    optionalDependencies = with nodePackages; [
-      fsevents_1-2-4
+    optionalDependencies = if !pkgs.stdenv.isDarwin then [] else [
+      nodePackages.fsevents_1-2-4
     ];
     meta = {
       homepage = "https://github.com/amasad/sane";
