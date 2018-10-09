@@ -10,6 +10,7 @@ buildNodePackage {
       node-pre-gyp_0-10-3
       nan_2-11-1
     ];
+    isBroken = !pkgs.stdenv.isDarwin;
     meta = {
       homepage = "https://github.com/strongloop/fsevents";
       description = "Native Access to Mac OS-X FSEvents";
