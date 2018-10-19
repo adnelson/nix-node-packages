@@ -741,7 +741,8 @@
     custom-event_1-0-1 = callPackage ./custom-event/1.0.1.nix {};
     cycle = callPackage ./cycle/1.0.3.nix {};
     cycle_1-0-3 = callPackage ./cycle/1.0.3.nix {};
-    d3 = callPackage ./d3/3.4.13.nix {};
+    d3 = callPackage ./d3/3.5.17.nix {};
+    d3_3-5-17 = callPackage ./d3/3.5.17.nix {};
     d3_3-4-13 = callPackage ./d3/3.4.13.nix {};
     dashdash = callPackage ./dashdash/1.14.1.nix {};
     dashdash_1-14-1 = callPackage ./dashdash/1.14.1.nix {};
