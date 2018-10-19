@@ -7,10 +7,10 @@ buildNodePackage {
       sha1 = "8869a0401253661c4c4ca3da6c2121ed555f5eed";
     };
     deps = with nodePackages; [
-      registry-auth-token_3-3-1
+      registry-auth-token_3-3-2
       got_6-7-1
-      semver_5-3-0
-      registry-url_3-0-3
+      semver_5-6-0
+      registry-url_3-1-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/package-json#readme";

@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = [];
     peerDependencies = with nodePackages; [
-      karma_0-13-22
+      karma_3-0-0
     ];
     meta = {
       description = "A Karma plugin. Launcher for shell scripts.";

@@ -3,13 +3,13 @@ buildNodePackage {
     name = "mock-knex";
     version = "0.2.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/mock-knex/-/mock-knex-0.2.2.tgz";
+      url = "https://registry.npmjs.org/mock-knex/-/mock-knex-0.2.2.tgz";
       sha1 = "09f14b32b949f2b8dd3120d3232fa846d5d61cc3";
     };
     deps = with nodePackages; [
       lodash_2-4-2
       semver_4-3-6
-      bluebird_2-10-2
+      bluebird_2-11-0
     ];
     peerDependencies = with nodePackages; [
       knex_0-8-6

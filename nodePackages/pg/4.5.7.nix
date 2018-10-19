@@ -12,9 +12,9 @@ buildNodePackage {
       pgpass_0-0-3
       generic-pool_2-4-2
       packet-reader_0-2-0
-      pg-types_1-10-0
+      pg-types_1-13-0
       buffer-writer_1-0-1
-      semver_4-3-6
+      semver_4-3-2
     ];
     meta = {
       homepage = "http://github.com/brianc/node-postgres";

@@ -3,11 +3,11 @@ buildNodePackage {
     name = "constantinople";
     version = "3.0.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/constantinople/-/constantinople-3.0.2.tgz";
+      url = "https://registry.npmjs.org/constantinople/-/constantinople-3.0.2.tgz";
       sha1 = "4b945d9937907bcd98ee575122c3817516544141";
     };
     deps = with nodePackages; [
-      acorn_2-6-4
+      acorn_2-7-0
     ];
     meta = {
       homepage = "https://github.com/ForbesLindesay/constantinople";

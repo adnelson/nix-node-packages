@@ -3,7 +3,7 @@ buildNodePackage {
     name = "http-signature";
     version = "0.10.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/http-signature/-/http-signature-0.10.1.tgz";
+      url = "https://registry.npmjs.org/http-signature/-/http-signature-0.10.1.tgz";
       sha1 = "4fbdac132559aa8323121e540779c0a012b27e66";
     };
     deps = with nodePackages; [

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "cookiejar";
     version = "2.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/cookiejar/-/cookiejar-2.0.1.tgz";
+      url = "https://registry.npmjs.org/cookiejar/-/cookiejar-2.0.1.tgz";
       sha1 = "3d12752f6adf68a892f332433492bd5812bb668f";
     };
     deps = [];

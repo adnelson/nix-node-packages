@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "dec09f1cddff94b52ac73d505c84df59dcceb372";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "This transformer wraps all typeof expressions with a method that replicates native behaviour. (ie. returning “symbol” for symbols)";

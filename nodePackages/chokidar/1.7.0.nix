@@ -8,18 +8,18 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       async-each_1-0-1
-      anymatch_1-3-0
-      readdirp_2-0-0
+      anymatch_1-3-2
+      readdirp_2-2-1
       inherits_2-0-3
       glob-parent_2-0-0
-      fsevents_1-0-17
+      # fsevents_1-2-4
       path-is-absolute_1-0-1
       is-binary-path_1-0-1
       is-glob_2-0-1
     ];
-    optionalDependencies = with nodePackages; [
-      fsevents_1-0-17
-    ];
+    optionalDependencies = with nodePackages; if pkgs.stdenv.isDarwin then [
+      fsevents_1-2-4
+    ] else [];
     meta = {
       homepage = "https://github.com/paulmillr/chokidar";
       description = "A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "extend-shallow";
     version = "2.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/extend-shallow/-/extend-shallow-2.0.1.tgz";
+      url = "https://registry.npmjs.org/extend-shallow/-/extend-shallow-2.0.1.tgz";
       sha1 = "51af7d614ad9a9f610ea1bafbb989d6b1c56890f";
     };
     deps = with nodePackages; [

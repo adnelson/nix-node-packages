@@ -3,7 +3,7 @@ buildNodePackage {
     name = "gaze";
     version = "0.5.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz";
+      url = "https://registry.npmjs.org/gaze/-/gaze-0.5.2.tgz";
       sha1 = "40b709537d24d1d45767db5a908689dfe69ac44f";
     };
     deps = with nodePackages; [

@@ -3,11 +3,11 @@ buildNodePackage {
     name = "end-of-stream";
     version = "0.1.5";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/end-of-stream/-/end-of-stream-0.1.5.tgz";
+      url = "https://registry.npmjs.org/end-of-stream/-/end-of-stream-0.1.5.tgz";
       sha1 = "8e177206c3c80837d85632e8b9359dfe8b2f6eaf";
     };
     deps = with nodePackages; [
-      once_1-3-3
+      once_1-3-0
     ];
     devDependencies = [];
     meta = {

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-glob";
     version = "2.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-glob/-/is-glob-2.0.1.tgz";
+      url = "https://registry.npmjs.org/is-glob/-/is-glob-2.0.1.tgz";
       sha1 = "d096f926a3ded5600f3fdfd91198cb0888c2d863";
     };
     deps = with nodePackages; [

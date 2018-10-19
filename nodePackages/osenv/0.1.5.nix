@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "85cdfafaeb28e8677f416e287592b5f3f49ea410";
     };
     deps = with nodePackages; [
-      os-tmpdir_1-0-1
-      os-homedir_1-0-1
+      os-tmpdir_1-0-2
+      os-homedir_1-0-2
     ];
     meta = {
       homepage = "https://github.com/npm/osenv#readme";

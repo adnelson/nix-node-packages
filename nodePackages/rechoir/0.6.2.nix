@@ -3,11 +3,11 @@ buildNodePackage {
     name = "rechoir";
     version = "0.6.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz";
+      url = "https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz";
       sha1 = "85204b54dba82d5742e28c96756ef43af50e3384";
     };
     deps = with nodePackages; [
-      resolve_1-1-6
+      resolve_1-8-1
     ];
     meta = {
       homepage = "https://github.com/tkellen/node-rechoir";

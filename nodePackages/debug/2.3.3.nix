@@ -3,7 +3,7 @@ buildNodePackage {
     name = "debug";
     version = "2.3.3";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/debug/-/debug-2.3.3.tgz";
+      url = "http://registry.npmjs.org/debug/-/debug-2.3.3.tgz";
       sha1 = "40c453e67e6e13c901ddec317af8986cda9eff8c";
     };
     deps = with nodePackages; [

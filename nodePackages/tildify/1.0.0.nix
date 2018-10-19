@@ -3,7 +3,7 @@ buildNodePackage {
     name = "tildify";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/tildify/-/tildify-1.0.0.tgz";
+      url = "https://registry.npmjs.org/tildify/-/tildify-1.0.0.tgz";
       sha1 = "2a021db5e8fbde0a8f8b4df37adaa8fb1d39d7dd";
     };
     deps = with nodePackages; [

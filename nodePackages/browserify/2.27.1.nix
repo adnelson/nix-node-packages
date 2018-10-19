@@ -3,7 +3,7 @@ buildNodePackage {
     name = "browserify";
     version = "2.27.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/browserify/-/browserify-2.27.1.tgz";
+      url = "http://registry.npmjs.org/browserify/-/browserify-2.27.1.tgz";
       sha1 = "c8fa51f07fd54acc089d34fdf18e699917cf7cf5";
     };
     deps = with nodePackages; [

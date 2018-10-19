@@ -3,7 +3,7 @@ buildNodePackage {
     name = "pm2-multimeter";
     version = "0.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/pm2-multimeter/-/pm2-multimeter-0.1.2.tgz";
+      url = "https://registry.npmjs.org/pm2-multimeter/-/pm2-multimeter-0.1.2.tgz";
       sha1 = "1a1e55153d41a05534cea23cfe860abaa0eb4ace";
     };
     deps = with nodePackages; [

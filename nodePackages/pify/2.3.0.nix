@@ -3,7 +3,7 @@ buildNodePackage {
     name = "pify";
     version = "2.3.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/pify/-/pify-2.3.0.tgz";
+      url = "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz";
       sha1 = "ed141a6ac043a849ea588498e7dca8b15330e90c";
     };
     deps = [];

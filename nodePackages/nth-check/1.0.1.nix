@@ -3,7 +3,7 @@ buildNodePackage {
     name = "nth-check";
     version = "1.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/nth-check/-/nth-check-1.0.1.tgz";
+      url = "https://registry.npmjs.org/nth-check/-/nth-check-1.0.1.tgz";
       sha1 = "9929acdf628fc2c41098deab82ac580cf149aae4";
     };
     deps = with nodePackages; [

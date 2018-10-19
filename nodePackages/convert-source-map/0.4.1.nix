@@ -3,7 +3,7 @@ buildNodePackage {
     name = "convert-source-map";
     version = "0.4.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/convert-source-map/-/convert-source-map-0.4.1.tgz";
+      url = "http://registry.npmjs.org/convert-source-map/-/convert-source-map-0.4.1.tgz";
       sha1 = "f919a0099fe31f80fc5a1d0eb303161b394070c7";
     };
     deps = [];

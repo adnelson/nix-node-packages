@@ -3,7 +3,7 @@ buildNodePackage {
     name = "protractor";
     version = "1.8.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz";
+      url = "http://registry.npmjs.org/protractor/-/protractor-1.8.0.tgz";
       sha1 = "ac2b05f590eddb293bddd41e8deaf999f60fc53c";
     };
     deps = with nodePackages; [

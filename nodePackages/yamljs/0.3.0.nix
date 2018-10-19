@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "dc060bf267447b39f7304e9b2bfbe8b5a7ddb03b";
     };
     deps = with nodePackages; [
-      argparse_1-0-7
-      glob_7-1-2
+      argparse_1-0-10
+      glob_7-1-3
     ];
     meta = {
       homepage = "https://github.com/jeremyfa/yaml.js#readme";

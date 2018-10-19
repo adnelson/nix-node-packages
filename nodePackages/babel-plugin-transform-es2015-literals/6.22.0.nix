@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "4f54a02d6cd66cf915280019a31d31925377ca2e";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Compile ES2015 unicode string and number literals to ES5";

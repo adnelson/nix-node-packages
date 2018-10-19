@@ -3,7 +3,7 @@ buildNodePackage {
     name = "jstransformer";
     version = "0.0.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/jstransformer/-/jstransformer-0.0.2.tgz";
+      url = "https://registry.npmjs.org/jstransformer/-/jstransformer-0.0.2.tgz";
       sha1 = "7aae29a903d196cfa0973d885d3e47947ecd76ab";
     };
     deps = with nodePackages; [

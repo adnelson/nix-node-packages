@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       cookie_0-1-0
       stack-trace_0-0-7
-      node-uuid_1-4-7
+      node-uuid_1-4-8
       lsmod_0-0-3
     ];
     meta = {

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "541097234cb2513c83ceed3acddc27ff27987d54";
     };
     deps = with nodePackages; [
-      cssom_0-3-2
+      cssom_0-3-4
     ];
     meta = {
       homepage = "https://github.com/chad3814/CSSStyleDeclaration";

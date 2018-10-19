@@ -3,7 +3,7 @@ buildNodePackage {
     name = "readable-stream";
     version = "2.3.6";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz";
+      url = "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz";
       sha1 = "b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf";
     };
     deps = with nodePackages; [

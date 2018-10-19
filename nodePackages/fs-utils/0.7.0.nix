@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "3bf359d0328649a7f1d93f041200035635d06087";
     };
     deps = with nodePackages; [
-      kind-of_3-0-2
-      js-yaml_3-7-0
+      kind-of_3-2-2
+      js-yaml_3-12-0
       async_1-5-2
       read-yaml_1-1-0
       read-data_0-3-0
@@ -21,8 +21,8 @@ buildNodePackage {
       relative_3-0-2
       write_0-2-1
       graceful-fs_4-1-11
-      normalize-path_2-0-1
-      lazy-cache_0-2-4
+      normalize-path_2-1-1
+      lazy-cache_0-2-7
       delete_0-2-1
     ];
     meta = {

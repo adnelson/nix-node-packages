@@ -3,7 +3,7 @@ buildNodePackage {
     name = "path-to-regexp";
     version = "0.1.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.3.tgz";
+      url = "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.3.tgz";
       sha1 = "21b9ab82274279de25b156ea08fd12ca51b8aecb";
     };
     deps = [];

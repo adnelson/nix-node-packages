@@ -3,7 +3,7 @@ buildNodePackage {
     name = "destroy";
     version = "1.0.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/destroy/-/destroy-1.0.3.tgz";
+      url = "https://registry.npmjs.org/destroy/-/destroy-1.0.3.tgz";
       sha1 = "b433b4724e71fd8551d9885174851c5fc377e2c9";
     };
     deps = [];

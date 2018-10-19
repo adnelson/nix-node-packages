@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "d6d68a99f89aedc4536c81a542e8dd9f1746f8d1";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Compile ES2015 spread to ES5";

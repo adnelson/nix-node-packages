@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       babel-helper-replace-supers_6-24-1
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Compile ES2015 object super to ES5";

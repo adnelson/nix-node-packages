@@ -3,7 +3,7 @@ buildNodePackage {
     name = "assertion-error";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/assertion-error/-/assertion-error-1.0.0.tgz";
+      url = "https://registry.npmjs.org/assertion-error/-/assertion-error-1.0.0.tgz";
       sha1 = "c7f85438fdd466bc7ca16ab90c81513797a5d23b";
     };
     deps = [];

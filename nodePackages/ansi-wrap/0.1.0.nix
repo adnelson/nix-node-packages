@@ -3,7 +3,7 @@ buildNodePackage {
     name = "ansi-wrap";
     version = "0.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/ansi-wrap/-/ansi-wrap-0.1.0.tgz";
+      url = "https://registry.npmjs.org/ansi-wrap/-/ansi-wrap-0.1.0.tgz";
       sha1 = "a82250ddb0015e9a27ca82e82ea603bbfa45efaf";
     };
     deps = [];

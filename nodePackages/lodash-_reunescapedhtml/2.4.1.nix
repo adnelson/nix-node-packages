@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._reunescapedhtml";
     version = "2.4.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._reunescapedhtml/-/lodash._reunescapedhtml-2.4.1.tgz";
+      url = "https://registry.npmjs.org/lodash._reunescapedhtml/-/lodash._reunescapedhtml-2.4.1.tgz";
       sha1 = "747c4fc40103eb3bb8a0976e571f7a2659e93ba7";
     };
     deps = with nodePackages; [

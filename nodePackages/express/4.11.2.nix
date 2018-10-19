@@ -20,14 +20,14 @@ buildNodePackage {
       debug_2-1-3
       qs_2-3-3
       serve-static_1-8-1
-      proxy-addr_1-0-8
+      proxy-addr_1-0-10
       utils-merge_1-0-0
       path-to-regexp_0-1-3
       accepts_1-2-13
       finalhandler_0-3-3
       send_0-11-1
-      methods_1-1-1
-      parseurl_1-3-0
+      methods_1-1-2
+      parseurl_1-3-2
       fresh_0-2-4
       content-disposition_0-5-0
       media-typer_0-3-0

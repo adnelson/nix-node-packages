@@ -3,7 +3,7 @@ buildNodePackage {
     name = "find-index";
     version = "0.1.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/find-index/-/find-index-0.1.1.tgz";
+      url = "https://registry.npmjs.org/find-index/-/find-index-0.1.1.tgz";
       sha1 = "675d358b2ca3892d795a1ab47232f8b6e2e0dde4";
     };
     deps = [];

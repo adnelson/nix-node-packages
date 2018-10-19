@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       JSONStream_0-7-4
-      concat-stream_1-4-10
+      concat-stream_1-4-11
       xtend_3-0-0
       lexical-scope_1-1-1
       process_0-6-0

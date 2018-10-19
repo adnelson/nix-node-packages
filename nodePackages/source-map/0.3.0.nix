@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8586fb9a5a005e5b501e21cd18b6f21b457ad1f9";
     };
     deps = with nodePackages; [
-      amdefine_1-0-0
+      amdefine_1-0-1
     ];
     meta = {
       homepage = "https://github.com/mozilla/source-map";

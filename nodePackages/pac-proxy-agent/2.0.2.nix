@@ -10,7 +10,7 @@ buildNodePackage {
       get-uri_2-0-2
       http-proxy-agent_2-1-0
       debug_3-1-0
-      raw-body_2-2-0
+      raw-body_2-3-3
       pac-resolver_3-0-0
       socks-proxy-agent_3-0-1
       https-proxy-agent_2-2-1

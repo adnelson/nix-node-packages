@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       thunky_0-1-0
-      readable-stream_1-1-13
+      readable-stream_1-1-14
       mongodb_1-4-15
     ];
     meta = {

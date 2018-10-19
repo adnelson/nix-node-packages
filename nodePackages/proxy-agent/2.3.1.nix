@@ -3,7 +3,7 @@ buildNodePackage {
     name = "proxy-agent";
     version = "2.3.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/proxy-agent/-/proxy-agent-2.3.1.tgz";
+      url = "http://registry.npmjs.org/proxy-agent/-/proxy-agent-2.3.1.tgz";
       sha1 = "3d49d863d46cf5f37ca8394848346ea02373eac6";
     };
     deps = with nodePackages; [

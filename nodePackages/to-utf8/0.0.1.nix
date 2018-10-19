@@ -3,7 +3,7 @@ buildNodePackage {
     name = "to-utf8";
     version = "0.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz";
+      url = "https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz";
       sha1 = "d17aea72ff2fba39b9e43601be7b3ff72e089852";
     };
     deps = [];

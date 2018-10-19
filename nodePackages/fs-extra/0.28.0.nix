@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "9a1c0708ea8c5169297ab06fd8cb914f5647b272";
     };
     deps = with nodePackages; [
-      klaw_1-1-2
-      rimraf_2-5-4
-      graceful-fs_4-1-2
-      jsonfile_2-2-3
-      path-is-absolute_1-0-0
+      klaw_1-3-1
+      rimraf_2-6-2
+      graceful-fs_4-1-11
+      jsonfile_2-4-0
+      path-is-absolute_1-0-1
     ];
     meta = {
       homepage = "https://github.com/jprichardson/node-fs-extra";

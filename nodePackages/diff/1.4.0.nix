@@ -3,7 +3,7 @@ buildNodePackage {
     name = "diff";
     version = "1.4.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/diff/-/diff-1.4.0.tgz";
+      url = "https://registry.npmjs.org/diff/-/diff-1.4.0.tgz";
       sha1 = "7f28d2eb9ee7b15a97efd89ce63dcfdaa3ccbabf";
     };
     deps = [];

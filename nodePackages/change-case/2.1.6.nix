@@ -21,7 +21,7 @@ buildNodePackage {
       dot-case_1-1-2
       camel-case_1-2-2
       constant-case_1-1-2
-      lower-case_1-1-3
+      lower-case_1-1-4
     ];
     meta = {
       homepage = "https://github.com/blakeembrey/change-case";

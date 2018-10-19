@@ -9,8 +9,8 @@ buildNodePackage {
     deps = with nodePackages; [
       cssom_0-2-5
       htmlparser_1-7-6
-      cssstyle_0-2-30
-      request_2-67-0
+      cssstyle_0-2-37
+      request_2-88-0
       contextify_0-1-15
     ];
     optionalDependencies = with nodePackages; [

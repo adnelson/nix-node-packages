@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       babel-helper-remap-async-to-generator_6-24-1
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
       babel-plugin-syntax-async-functions_6-13-0
     ];
     meta = {

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "sequencify";
     version = "0.0.7";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/sequencify/-/sequencify-0.0.7.tgz";
+      url = "https://registry.npmjs.org/sequencify/-/sequencify-0.0.7.tgz";
       sha1 = "90cff19d02e07027fd767f5ead3e7b95d1e7380c";
     };
     deps = [];

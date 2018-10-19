@@ -12,7 +12,7 @@ buildNodePackage {
       define-property_0-2-5
       extend-shallow_2-0-1
       debug_2-6-9
-      source-map_0-5-6
+      source-map_0-5-7
       base_0-11-2
       use_3-1-1
     ];

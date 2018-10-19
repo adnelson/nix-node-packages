@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "0b81eba897e5a3d31d1c3d102f8f01441e559449";
     };
     deps = with nodePackages; [
-      os-homedir_1-0-1
+      os-homedir_1-0-2
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/expand-tilde";

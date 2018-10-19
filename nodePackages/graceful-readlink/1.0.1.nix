@@ -3,7 +3,7 @@ buildNodePackage {
     name = "graceful-readlink";
     version = "1.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz";
+      url = "https://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz";
       sha1 = "4cafad76bc62f02fa039b2f94e9a3dd3a391a725";
     };
     deps = [];

@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       cookie_0-0-5
       cookie-signature_0-0-1
-      debug_2-2-0
+      debug_3-1-0
       formidable_1-0-11
       qs_0-5-1
       send_0-1-0

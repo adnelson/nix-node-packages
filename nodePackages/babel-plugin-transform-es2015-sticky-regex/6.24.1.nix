@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "00c1cdb1aca71112cdf0cf6126c2ed6b457ccdbc";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
-      babel-helper-regex_6-24-1
-      babel-types_6-24-1
+      babel-runtime_6-26-0
+      babel-helper-regex_6-26-0
+      babel-types_6-26-0
     ];
     meta = {
       description = "Compile ES2015 sticky regex to an ES5 RegExp constructor";

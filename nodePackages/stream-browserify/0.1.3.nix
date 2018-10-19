@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "95cf1b369772e27adaf46352265152689c6c4be9";
     };
     deps = with nodePackages; [
-      inherits_2-0-1
+      inherits_2-0-3
       process_0-5-2
     ];
     meta = {

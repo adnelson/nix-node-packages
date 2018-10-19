@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash.isobject";
     version = "2.4.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash.isobject/-/lodash.isobject-2.4.1.tgz";
+      url = "https://registry.npmjs.org/lodash.isobject/-/lodash.isobject-2.4.1.tgz";
       sha1 = "5a2e47fe69953f1ee631a7eba1fe64d2d06558f5";
     };
     deps = with nodePackages; [

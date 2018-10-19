@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "0d273ac0c95be92230dc0d4c4c4f5b8960a336d6";
     };
     deps = with nodePackages; [
-      js-yaml_3-9-1
+      js-yaml_3-12-0
       extend-shallow_2-0-1
     ];
     meta = {

@@ -3,11 +3,11 @@ buildNodePackage {
     name = "read-pkg-up";
     version = "1.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/read-pkg-up/-/read-pkg-up-1.0.1.tgz";
+      url = "https://registry.npmjs.org/read-pkg-up/-/read-pkg-up-1.0.1.tgz";
       sha1 = "9d63c13276c065918d57f002a57f40a1b643fb02";
     };
     deps = with nodePackages; [
-      find-up_1-1-0
+      find-up_1-1-2
       read-pkg_1-1-0
     ];
     meta = {

@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "3b78872b17b3f42db53fd51591b5e051d7de81bf";
     };
     deps = with nodePackages; [
-      coffee-script_1-12-2
+      coffee-script_1-11-1
       object-assign_4-1-1
     ];
     peerDependencies = with nodePackages; [
-      karma_0-13-22
+      karma_3-0-0
     ];
     meta = {
       homepage = "https://github.com/karma-runner/karma-coffee-preprocessor#readme";

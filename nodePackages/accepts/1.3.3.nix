@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       negotiator_0-6-1
-      mime-types_2-1-14
+      mime-types_2-1-20
     ];
     meta = {
       homepage = "https://github.com/jshttp/accepts#readme";

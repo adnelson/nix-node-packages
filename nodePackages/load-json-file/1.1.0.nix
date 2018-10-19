@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "956905708d58b4bab4c2261b04f59f31c99374c0";
     };
     deps = with nodePackages; [
-      graceful-fs_4-1-2
+      graceful-fs_4-1-11
       pify_2-3-0
       parse-json_2-2-0
       strip-bom_2-0-0
-      pinkie-promise_2-0-0
+      pinkie-promise_2-0-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/load-json-file";

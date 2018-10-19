@@ -3,7 +3,7 @@ buildNodePackage {
     name = "jsesc";
     version = "0.5.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz";
+      url = "https://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz";
       sha1 = "e7dee66e35d6fc16f710fe91d5cf69f70f08911d";
     };
     deps = [];

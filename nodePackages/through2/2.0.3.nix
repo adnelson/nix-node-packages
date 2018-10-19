@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       xtend_4-0-1
-      readable-stream_2-2-9
+      readable-stream_2-3-6
     ];
     meta = {
       homepage = "https://github.com/rvagg/through2#readme";

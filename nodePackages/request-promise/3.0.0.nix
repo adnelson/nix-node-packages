@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "be1edb26f41c49cd1d5656c6753d6842a1249f46";
     };
     deps = with nodePackages; [
-      lodash_4-11-2
-      request_2-68-0
-      bluebird_3-3-4
+      lodash_4-17-11
+      request_2-88-0
+      bluebird_3-5-2
     ];
     meta = {
       homepage = "https://github.com/request/request-promise";

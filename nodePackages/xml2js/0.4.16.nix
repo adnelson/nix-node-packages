@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       xmlbuilder_4-2-1
-      sax_1-1-5
+      sax_1-2-4
     ];
     meta = {
       homepage = "https://github.com/Leonidas-from-XIV/node-xml2js";

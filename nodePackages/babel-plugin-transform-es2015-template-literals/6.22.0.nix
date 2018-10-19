@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "a84b3450f7e9f8f1f6839d6d687da84bb1236d8d";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Compile ES2015 template literals to ES5";

@@ -8,13 +8,13 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       babel-helper-replace-supers_6-24-1
-      babel-runtime_6-23-0
-      babel-helper-define-map_6-24-1
+      babel-runtime_6-26-0
+      babel-helper-define-map_6-26-0
       babel-messages_6-23-0
-      babel-template_6-24-1
-      babel-traverse_6-24-1
+      babel-template_6-26-0
+      babel-traverse_6-26-0
       babel-helper-optimise-call-expression_6-24-1
-      babel-types_6-24-1
+      babel-types_6-26-0
       babel-helper-function-name_6-24-1
     ];
     meta = {

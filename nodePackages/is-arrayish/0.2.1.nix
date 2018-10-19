@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-arrayish";
     version = "0.2.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz";
+      url = "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz";
       sha1 = "77c99840527aa8ecb1a8ba697b80645a7a926a9d";
     };
     deps = [];

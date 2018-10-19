@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       change-case_2-1-6
-      relateurl_0-2-6
+      relateurl_0-2-7
       clean-css_2-2-23
       uglify-js_2-4-24
       cli_0-6-6

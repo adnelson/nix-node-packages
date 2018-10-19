@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "5109d62f3e56ea967c4b63505aef08291c8a5203";
     };
     deps = with nodePackages; [
-      es6-promise_4-2-4
+      es6-promise_4-2-5
     ];
     meta = {
       homepage = "https://github.com/digitaldesignlabs/es6-promisify#readme";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "accounting";
     version = "0.4.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/accounting/-/accounting-0.4.1.tgz";
+      url = "https://registry.npmjs.org/accounting/-/accounting-0.4.1.tgz";
       sha1 = "87dd4103eff7f4460f1e186f5c677ed6cf566883";
     };
     deps = [];

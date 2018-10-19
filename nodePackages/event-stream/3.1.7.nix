@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       map-stream_0-1-0
-      from_0-0-2
+      from_0-1-7
       duplexer_0-1-1
       split_0-2-10
       pause-stream_0-0-11

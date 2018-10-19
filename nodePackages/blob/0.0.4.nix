@@ -3,7 +3,7 @@ buildNodePackage {
     name = "blob";
     version = "0.0.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/blob/-/blob-0.0.4.tgz";
+      url = "https://registry.npmjs.org/blob/-/blob-0.0.4.tgz";
       sha1 = "bcf13052ca54463f30f9fc7e95b9a47630a94921";
     };
     deps = [];

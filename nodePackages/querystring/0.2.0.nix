@@ -3,7 +3,7 @@ buildNodePackage {
     name = "querystring";
     version = "0.2.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz";
+      url = "https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz";
       sha1 = "b209849203bb25df820da756e747005878521620";
     };
     deps = [];

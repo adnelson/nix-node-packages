@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       combined-stream_0-0-7
       mime_1-2-11
-      async_0-9-0
+      async_0-9-2
     ];
     meta = {
       homepage = "https://github.com/felixge/node-form-data";

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "41fbb20243e50b12be0f04b8dedbf07520ce841d";
     };
     deps = with nodePackages; [
-      color-convert_1-9-0
+      color-convert_1-9-3
     ];
     meta = {
       homepage = "https://github.com/chalk/ansi-styles#readme";

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "c36aeccba563b89ceb556f3690f0b1d9e3547f7f";
     };
     deps = with nodePackages; [
-      string-width_2-1-0
+      string-width_2-1-1
     ];
     meta = {
       homepage = "https://github.com/nexdrew/ansi-align#readme";

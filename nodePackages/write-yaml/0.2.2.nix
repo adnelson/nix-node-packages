@@ -7,10 +7,10 @@ buildNodePackage {
       sha1 = "106f837a0e9dc0eeb4d22f632405a3d824ced787";
     };
     deps = with nodePackages; [
-      js-yaml_3-9-1
+      js-yaml_3-12-0
       extend-shallow_2-0-1
       write_0-2-1
-      lazy-cache_0-2-4
+      lazy-cache_0-2-7
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/write-yaml";

@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "f25b82cf7dc10433c55f70592d5746400ac22caa";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
-      babel-traverse_6-24-1
-      babel-types_6-24-1
+      babel-runtime_6-26-0
+      babel-traverse_6-26-0
+      babel-types_6-26-0
     ];
     devDependencies = [];
     meta = {

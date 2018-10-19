@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "42940bae5b5f22c74483699126f9f3f27449cb13";
     };
     deps = with nodePackages; [
-      inherits_2-0-1
-      block-stream_0-0-8
+      inherits_2-0-3
+      block-stream_0-0-9
       fstream_0-1-31
     ];
     meta = {

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "7444fd8551ddf3e5da7198fea0c91bc8308cc274";
     };
     deps = with nodePackages; [
-      pako_0-2-8
+      pako_0-2-9
     ];
     meta = {
       homepage = "https://github.com/Stuk/jszip";

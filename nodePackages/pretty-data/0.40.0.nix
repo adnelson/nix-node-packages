@@ -3,7 +3,7 @@ buildNodePackage {
     name = "pretty-data";
     version = "0.40.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/pretty-data/-/pretty-data-0.40.0.tgz";
+      url = "https://registry.npmjs.org/pretty-data/-/pretty-data-0.40.0.tgz";
       sha1 = "572aa8ea23467467ab94b6b5266a6fd9c8fddd72";
     };
     deps = [];

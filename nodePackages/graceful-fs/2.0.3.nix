@@ -3,7 +3,7 @@ buildNodePackage {
     name = "graceful-fs";
     version = "2.0.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/graceful-fs/-/graceful-fs-2.0.3.tgz";
+      url = "https://registry.npmjs.org/graceful-fs/-/graceful-fs-2.0.3.tgz";
       sha1 = "7cd2cdb228a4a3f36e95efa6cc142de7d1a136d0";
     };
     deps = [];

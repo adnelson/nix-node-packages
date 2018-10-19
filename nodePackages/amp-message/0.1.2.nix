@@ -3,7 +3,7 @@ buildNodePackage {
     name = "amp-message";
     version = "0.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/amp-message/-/amp-message-0.1.2.tgz";
+      url = "https://registry.npmjs.org/amp-message/-/amp-message-0.1.2.tgz";
       sha1 = "a78f1c98995087ad36192a41298e4db49e3dfc45";
     };
     deps = with nodePackages; [

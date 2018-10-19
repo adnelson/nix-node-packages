@@ -3,7 +3,7 @@ buildNodePackage {
     name = "moment";
     version = "2.2.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/moment/-/moment-2.2.1.tgz";
+      url = "http://registry.npmjs.org/moment/-/moment-2.2.1.tgz";
       sha1 = "9793e45f549bb698f2e8755bcddc05edc539bc64";
     };
     deps = [];

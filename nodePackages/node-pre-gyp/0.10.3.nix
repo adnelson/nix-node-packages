@@ -9,13 +9,13 @@ buildNodePackage {
     deps = with nodePackages; [
       nopt_4-0-1
       detect-libc_1-0-3
-      npmlog_4-0-2
+      npmlog_4-1-2
       rc_1-2-8
       mkdirp_0-5-1
-      rimraf_2-6-1
+      rimraf_2-6-2
       npm-packlist_1-1-12
       tar_4-4-6
-      semver_5-5-0
+      semver_5-6-0
       needle_2-2-4
     ];
     meta = {

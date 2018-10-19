@@ -3,7 +3,7 @@ buildNodePackage {
     name = "form-data";
     version = "0.0.10";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/form-data/-/form-data-0.0.10.tgz";
+      url = "http://registry.npmjs.org/form-data/-/form-data-0.0.10.tgz";
       sha1 = "db345a5378d86aeeb1ed5d553b869ac192d2f5ed";
     };
     deps = with nodePackages; [

@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       arr-flatten_1-1-0
-      repeat-element_1-1-2
+      repeat-element_1-1-3
       fill-range_4-0-0
       isobject_3-0-1
       snapdragon-node_2-1-1

@@ -8,19 +8,19 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       lodash_3-10-1
-      inherits_2-0-1
+      inherits_2-0-3
       interpret_0-5-2
-      commander_2-9-0
+      commander_2-19-0
       minimist_1-1-3
-      debug_2-2-0
+      debug_2-6-9
       mkdirp_0-5-1
-      chalk_1-1-1
-      pool2_1-3-0
+      chalk_1-1-3
+      pool2_1-4-1
       liftoff_2-0-3
-      v8flags_2-0-10
-      readable-stream_1-1-13
+      v8flags_2-1-1
+      readable-stream_1-1-14
       tildify_1-0-0
-      bluebird_2-10-2
+      bluebird_2-11-0
     ];
     meta = {
       homepage = "https://github.com/tgriesser/knex";

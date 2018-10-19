@@ -3,7 +3,7 @@ buildNodePackage {
     name = "delayed-stream";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz";
+      url = "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz";
       sha1 = "df3ae199acadfb7d440aaae0b29e2272b24ec619";
     };
     deps = [];

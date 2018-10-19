@@ -3,7 +3,7 @@ buildNodePackage {
     name = "optimist";
     version = "0.3.7";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz";
+      url = "https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz";
       sha1 = "c90941ad59e4273328923074d2cf2e7cbc6ec0d9";
     };
     deps = with nodePackages; [

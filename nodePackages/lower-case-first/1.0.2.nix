@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "e5da7c26f29a7073be02d52bac9980e5922adfa1";
     };
     deps = with nodePackages; [
-      lower-case_1-1-3
+      lower-case_1-1-4
     ];
     meta = {
       homepage = "https://github.com/blakeembrey/lower-case-first";

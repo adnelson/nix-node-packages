@@ -3,7 +3,7 @@ buildNodePackage {
     name = "grunt-karma";
     version = "2.0.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/grunt-karma/-/grunt-karma-2.0.0.tgz";
+      url = "http://registry.npmjs.org/grunt-karma/-/grunt-karma-2.0.0.tgz";
       sha1 = "753583d115dfdc055fe57e58f96d6b3c7e612118";
     };
     deps = with nodePackages; [
@@ -11,7 +11,7 @@ buildNodePackage {
     ];
     peerDependencies = with nodePackages; [
       grunt_0-4-5
-      karma_1-4-1
+      karma_3-0-0
     ];
     meta = {
       homepage = "https://github.com/karma-runner/grunt-karma#readme";

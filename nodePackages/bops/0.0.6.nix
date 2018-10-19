@@ -3,7 +3,7 @@ buildNodePackage {
     name = "bops";
     version = "0.0.6";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/bops/-/bops-0.0.6.tgz";
+      url = "https://registry.npmjs.org/bops/-/bops-0.0.6.tgz";
       sha1 = "082d1d55fa01e60dbdc2ebc2dba37f659554cf3a";
     };
     deps = with nodePackages; [

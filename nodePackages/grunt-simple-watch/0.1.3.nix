@@ -6,17 +6,11 @@ buildNodePackage {
       url = "https://registry.npmjs.org/grunt-simple-watch/-/grunt-simple-watch-0.1.3.tgz";
       sha1 = "9224707afba3dc78961ecc41193405b9655988b7";
     };
-    deps = [];
-    postPatch = ''
-      python <<PYTHON
-      import json
-      with open('package.json') as f:
-          pkg_json = json.load(f)
-      pkg_json['main'] = 'tasks/simple_watch.js'
-      with open('package.json', 'w') as f:
-          f.write(json.dumps(pkg_json, indent=2))
-      PYTHON
+    # Not sure why this was set incorrectly
+    patchPhase = ''
+      sed -i 's,"grunt.js","tasks/simple_watch.js",' package.json
     '';
+    deps = [];
     meta = {
       homepage = "https://github.com/unbalanced/grunt-simple-watch";
       description = "no need to change your gruntfile configurations";

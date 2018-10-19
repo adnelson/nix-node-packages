@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       node-int64_0-3-3
-      buffer-crc32_0-2-5
-      readable-stream_1-0-33
+      buffer-crc32_0-2-1
+      readable-stream_1-0-34
       crc32-stream_0-3-4
     ];
     meta = {

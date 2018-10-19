@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "14b2b31ef5971d289e571a93287ab91a169b0e83";
     };
     deps = with nodePackages; [
-      mime_1-3-4
+      mime_2-3-1
       debug_0-7-4
-      xml2js_0-2-8
+      xml2js_0-2-6
     ];
     meta = {
       description = "Amazon S3 client";

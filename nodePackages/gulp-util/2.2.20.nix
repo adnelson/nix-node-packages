@@ -3,7 +3,7 @@ buildNodePackage {
     name = "gulp-util";
     version = "2.2.20";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/gulp-util/-/gulp-util-2.2.20.tgz";
+      url = "https://registry.npmjs.org/gulp-util/-/gulp-util-2.2.20.tgz";
       sha1 = "d7146e5728910bd8f047a6b0b1e549bc22dbd64c";
     };
     deps = with nodePackages; [

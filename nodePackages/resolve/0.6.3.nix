@@ -3,7 +3,7 @@ buildNodePackage {
     name = "resolve";
     version = "0.6.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/resolve/-/resolve-0.6.3.tgz";
+      url = "https://registry.npmjs.org/resolve/-/resolve-0.6.3.tgz";
       sha1 = "dd957982e7e736debdf53b58a4dd91754575dd46";
     };
     deps = [];

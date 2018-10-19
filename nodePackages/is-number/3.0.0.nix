@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "24fd6201a4782cf50561c810276afc7d12d71195";
     };
     deps = with nodePackages; [
-      kind-of_3-0-2
+      kind-of_3-2-2
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/is-number";

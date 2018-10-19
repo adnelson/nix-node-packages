@@ -3,7 +3,7 @@ buildNodePackage {
     name = "grunt-legacy-log-utils";
     version = "0.1.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/grunt-legacy-log-utils/-/grunt-legacy-log-utils-0.1.1.tgz";
+      url = "https://registry.npmjs.org/grunt-legacy-log-utils/-/grunt-legacy-log-utils-0.1.1.tgz";
       sha1 = "c0706b9dd9064e116f36f23fe4e6b048672c0f7e";
     };
     deps = with nodePackages; [

@@ -3,11 +3,11 @@ buildNodePackage {
     name = "has-ansi";
     version = "2.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz";
+      url = "https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz";
       sha1 = "34f5049ce1ecdf2b0649af3ef24e45ed35416d91";
     };
     deps = with nodePackages; [
-      ansi-regex_2-0-0
+      ansi-regex_2-1-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/has-ansi";

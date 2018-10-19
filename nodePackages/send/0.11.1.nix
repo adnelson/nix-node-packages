@@ -3,11 +3,8 @@ buildNodePackage {
     name = "send";
     version = "0.11.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/send/-/send-0.11.1.tgz";
+      url = "https://registry.npmjs.org/send/-/send-0.11.1.tgz";
       sha1 = "1beabfd42f9e2709f99028af3078ac12b47092d5";
-    };
-    patchDependencies = {
-      ms = "~0.7";
     };
     deps = with nodePackages; [
       mime_1-2-11
@@ -17,7 +14,7 @@ buildNodePackage {
       etag_1-5-1
       escape-html_1-0-1
       debug_2-1-3
-      ms_0-7-2
+      ms_0-7-0
       destroy_1-0-3
       fresh_0-2-4
     ];

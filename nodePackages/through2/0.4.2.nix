@@ -3,12 +3,12 @@ buildNodePackage {
     name = "through2";
     version = "0.4.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/through2/-/through2-0.4.2.tgz";
+      url = "https://registry.npmjs.org/through2/-/through2-0.4.2.tgz";
       sha1 = "dbf5866031151ec8352bb6c4db64a2292a840b9b";
     };
     deps = with nodePackages; [
       xtend_2-1-2
-      readable-stream_1-0-33
+      readable-stream_1-0-34
     ];
     meta = {
       homepage = "https://github.com/rvagg/through2";

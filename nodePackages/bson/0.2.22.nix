@@ -3,7 +3,7 @@ buildNodePackage {
     name = "bson";
     version = "0.2.22";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/bson/-/bson-0.2.22.tgz";
+      url = "http://registry.npmjs.org/bson/-/bson-0.2.22.tgz";
       sha1 = "fcda103f26d0c074d5a52d50927db80fd02b4b39";
     };
     deps = with nodePackages; [

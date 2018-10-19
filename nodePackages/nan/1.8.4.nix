@@ -3,7 +3,7 @@ buildNodePackage {
     name = "nan";
     version = "1.8.4";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/nan/-/nan-1.8.4.tgz";
+      url = "http://registry.npmjs.org/nan/-/nan-1.8.4.tgz";
       sha1 = "3c76b5382eab33e44b758d2813ca9d92e9342f34";
     };
     deps = [];

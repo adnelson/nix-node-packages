@@ -3,7 +3,7 @@ buildNodePackage {
     name = "json3";
     version = "3.3.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/json3/-/json3-3.3.2.tgz";
+      url = "https://registry.npmjs.org/json3/-/json3-3.3.2.tgz";
       sha1 = "3c0434743df93e2f5c42aee7b19bcb483575f4e1";
     };
     deps = [];

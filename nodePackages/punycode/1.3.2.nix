@@ -3,7 +3,7 @@ buildNodePackage {
     name = "punycode";
     version = "1.3.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/punycode/-/punycode-1.3.2.tgz";
+      url = "https://registry.npmjs.org/punycode/-/punycode-1.3.2.tgz";
       sha1 = "9653a036fb7c1ee42342f2325cceefea3926c48d";
     };
     deps = [];

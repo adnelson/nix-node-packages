@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       mime_1-2-11
       extend_1-2-1
-      debug_2-2-0
+      debug_2-6-9
       formidable_1-0-14
       reduce-component_1-0-1
       qs_1-2-0

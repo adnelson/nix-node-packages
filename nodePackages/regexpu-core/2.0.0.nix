@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       regjsparser_0-1-5
-      regenerate_1-2-1
+      regenerate_1-4-0
       regjsgen_0-2-0
     ];
     meta = {

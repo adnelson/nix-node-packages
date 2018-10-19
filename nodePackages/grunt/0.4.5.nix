@@ -3,7 +3,7 @@ buildNodePackage {
     name = "grunt";
     version = "0.4.5";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz";
+      url = "https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz";
       sha1 = "56937cd5194324adff6d207631832a9d6ba4e7f0";
     };
     deps = with nodePackages; [
@@ -25,7 +25,7 @@ buildNodePackage {
       exit_0-1-2
       minimatch_0-2-14
       getobject_0-1-0
-      grunt-legacy-log_0-1-2
+      grunt-legacy-log_0-1-3
       grunt-legacy-util_0-2-0
     ];
     meta = {

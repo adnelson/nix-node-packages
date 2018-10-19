@@ -3,7 +3,7 @@ buildNodePackage {
     name = "camelcase";
     version = "1.2.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz";
+      url = "https://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz";
       sha1 = "9bb5304d2e0b56698b2c758b08a3eaa9daa58a39";
     };
     deps = [];

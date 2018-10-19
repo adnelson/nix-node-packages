@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "7e147be4768dc466db3bfb21cc60b31e6ad69393";
     };
     deps = with nodePackages; [
-      lower-case_1-1-3
+      lower-case_1-1-4
     ];
     meta = {
       homepage = "https://github.com/blakeembrey/is-lower-case";

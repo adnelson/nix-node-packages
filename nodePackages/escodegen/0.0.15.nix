@@ -7,11 +7,11 @@ buildNodePackage {
       sha1 = "ffda9cb26b70b34f7cc19f1d88756539afb543bd";
     };
     deps = with nodePackages; [
-      esprima_2-7-2
-      source-map_0-5-3
+      esprima_4-0-1
+      source-map_0-6-1
     ];
     optionalDependencies = with nodePackages; [
-      source-map_0-5-3
+      source-map_0-6-1
     ];
     meta = {
       homepage = "http://github.com/Constellation/escodegen.html";

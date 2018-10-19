@@ -3,15 +3,12 @@ buildNodePackage {
     name = "mocha";
     version = "1.21.5";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/mocha/-/mocha-1.21.5.tgz";
+      url = "http://registry.npmjs.org/mocha/-/mocha-1.21.5.tgz";
       sha1 = "7c58b09174df976e434a23b1e8d639873fc529e9";
-    };
-    patchDependencies = {
-      debug = "~2.3";
     };
     deps = with nodePackages; [
       commander_2-3-0
-      debug_2-3-3
+      debug_2-0-0
       mkdirp_0-5-0
       jade_0-26-3
       diff_1-0-8

@@ -7,17 +7,17 @@ buildNodePackage {
       sha1 = "86677c97d1720b363431d04d0d15293bd38c1565";
     };
     deps = with nodePackages; [
-      regex-cache_0-4-2
-      object-omit_2-0-0
-      kind-of_3-0-2
-      expand-brackets_0-1-4
+      regex-cache_0-4-4
+      object-omit_2-0-1
+      kind-of_3-2-2
+      expand-brackets_0-1-5
       is-extglob_1-0-0
-      filename-regex_2-0-0
-      braces_1-8-2
-      normalize-path_2-0-1
+      filename-regex_2-0-1
+      braces_1-8-5
+      normalize-path_2-1-1
       parse-glob_3-0-4
       array-unique_0-2-1
-      extglob_0-3-1
+      extglob_0-3-2
       is-glob_2-0-1
       arr-diff_2-0-0
     ];

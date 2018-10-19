@@ -3,7 +3,7 @@ buildNodePackage {
     name = "dom-serializer";
     version = "0.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/dom-serializer/-/dom-serializer-0.1.0.tgz";
+      url = "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.1.0.tgz";
       sha1 = "073c697546ce0780ce23be4a28e293e40bc30c82";
     };
     deps = with nodePackages; [

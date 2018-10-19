@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = [];
     peerDependencies = with nodePackages; [
-      jasmine-core_2-5-2
-      karma_1-4-1
+      jasmine-core_2-99-1
+      karma_3-0-0
     ];
     meta = {
       homepage = "https://github.com/karma-runner/karma-jasmine#readme";

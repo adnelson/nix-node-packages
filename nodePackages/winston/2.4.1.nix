@@ -10,7 +10,7 @@ buildNodePackage {
       async_1-0-0
       isstream_0-1-2
       cycle_1-0-3
-      stack-trace_0-0-9
+      stack-trace_0-0-10
       eyes_0-1-8
       colors_1-0-3
     ];

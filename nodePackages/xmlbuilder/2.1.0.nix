@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "6ddae31683b6df12100b29fc8a0d4f46349abbed";
     };
     deps = with nodePackages; [
-      underscore_1-8-3
+      underscore_1-6-0
     ];
     meta = {
       homepage = "http://github.com/oozcitak/xmlbuilder-js";

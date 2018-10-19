@@ -3,7 +3,7 @@ buildNodePackage {
     name = "stream-combiner";
     version = "0.1.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.1.0.tgz";
+      url = "http://registry.npmjs.org/stream-combiner/-/stream-combiner-0.1.0.tgz";
       sha1 = "0dc389a3c203f8f4d56368f95dde52eb9269b5be";
     };
     deps = with nodePackages; [

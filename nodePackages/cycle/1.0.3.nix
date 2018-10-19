@@ -3,7 +3,7 @@ buildNodePackage {
     name = "cycle";
     version = "1.0.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/cycle/-/cycle-1.0.3.tgz";
+      url = "https://registry.npmjs.org/cycle/-/cycle-1.0.3.tgz";
       sha1 = "21e80b2be8580f98b468f379430662b046c34ad2";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "character-parser";
     version = "1.2.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/character-parser/-/character-parser-1.2.1.tgz";
+      url = "https://registry.npmjs.org/character-parser/-/character-parser-1.2.1.tgz";
       sha1 = "c0dde4ab182713b919b970959a123ecc1a30fcd6";
     };
     deps = [];

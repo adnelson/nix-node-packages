@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "61a29abb6fcc026fea77e56d1c6ec53a795951f4";
     };
     deps = with nodePackages; [
-      lodash_4-17-10
+      lodash_4-17-11
     ];
     meta = {
       homepage = "https://caolan.github.io/async/";

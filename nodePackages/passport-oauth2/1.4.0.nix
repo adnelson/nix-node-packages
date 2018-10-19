@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       utils-merge_1-0-1
       passport-strategy_1-0-0
-      oauth_0-9-14
+      oauth_0-9-15
       uid2_0-0-3
     ];
     meta = {

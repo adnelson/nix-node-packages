@@ -3,7 +3,7 @@ buildNodePackage {
     name = "findup-sync";
     version = "0.2.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/findup-sync/-/findup-sync-0.2.1.tgz";
+      url = "https://registry.npmjs.org/findup-sync/-/findup-sync-0.2.1.tgz";
       sha1 = "e0a90a450075c49466ee513732057514b81e878c";
     };
     deps = with nodePackages; [

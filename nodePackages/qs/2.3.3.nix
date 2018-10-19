@@ -3,7 +3,7 @@ buildNodePackage {
     name = "qs";
     version = "2.3.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/qs/-/qs-2.3.3.tgz";
+      url = "https://registry.npmjs.org/qs/-/qs-2.3.3.tgz";
       sha1 = "e9e85adbe75da0bbe4c8e0476a086290f863b404";
     };
     deps = [];

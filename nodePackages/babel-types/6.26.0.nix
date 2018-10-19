@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "a3b073f94ab49eb6fa55cd65227a334380632497";
     };
     deps = with nodePackages; [
-      lodash_4-17-4
+      lodash_4-17-11
       babel-runtime_6-26-0
       esutils_2-0-2
       to-fast-properties_1-0-3

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "pkginfo";
     version = "0.2.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/pkginfo/-/pkginfo-0.2.3.tgz";
+      url = "https://registry.npmjs.org/pkginfo/-/pkginfo-0.2.3.tgz";
       sha1 = "7239c42a5ef6c30b8f328439d9b9ff71042490f8";
     };
     deps = [];

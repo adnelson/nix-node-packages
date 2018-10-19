@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "acbf354b777e495e282d616615ffc0d7457a7b60";
     };
     deps = with nodePackages; [
-      underscore_1-8-3
+      underscore_1-7-0
     ];
     devDependencies = [];
     meta = {

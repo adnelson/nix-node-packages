@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "decbcf874b0d1e5fb72e14b164a9683048e9acb3";
     };
     deps = with nodePackages; [
-      interpret_1-0-2
+      interpret_1-1-0
       rechoir_0-6-2
-      glob_7-1-2
+      glob_7-1-3
     ];
     meta = {
       homepage = "http://github.com/shelljs/shelljs";

@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "d5faf7aa578a65bbe591cf5edae04a0c67020758";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
-      babel-types_6-24-1
+      babel-runtime_6-26-0
+      babel-types_6-26-0
     ];
     meta = {
       description = "This plugin places a 'use strict'; directive at the top of all files to enable strict mode";

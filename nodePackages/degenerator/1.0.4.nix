@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "fcf490a37ece266464d9cc431ab98c5819ced095";
     };
     deps = with nodePackages; [
-      escodegen_1-8-1
+      escodegen_1-11-0
       esprima_3-1-3
-      ast-types_0-9-6
+      ast-types_0-11-6
     ];
     meta = {
       homepage = "https://github.com/TooTallNate/node-degenerator#readme";

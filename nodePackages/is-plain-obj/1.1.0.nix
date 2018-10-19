@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-plain-obj";
     version = "1.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz";
+      url = "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz";
       sha1 = "71a50c8429dfca773c92a390a4a03b39fcd51d3e";
     };
     deps = [];

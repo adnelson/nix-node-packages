@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "460ea0dbdb7d5b11bc4f78deba565f86a178e128";
     };
     deps = with nodePackages; [
-      mime_1-6-0
-      extend_3-0-0
+      mime_1-4-1
+      extend_3-0-2
       debug_3-1-0
       formidable_1-2-1
       qs_6-5-2
@@ -16,7 +16,7 @@ buildNodePackage {
       component-emitter_1-2-1
       cookiejar_2-1-2
       readable-stream_2-3-6
-      form-data_2-3-2
+      form-data_2-3-3
     ];
     meta = {
       homepage = "https://github.com/visionmedia/superagent#readme";

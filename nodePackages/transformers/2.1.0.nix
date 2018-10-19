@@ -3,7 +3,7 @@ buildNodePackage {
     name = "transformers";
     version = "2.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/transformers/-/transformers-2.1.0.tgz";
+      url = "https://registry.npmjs.org/transformers/-/transformers-2.1.0.tgz";
       sha1 = "5d23cb35561dd85dc67fb8482309b47d53cce9a7";
     };
     deps = with nodePackages; [

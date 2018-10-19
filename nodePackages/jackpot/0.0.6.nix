@@ -3,7 +3,7 @@ buildNodePackage {
     name = "jackpot";
     version = "0.0.6";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/jackpot/-/jackpot-0.0.6.tgz";
+      url = "https://registry.npmjs.org/jackpot/-/jackpot-0.0.6.tgz";
       sha1 = "3cff064285cbf66f4eab2593c90bce816a821849";
     };
     deps = with nodePackages; [

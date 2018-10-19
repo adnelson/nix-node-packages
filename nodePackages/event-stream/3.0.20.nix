@@ -3,12 +3,12 @@ buildNodePackage {
     name = "event-stream";
     version = "3.0.20";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/event-stream/-/event-stream-3.0.20.tgz";
+      url = "http://registry.npmjs.org/event-stream/-/event-stream-3.0.20.tgz";
       sha1 = "038bbb2ea9ea90385b26fbc1854d0b539f2abea3";
     };
     deps = with nodePackages; [
-      map-stream_0-0-6
-      from_0-0-2
+      map-stream_0-0-7
+      from_0-1-7
       duplexer_0-1-1
       split_0-2-10
       pause-stream_0-0-11

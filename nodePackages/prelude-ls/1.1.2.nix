@@ -3,7 +3,7 @@ buildNodePackage {
     name = "prelude-ls";
     version = "1.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz";
+      url = "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz";
       sha1 = "21932a549f5e52ffd9a827f570e04be62a97da54";
     };
     deps = [];

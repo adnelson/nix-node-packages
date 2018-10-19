@@ -3,7 +3,7 @@ buildNodePackage {
     name = "grunt-contrib-clean";
     version = "0.5.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.5.0.tgz";
+      url = "http://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-0.5.0.tgz";
       sha1 = "f53dfdee0849b1c7b40e9ebbba69f48c4c6079c5";
     };
     deps = with nodePackages; [

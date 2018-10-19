@@ -7,14 +7,14 @@ buildNodePackage {
       sha1 = "32f00235cd08d482b4d0d68db93a829c0ed5756e";
     };
     deps = with nodePackages; [
-      combined-stream_1-0-6
+      combined-stream_1-0-7
       caseless_0-12-0
-      extend_3-0-1
+      extend_3-0-2
       isstream_0-1-2
       har-validator_5-0-3
       tough-cookie_2-3-4
       http-signature_1-2-0
-      aws4_1-7-0
+      aws4_1-8-0
       aws-sign2_0-7-0
       qs_6-5-2
       forever-agent_0-6-1
@@ -24,9 +24,9 @@ buildNodePackage {
       oauth-sign_0-8-2
       is-typedarray_1-0-0
       json-stringify-safe_5-0-1
-      mime-types_2-1-17
+      mime-types_2-1-20
       performance-now_2-1-0
-      form-data_2-3-2
+      form-data_2-3-3
     ];
     meta = {
       homepage = "https://github.com/request/request#readme";

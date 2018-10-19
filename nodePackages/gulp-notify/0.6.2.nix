@@ -3,7 +3,7 @@ buildNodePackage {
     name = "gulp-notify";
     version = "0.6.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/gulp-notify/-/gulp-notify-0.6.2.tgz";
+      url = "https://registry.npmjs.org/gulp-notify/-/gulp-notify-0.6.2.tgz";
       sha1 = "493fd92b13e7bc6c32d4a3147f84dd54d387316c";
     };
     deps = with nodePackages; [

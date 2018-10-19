@@ -3,7 +3,7 @@ buildNodePackage {
     name = "ultron";
     version = "1.0.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/ultron/-/ultron-1.0.2.tgz";
+      url = "https://registry.npmjs.org/ultron/-/ultron-1.0.2.tgz";
       sha1 = "ace116ab557cd197386a4e88f4685378c8b2e4fa";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "exit";
     version = "0.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/exit/-/exit-0.1.2.tgz";
+      url = "https://registry.npmjs.org/exit/-/exit-0.1.2.tgz";
       sha1 = "0632638f8d877cc82107d30a0fff1a17cba1cd0c";
     };
     deps = [];

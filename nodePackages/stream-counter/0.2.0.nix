@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "ded266556319c8b0e222812b9cf3b26fa7d947de";
     };
     deps = with nodePackages; [
-      readable-stream_1-1-13
+      readable-stream_1-1-14
     ];
     devDependencies = [];
     meta = {

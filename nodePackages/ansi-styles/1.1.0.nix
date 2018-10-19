@@ -3,7 +3,7 @@ buildNodePackage {
     name = "ansi-styles";
     version = "1.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz";
+      url = "https://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz";
       sha1 = "eaecbf66cd706882760b2f4691582b8f55d7a7de";
     };
     deps = [];

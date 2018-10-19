@@ -3,7 +3,7 @@ buildNodePackage {
     name = "finalhandler";
     version = "1.1.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz";
+      url = "http://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz";
       sha1 = "eebf4ed840079c83f4249038c9d703008301b105";
     };
     deps = with nodePackages; [

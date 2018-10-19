@@ -3,7 +3,7 @@ buildNodePackage {
     name = "better-assert";
     version = "1.0.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/better-assert/-/better-assert-1.0.2.tgz";
+      url = "https://registry.npmjs.org/better-assert/-/better-assert-1.0.2.tgz";
       sha1 = "40866b9e1b9e0b55b481894311e68faffaebc522";
     };
     deps = with nodePackages; [

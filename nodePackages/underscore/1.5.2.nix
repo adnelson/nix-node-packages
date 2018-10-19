@@ -3,7 +3,7 @@ buildNodePackage {
     name = "underscore";
     version = "1.5.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/underscore/-/underscore-1.5.2.tgz";
+      url = "https://registry.npmjs.org/underscore/-/underscore-1.5.2.tgz";
       sha1 = "1335c5e4f5e6d33bbb4b006ba8c86a00f556de08";
     };
     deps = [];

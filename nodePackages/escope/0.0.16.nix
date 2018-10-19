@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "418c7a0afca721dafe659193fd986283e746538f";
     };
     deps = with nodePackages; [
-      estraverse_4-1-1
+      estraverse_4-2-0
     ];
     meta = {
       homepage = "http://github.com/Constellation/escope.html";

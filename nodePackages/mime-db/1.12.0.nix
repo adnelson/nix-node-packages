@@ -3,7 +3,7 @@ buildNodePackage {
     name = "mime-db";
     version = "1.12.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz";
+      url = "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz";
       sha1 = "3d0c63180f458eb10d325aaa37d7c58ae312e9d7";
     };
     deps = [];

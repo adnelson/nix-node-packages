@@ -11,7 +11,7 @@ buildNodePackage {
       cookie_0-1-0
       cookie-signature_1-0-1
       negotiator_0-3-0
-      debug_0-7-4
+      debug_0-8-1
       raw-body_1-1-2
       qs_0-6-6
       send_0-1-4

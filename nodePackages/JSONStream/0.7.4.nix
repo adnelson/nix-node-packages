@@ -3,7 +3,7 @@ buildNodePackage {
     name = "JSONStream";
     version = "0.7.4";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/JSONStream/-/JSONStream-0.7.4.tgz";
+      url = "http://registry.npmjs.org/JSONStream/-/JSONStream-0.7.4.tgz";
       sha1 = "734290e41511eea7c2cfe151fbf9a563a97b9786";
     };
     deps = with nodePackages; [

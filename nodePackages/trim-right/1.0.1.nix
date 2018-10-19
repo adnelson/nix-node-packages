@@ -3,7 +3,7 @@ buildNodePackage {
     name = "trim-right";
     version = "1.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/trim-right/-/trim-right-1.0.1.tgz";
+      url = "https://registry.npmjs.org/trim-right/-/trim-right-1.0.1.tgz";
       sha1 = "cb2e1203067e0c8de1f614094b9fe45704ea6003";
     };
     deps = [];

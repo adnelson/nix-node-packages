@@ -3,7 +3,7 @@ buildNodePackage {
     name = "kind-of";
     version = "1.1.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/kind-of/-/kind-of-1.1.0.tgz";
+      url = "http://registry.npmjs.org/kind-of/-/kind-of-1.1.0.tgz";
       sha1 = "140a3d2d41a36d2efcfa9377b62c24f8495a5c44";
     };
     deps = [];

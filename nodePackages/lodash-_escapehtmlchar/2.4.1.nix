@@ -3,7 +3,7 @@ buildNodePackage {
     name = "lodash._escapehtmlchar";
     version = "2.4.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/lodash._escapehtmlchar/-/lodash._escapehtmlchar-2.4.1.tgz";
+      url = "https://registry.npmjs.org/lodash._escapehtmlchar/-/lodash._escapehtmlchar-2.4.1.tgz";
       sha1 = "df67c3bb6b7e8e1e831ab48bfa0795b92afe899d";
     };
     deps = with nodePackages; [

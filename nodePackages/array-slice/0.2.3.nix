@@ -3,7 +3,7 @@ buildNodePackage {
     name = "array-slice";
     version = "0.2.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/array-slice/-/array-slice-0.2.3.tgz";
+      url = "https://registry.npmjs.org/array-slice/-/array-slice-0.2.3.tgz";
       sha1 = "dd3cfb80ed7973a75117cdac69b0b99ec86186f5";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "nssocket";
     version = "0.6.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/nssocket/-/nssocket-0.6.0.tgz";
+      url = "https://registry.npmjs.org/nssocket/-/nssocket-0.6.0.tgz";
       sha1 = "59f96f6ff321566f33c70f7dbeeecdfdc07154fa";
     };
     deps = with nodePackages; [

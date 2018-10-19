@@ -3,7 +3,7 @@ buildNodePackage {
     name = "wordwrap";
     version = "0.0.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz";
+      url = "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz";
       sha1 = "a3d5da6cd5c0bc0008d37234bbaf1bed63059107";
     };
     deps = [];

@@ -12,7 +12,7 @@ buildNodePackage {
       pgpass_1-0-2
       pg-pool_1-8-0
       packet-reader_0-3-1
-      pg-types_1-10-0
+      pg-types_1-13-0
       buffer-writer_1-0-1
       semver_4-3-2
     ];

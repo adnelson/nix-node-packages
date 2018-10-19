@@ -3,7 +3,7 @@ buildNodePackage {
     name = "eventemitter2";
     version = "1.0.5";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/eventemitter2/-/eventemitter2-1.0.5.tgz";
+      url = "http://registry.npmjs.org/eventemitter2/-/eventemitter2-1.0.5.tgz";
       sha1 = "f983610517b1737c0b9dc643beca93893c04df18";
     };
     deps = [];

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "06be7abef947a3f14a30fd610671d401bca8b7b6";
     };
     deps = with nodePackages; [
-      capture-stack-trace_1-0-0
+      capture-stack-trace_1-0-1
     ];
     meta = {
       homepage = "https://github.com/floatdrop/create-error-class";

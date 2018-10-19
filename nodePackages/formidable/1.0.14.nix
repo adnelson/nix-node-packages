@@ -3,7 +3,7 @@ buildNodePackage {
     name = "formidable";
     version = "1.0.14";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/formidable/-/formidable-1.0.14.tgz";
+      url = "https://registry.npmjs.org/formidable/-/formidable-1.0.14.tgz";
       sha1 = "2b3f4c411cbb5fdd695c44843e2a23514a43231a";
     };
     deps = [];

@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "78d7cbfc1e6d66303fe79837365984517b2f6ee1";
     };
     deps = with nodePackages; [
-      is-stream_1-0-1
-      pinkie-promise_2-0-0
+      is-stream_1-1-0
+      pinkie-promise_2-0-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/hasha";

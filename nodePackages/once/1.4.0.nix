@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "583b1aa775961d4b113ac17d9c50baef9dd76bd1";
     };
     deps = with nodePackages; [
-      wrappy_1-0-1
+      wrappy_1-0-2
     ];
     meta = {
       homepage = "https://github.com/isaacs/once#readme";

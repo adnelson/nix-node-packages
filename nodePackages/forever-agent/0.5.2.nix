@@ -3,7 +3,7 @@ buildNodePackage {
     name = "forever-agent";
     version = "0.5.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/forever-agent/-/forever-agent-0.5.2.tgz";
+      url = "https://registry.npmjs.org/forever-agent/-/forever-agent-0.5.2.tgz";
       sha1 = "6d0e09c4921f94a27f63d3b49c5feff1ea4c5130";
     };
     deps = [];

@@ -1,8 +1,8 @@
-{ nodejs ? pkgs.nodejs-6_x, npm3 ? true, pkgs ? import <nixpkgs> {} }:
+{ nodejs ? pkgs.nodejs-6_x, pkgs ? import <nixpkgs> {} }:
 let
   mkNodeLib = import ./nodeLib { self = mkNodeLib; };
   nodeLib = mkNodeLib {
-    inherit pkgs npm3 nodejs;
+    inherit pkgs nodejs;
   };
 in
 nodeLib.generatePackages {

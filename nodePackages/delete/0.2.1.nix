@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "33774d3c91c0c0e060b1ed44095a7394c05ebea8";
     };
     deps = with nodePackages; [
-      rimraf_2-6-1
+      rimraf_2-6-2
       lazy-cache_0-1-0
-      bluebird_2-10-2
+      bluebird_2-11-0
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/delete";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "express-winston";
     version = "0.2.12";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/express-winston/-/express-winston-0.2.12.tgz";
+      url = "http://registry.npmjs.org/express-winston/-/express-winston-0.2.12.tgz";
       sha1 = "eefbfb9bf7af87f9411ac2cdf69c4d076b437f0b";
     };
     deps = with nodePackages; [

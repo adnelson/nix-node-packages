@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8f3b827f955a8bd669697e4a4256ac3ceae356cf";
     };
     deps = with nodePackages; [
-      arr-flatten_1-0-1
+      arr-flatten_1-1-0
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/arr-diff";

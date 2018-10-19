@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       upper-case_1-1-3
-      lower-case_1-1-3
+      lower-case_1-1-4
     ];
     meta = {
       homepage = "https://github.com/blakeembrey/swap-case";

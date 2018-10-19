@@ -3,11 +3,11 @@ buildNodePackage {
     name = "node-cache";
     version = "1.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/node-cache/-/node-cache-1.1.0.tgz";
+      url = "https://registry.npmjs.org/node-cache/-/node-cache-1.1.0.tgz";
       sha1 = "186365032d2395bdff73404178fb2bc8981ace70";
     };
     deps = with nodePackages; [
-      underscore_1-8-3
+      underscore_1-6-0
     ];
     meta = {
       homepage = "https://github.com/tcs-de/nodecache";

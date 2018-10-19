@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "73eb3d310ca969e3ef9ec91c53741a6f1576423e";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
-      babel-types_6-24-1
+      babel-runtime_6-26-0
+      babel-types_6-26-0
     ];
     meta = {
       description = "Compile objects with duplicate keys to valid strict ES5";

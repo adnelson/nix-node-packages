@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       window-size_0-1-0
-      decamelize_1-1-1
+      decamelize_1-2-0
       wordwrap_0-0-2
       camelcase_1-2-1
     ];

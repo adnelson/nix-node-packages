@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "8d3bc6b8da3ca8112a160d8d496ff0462bfef78f";
     };
     deps = with nodePackages; [
-      which_1-2-14
-      ini_1-3-4
+      which_1-3-1
+      ini_1-3-5
       is-windows_0-2-0
       homedir-polyfill_1-0-1
     ];

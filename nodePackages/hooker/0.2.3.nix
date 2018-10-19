@@ -3,7 +3,7 @@ buildNodePackage {
     name = "hooker";
     version = "0.2.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/hooker/-/hooker-0.2.3.tgz";
+      url = "https://registry.npmjs.org/hooker/-/hooker-0.2.3.tgz";
       sha1 = "b834f723cc4a242aa65963459df6d984c5d3d959";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "uuid";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/uuid/-/uuid-3.0.0.tgz";
+      url = "http://registry.npmjs.org/uuid/-/uuid-3.0.0.tgz";
       sha1 = "6728fc0459c450d796a99c31837569bdf672d728";
     };
     deps = [];

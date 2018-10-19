@@ -3,7 +3,7 @@ buildNodePackage {
     name = "entities";
     version = "1.1.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/entities/-/entities-1.1.1.tgz";
+      url = "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz";
       sha1 = "6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "grunt-legacy-util";
     version = "0.2.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/grunt-legacy-util/-/grunt-legacy-util-0.2.0.tgz";
+      url = "https://registry.npmjs.org/grunt-legacy-util/-/grunt-legacy-util-0.2.0.tgz";
       sha1 = "93324884dbf7e37a9ff7c026dff451d94a9e554b";
     };
     deps = with nodePackages; [

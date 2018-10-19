@@ -3,7 +3,7 @@ buildNodePackage {
     name = "grunt-mocha-test";
     version = "0.12.7";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/grunt-mocha-test/-/grunt-mocha-test-0.12.7.tgz";
+      url = "https://registry.npmjs.org/grunt-mocha-test/-/grunt-mocha-test-0.12.7.tgz";
       sha1 = "c61cdf32a6762954115fe712b983e3dd8e0c9554";
     };
     deps = with nodePackages; [
@@ -11,7 +11,7 @@ buildNodePackage {
       hooker_0-2-3
     ];
     peerDependencies = with nodePackages; [
-      mocha_2-3-4
+      mocha_2-5-3
     ];
     meta = {
       homepage = "https://github.com/pghalliday/grunt-mocha-test";

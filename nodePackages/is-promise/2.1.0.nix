@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-promise";
     version = "2.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-promise/-/is-promise-2.1.0.tgz";
+      url = "https://registry.npmjs.org/is-promise/-/is-promise-2.1.0.tgz";
       sha1 = "79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa";
     };
     deps = [];

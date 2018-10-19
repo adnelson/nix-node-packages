@@ -6,8 +6,9 @@ buildNodePackage {
       url = "https://registry.npmjs.org/detective/-/detective-3.1.0.tgz";
       sha1 = "77782444ab752b88ca1be2e9d0a0395f1da25eed";
     };
-    # Semver complains about an invalid version.
-    patchDependencies = { esprima-fb = "*"; };
+    patchDependencies = {
+      "esprima-fb" = "3001.1.0-dev";
+    };
     deps = with nodePackages; [
       escodegen_1-1-0
       esprima-fb_3001-1-0-dev-harmony-fb

@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "ff89a142b9119a906195f5f106ecf305d9407d23";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
-      babel-template_6-24-1
+      babel-runtime_6-26-0
+      babel-template_6-26-0
       babel-helper-hoist-variables_6-24-1
     ];
     meta = {

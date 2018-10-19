@@ -3,7 +3,7 @@ buildNodePackage {
     name = "glob-stream";
     version = "3.1.18";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/glob-stream/-/glob-stream-3.1.18.tgz";
+      url = "https://registry.npmjs.org/glob-stream/-/glob-stream-3.1.18.tgz";
       sha1 = "9170a5f12b790306fdfe598f313f8f7954fd143b";
     };
     deps = with nodePackages; [

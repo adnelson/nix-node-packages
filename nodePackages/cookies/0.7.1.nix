@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "7c8a615f5481c61ab9f16c833731bcb8f663b99b";
     };
     deps = with nodePackages; [
-      depd_1-1-1
-      keygrip_1-0-2
+      depd_1-1-2
+      keygrip_1-0-3
     ];
     meta = {
       homepage = "https://github.com/pillarjs/cookies#readme";

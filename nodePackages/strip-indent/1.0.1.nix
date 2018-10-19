@@ -3,7 +3,7 @@ buildNodePackage {
     name = "strip-indent";
     version = "1.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/strip-indent/-/strip-indent-1.0.1.tgz";
+      url = "https://registry.npmjs.org/strip-indent/-/strip-indent-1.0.1.tgz";
       sha1 = "0c7962a6adefa7bbd4ac366460a638552ae1a0a2";
     };
     deps = with nodePackages; [

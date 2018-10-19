@@ -3,7 +3,7 @@ buildNodePackage {
     name = "preserve";
     version = "0.2.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/preserve/-/preserve-0.2.0.tgz";
+      url = "https://registry.npmjs.org/preserve/-/preserve-0.2.0.tgz";
       sha1 = "815ed1f6ebc65926f865b310c0713bcb3315ce4b";
     };
     deps = [];

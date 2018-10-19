@@ -3,7 +3,7 @@ buildNodePackage {
     name = "colors";
     version = "0.6.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/colors/-/colors-0.6.2.tgz";
+      url = "https://registry.npmjs.org/colors/-/colors-0.6.2.tgz";
       sha1 = "2423fe6678ac0c5dae8852e5d0e5be08c997abcc";
     };
     deps = [];

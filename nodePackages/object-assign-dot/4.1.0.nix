@@ -8,9 +8,9 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       has-symbols_1-0-0
-      object-keys_1-0-11
+      object-keys_1-0-12
       function-bind_1-1-1
-      define-properties_1-1-2
+      define-properties_1-1-3
     ];
     meta = {
       homepage = "https://github.com/ljharb/object.assign#readme";

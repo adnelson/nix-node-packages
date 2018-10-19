@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8034aafc2145772d3abe1509aa42c9e1042dc139";
     };
     deps = with nodePackages; [
-      lower-case_1-1-3
+      lower-case_1-1-4
     ];
     meta = {
       homepage = "https://github.com/blakeembrey/sentence-case";

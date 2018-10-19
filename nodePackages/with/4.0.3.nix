@@ -3,7 +3,7 @@ buildNodePackage {
     name = "with";
     version = "4.0.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/with/-/with-4.0.3.tgz";
+      url = "https://registry.npmjs.org/with/-/with-4.0.3.tgz";
       sha1 = "eefd154e9e79d2c8d3417b647a8f14d9fecce14e";
     };
     deps = with nodePackages; [

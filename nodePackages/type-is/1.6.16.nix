@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "f89ce341541c672b25ee7ae3c73dee3b2be50194";
     };
     deps = with nodePackages; [
-      mime-types_2-1-19
+      mime-types_2-1-20
       media-typer_0-3-0
     ];
     meta = {

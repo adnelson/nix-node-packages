@@ -3,17 +3,17 @@ buildNodePackage {
     name = "browserify";
     version = "3.46.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/browserify/-/browserify-3.46.1.tgz";
+      url = "http://registry.npmjs.org/browserify/-/browserify-3.46.1.tgz";
       sha1 = "2c2e4a7f2f408178e78c223b5b57b37c2185ad8e";
     };
     deps = with nodePackages; [
       JSONStream_0-7-4
-      syntax-error_1-1-4
+      syntax-error_1-1-6
       crypto-browserify_1-0-9
       string_decoder_0-0-1
-      concat-stream_1-4-10
+      concat-stream_1-4-11
       deep-equal_0-1-2
-      inherits_2-0-1
+      inherits_2-0-3
       querystring-es3_0-2-0
       duplexer_0-1-1
       punycode_1-2-4
@@ -27,7 +27,7 @@ buildNodePackage {
       shallow-copy_0-0-1
       os-browserify_0-1-2
       xtend_3-0-0
-      util_0-10-3
+      util_0-10-4
       resolve_0-6-3
       vm-browserify_0-0-4
       https-browserify_0-0-1
@@ -38,16 +38,16 @@ buildNodePackage {
       browser-resolve_1-2-4
       module-deps_2-0-6
       glob_3-2-11
-      tty-browserify_0-0-0
+      tty-browserify_0-0-1
       http-browserify_1-3-2
       parents_0-0-2
       events_1-0-2
       browser-pack_2-0-1
-      domain-browser_1-1-4
+      domain-browser_1-1-7
       defined_0-0-0
       shell-quote_0-0-1
       assert_1-1-2
-      path-browserify_0-0-0
+      path-browserify_0-0-1
       browserify-zlib_0-1-4
       stream-combiner_0-0-4
       stream-browserify_0-1-3

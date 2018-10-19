@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-extendable";
     version = "0.1.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz";
+      url = "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz";
       sha1 = "62b110e289a471418e3ec36a617d472e301dfc89";
     };
     deps = [];

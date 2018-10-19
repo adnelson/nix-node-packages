@@ -3,7 +3,7 @@ buildNodePackage {
     name = "amp";
     version = "0.3.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/amp/-/amp-0.3.1.tgz";
+      url = "https://registry.npmjs.org/amp/-/amp-0.3.1.tgz";
       sha1 = "6adf8d58a74f361e82c1fa8d389c079e139fc47d";
     };
     deps = [];

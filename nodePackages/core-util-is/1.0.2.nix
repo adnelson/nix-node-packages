@@ -3,7 +3,7 @@ buildNodePackage {
     name = "core-util-is";
     version = "1.0.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz";
+      url = "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz";
       sha1 = "b5fd54220aa2bc5ab57aab7140c940754503c1a7";
     };
     deps = [];

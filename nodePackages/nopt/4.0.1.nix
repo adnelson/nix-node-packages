@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "d0d4685afd5415193c8c7505602d0d17cd64474d";
     };
     deps = with nodePackages; [
-      abbrev_1-0-7
+      abbrev_1-1-1
       osenv_0-1-5
     ];
     meta = {

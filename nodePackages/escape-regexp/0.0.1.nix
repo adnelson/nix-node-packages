@@ -3,7 +3,7 @@ buildNodePackage {
     name = "escape-regexp";
     version = "0.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/escape-regexp/-/escape-regexp-0.0.1.tgz";
+      url = "https://registry.npmjs.org/escape-regexp/-/escape-regexp-0.0.1.tgz";
       sha1 = "f44bda12d45bbdf9cb7f862ee7e4827b3dd32254";
     };
     deps = [];

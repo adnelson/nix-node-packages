@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "debac1067435f1359d90fcfd9e94bcb2ee47b2bf";
     };
     deps = with nodePackages; [
-      astw_2-0-0
+      astw_2-2-0
     ];
     meta = {
       homepage = "https://github.com/substack/lexical-scope";

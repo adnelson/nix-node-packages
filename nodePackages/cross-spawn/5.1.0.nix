@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "e8bd0efee58fcff6f8f94510a0a554bbfa235449";
     };
     deps = with nodePackages; [
-      which_1-2-14
-      lru-cache_4-0-1
+      which_1-3-1
+      lru-cache_4-1-3
       shebang-command_1-2-0
     ];
     meta = {

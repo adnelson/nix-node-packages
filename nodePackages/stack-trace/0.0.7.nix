@@ -3,7 +3,7 @@ buildNodePackage {
     name = "stack-trace";
     version = "0.0.7";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/stack-trace/-/stack-trace-0.0.7.tgz";
+      url = "https://registry.npmjs.org/stack-trace/-/stack-trace-0.0.7.tgz";
       sha1 = "c72e089744fc3659f508cdce3621af5634ec0fff";
     };
     deps = [];

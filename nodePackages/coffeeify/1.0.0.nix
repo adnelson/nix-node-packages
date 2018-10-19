@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       convert-source-map_0-4-1
-      coffee-script_1-10-0
+      coffee-script_1-11-1
       through_2-3-8
     ];
     meta = {

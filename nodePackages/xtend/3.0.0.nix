@@ -3,7 +3,7 @@ buildNodePackage {
     name = "xtend";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz";
+      url = "https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz";
       sha1 = "5cce7407baf642cba7becda568111c493f59665a";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "json5";
     version = "0.5.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/json5/-/json5-0.5.1.tgz";
+      url = "http://registry.npmjs.org/json5/-/json5-0.5.1.tgz";
       sha1 = "1eade7acc012034ad84e2396767ead9fa5495821";
     };
     deps = [];

@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       path-exists_2-1-0
-      pinkie-promise_2-0-0
+      pinkie-promise_2-0-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/find-up";

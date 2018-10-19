@@ -3,7 +3,7 @@ buildNodePackage {
     name = "glob-base";
     version = "0.3.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/glob-base/-/glob-base-0.3.0.tgz";
+      url = "https://registry.npmjs.org/glob-base/-/glob-base-0.3.0.tgz";
       sha1 = "dbb164f6221b1c0b1ccf82aea328b497df0ea3c4";
     };
     deps = with nodePackages; [

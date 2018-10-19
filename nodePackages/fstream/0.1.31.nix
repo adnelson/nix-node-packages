@@ -7,10 +7,10 @@ buildNodePackage {
       sha1 = "7337f058fbbbbefa8c9f561a28cab0849202c988";
     };
     deps = with nodePackages; [
-      inherits_2-0-1
+      inherits_2-0-3
       mkdirp_0-5-1
-      rimraf_2-5-1
-      graceful-fs_3-0-8
+      rimraf_2-6-2
+      graceful-fs_3-0-11
     ];
     meta = {
       homepage = "https://github.com/isaacs/fstream";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-primitive";
     version = "2.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-primitive/-/is-primitive-2.0.0.tgz";
+      url = "https://registry.npmjs.org/is-primitive/-/is-primitive-2.0.0.tgz";
       sha1 = "207bab91638499c07b2adf240a41a87210034575";
     };
     deps = [];

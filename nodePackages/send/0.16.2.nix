@@ -16,7 +16,7 @@ buildNodePackage {
       debug_2-6-9
       encodeurl_1-0-2
       ms_2-0-0
-      http-errors_1-6-2
+      http-errors_1-6-3
       destroy_1-0-4
       fresh_0-5-2
       statuses_1-4-0

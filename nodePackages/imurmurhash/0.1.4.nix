@@ -3,7 +3,7 @@ buildNodePackage {
     name = "imurmurhash";
     version = "0.1.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz";
+      url = "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz";
       sha1 = "9218b9b2b928a238b13dc4fb6b6d576f231453ea";
     };
     deps = [];

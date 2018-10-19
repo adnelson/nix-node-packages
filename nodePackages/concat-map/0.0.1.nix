@@ -3,7 +3,7 @@ buildNodePackage {
     name = "concat-map";
     version = "0.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz";
+      url = "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz";
       sha1 = "d8a96bd77fd68df7793a73036a3ba0d5405d477b";
     };
     deps = [];

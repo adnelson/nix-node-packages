@@ -10,7 +10,7 @@ buildNodePackage {
       crypto-browserify_1-0-9
       punycode_1-2-4
       console-browserify_0-1-6
-      zlib-browserify_0-0-3
+      zlib-browserify_0-0-1
       constants-browserify_0-0-1
       resolve_0-3-1
       vm-browserify_0-0-4

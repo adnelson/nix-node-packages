@@ -3,7 +3,7 @@ buildNodePackage {
     name = "gulp-plumber";
     version = "0.5.6";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/gulp-plumber/-/gulp-plumber-0.5.6.tgz";
+      url = "https://registry.npmjs.org/gulp-plumber/-/gulp-plumber-0.5.6.tgz";
       sha1 = "f25ba0558c1b754bac2cf0ee2658cbbe76c7bf3d";
     };
     deps = with nodePackages; [

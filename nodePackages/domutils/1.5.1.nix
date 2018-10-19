@@ -3,7 +3,7 @@ buildNodePackage {
     name = "domutils";
     version = "1.5.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz";
+      url = "https://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz";
       sha1 = "dcd8488a26f563d61079e48c9f7b7e32373682cf";
     };
     deps = with nodePackages; [

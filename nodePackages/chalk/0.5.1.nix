@@ -11,7 +11,7 @@ buildNodePackage {
       ansi-styles_1-1-0
       has-ansi_0-1-0
       supports-color_0-2-0
-      escape-string-regexp_1-0-3
+      escape-string-regexp_1-0-5
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/chalk";

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "bbc51b49f964d70cb8d8e0b94e820246ce3a6141";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Babel plugin to ensure function declarations at the block level are block scoped";

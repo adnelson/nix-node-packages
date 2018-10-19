@@ -11,7 +11,7 @@ buildNodePackage {
       resolve-dir_0-1-1
       glob_5-0-15
       async-array-reduce_0-1-0
-      lazy-cache_0-2-4
+      lazy-cache_0-2-7
       is-valid-glob_0-3-0
     ];
     meta = {

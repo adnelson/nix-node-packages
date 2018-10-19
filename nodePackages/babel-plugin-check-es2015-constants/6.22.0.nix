@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "35157b101426fd2ffd3da3f75c7d1e91835bbf8a";
     };
     deps = with nodePackages; [
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Compile ES2015 constants to ES5";

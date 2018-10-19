@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       mime_1-2-11
       range-parser_0-0-4
-      debug_2-2-0
+      debug_0-8-1
       fresh_0-2-0
     ];
     meta = {

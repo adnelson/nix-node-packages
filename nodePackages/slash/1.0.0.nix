@@ -3,7 +3,7 @@ buildNodePackage {
     name = "slash";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/slash/-/slash-1.0.0.tgz";
+      url = "https://registry.npmjs.org/slash/-/slash-1.0.0.tgz";
       sha1 = "c41f2f6c39fc16d1cd17ad4b5d896114ae470d55";
     };
     deps = [];

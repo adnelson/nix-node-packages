@@ -13,7 +13,7 @@ buildNodePackage {
       lodash-some_4-6-0
       htmlparser2_3-9-2
       lodash-pick_4-4-0
-      lodash-merge_4-6-0
+      lodash-merge_4-6-1
       lodash-defaults_4-2-0
       lodash-flatten_4-4-0
       lodash-reject_4-6-0

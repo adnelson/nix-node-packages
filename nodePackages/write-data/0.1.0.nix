@@ -10,7 +10,7 @@ buildNodePackage {
       write-json_0-2-2
       extend-shallow_1-1-4
       write-yaml_0-2-2
-      lazy-cache_0-2-4
+      lazy-cache_0-2-7
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/write-data";

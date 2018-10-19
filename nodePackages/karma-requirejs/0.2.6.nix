@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = [];
     peerDependencies = with nodePackages; [
-      karma_0-13-22
-      requirejs_2-3-1
+      karma_3-0-0
+      requirejs_2-3-6
     ];
     meta = {
       homepage = "https://github.com/karma-runner/karma-requirejs#readme";

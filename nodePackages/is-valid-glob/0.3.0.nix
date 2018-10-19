@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-valid-glob";
     version = "0.3.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-valid-glob/-/is-valid-glob-0.3.0.tgz";
+      url = "https://registry.npmjs.org/is-valid-glob/-/is-valid-glob-0.3.0.tgz";
       sha1 = "d4b55c69f51886f9b65c70d6c2622d37e29f48fe";
     };
     deps = [];

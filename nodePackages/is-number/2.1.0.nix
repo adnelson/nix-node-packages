@@ -3,11 +3,11 @@ buildNodePackage {
     name = "is-number";
     version = "2.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-number/-/is-number-2.1.0.tgz";
+      url = "https://registry.npmjs.org/is-number/-/is-number-2.1.0.tgz";
       sha1 = "01fcbbb393463a548f2f466cce16dece49db908f";
     };
     deps = with nodePackages; [
-      kind-of_3-0-2
+      kind-of_3-2-2
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/is-number";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "formatio";
     version = "1.1.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/formatio/-/formatio-1.1.1.tgz";
+      url = "https://registry.npmjs.org/formatio/-/formatio-1.1.1.tgz";
       sha1 = "5ed3ccd636551097383465d996199100e86161e9";
     };
     deps = with nodePackages; [

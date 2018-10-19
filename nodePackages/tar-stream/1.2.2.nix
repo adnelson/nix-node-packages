@@ -3,14 +3,14 @@ buildNodePackage {
     name = "tar-stream";
     version = "1.2.2";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/tar-stream/-/tar-stream-1.2.2.tgz";
+      url = "http://registry.npmjs.org/tar-stream/-/tar-stream-1.2.2.tgz";
       sha1 = "9632f23d98fd33d41661bbdec05489120dec6028";
     };
     deps = with nodePackages; [
-      bl_1-1-2
+      bl_1-2-2
       xtend_4-0-1
-      readable-stream_2-2-9
-      end-of-stream_1-1-0
+      readable-stream_2-3-6
+      end-of-stream_1-4-1
     ];
     meta = {
       homepage = "https://github.com/mafintosh/tar-stream";

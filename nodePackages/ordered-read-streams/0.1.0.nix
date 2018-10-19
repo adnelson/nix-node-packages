@@ -3,7 +3,7 @@ buildNodePackage {
     name = "ordered-read-streams";
     version = "0.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/ordered-read-streams/-/ordered-read-streams-0.1.0.tgz";
+      url = "https://registry.npmjs.org/ordered-read-streams/-/ordered-read-streams-0.1.0.tgz";
       sha1 = "fd565a9af8eb4473ba69b6ed8a34352cb552f126";
     };
     deps = [];

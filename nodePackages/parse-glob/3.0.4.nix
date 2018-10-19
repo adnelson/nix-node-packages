@@ -3,12 +3,12 @@ buildNodePackage {
     name = "parse-glob";
     version = "3.0.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/parse-glob/-/parse-glob-3.0.4.tgz";
+      url = "https://registry.npmjs.org/parse-glob/-/parse-glob-3.0.4.tgz";
       sha1 = "b2c376cfb11f35513badd173ef0bb6e3a388391c";
     };
     deps = with nodePackages; [
       is-extglob_1-0-0
-      is-dotfile_1-0-2
+      is-dotfile_1-0-3
       glob-base_0-3-0
       is-glob_2-0-1
     ];

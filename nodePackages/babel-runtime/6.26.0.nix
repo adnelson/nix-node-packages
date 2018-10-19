@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "965c7058668e82b55d7bfe04ff2337bc8b5647fe";
     };
     deps = with nodePackages; [
-      regenerator-runtime_0-11-0
-      core-js_2-4-1
+      regenerator-runtime_0-11-1
+      core-js_2-5-7
     ];
     meta = {
       description = "babel selfContained runtime";

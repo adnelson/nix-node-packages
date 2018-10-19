@@ -11,7 +11,7 @@ buildNodePackage {
       superagent_3-8-3
       superagent-proxy_1-0-3
       deepmerge_1-5-2
-      bluebird_2-10-2
+      bluebird_2-11-0
     ];
     meta = {
       homepage = "https://github.com/ngonzalvez/rest-facade#readme";

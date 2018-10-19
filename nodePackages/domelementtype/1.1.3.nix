@@ -3,7 +3,7 @@ buildNodePackage {
     name = "domelementtype";
     version = "1.1.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/domelementtype/-/domelementtype-1.1.3.tgz";
+      url = "https://registry.npmjs.org/domelementtype/-/domelementtype-1.1.3.tgz";
       sha1 = "bd28773e2642881aec51544924299c5cd822185b";
     };
     deps = [];

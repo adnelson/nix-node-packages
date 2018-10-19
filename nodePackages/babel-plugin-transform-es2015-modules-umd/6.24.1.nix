@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       babel-plugin-transform-es2015-modules-amd_6-24-1
-      babel-runtime_6-23-0
-      babel-template_6-24-1
+      babel-runtime_6-26-0
+      babel-template_6-26-0
     ];
     meta = {
       description = "This plugin transforms ES2015 modules to UMD";

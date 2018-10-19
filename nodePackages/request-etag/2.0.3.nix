@@ -10,7 +10,7 @@ buildNodePackage {
       lodash-clonedeep_4-5-0
       lodash-assign_4-2-0
       lru-cache_4-1-3
-      request_2-87-0
+      request_2-88-0
     ];
     meta = {
       homepage = "https://github.com/Belema/request-etag#readme";

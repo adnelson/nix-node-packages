@@ -3,7 +3,7 @@ buildNodePackage {
     name = "getobject";
     version = "0.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/getobject/-/getobject-0.1.0.tgz";
+      url = "https://registry.npmjs.org/getobject/-/getobject-0.1.0.tgz";
       sha1 = "047a449789fa160d018f5486ed91320b6ec7885c";
     };
     deps = [];

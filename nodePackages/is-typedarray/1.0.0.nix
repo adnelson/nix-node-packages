@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-typedarray";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz";
+      url = "https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz";
       sha1 = "e479c80858df0c1b11ddda6940f96011fcda4a9a";
     };
     deps = [];

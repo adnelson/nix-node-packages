@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       formatio_1-0-2
-      util_0-10-3
+      util_0-11-0
     ];
     meta = {
       homepage = "http://cjohansen.no/sinon/";

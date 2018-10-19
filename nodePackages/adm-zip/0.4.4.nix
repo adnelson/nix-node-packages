@@ -3,7 +3,7 @@ buildNodePackage {
     name = "adm-zip";
     version = "0.4.4";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/adm-zip/-/adm-zip-0.4.4.tgz";
+      url = "http://registry.npmjs.org/adm-zip/-/adm-zip-0.4.4.tgz";
       sha1 = "a61ed5ae6905c3aea58b3a657d25033091052736";
     };
     deps = [];

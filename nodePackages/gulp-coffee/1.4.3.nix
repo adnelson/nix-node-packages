@@ -3,11 +3,11 @@ buildNodePackage {
     name = "gulp-coffee";
     version = "1.4.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/gulp-coffee/-/gulp-coffee-1.4.3.tgz";
+      url = "https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-1.4.3.tgz";
       sha1 = "f3ae30cb8e9ca0873947ad755389cfe7c98dd2c8";
     };
     deps = with nodePackages; [
-      event-stream_3-3-2
+      event-stream_3-3-6
       coffee-script_1-7-0
       gulp-util_2-2-20
     ];

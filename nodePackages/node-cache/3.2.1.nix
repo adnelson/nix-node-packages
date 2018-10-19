@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "a7958d32a8a42d9119ce25986567ea2c5f966773";
     };
     deps = with nodePackages; [
-      lodash_4-17-4
-      clone_1-0-2
+      lodash_4-17-11
+      clone_1-0-4
     ];
     meta = {
       homepage = "https://github.com/tcs-de/nodecache";

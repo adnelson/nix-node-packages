@@ -11,7 +11,7 @@ buildNodePackage {
       on-headers_1-0-1
       debug_2-6-9
       accepts_1-3-5
-      compressible_2-0-14
+      compressible_2-0-15
       safe-buffer_5-1-2
       bytes_3-0-0
     ];

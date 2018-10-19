@@ -3,7 +3,7 @@ buildNodePackage {
     name = "vinyl";
     version = "0.4.6";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/vinyl/-/vinyl-0.4.6.tgz";
+      url = "https://registry.npmjs.org/vinyl/-/vinyl-0.4.6.tgz";
       sha1 = "2f356c87a550a255461f36bbeb2a5ba8bf784847";
     };
     deps = with nodePackages; [

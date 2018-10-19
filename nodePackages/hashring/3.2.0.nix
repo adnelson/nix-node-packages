@@ -3,7 +3,7 @@ buildNodePackage {
     name = "hashring";
     version = "3.2.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/hashring/-/hashring-3.2.0.tgz";
+      url = "https://registry.npmjs.org/hashring/-/hashring-3.2.0.tgz";
       sha1 = "fda4efde8aa22cdb97fb1d2a65e88401e1c144ce";
     };
     deps = with nodePackages; [

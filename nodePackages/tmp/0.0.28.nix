@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "172735b7f614ea7af39664fa84cf0de4e515d120";
     };
     deps = with nodePackages; [
-      os-tmpdir_1-0-1
+      os-tmpdir_1-0-2
     ];
     meta = {
       homepage = "http://github.com/raszi/node-tmp";

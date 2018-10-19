@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-equal-shallow";
     version = "0.1.3";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-equal-shallow/-/is-equal-shallow-0.1.3.tgz";
+      url = "https://registry.npmjs.org/is-equal-shallow/-/is-equal-shallow-0.1.3.tgz";
       sha1 = "2238098fc221de0bcfa5d9eac4c45d638aa1c534";
     };
     deps = with nodePackages; [

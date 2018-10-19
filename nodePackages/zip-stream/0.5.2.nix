@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       compress-commons_0-2-9
       lodash_3-2-0
-      readable-stream_1-0-33
+      readable-stream_1-0-34
     ];
     meta = {
       homepage = "https://github.com/archiverjs/node-zip-stream";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "sntp";
     version = "0.2.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/sntp/-/sntp-0.2.4.tgz";
+      url = "https://registry.npmjs.org/sntp/-/sntp-0.2.4.tgz";
       sha1 = "fb885f18b0f3aad189f824862536bceeec750900";
     };
     deps = with nodePackages; [

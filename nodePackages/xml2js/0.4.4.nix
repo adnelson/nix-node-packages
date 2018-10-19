@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "3111010003008ae19240eba17497b57c729c555d";
     };
     deps = with nodePackages; [
-      xmlbuilder_4-1-0
+      xmlbuilder_9-0-7
       sax_0-6-1
     ];
     meta = {

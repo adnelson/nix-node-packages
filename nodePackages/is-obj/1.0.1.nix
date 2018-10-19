@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-obj";
     version = "1.0.1";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/is-obj/-/is-obj-1.0.1.tgz";
+      url = "http://registry.npmjs.org/is-obj/-/is-obj-1.0.1.tgz";
       sha1 = "3e4729ac1f5fde025cd7d83a896dab9f4f67db0f";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "first-chunk-stream";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz";
+      url = "https://registry.npmjs.org/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz";
       sha1 = "59bfb50cd905f60d7c394cd3d9acaab4e6ad934e";
     };
     deps = [];

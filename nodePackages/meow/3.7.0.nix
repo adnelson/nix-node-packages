@@ -3,7 +3,7 @@ buildNodePackage {
     name = "meow";
     version = "3.7.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/meow/-/meow-3.7.0.tgz";
+      url = "http://registry.npmjs.org/meow/-/meow-3.7.0.tgz";
       sha1 = "72cb668b425228290abbfa856892587308a801fb";
     };
     deps = with nodePackages; [
@@ -13,10 +13,10 @@ buildNodePackage {
       decamelize_1-2-0
       read-pkg-up_1-0-1
       map-obj_1-0-1
-      normalize-package-data_2-3-5
-      loud-rejection_1-2-0
+      normalize-package-data_2-4-0
+      loud-rejection_1-6-0
       object-assign_4-1-1
-      camelcase-keys_2-0-0
+      camelcase-keys_2-1-0
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/meow#readme";

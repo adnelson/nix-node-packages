@@ -3,7 +3,7 @@ buildNodePackage {
     name = "gulp-watch";
     version = "0.5.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/gulp-watch/-/gulp-watch-0.5.4.tgz";
+      url = "https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.5.4.tgz";
       sha1 = "4f2cccd6e0808c895f530d843b806dc450d3ae2c";
     };
     deps = with nodePackages; [

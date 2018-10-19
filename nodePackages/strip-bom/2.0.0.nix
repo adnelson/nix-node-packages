@@ -3,11 +3,11 @@ buildNodePackage {
     name = "strip-bom";
     version = "2.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/strip-bom/-/strip-bom-2.0.0.tgz";
+      url = "https://registry.npmjs.org/strip-bom/-/strip-bom-2.0.0.tgz";
       sha1 = "6219a85616520491f35788bdbf1447a99c7e6b0e";
     };
     deps = with nodePackages; [
-      is-utf8_0-2-0
+      is-utf8_0-2-1
     ];
     meta = {
       homepage = "https://github.com/sindresorhus/strip-bom";

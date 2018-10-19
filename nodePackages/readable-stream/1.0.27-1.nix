@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       string_decoder_0-10-31
-      inherits_2-0-1
+      inherits_2-0-3
       isarray_0-0-1
       core-util-is_1-0-2
     ];

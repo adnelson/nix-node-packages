@@ -3,7 +3,7 @@ buildNodePackage {
     name = "object-assign";
     version = "3.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz";
+      url = "https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz";
       sha1 = "9bedd5ca0897949bca47e7ff408062d549f587f2";
     };
     deps = [];

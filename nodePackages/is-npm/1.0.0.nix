@@ -3,7 +3,7 @@ buildNodePackage {
     name = "is-npm";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/is-npm/-/is-npm-1.0.0.tgz";
+      url = "https://registry.npmjs.org/is-npm/-/is-npm-1.0.0.tgz";
       sha1 = "f2fb63a65e4905b406c86072765a1a4dc793b9f4";
     };
     deps = [];

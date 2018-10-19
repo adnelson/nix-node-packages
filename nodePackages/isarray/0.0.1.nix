@@ -3,7 +3,7 @@ buildNodePackage {
     name = "isarray";
     version = "0.0.1";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz";
+      url = "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz";
       sha1 = "8a18acfca9a8f4177e09abfc6038939b05d1eedf";
     };
     deps = [];

@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "31ea21a734bab9bbb0f32466d893aea51e4a3c64";
     };
     deps = with nodePackages; [
-      is-buffer_1-1-5
+      is-buffer_1-1-6
     ];
     meta = {
       homepage = "https://github.com/jonschlinkert/kind-of";

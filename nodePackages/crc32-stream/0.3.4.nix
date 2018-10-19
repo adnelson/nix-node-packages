@@ -7,8 +7,8 @@ buildNodePackage {
       sha1 = "73bc25b45fac1db6632231a7bfce8927e9f06552";
     };
     deps = with nodePackages; [
-      buffer-crc32_0-2-5
-      readable-stream_1-0-33
+      buffer-crc32_0-2-1
+      readable-stream_1-0-34
     ];
     meta = {
       homepage = "https://github.com/archiverjs/node-crc32-stream";

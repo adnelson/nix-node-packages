@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       double-ended-queue_2-1-0-0
       redis-parser_2-6-0
-      redis-commands_1-3-5
+      redis-commands_1-4-0
     ];
     meta = {
       homepage = "https://github.com/NodeRedis/node_redis";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "array-differ";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/array-differ/-/array-differ-1.0.0.tgz";
+      url = "https://registry.npmjs.org/array-differ/-/array-differ-1.0.0.tgz";
       sha1 = "eff52e3758249d33be402b8bb8e564bb2b5d4031";
     };
     deps = [];

@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       passport-oauth_1-0-0
       xtend_4-0-1
-      request_2-87-0
+      request_2-88-0
     ];
     meta = {
       homepage = "https://github.com/auth0/passport-auth0#readme";

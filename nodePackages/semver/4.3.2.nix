@@ -3,7 +3,7 @@ buildNodePackage {
     name = "semver";
     version = "4.3.2";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/semver/-/semver-4.3.2.tgz";
+      url = "http://registry.npmjs.org/semver/-/semver-4.3.2.tgz";
       sha1 = "c7a07158a80bedd052355b770d82d6640f803be7";
     };
     deps = [];

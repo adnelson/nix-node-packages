@@ -3,7 +3,7 @@ buildNodePackage {
     name = "aws-sdk";
     version = "2.2.35";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.2.35.tgz";
+      url = "http://registry.npmjs.org/aws-sdk/-/aws-sdk-2.2.35.tgz";
       sha1 = "5884b0fe9e450b3d1f9ebb240767654ed021b1f3";
     };
     deps = with nodePackages; [

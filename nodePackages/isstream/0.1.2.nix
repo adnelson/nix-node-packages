@@ -3,7 +3,7 @@ buildNodePackage {
     name = "isstream";
     version = "0.1.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz";
+      url = "https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz";
       sha1 = "47e63f7af55afa6f92e1500e690eb8b8529c099a";
     };
     deps = [];

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "assert-plus";
     version = "0.1.5";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz";
+      url = "https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz";
       sha1 = "ee74009413002d84cec7219c6ac811812e723160";
     };
     deps = [];

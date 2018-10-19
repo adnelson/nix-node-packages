@@ -3,11 +3,11 @@ buildNodePackage {
     name = "read-pkg";
     version = "1.1.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/read-pkg/-/read-pkg-1.1.0.tgz";
+      url = "https://registry.npmjs.org/read-pkg/-/read-pkg-1.1.0.tgz";
       sha1 = "f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28";
     };
     deps = with nodePackages; [
-      normalize-package-data_2-3-5
+      normalize-package-data_2-4-0
       load-json-file_1-1-0
       path-type_1-1-0
     ];

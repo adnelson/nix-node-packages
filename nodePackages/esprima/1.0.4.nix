@@ -3,7 +3,7 @@ buildNodePackage {
     name = "esprima";
     version = "1.0.4";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/esprima/-/esprima-1.0.4.tgz";
+      url = "https://registry.npmjs.org/esprima/-/esprima-1.0.4.tgz";
       sha1 = "9f557e08fc3b4d26ece9dd34f8fbf476b62585ad";
     };
     deps = [];

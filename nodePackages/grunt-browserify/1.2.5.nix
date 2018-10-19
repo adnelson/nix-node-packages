@@ -6,11 +6,14 @@ buildNodePackage {
       url = "https://registry.npmjs.org/grunt-browserify/-/grunt-browserify-1.2.5.tgz";
       sha1 = "43852edaec91b527a3b18d91a05828d4a507e4cd";
     };
+    # Not sure why this was set incorrectly
+    patchPhase = ''
+      sed -i 's,"grunt.js","tasks/browserify.js",' package.json
+    '';
     deps = with nodePackages; [
       browserify-shim_2-0-10
       browserify_2-27-1
     ];
-    postPatch = "touch grunt.js";
     peerDependencies = with nodePackages; [
       grunt_0-4-5
     ];

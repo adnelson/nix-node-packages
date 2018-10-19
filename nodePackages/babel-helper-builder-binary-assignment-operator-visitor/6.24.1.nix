@@ -8,8 +8,8 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       babel-helper-explode-assignable-expression_6-24-1
-      babel-runtime_6-23-0
-      babel-types_6-24-1
+      babel-runtime_6-26-0
+      babel-types_6-26-0
     ];
     devDependencies = [];
     meta = {

@@ -10,9 +10,9 @@ buildNodePackage {
       lodash_3-10-1
       async_1-4-2
       tar-stream_1-2-2
-      buffer-crc32_0-2-5
+      buffer-crc32_0-2-1
       glob_5-0-15
-      readable-stream_1-0-33
+      readable-stream_1-0-34
       lazystream_0-1-0
       zip-stream_0-5-2
     ];

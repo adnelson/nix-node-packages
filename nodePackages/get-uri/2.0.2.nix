@@ -7,9 +7,9 @@ buildNodePackage {
       sha1 = "5c795e71326f6ca1286f2fc82575cd2bab2af578";
     };
     deps = with nodePackages; [
-      extend_3-0-0
+      extend_3-0-2
       data-uri-to-buffer_1-2-0
-      debug_2-6-8
+      debug_2-6-9
       readable-stream_2-3-6
       ftp_0-3-10
       file-uri-to-path_1-0-0

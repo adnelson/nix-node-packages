@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       babel-plugin-syntax-exponentiation-operator_6-13-0
       babel-helper-builder-binary-assignment-operator-visitor_6-24-1
-      babel-runtime_6-23-0
+      babel-runtime_6-26-0
     ];
     meta = {
       description = "Compile exponentiation operator to ES5";

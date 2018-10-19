@@ -10,13 +10,13 @@ buildNodePackage {
       mime_1-2-11
       ycssmin_1-0-1
       mkdirp_0-3-5
-      request_2-74-0
+      request_2-88-0
     ];
     optionalDependencies = with nodePackages; [
       mime_1-2-11
       ycssmin_1-0-1
       mkdirp_0-3-5
-      request_2-74-0
+      request_2-88-0
     ];
     meta = {
       homepage = "http://lesscss.org";

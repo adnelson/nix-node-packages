@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       formatio_1-1-1
-      util_0-10-3
+      util_0-11-0
       lolex_1-1-0
     ];
     meta = {

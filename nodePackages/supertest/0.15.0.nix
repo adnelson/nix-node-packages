@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       superagent_0-21-0
-      methods_1-1-1
+      methods_1-1-2
     ];
     meta = {
       homepage = "https://github.com/visionmedia/supertest";

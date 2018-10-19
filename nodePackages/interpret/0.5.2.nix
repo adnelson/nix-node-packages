@@ -3,7 +3,7 @@ buildNodePackage {
     name = "interpret";
     version = "0.5.2";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/interpret/-/interpret-0.5.2.tgz";
+      url = "https://registry.npmjs.org/interpret/-/interpret-0.5.2.tgz";
       sha1 = "377833b04b5ea693ff0d533380e3dda0c0381be0";
     };
     deps = [];

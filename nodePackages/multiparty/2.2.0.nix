@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       stream-counter_0-2-0
-      readable-stream_1-1-13
+      readable-stream_1-1-14
     ];
     meta = {
       description = "multipart/form-data parser which supports streaming";

@@ -3,7 +3,7 @@ buildNodePackage {
     name = "aws-sign2";
     version = "0.5.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/aws-sign2/-/aws-sign2-0.5.0.tgz";
+      url = "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.5.0.tgz";
       sha1 = "c57103f7a17fc037f02d7c2e64b602ea223f7d63";
     };
     deps = [];

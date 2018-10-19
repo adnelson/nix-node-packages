@@ -7,18 +7,18 @@ buildNodePackage {
       sha1 = "5a484dd2dc13d5b894a8fe781a250c07eae7bffa";
     };
     deps = with nodePackages; [
-      nopt_2-2-1
-      which_1-2-4
-      npmlog_0-0-6
+      nopt_2-1-1
+      which_1-3-1
+      npmlog_0-1-1
       mkdirp_0-5-1
       fstream_0-1-31
-      rimraf_2-5-1
+      rimraf_2-6-2
       graceful-fs_2-0-3
       glob_3-2-11
       tar_0-1-20
       minimatch_0-3-0
-      request_2-68-0
-      osenv_0-1-3
+      request_2-88-0
+      osenv_0-1-5
       semver_2-2-1
     ];
     devDependencies = [];

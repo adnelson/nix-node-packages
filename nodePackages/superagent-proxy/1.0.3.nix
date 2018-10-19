@@ -3,7 +3,7 @@ buildNodePackage {
     name = "superagent-proxy";
     version = "1.0.3";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/superagent-proxy/-/superagent-proxy-1.0.3.tgz";
+      url = "http://registry.npmjs.org/superagent-proxy/-/superagent-proxy-1.0.3.tgz";
       sha1 = "acfa776672f11c24a90ad575e855def8be44f741";
     };
     deps = with nodePackages; [

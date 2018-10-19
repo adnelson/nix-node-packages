@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "a6e02a70d839792b9780488b7b8b184c095c99c7";
     };
     deps = with nodePackages; [
-      source-map_0-1-31
+      source-map_0-1-34
       optimist_0-3-7
     ];
     devDependencies = [];

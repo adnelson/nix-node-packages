@@ -3,7 +3,7 @@ buildNodePackage {
     name = "redent";
     version = "1.0.0";
     src = pkgs.fetchurl {
-      url = "http://registry.npmjs.org/redent/-/redent-1.0.0.tgz";
+      url = "https://registry.npmjs.org/redent/-/redent-1.0.0.tgz";
       sha1 = "cf916ab1fd5f1f16dfb20822dd6ec7f730c2afde";
     };
     deps = with nodePackages; [

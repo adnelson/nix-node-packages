@@ -3,7 +3,7 @@ buildNodePackage {
     name = "he";
     version = "0.5.0";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/he/-/he-0.5.0.tgz";
+      url = "http://registry.npmjs.org/he/-/he-0.5.0.tgz";
       sha1 = "2c05ffaef90b68e860f3fd2b54ef580989277ee2";
     };
     deps = [];

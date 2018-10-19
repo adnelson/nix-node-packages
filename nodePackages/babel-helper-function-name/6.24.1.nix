@@ -8,10 +8,10 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       babel-helper-get-function-arity_6-24-1
-      babel-runtime_6-23-0
-      babel-template_6-24-1
-      babel-traverse_6-24-1
-      babel-types_6-24-1
+      babel-runtime_6-26-0
+      babel-template_6-26-0
+      babel-traverse_6-26-0
+      babel-types_6-26-0
     ];
     devDependencies = [];
     meta = {
