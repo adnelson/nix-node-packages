@@ -1584,7 +1584,8 @@
     jetpack-id_1-0-0 = callPackage ./jetpack-id/1.0.0.nix {};
     jmespath = callPackage ./jmespath/0.15.0.nix {};
     jmespath_0-15-0 = callPackage ./jmespath/0.15.0.nix {};
-    jquery = callPackage ./jquery/1.8.3.nix {};
+    jquery = callPackage ./jquery/3.3.1.nix {};
+    jquery_3-3-1 = callPackage ./jquery/3.3.1.nix {};
     jquery_1-8-3 = callPackage ./jquery/1.8.3.nix {};
     js-string-escape = callPackage ./js-string-escape/1.0.1.nix {};
     js-string-escape_1-0-1 = callPackage ./js-string-escape/1.0.1.nix {};
