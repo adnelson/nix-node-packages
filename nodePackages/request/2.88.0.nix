@@ -24,7 +24,7 @@ buildNodePackage {
       oauth-sign_0-9-0
       is-typedarray_1-0-0
       json-stringify-safe_5-0-1
-      mime-types_2-1-20
+      mime-types_2-1-21
       performance-now_2-1-0
       form-data_2-3-3
     ];

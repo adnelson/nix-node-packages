@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "18b038a9c44d65f7a8e428a653b9f6fe42faf5fb";
     };
     deps = with nodePackages; [
-      cssom_0-3-2
+      cssom_0-3-4
     ];
     meta = {
       homepage = "https://github.com/jsakas/CSSStyleDeclaration";

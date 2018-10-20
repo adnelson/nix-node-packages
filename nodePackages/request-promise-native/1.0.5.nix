@@ -8,11 +8,11 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       request-promise-core_1-1-1
-      tough-cookie_2-3-4
+      tough-cookie_2-4-3
       stealthy-require_1-1-1
     ];
     peerDependencies = with nodePackages; [
-      request_2-87-0
+      request_2-88-0
     ];
     meta = {
       homepage = "https://github.com/request/request-promise-native#readme";
