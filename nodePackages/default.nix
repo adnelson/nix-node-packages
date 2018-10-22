@@ -176,13 +176,16 @@
     babel_6-23-0 = callPackage ./babel/6.23.0.nix {};
     babel-cli = callPackage ./babel-cli/7.0.0-beta.3.nix {};
     babel-cli_7-0-0-beta-3 = callPackage ./babel-cli/7.0.0-beta.3.nix {};
+    babel-cli_6-26-0 = callPackage ./babel-cli/6.26.0.nix {};
     babel-code-frame = callPackage ./babel-code-frame/7.0.0-beta.3.nix {};
     babel-code-frame_7-0-0-beta-3 = callPackage ./babel-code-frame/7.0.0-beta.3.nix {};
     babel-code-frame_6-26-0 = callPackage ./babel-code-frame/6.26.0.nix {};
     babel-core = callPackage ./babel-core/7.0.0-beta.3.nix {};
     babel-core_7-0-0-beta-3 = callPackage ./babel-core/7.0.0-beta.3.nix {};
+    babel-core_6-26-3 = callPackage ./babel-core/6.26.3.nix {};
     babel-generator = callPackage ./babel-generator/7.0.0-beta.3.nix {};
     babel-generator_7-0-0-beta-3 = callPackage ./babel-generator/7.0.0-beta.3.nix {};
+    babel-generator_6-26-1 = callPackage ./babel-generator/6.26.1.nix {};
     babel-helper-annotate-as-pure = callPackage ./babel-helper-annotate-as-pure/7.0.0-beta.3.nix {};
     babel-helper-annotate-as-pure_7-0-0-beta-3 = callPackage ./babel-helper-annotate-as-pure/7.0.0-beta.3.nix {};
     babel-helper-builder-binary-assignment-operator-visitor = callPackage ./babel-helper-builder-binary-assignment-operator-visitor/7.0.0-beta.3.nix {};
@@ -230,6 +233,7 @@
     babel-helpers_7-0-0-beta-3 = callPackage ./babel-helpers/7.0.0-beta.3.nix {};
     babel-jest = callPackage ./babel-jest/23.6.0.nix {};
     babel-jest_23-6-0 = callPackage ./babel-jest/23.6.0.nix {};
+    babel-helpers_6-24-1 = callPackage ./babel-helpers/6.24.1.nix {};
     babel-messages = callPackage ./babel-messages/6.23.0.nix {};
     babel-messages_6-23-0 = callPackage ./babel-messages/6.23.0.nix {};
     babel-plugin-check-es2015-constants = callPackage ./babel-plugin-check-es2015-constants/7.0.0-beta.3.nix {};
@@ -341,11 +345,15 @@
     babel-plugin-transform-strict-mode_6-24-1 = callPackage ./babel-plugin-transform-strict-mode/6.24.1.nix {};
     babel-plugin-transform-unicode-property-regex = callPackage ./babel-plugin-transform-unicode-property-regex/2.0.5.nix {};
     babel-plugin-transform-unicode-property-regex_2-0-5 = callPackage ./babel-plugin-transform-unicode-property-regex/2.0.5.nix {};
+    babel-polyfill = callPackage ./babel-polyfill/6.26.0.nix {};
+    babel-polyfill_6-26-0 = callPackage ./babel-polyfill/6.26.0.nix {};
     babel-preset-env = callPackage ./babel-preset-env/7.0.0-beta.3.nix {};
     babel-preset-env_7-0-0-beta-3 = callPackage ./babel-preset-env/7.0.0-beta.3.nix {};
     babel-preset-env_1-7-0 = callPackage ./babel-preset-env/1.7.0.nix {};
     babel-preset-jest = callPackage ./babel-preset-jest/23.2.0.nix {};
     babel-preset-jest_23-2-0 = callPackage ./babel-preset-jest/23.2.0.nix {};
+    babel-register = callPackage ./babel-register/6.26.0.nix {};
+    babel-register_6-26-0 = callPackage ./babel-register/6.26.0.nix {};
     babel-runtime = callPackage ./babel-runtime/6.26.0.nix {};
     babel-runtime_6-26-0 = callPackage ./babel-runtime/6.26.0.nix {};
     babel-template = callPackage ./babel-template/7.0.0-beta.3.nix {};
@@ -818,6 +826,8 @@
     detect-file = callPackage ./detect-file/1.0.0.nix {};
     detect-file_1-0-0 = callPackage ./detect-file/1.0.0.nix {};
     detect-file_0-1-0 = callPackage ./detect-file/0.1.0.nix {};
+    detect-indent = callPackage ./detect-indent/4.0.0.nix {};
+    detect-indent_4-0-0 = callPackage ./detect-indent/4.0.0.nix {};
     detect-libc = callPackage ./detect-libc/1.0.3.nix {};
     detect-libc_1-0-3 = callPackage ./detect-libc/1.0.3.nix {};
     detect-newline = callPackage ./detect-newline/2.1.0.nix {};
@@ -1305,6 +1315,8 @@
     hoek_0-7-6 = callPackage ./hoek/0.7.6.nix {};
     hogan-js = callPackage ./hogan-js/2.0.0.nix {};
     hogan-js_2-0-0 = callPackage ./hogan-js/2.0.0.nix {};
+    home-or-tmp = callPackage ./home-or-tmp/2.0.0.nix {};
+    home-or-tmp_2-0-0 = callPackage ./home-or-tmp/2.0.0.nix {};
     homedir-polyfill = callPackage ./homedir-polyfill/1.0.1.nix {};
     homedir-polyfill_1-0-1 = callPackage ./homedir-polyfill/1.0.1.nix {};
     hooker = callPackage ./hooker/0.2.3.nix {};
@@ -1606,6 +1618,7 @@
     jsdom_0-2-19 = callPackage ./jsdom/0.2.19.nix {};
     jsesc = callPackage ./jsesc/2.5.1.nix {};
     jsesc_2-5-1 = callPackage ./jsesc/2.5.1.nix {};
+    jsesc_1-3-0 = callPackage ./jsesc/1.3.0.nix {};
     jsesc_0-5-0 = callPackage ./jsesc/0.5.0.nix {};
     json-schema = callPackage ./json-schema/0.2.3.nix {};
     json-schema_0-2-3 = callPackage ./json-schema/0.2.3.nix {};
@@ -2137,6 +2150,7 @@
     osenv_0-1-5 = callPackage ./osenv/0.1.5.nix {};
     output-file-sync = callPackage ./output-file-sync/2.0.1.nix {};
     output-file-sync_2-0-1 = callPackage ./output-file-sync/2.0.1.nix {};
+    output-file-sync_1-1-2 = callPackage ./output-file-sync/1.1.2.nix {};
     p-finally = callPackage ./p-finally/1.0.0.nix {};
     p-finally_1-0-0 = callPackage ./p-finally/1.0.0.nix {};
     pac-proxy-agent = callPackage ./pac-proxy-agent/2.0.2.nix {};
@@ -2439,6 +2453,7 @@
     regenerate-unicode-properties_7-0-0 = callPackage ./regenerate-unicode-properties/7.0.0.nix {};
     regenerator-runtime = callPackage ./regenerator-runtime/0.11.1.nix {};
     regenerator-runtime_0-11-1 = callPackage ./regenerator-runtime/0.11.1.nix {};
+    regenerator-runtime_0-10-5 = callPackage ./regenerator-runtime/0.10.5.nix {};
     regenerator-transform = callPackage ./regenerator-transform/0.11.1.nix {};
     regenerator-transform_0-11-1 = callPackage ./regenerator-transform/0.11.1.nix {};
     regenerator-transform_0-10-1 = callPackage ./regenerator-transform/0.10.1.nix {};
@@ -2663,6 +2678,7 @@
     source-map-resolve_0-5-2 = callPackage ./source-map-resolve/0.5.2.nix {};
     source-map-support = callPackage ./source-map-support/0.5.9.nix {};
     source-map-support_0-5-9 = callPackage ./source-map-support/0.5.9.nix {};
+    source-map-support_0-4-18 = callPackage ./source-map-support/0.4.18.nix {};
     source-map-support_0-2-10 = callPackage ./source-map-support/0.2.10.nix {};
     source-map-url = callPackage ./source-map-url/0.4.0.nix {};
     source-map-url_0-4-0 = callPackage ./source-map-url/0.4.0.nix {};

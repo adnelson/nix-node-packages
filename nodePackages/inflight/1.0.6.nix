@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "49bd6331d7d02d0c09bc910a1075ba8165b56df9";
     };
     deps = with nodePackages; [
-      once_1-3-0
+      once_1-4-0
       wrappy_1-0-2
     ];
     meta = {
