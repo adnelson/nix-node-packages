@@ -1169,6 +1169,8 @@
     file-uri-to-path_1-0-0 = callPackage ./file-uri-to-path/1.0.0.nix {};
     filename-regex = callPackage ./filename-regex/2.0.1.nix {};
     filename-regex_2-0-1 = callPackage ./filename-regex/2.0.1.nix {};
+    fill-keys = callPackage ./fill-keys/1.0.2.nix {};
+    fill-keys_1-0-2 = callPackage ./fill-keys/1.0.2.nix {};
     fill-range = callPackage ./fill-range/4.0.0.nix {};
     fill-range_4-0-0 = callPackage ./fill-range/4.0.0.nix {};
     fill-range_2-2-4 = callPackage ./fill-range/2.2.4.nix {};
@@ -1602,6 +1604,8 @@
     is-number_0-1-1 = callPackage ./is-number/0.1.1.nix {};
     is-obj = callPackage ./is-obj/1.0.1.nix {};
     is-obj_1-0-1 = callPackage ./is-obj/1.0.1.nix {};
+    is-object = callPackage ./is-object/1.0.1.nix {};
+    is-object_1-0-1 = callPackage ./is-object/1.0.1.nix {};
     is-path-inside = callPackage ./is-path-inside/1.0.1.nix {};
     is-path-inside_1-0-1 = callPackage ./is-path-inside/1.0.1.nix {};
     is-plain-obj = callPackage ./is-plain-obj/1.1.0.nix {};
@@ -2130,6 +2134,8 @@
     module-deps_4-1-1 = callPackage ./module-deps/4.1.1.nix {};
     module-deps_2-0-6 = callPackage ./module-deps/2.0.6.nix {};
     module-deps_1-0-2 = callPackage ./module-deps/1.0.2.nix {};
+    module-not-found-error = callPackage ./module-not-found-error/1.0.1.nix {};
+    module-not-found-error_1-0-1 = callPackage ./module-not-found-error/1.0.1.nix {};
     moment = callPackage ./moment/2.22.2.nix {};
     moment_2-22-2 = callPackage ./moment/2.22.2.nix {};
     moment_2-2-1 = callPackage ./moment/2.2.1.nix {};
@@ -2310,6 +2316,8 @@
     os-tmpdir_1-0-2 = callPackage ./os-tmpdir/1.0.2.nix {};
     osenv = callPackage ./osenv/0.1.5.nix {};
     osenv_0-1-5 = callPackage ./osenv/0.1.5.nix {};
+    outpipe = callPackage ./outpipe/1.1.1.nix {};
+    outpipe_1-1-1 = callPackage ./outpipe/1.1.1.nix {};
     output-file-sync = callPackage ./output-file-sync/2.0.1.nix {};
     output-file-sync_2-0-1 = callPackage ./output-file-sync/2.0.1.nix {};
     output-file-sync_1-1-2 = callPackage ./output-file-sync/1.1.2.nix {};
@@ -2534,6 +2542,8 @@
     proxy-agent_2-3-1 = callPackage ./proxy-agent/2.3.1.nix {};
     proxy-from-env = callPackage ./proxy-from-env/1.0.0.nix {};
     proxy-from-env_1-0-0 = callPackage ./proxy-from-env/1.0.0.nix {};
+    proxyquire = callPackage ./proxyquire/1.7.11.nix {};
+    proxyquire_1-7-11 = callPackage ./proxyquire/1.7.11.nix {};
     ps-tree = callPackage ./ps-tree/1.1.0.nix {};
     ps-tree_1-1-0 = callPackage ./ps-tree/1.1.0.nix {};
     pseudomap = callPackage ./pseudomap/1.0.2.nix {};
@@ -3215,6 +3225,8 @@
     w3c-hr-time_1-0-1 = callPackage ./w3c-hr-time/1.0.1.nix {};
     watch = callPackage ./watch/0.18.0.nix {};
     watch_0-18-0 = callPackage ./watch/0.18.0.nix {};
+    watchify = callPackage ./watchify/3.8.0.nix {};
+    watchify_3-8-0 = callPackage ./watchify/3.8.0.nix {};
     webidl-conversions = callPackage ./webidl-conversions/4.0.2.nix {};
     webidl-conversions_4-0-2 = callPackage ./webidl-conversions/4.0.2.nix {};
     whatwg-encoding = callPackage ./whatwg-encoding/1.0.5.nix {};
