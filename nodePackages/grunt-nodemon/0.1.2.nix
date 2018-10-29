@@ -8,7 +8,7 @@ buildNodePackage {
     };
     # Not sure why this was set incorrectly
     patchPhase = ''
-      sed -i 's,"grunt.js","tasks/nodemon.js",' package.json
+      sed -i 's,"test/fixtures/server.js","tasks/nodemon.js",' package.json
     '';
     deps = with nodePackages; [
       nodemon_0-7-10
