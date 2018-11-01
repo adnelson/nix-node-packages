@@ -617,6 +617,8 @@
     coffeeify_1-0-0 = callPackage ./coffeeify/1.0.0.nix {};
     coffeelint = callPackage ./coffeelint/1.16.2.nix {};
     coffeelint_1-16-2 = callPackage ./coffeelint/1.16.2.nix {};
+    coffeelint-min-colon-spacing = callPackage ./coffeelint-min-colon-spacing/0.1.2.nix {};
+    coffeelint-min-colon-spacing_0-1-2 = callPackage ./coffeelint-min-colon-spacing/0.1.2.nix {};
     coffeelint-stylish = callPackage ./coffeelint-stylish/0.1.2.nix {};
     coffeelint-stylish_0-1-2 = callPackage ./coffeelint-stylish/0.1.2.nix {};
     collection-visit = callPackage ./collection-visit/1.0.0.nix {};
@@ -1336,7 +1338,8 @@
     grunt-cli_1-3-1 = callPackage ./grunt-cli/1.3.1.nix {};
     grunt-coffeelint = callPackage ./grunt-coffeelint/0.0.13.nix {};
     grunt-coffeelint_0-0-13 = callPackage ./grunt-coffeelint/0.0.13.nix {};
-    grunt-concurrent = callPackage ./grunt-concurrent/0.3.1.nix {};
+    grunt-concurrent = callPackage ./grunt-concurrent/1.0.1.nix {};
+    grunt-concurrent_1-0-1 = callPackage ./grunt-concurrent/1.0.1.nix {};
     grunt-concurrent_0-3-1 = callPackage ./grunt-concurrent/0.3.1.nix {};
     grunt-contrib-clean = callPackage ./grunt-contrib-clean/0.5.0.nix {};
     grunt-contrib-clean_0-5-0 = callPackage ./grunt-contrib-clean/0.5.0.nix {};
@@ -2019,7 +2022,8 @@
     lower-case-first_1-0-2 = callPackage ./lower-case-first/1.0.2.nix {};
     lowercase-keys = callPackage ./lowercase-keys/1.0.1.nix {};
     lowercase-keys_1-0-1 = callPackage ./lowercase-keys/1.0.1.nix {};
-    lpad = callPackage ./lpad/0.1.0.nix {};
+    lpad = callPackage ./lpad/1.0.0.nix {};
+    lpad_1-0-0 = callPackage ./lpad/1.0.0.nix {};
     lpad_0-1-0 = callPackage ./lpad/0.1.0.nix {};
     lru-cache = callPackage ./lru-cache/4.1.3.nix {};
     lru-cache_4-1-3 = callPackage ./lru-cache/4.1.3.nix {};
@@ -2332,6 +2336,8 @@
     packet-reader = callPackage ./packet-reader/0.3.1.nix {};
     packet-reader_0-3-1 = callPackage ./packet-reader/0.3.1.nix {};
     packet-reader_0-2-0 = callPackage ./packet-reader/0.2.0.nix {};
+    pad-stdio = callPackage ./pad-stdio/1.0.0.nix {};
+    pad-stdio_1-0-0 = callPackage ./pad-stdio/1.0.0.nix {};
     pako = callPackage ./pako/0.2.9.nix {};
     pako_0-2-9 = callPackage ./pako/0.2.9.nix {};
     param-case = callPackage ./param-case/1.1.2.nix {};
