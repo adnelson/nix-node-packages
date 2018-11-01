@@ -9,6 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       mkdirp_0-5-1
       hooker_0-2-3
+      mocha_2-5-3
     ];
     peerDependencies = with nodePackages; [
       mocha_2-5-3

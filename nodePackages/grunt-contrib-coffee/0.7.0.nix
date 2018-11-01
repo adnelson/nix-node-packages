@@ -6,8 +6,11 @@ buildNodePackage {
       url = "https://registry.npmjs.org/grunt-contrib-coffee/-/grunt-contrib-coffee-0.7.0.tgz";
       sha1 = "8b12267b74e7338b1f29c5b8b718fb9f89982f13";
     };
+    patchDependencies = {
+      coffee-script = "~1.11";
+    };
     deps = with nodePackages; [
-      coffee-script_1-6-3
+      coffee-script_1-11-1
     ];
     peerDependencies = with nodePackages; [
       grunt_0-4-5

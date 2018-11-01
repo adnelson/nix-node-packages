@@ -8,10 +8,10 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       coffeelint-stylish_0-1-2
+      coffeelint_1-16-2
     ];
     peerDependencies = with nodePackages; [
       grunt_0-4-5
-      coffeelint_1-16-2
     ];
     meta = {
       homepage = "https://github.com/vojtajina/grunt-coffeelint";

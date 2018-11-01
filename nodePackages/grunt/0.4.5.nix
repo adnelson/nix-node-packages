@@ -6,6 +6,9 @@ buildNodePackage {
       url = "https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz";
       sha1 = "56937cd5194324adff6d207631832a9d6ba4e7f0";
     };
+    patchDependencies = {
+      coffee-script = "~1.11";
+    };
     deps = with nodePackages; [
       lodash_0-9-2
       nopt_1-0-10
@@ -20,7 +23,7 @@ buildNodePackage {
       hooker_0-2-3
       colors_0-6-2
       glob_3-1-21
-      coffee-script_1-3-3
+      coffee-script_1-11-1
       dateformat_1-0-2-1-2-3
       exit_0-1-2
       minimatch_0-2-14
