@@ -6,6 +6,9 @@ buildNodePackage {
       url = "http://registry.npmjs.org/express/-/express-3.0.6.tgz";
       sha1 = "d274fcb868b95788bf4af62168d75d13fd77d8b4";
     };
+    patchDependencies = {
+      fresh = "^0.5";
+    };
     deps = with nodePackages; [
       cookie_0-0-5
       range-parser_0-0-4
@@ -17,7 +20,7 @@ buildNodePackage {
       send_0-1-0
       methods_0-0-1
       buffer-crc32_0-1-1
-      fresh_0-1-0
+      fresh_0-5-2
     ];
     meta = {
       description = "Sinatra inspired web development framework";

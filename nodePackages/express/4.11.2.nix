@@ -6,6 +6,9 @@ buildNodePackage {
       url = "http://registry.npmjs.org/express/-/express-4.11.2.tgz";
       sha1 = "8df3d5a9ac848585f00a0777601823faecd3b148";
     };
+    patchDependencies = {
+      fresh = "^0.5";
+    };
     deps = with nodePackages; [
       vary_1-0-1
       cookie_0-1-2
@@ -28,7 +31,7 @@ buildNodePackage {
       send_0-11-1
       methods_1-1-2
       parseurl_1-3-2
-      fresh_0-2-4
+      fresh_0-5-2
       content-disposition_0-5-0
       media-typer_0-3-0
     ];

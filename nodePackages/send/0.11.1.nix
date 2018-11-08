@@ -6,6 +6,9 @@ buildNodePackage {
       url = "https://registry.npmjs.org/send/-/send-0.11.1.tgz";
       sha1 = "1beabfd42f9e2709f99028af3078ac12b47092d5";
     };
+    patchDependencies = {
+      fresh = "^0.5";
+    };
     deps = with nodePackages; [
       mime_1-2-11
       range-parser_1-0-3
@@ -16,7 +19,7 @@ buildNodePackage {
       debug_2-1-3
       ms_0-7-0
       destroy_1-0-3
-      fresh_0-2-4
+      fresh_0-5-2
     ];
     meta = {
       homepage = "https://github.com/tj/send";

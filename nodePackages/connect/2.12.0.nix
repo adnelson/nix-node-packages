@@ -6,11 +6,15 @@ buildNodePackage {
       url = "https://registry.npmjs.org/connect/-/connect-2.12.0.tgz";
       sha1 = "31d8fa0dcacdf1908d822bd2923be8a2d2a7ed9a";
     };
+    patchDependencies = {
+      negotiator = "^0.6";
+      fresh = "^0.5";
+    };
     deps = with nodePackages; [
       batch_0-5-0
       cookie_0-1-0
       cookie-signature_1-0-1
-      negotiator_0-3-0
+      negotiator_0-6-1
       debug_0-8-1
       raw-body_1-1-2
       qs_0-6-6
@@ -19,7 +23,7 @@ buildNodePackage {
       buffer-crc32_0-2-1
       multiparty_2-2-0
       bytes_0-2-1
-      fresh_0-2-0
+      fresh_0-5-2
       uid2_0-0-3
       pause_0-0-1
     ];
