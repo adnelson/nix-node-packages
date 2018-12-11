@@ -12,13 +12,14 @@ buildNodePackage {
       readdirp_2-2-1
       inherits_2-0-3
       glob-parent_2-0-0
-      fsevents_1-2-4
+      # fsevents_1-2-4
       path-is-absolute_1-0-1
       is-binary-path_1-0-1
       is-glob_2-0-1
     ];
     optionalDependencies = with nodePackages; [
-      fsevents_1-2-4
+      # Only a macos package
+      # fsevents_1-2-4
     ];
     meta = {
       homepage = "https://github.com/paulmillr/chokidar";
