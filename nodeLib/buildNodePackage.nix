@@ -11,16 +11,18 @@
   xcode-wrapper,
   # Scripts that we use during the npm builds.
   node-build-tools,
+  # C header files for node libraries
+  nodejsSources,
 }:
 
 let
-  inherit (pkgs) stdenv python2 file;
+  inherit (pkgs) stdenv python2 file darwin;
   inherit (pkgs.lib) showVal optional foldl;
-  inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip
+  inherit (stdenv.lib) fold removePrefix hasPrefix subtractLists flip isList
                        intersectLists isAttrs listToAttrs nameValuePair hasAttr
                        mapAttrs filterAttrs attrNames elem concatMapStrings
                        attrValues concatStringsSep optionalString filter
-                       optionalAttrs;
+                       optionalAttrs optionals;
 
   # Join a list of strings with newlines, filtering out empty lines.
   joinLines = strings: concatStringsSep "\n" (filter (s: s != "") strings);
@@ -28,12 +30,17 @@ let
   # Map a function and concatenate with newlines.
   concatMapLines = list: func: joinLines (map func list);
 
-  # This expression builds the raw C headers and source files for the base
-  # node.js installation. Node packages which use the C API for node need to
-  # link against these files and use the headers.
-  nodejsSources = pkgs.runCommand "node-sources" {} ''
-    tar --no-same-owner --no-same-permissions -xf ${nodejs.src}
-    mv $(find . -type d -mindepth 1 -maxdepth 1) $out
+  # Create a tar wrapper that filters all the 'Ignoring unknown
+  # extended header keyword' noise
+  #
+  # Cribbed from nixpkgs/pkgs/development/node-packages/node-env.nix
+  tarWrapper = pkgs.runCommand "tarWrapper" {} ''
+    mkdir -p $out/bin
+    cat > $out/bin/tar <<EOF
+    #! ${pkgs.stdenv.shell} -e
+    $(type -p tar) "\$@" --warning=no-unknown-keyword
+    EOF
+    chmod +x $out/bin/tar
   '';
 
   # Checks a derivation's structure; if it doesn't have certain attributes then
@@ -99,17 +106,8 @@ in
   # tree.
   circularDependencies ? [],
 
-  # List of peer dependencies. See:
-  # https://nodejs.org/en/blog/npm/peer-dependencies/
-  peerDependencies ? [],
-
   # List of optional dependencies.
   optionalDependencies ? [],
-
-  # List of optional dependencies to skip. List of strings, where a string
-  # should contain the `name` of the derivation to skip (not a version or
-  # namespace).
-  skipOptionalDependencies ? [],
 
   # List or set of development dependencies (or null). These will only be
   # installed when `includeDevDependencies` is true, which is provided by
@@ -126,9 +124,6 @@ in
 
   # Bash command to run package tests.
   checkPhase ? defaultCheckPhase,
-
-  # Additional flags passed to npm install. A list of strings.
-  extraNpmFlags ? [],
 
   # Build inputs to propagate in addition to nodejs and non-dev dependencies.
   propagatedBuildInputs ? [],
@@ -161,6 +156,9 @@ in
 
   # Metadata about the package.
   meta ? {},
+
+  # Build step
+  buildStep ? "execute-install-scripts",
 
   # Overrides to the arguments to mkDerivation. This can be used to
   # set custom values for the arguments that buildNodePackage would
@@ -201,12 +199,11 @@ else
 
 let
   # Types of npm dependencies as they appear as keys in a package.json file.
-  dependencyTypes = ["dependencies" "devDependencies" "peerDependencies"
-                     "optionalDependencies"];
+  dependencyTypes = ["dependencies" "devDependencies" "optionalDependencies"];
 
   # These arguments are intended as directives to this function and not
   # to be passed through to mkDerivation. They are removed below.
-  attrsToRemove = ["deps" "flags" "skipOptionalDependencies" "isBroken"
+  attrsToRemove = ["deps" "flags" "isBroken"
                    "passthru" "doCheck" "includeDevDependencies" "version"
                    "namespace" "skipDevDependencyCleanup" "patchDependencies"
                    "circularDependencies" "derivationOverrides"] ++ dependencyTypes;
@@ -218,10 +215,16 @@ let
     _dependencies = toAttrSet deps;
     # Set of circular dependencies.
     _circularDependencies = toAttrSet circularDependencies;
-    # Set of optional dependencies.
-    _optionalDependencies = toAttrSet optionalDependencies;
-    # Set of peer dependencies.
-    _peerDependencies = toAttrSet peerDependencies;
+
+    # Since optional dependencies are optional, ignore the ones that fail
+    tryOrNull = p: let r = builtins.tryEval "${p}"; in if r.success then p else null;
+
+    _optionalDependencies =
+      if isList optionalDependencies
+      then toAttrSet (filter (x: x != null) (map tryOrNull optionalDependencies))
+      else if isAttrs optionalDependencies
+      then toAttrSet (filterAttrs (_: x: x != null) (mapAttrs (_: tryOrNull) optionalDependencies))
+      else toAttrSet optionalDependencies;
 
     # Dev dependencies will only be included if requested.
     _devDependencies = if !includeDevDependencies then {}
@@ -231,9 +234,7 @@ let
     # available to the package at runtime. We don't include the
     # circular dependencies here, even though they might be needed at
     # runtime, because we have a "special way" of building them.
-    runtimeDependencies = _dependencies //
-                             _optionalDependencies //
-                             _peerDependencies;
+    runtimeDependencies = _dependencies // _optionalDependencies;
 
     # Names of packages to keep when cleaning up dev dependencies. We
     # put them in a dictionary for fast lookup, but the values are
@@ -244,30 +245,9 @@ let
     # Required dependencies are those that we haven't filtered yet.
     requiredDependencies = _devDependencies // runtimeDependencies;
 
-    # Flags that we will pass to `npm install`.
-    npmFlags = concatStringsSep " " ([
-      # We point the registry at something that doesn't exist. This will
-      # mean that NPM will fail if any of the dependencies aren't met, as it
-      # will attempt to hit this registry for the missing dependency.
-      "--registry=http://notaregistry.$UNIQNAME.com"
-      # These flags make failure fast, as otherwise NPM will spin for a while.
-      "--fetch-retry-mintimeout=0" "--fetch-retry-maxtimeout=10" "--fetch-retries=0"
-      # This will disable any user-level npm configuration.
-      "--userconfig=/dev/null"
-      # This flag is used for packages which link against the node headers.
-      "--nodedir=${nodejsSources}"
-      # This will tell npm not to run pre/post publish hooks
-      # "--ignore-scripts"
-      ] ++
-      # Use the --production flag if we're not running tests; this will make
-      # npm skip the dev dependencies.
-      (if !doCheck then ["--production"] else []) ++
-      # Add any extra headers that the user has passed in.
-      extraNpmFlags);
-
     patchPhase = joinLines [
       "runHook prePatch"
-      "patchShebangs \"$PWD\" >/dev/null"
+      "patchShebangs $PWD >/dev/null"
       # Ensure that the package name matches what is in the package.json.
       "check-package-json checkPackageName ${fullName}"
       # Remove any impure dependencies from the package.json (see script
@@ -297,7 +277,7 @@ let
                         (attrValues package.circularDependencies);
         in
         # Combine the results into a single set.
-        foldl (a: b: a // b) {} closure;
+        foldl (a: b: a // b) self.circularDependencies closure;
 
     # Compute any cycles. Remove 'self' from the dependency closure.
     circularDepClosure = removeAttrs (circularClosure {} self) [self.name];
@@ -333,7 +313,6 @@ let
         ''
           mkdir -p ${dep.modulePath}
           ${link dep}
-          ${concatMapStrings link (attrValues dep.peerDependencies)}
         '')) ++
       ["runHook postConfigure"] ++
       (optional (circulars != []) (let
@@ -350,7 +329,10 @@ let
                    "'package' directory. Don't know how to handle this :("
               exit 1
             fi
-            mv package node_modules/${dep.fullName}
+
+            mkdir -p node_modules/${dep.fullName}
+            cp -rP package/. node_modules/${dep.fullName}
+            rm -rf ./package
           fi
         ''))
         # Symlink all of the transitive dependencies of the circular packages.
@@ -358,7 +340,7 @@ let
         # Create a temporary symlink to the current package directory,
         # so that node knows that the dependency is satisfied when
         # checking the recursive dependencies (grumble grumble).
-        "ln -s \"$PWD\" node_modules/${self.fullName}"
+        "ln -s $PWD node_modules/${self.fullName}"
       ]
     )));
 
@@ -366,31 +348,9 @@ let
       "runHook preBuild"
       # Previous NODE_PATH should be empty, but it might have been set
       # in the custom derivation steps.
-      "export NODE_PATH=\"$PWD\"/node_modules:$NODE_PATH"
-      ''
-      (
-        # NPM reads the `HOME` environment variable and fails if it doesn't
-        # exist, so set it here.
-        export HOME="$PWD"
-        echo npm install ${npmFlags}
-
-        # Try doing the install first. If it fails, first check the
-        # dependencies, and if we don't uncover anything there just rerun it
-        # with verbose output.
-        npm install ${npmFlags} >/dev/null 2>&1 || {
-          echo "Installation of ${name}@${version} failed!"
-          echo "Checking dependencies to see if any aren't satisfied..."
-          check-package-json checkDependencies
-          echo "Dependencies seem ok. Rerunning with verbose logging:"
-          npm install . ${npmFlags} --loglevel=verbose
-          if [[ -d node_modules ]]; then
-            echo "node_modules contains these files:"
-            ls -l node_modules
-          fi
-          exit 1
-        }
-      )
-      ''
+      "export NODE_PATH=$PWD/node_modules:$NODE_PATH"
+      "check-package-json checkDependencies"
+      buildStep
       # If we have any circular dependencies, they will need to reference
       # the current package at runtime. Make a symlink into the node modules
       # folder which points at where the package will live in $out.
@@ -428,10 +388,6 @@ let
                      rm -fv node_modules/.bin/$(basename $exec_file)
                  done
                fi
-
-               # Remove any peer dependencies that package might have brought
-               # with it.
-               ${concatMapStrings rm (attrValues dep.peerDependencies)}
              ''
              else ''
                echo "Retaining ${dep.basicName} since it " \
@@ -441,7 +397,7 @@ let
          rm dep)}
 
       # Copy the folder that was created for this path to $out/lib.
-      cp -r "$PWD" $out/lib/node_modules/${self.fullName}
+      cp -r $PWD $out/lib/node_modules/${self.fullName}
 
       # Remove the node_modules subfolder from there, and instead put things
       # in $PWD/node_modules into that folder.
@@ -458,12 +414,6 @@ let
         done
         echo "linked $NUM_MAN_PAGES man pages."
       fi
-
-      # Move peer dependencies to node_modules
-      ${concatMapStrings (dep: ''
-        mkdir -p ${dep.modulePath}
-        mv node_modules/${dep.fullName} $out/lib/${dep.modulePath}
-      '') (attrValues _peerDependencies)}
 
       # Install binaries using the `bin` object in the package.json
       install-binaries
@@ -482,14 +432,13 @@ let
         fullName
         installPhase
         meta
-        npmFlags
         patchPhase
+        nodejsSources
         src;
 
       patchDependencies = builtins.toJSON patchDependencies;
 
-      # Informs lower scripts not to check dev dependencies
-      NO_DEV_DEPENDENCIES = devDependencies == null;
+      NO_DEV_DEPENDENCIES = !includeDevDependencies;
 
       # Tell mkDerivation to run `setVariables` prior to other phases.
       prePhases = ["setVariables"];
@@ -509,6 +458,9 @@ let
         # This appends the package name and version to the hash string
         # we defined above, so that it is more human-readable.
         export UNIQNAME="''${HASHEDNAME:0:10}-${name}-${version}"
+
+        # Add gyp to the path in case it's needed
+        export PATH=${nodejs}/lib/node_modules/npm/bin/node-gyp-bin:$PATH
       '';
 
       shellHook = ''
@@ -589,9 +541,6 @@ let
         # package.json) within the nix store.
         fullPath = "${self}/lib/node_modules/${self.fullName}";
 
-        # Downstream packages need to have access to peer dependencies.
-        peerDependencies = _peerDependencies;
-
         # The `env` attribute is meant to be used with `nix-shell` (although
         # that's not required). It will build the package with its dev
         # dependencies. This means that the package must have dev dependencies
@@ -635,11 +584,11 @@ let
       # additional specified build inputs. In addition, on darwin we
       # provide XCode, since node-gyp will use it, and on linux we add
       # utillinux.
-      buildInputs = [npm python2 file node-build-tools] ++
+      buildInputs = [ tarWrapper npm python2 file node-build-tools ] ++
                     attrValues _devDependencies ++
                     buildInputs ++
                     (optional stdenv.isLinux pkgs.utillinux) ++
-                    (optional stdenv.isDarwin xcode-wrapper);
+                    (optionals stdenv.isDarwin [darwin.cctools xcode-wrapper]);
     } // optionalAttrs stdenv.isLinux {
       LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
     } // derivationOverrides;
