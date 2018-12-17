@@ -99,8 +99,6 @@
     arr-flatten_1-1-0 = callPackage ./arr-flatten/1.1.0.nix {};
     arr-union = callPackage ./arr-union/3.1.0.nix {};
     arr-union_3-1-0 = callPackage ./arr-union/3.1.0.nix {};
-    arrify = callPackage ./arrify/1.0.1.nix {};
-    arrify_1-0-1 = callPackage ./arrify/1.0.1.nix {};
     array-differ = callPackage ./array-differ/1.0.0.nix {};
     array-differ_1-0-0 = callPackage ./array-differ/1.0.0.nix {};
     array-each = callPackage ./array-each/1.0.1.nix {};
@@ -128,6 +126,8 @@
     arraybuffer-slice = callPackage ./arraybuffer-slice/0.0.7.nix {};
     arraybuffer-slice_0-0-7 = callPackage ./arraybuffer-slice/0.0.7.nix {};
     arraybuffer-slice_0-0-6 = callPackage ./arraybuffer-slice/0.0.6.nix {};
+    arrify = callPackage ./arrify/1.0.1.nix {};
+    arrify_1-0-1 = callPackage ./arrify/1.0.1.nix {};
     asap = callPackage ./asap/1.0.0.nix {};
     asap_1-0-0 = callPackage ./asap/1.0.0.nix {};
     asn1 = callPackage ./asn1/0.2.4.nix {};
@@ -550,6 +550,8 @@
     camelcase_1-2-1 = callPackage ./camelcase/1.2.1.nix {};
     camelcase-keys = callPackage ./camelcase-keys/2.1.0.nix {};
     camelcase-keys_2-1-0 = callPackage ./camelcase-keys/2.1.0.nix {};
+    camelize = callPackage ./camelize/1.0.0.nix {};
+    camelize_1-0-0 = callPackage ./camelize/1.0.0.nix {};
     caniuse-lite = callPackage ./caniuse-lite/1.0.30000893.nix {};
     caniuse-lite_1-0-30000893 = callPackage ./caniuse-lite/1.0.30000893.nix {};
     capture-exit = callPackage ./capture-exit/1.2.0.nix {};
@@ -692,6 +694,7 @@
     configstore_3-1-2 = callPackage ./configstore/3.1.2.nix {};
     connect = callPackage ./connect/3.6.6.nix {};
     connect_3-6-6 = callPackage ./connect/3.6.6.nix {};
+    connect_3-6-2 = callPackage ./connect/3.6.2.nix {};
     connect_2-12-0 = callPackage ./connect/2.12.0.nix {};
     connect_2-7-2 = callPackage ./connect/2.7.2.nix {};
     namespaces.types.connect = callPackage (./. + "/@types/connect/3.4.32.nix") {};
@@ -722,6 +725,8 @@
     content-disposition = callPackage ./content-disposition/0.5.2.nix {};
     content-disposition_0-5-2 = callPackage ./content-disposition/0.5.2.nix {};
     content-disposition_0-5-0 = callPackage ./content-disposition/0.5.0.nix {};
+    content-security-policy-builder = callPackage ./content-security-policy-builder/1.1.0.nix {};
+    content-security-policy-builder_1-1-0 = callPackage ./content-security-policy-builder/1.1.0.nix {};
     content-type = callPackage ./content-type/1.0.4.nix {};
     content-type_1-0-4 = callPackage ./content-type/1.0.4.nix {};
     contextify = callPackage ./contextify/0.1.15.nix {};
@@ -882,6 +887,10 @@
     d3-zoom_1-7-3 = callPackage ./d3-zoom/1.7.3.nix {};
     dashdash = callPackage ./dashdash/1.14.1.nix {};
     dashdash_1-14-1 = callPackage ./dashdash/1.14.1.nix {};
+    dasherize = callPackage ./dasherize/2.0.0.nix {};
+    dasherize_2-0-0 = callPackage ./dasherize/2.0.0.nix {};
+    dashify = callPackage ./dashify/0.2.2.nix {};
+    dashify_0-2-2 = callPackage ./dashify/0.2.2.nix {};
     data-uri-to-buffer = callPackage ./data-uri-to-buffer/1.2.0.nix {};
     data-uri-to-buffer_1-2-0 = callPackage ./data-uri-to-buffer/1.2.0.nix {};
     data-urls = callPackage ./data-urls/1.0.1.nix {};
@@ -897,6 +906,7 @@
     debug = callPackage ./debug/3.1.0.nix {};
     debug_3-1-0 = callPackage ./debug/3.1.0.nix {};
     debug_2-6-9 = callPackage ./debug/2.6.9.nix {};
+    debug_2-6-7 = callPackage ./debug/2.6.7.nix {};
     debug_2-3-3 = callPackage ./debug/2.3.3.nix {};
     debug_2-2-0 = callPackage ./debug/2.2.0.nix {};
     debug_2-1-3 = callPackage ./debug/2.1.3.nix {};
@@ -980,6 +990,8 @@
     diff_1-0-8 = callPackage ./diff/1.0.8.nix {};
     diffie-hellman = callPackage ./diffie-hellman/5.0.3.nix {};
     diffie-hellman_5-0-3 = callPackage ./diffie-hellman/5.0.3.nix {};
+    dns-prefetch-control = callPackage ./dns-prefetch-control/0.1.0.nix {};
+    dns-prefetch-control_0-1-0 = callPackage ./dns-prefetch-control/0.1.0.nix {};
     docopt = callPackage ./docopt/0.6.2.nix {};
     docopt_0-6-2 = callPackage ./docopt/0.6.2.nix {};
     dom-serialize = callPackage ./dom-serialize/2.2.1.nix {};
@@ -998,6 +1010,8 @@
     domutils = callPackage ./domutils/1.7.0.nix {};
     domutils_1-7-0 = callPackage ./domutils/1.7.0.nix {};
     domutils_1-5-1 = callPackage ./domutils/1.5.1.nix {};
+    dont-sniff-mimetype = callPackage ./dont-sniff-mimetype/1.0.0.nix {};
+    dont-sniff-mimetype_1-0-0 = callPackage ./dont-sniff-mimetype/1.0.0.nix {};
     dot-case = callPackage ./dot-case/1.1.2.nix {};
     dot-case_1-1-2 = callPackage ./dot-case/1.1.2.nix {};
     dot-prop = callPackage ./dot-prop/4.2.0.nix {};
@@ -1136,6 +1150,8 @@
     expand-tilde_1-2-2 = callPackage ./expand-tilde/1.2.2.nix {};
     expect = callPackage ./expect/23.6.0.nix {};
     expect_23-6-0 = callPackage ./expect/23.6.0.nix {};
+    expect-ct = callPackage ./expect-ct/0.1.0.nix {};
+    expect-ct_0-1-0 = callPackage ./expect-ct/0.1.0.nix {};
     express = callPackage ./express/4.16.4.nix {};
     express_4-16-4 = callPackage ./express/4.16.4.nix {};
     express_4-11-2 = callPackage ./express/4.11.2.nix {};
@@ -1200,6 +1216,7 @@
     finalhandler = callPackage ./finalhandler/1.1.1.nix {};
     finalhandler_1-1-1 = callPackage ./finalhandler/1.1.1.nix {};
     finalhandler_1-1-0 = callPackage ./finalhandler/1.1.0.nix {};
+    finalhandler_1-0-3 = callPackage ./finalhandler/1.0.3.nix {};
     finalhandler_0-3-3 = callPackage ./finalhandler/0.3.3.nix {};
     find-index = callPackage ./find-index/0.1.1.nix {};
     find-index_0-1-1 = callPackage ./find-index/0.1.1.nix {};
@@ -1249,6 +1266,8 @@
     forwarded_0-1-2 = callPackage ./forwarded/0.1.2.nix {};
     fragment-cache = callPackage ./fragment-cache/0.2.1.nix {};
     fragment-cache_0-2-1 = callPackage ./fragment-cache/0.2.1.nix {};
+    frameguard = callPackage ./frameguard/3.0.0.nix {};
+    frameguard_3-0-0 = callPackage ./frameguard/3.0.0.nix {};
     fresh = callPackage ./fresh/0.5.2.nix {};
     fresh_0-5-2 = callPackage ./fresh/0.5.2.nix {};
     fresh_0-2-4 = callPackage ./fresh/0.2.4.nix {};
@@ -1477,6 +1496,12 @@
     hawk_0-10-2 = callPackage ./hawk/0.10.2.nix {};
     he = callPackage ./he/0.5.0.nix {};
     he_0-5-0 = callPackage ./he/0.5.0.nix {};
+    helmet = callPackage ./helmet/3.8.1.nix {};
+    helmet_3-8-1 = callPackage ./helmet/3.8.1.nix {};
+    helmet-csp = callPackage ./helmet-csp/2.5.1.nix {};
+    helmet-csp_2-5-1 = callPackage ./helmet-csp/2.5.1.nix {};
+    hide-powered-by = callPackage ./hide-powered-by/1.0.0.nix {};
+    hide-powered-by_1-0-0 = callPackage ./hide-powered-by/1.0.0.nix {};
     namespaces.babel.highlight = callPackage (./. + "/@babel/highlight/7.0.0-rc.4.nix") {};
     namespaces.babel.highlight_7-0-0-rc-4 = callPackage (./. + "/@babel/highlight/7.0.0-rc.4.nix") {};
     hmac-drbg = callPackage ./hmac-drbg/1.0.1.nix {};
@@ -1495,6 +1520,10 @@
     hooker_0-2-3 = callPackage ./hooker/0.2.3.nix {};
     hosted-git-info = callPackage ./hosted-git-info/2.7.1.nix {};
     hosted-git-info_2-7-1 = callPackage ./hosted-git-info/2.7.1.nix {};
+    hpkp = callPackage ./hpkp/2.0.0.nix {};
+    hpkp_2-0-0 = callPackage ./hpkp/2.0.0.nix {};
+    hsts = callPackage ./hsts/2.1.0.nix {};
+    hsts_2-1-0 = callPackage ./hsts/2.1.0.nix {};
     html-encoding-sniffer = callPackage ./html-encoding-sniffer/1.0.2.nix {};
     html-encoding-sniffer_1-0-2 = callPackage ./html-encoding-sniffer/1.0.2.nix {};
     html-entities = callPackage ./html-entities/1.1.3.nix {};
@@ -1533,6 +1562,8 @@
     ieee754 = callPackage ./ieee754/1.1.12.nix {};
     ieee754_1-1-12 = callPackage ./ieee754/1.1.12.nix {};
     ieee754_1-1-8 = callPackage ./ieee754/1.1.8.nix {};
+    ienoopen = callPackage ./ienoopen/1.0.0.nix {};
+    ienoopen_1-0-0 = callPackage ./ienoopen/1.0.0.nix {};
     ignore = callPackage ./ignore/3.3.10.nix {};
     ignore_3-3-10 = callPackage ./ignore/3.3.10.nix {};
     ignore-by-default = callPackage ./ignore-by-default/1.0.1.nix {};
@@ -1597,10 +1628,12 @@
     is-builtin-module_1-0-0 = callPackage ./is-builtin-module/1.0.0.nix {};
     is-callable = callPackage ./is-callable/1.1.3.nix {};
     is-callable_1-1-3 = callPackage ./is-callable/1.1.3.nix {};
+    is-ci = callPackage ./is-ci/1.2.1.nix {};
     is-ci_1-2-1 = callPackage ./is-ci/1.2.1.nix {};
     is-data-descriptor = callPackage ./is-data-descriptor/1.0.0.nix {};
     is-data-descriptor_1-0-0 = callPackage ./is-data-descriptor/1.0.0.nix {};
     is-data-descriptor_0-1-4 = callPackage ./is-data-descriptor/0.1.4.nix {};
+    is-date-object = callPackage ./is-date-object/1.0.1.nix {};
     is-date-object_1-0-1 = callPackage ./is-date-object/1.0.1.nix {};
     is-descriptor = callPackage ./is-descriptor/1.0.2.nix {};
     is-descriptor_1-0-2 = callPackage ./is-descriptor/1.0.2.nix {};
@@ -2240,6 +2273,8 @@
     netmask_1-0-6 = callPackage ./netmask/1.0.6.nix {};
     newrelic = callPackage ./newrelic/1.40.0.nix {};
     newrelic_1-40-0 = callPackage ./newrelic/1.40.0.nix {};
+    nocache = callPackage ./nocache/2.0.0.nix {};
+    nocache_2-0-0 = callPackage ./nocache/2.0.0.nix {};
     nock = callPackage ./nock/10.0.0.nix {};
     nock_10-0-0 = callPackage ./nock/10.0.0.nix {};
     namespaces.types.node = callPackage (./. + "/@types/node/10.12.0.nix") {};
@@ -2527,6 +2562,8 @@
     pkginfo = callPackage ./pkginfo/0.3.1.nix {};
     pkginfo_0-3-1 = callPackage ./pkginfo/0.3.1.nix {};
     pkginfo_0-2-3 = callPackage ./pkginfo/0.2.3.nix {};
+    platform = callPackage ./platform/1.3.4.nix {};
+    platform_1-3-4 = callPackage ./platform/1.3.4.nix {};
     pm2 = callPackage ./pm2/2.10.4.nix {};
     pm2_2-10-4 = callPackage ./pm2/2.10.4.nix {};
     pm2-axon = callPackage ./pm2-axon/3.1.0.nix {};
@@ -2698,6 +2735,8 @@
     redis-parser_2-6-0 = callPackage ./redis-parser/2.6.0.nix {};
     reduce-component = callPackage ./reduce-component/1.0.1.nix {};
     reduce-component_1-0-1 = callPackage ./reduce-component/1.0.1.nix {};
+    referrer-policy = callPackage ./referrer-policy/1.1.0.nix {};
+    referrer-policy_1-1-0 = callPackage ./referrer-policy/1.1.0.nix {};
     regenerate = callPackage ./regenerate/1.4.0.nix {};
     regenerate_1-4-0 = callPackage ./regenerate/1.4.0.nix {};
     regenerate-unicode-properties = callPackage ./regenerate-unicode-properties/7.0.0.nix {};
@@ -2760,14 +2799,14 @@
     request-promise-core_1-1-1 = callPackage ./request-promise-core/1.1.1.nix {};
     request-promise-native = callPackage ./request-promise-native/1.0.5.nix {};
     request-promise-native_1-0-5 = callPackage ./request-promise-native/1.0.5.nix {};
-    requirejs = callPackage ./requirejs/2.3.6.nix {};
-    requirejs_2-3-6 = callPackage ./requirejs/2.3.6.nix {};
     require-directory = callPackage ./require-directory/2.1.1.nix {};
     require-directory_2-1-1 = callPackage ./require-directory/2.1.1.nix {};
-    requires-port = callPackage ./requires-port/1.0.0.nix {};
-    requires-port_1-0-0 = callPackage ./requires-port/1.0.0.nix {};
     require-main-filename = callPackage ./require-main-filename/1.0.1.nix {};
     require-main-filename_1-0-1 = callPackage ./require-main-filename/1.0.1.nix {};
+    requirejs = callPackage ./requirejs/2.3.6.nix {};
+    requirejs_2-3-6 = callPackage ./requirejs/2.3.6.nix {};
+    requires-port = callPackage ./requires-port/1.0.0.nix {};
+    requires-port_1-0-0 = callPackage ./requires-port/1.0.0.nix {};
     reqwest = callPackage ./reqwest/2.0.5.nix {};
     reqwest_2-0-5 = callPackage ./reqwest/2.0.5.nix {};
     resolve = callPackage ./resolve/1.8.1.nix {};
@@ -3030,7 +3069,7 @@
     strip-ansi_0-3-0 = callPackage ./strip-ansi/0.3.0.nix {};
     strip-ansi_0-1-1 = callPackage ./strip-ansi/0.1.1.nix {};
     strip-bom = callPackage ./strip-bom/3.0.0.nix {};
-    strip-bom_3-0-0 = callPackage ./strip-bom/2.0.0.nix {};
+    strip-bom_3-0-0 = callPackage ./strip-bom/3.0.0.nix {};
     strip-bom_2-0-0 = callPackage ./strip-bom/2.0.0.nix {};
     strip-bom_1-0-0 = callPackage ./strip-bom/1.0.0.nix {};
     strip-eof = callPackage ./strip-eof/1.0.0.nix {};
@@ -3350,6 +3389,8 @@
     ws_1-1-1 = callPackage ./ws/1.1.1.nix {};
     wtf-8 = callPackage ./wtf-8/1.0.0.nix {};
     wtf-8_1-0-0 = callPackage ./wtf-8/1.0.0.nix {};
+    x-xss-protection = callPackage ./x-xss-protection/1.0.0.nix {};
+    x-xss-protection_1-0-0 = callPackage ./x-xss-protection/1.0.0.nix {};
     xdg-basedir = callPackage ./xdg-basedir/3.0.0.nix {};
     xdg-basedir_3-0-0 = callPackage ./xdg-basedir/3.0.0.nix {};
     xhr2 = callPackage ./xhr2/0.1.4.nix {};
