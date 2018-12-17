@@ -10,8 +10,8 @@ buildNodePackage {
       debug_3-1-0
       mkdirp_0-5-1
       istanbul-lib-coverage_1-2-1
-      rimraf_2-6-1
-      source-map_0-5-6
+      rimraf_2-6-2
+      source-map_0-5-7
     ];
     meta = {
       homepage = "https://github.com/istanbuljs/istanbuljs#readme";

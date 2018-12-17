@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       leven_2-1-0
-      chalk_2-0-1
+      chalk_2-4-1
       jest-get-type_22-4-3
       pretty-format_23-6-0
     ];

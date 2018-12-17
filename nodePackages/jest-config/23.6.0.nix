@@ -12,9 +12,9 @@ buildNodePackage {
       jest-resolve_23-6-0
       micromatch_2-3-11
       jest-regex-util_23-3-0
-      chalk_2-0-1
-      babel-core_6-26-0
-      glob_7-1-2
+      chalk_2-4-1
+      babel-core_6-26-3
+      glob_7-1-3
       jest-get-type_22-4-3
       jest-jasmine2_23-6-0
       pretty-format_23-6-0

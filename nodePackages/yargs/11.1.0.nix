@@ -14,7 +14,7 @@ buildNodePackage {
       get-caller-file_1-0-2
       find-up_2-1-0
       y18n_3-2-1
-      string-width_2-1-0
+      string-width_2-1-1
       require-main-filename_1-0-1
       os-locale_2-1-0
       cliui_4-1-0

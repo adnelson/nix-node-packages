@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "726bcea0c5294261a7417afb6da3186b4b8cac80";
     };
     deps = with nodePackages; [
-      chalk_2-0-1
+      chalk_2-4-1
       jest-get-type_22-4-3
       pretty-format_23-6-0
     ];

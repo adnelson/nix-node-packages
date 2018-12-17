@@ -10,8 +10,8 @@ buildNodePackage {
       mkdirp_0-5-1
       source-map_0-6-1
       slash_1-0-0
-      chalk_2-0-1
-      is-ci_1-0-10
+      chalk_2-4-1
+      is-ci_1-2-1
       graceful-fs_4-1-11
       jest-message-util_23-4-0
       callsites_2-0-0

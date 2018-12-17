@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8758c846f5b407adab0f236e0986f14b051caa16";
     };
     deps = with nodePackages; [
-      define-properties_1-1-2
+      define-properties_1-1-3
       es-abstract_1-7-0
     ];
     meta = {

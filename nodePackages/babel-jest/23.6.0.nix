@@ -11,7 +11,7 @@ buildNodePackage {
       babel-plugin-istanbul_4-1-6
     ];
     peerDependencies = with nodePackages; [
-      babel-core_6-26-0
+      babel-core_6-26-3
     ];
     meta = {
       homepage = "https://github.com/facebook/jest#readme";

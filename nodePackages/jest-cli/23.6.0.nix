@@ -10,7 +10,7 @@ buildNodePackage {
       strip-ansi_4-0-0
       jest-runner_23-6-0
       jest-resolve-dependencies_23-6-0
-      which_1-2-14
+      which_1-3-1
       yargs_11-1-0
       jest-config_23-6-0
       jest-haste-map_23-6-0
@@ -21,15 +21,15 @@ buildNodePackage {
       jest-snapshot_23-6-0
       ansi-escapes_3-1-0
       istanbul-lib-coverage_1-2-1
-      rimraf_2-6-1
+      rimraf_2-6-2
       jest-watcher_23-4-0
       string-length_2-0-0
       slash_1-0-0
-      chalk_2-0-1
-      is-ci_1-0-10
+      chalk_2-4-1
+      is-ci_1-2-1
       graceful-fs_4-1-11
       import-local_1-0-0
-      glob_7-1-2
+      glob_7-1-3
       jest-get-type_22-4-3
       prompts_0-1-14
       jest-changed-files_23-4-2

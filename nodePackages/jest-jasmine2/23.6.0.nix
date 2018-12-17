@@ -10,7 +10,7 @@ buildNodePackage {
       is-generator-fn_1-0-0
       jest-snapshot_23-6-0
       co_4-6-0
-      chalk_2-0-1
+      chalk_2-4-1
       babel-traverse_6-26-0
       expect_23-6-0
       jest-message-util_23-4-0

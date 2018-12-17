@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "ba0c3a82a8054387016139c733a05242d3d71575";
     };
     deps = with nodePackages; [
-      chalk_2-0-1
+      chalk_2-4-1
       pretty-format_23-6-0
     ];
     devDependencies = [];

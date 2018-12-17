@@ -9,7 +9,7 @@ buildNodePackage {
     namespace = "babel";
     deps = with nodePackages; [
       js-tokens_4-0-0
-      chalk_2-0-1
+      chalk_2-4-1
       esutils_2-0-2
     ];
     meta = {

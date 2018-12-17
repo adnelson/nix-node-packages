@@ -10,7 +10,7 @@ buildNodePackage {
       micromatch_2-3-11
       stack-utils_1-0-1
       slash_1-0-0
-      chalk_2-0-1
+      chalk_2-4-1
       namespaces.babel.code-frame_7-0-0-rc-4
     ];
     devDependencies = [];

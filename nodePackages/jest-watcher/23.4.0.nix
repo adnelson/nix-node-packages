@@ -9,7 +9,7 @@ buildNodePackage {
     deps = with nodePackages; [
       ansi-escapes_3-1-0
       string-length_2-0-0
-      chalk_2-0-1
+      chalk_2-4-1
     ];
     devDependencies = [];
     meta = {

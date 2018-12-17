@@ -6,9 +6,12 @@ buildNodePackage {
       url = "https://registry.npmjs.org/nock/-/nock-10.0.0.tgz";
       sha1 = "bcbd2c003961baffcae2ecd28e074574233d3869";
     };
+    patchDependencies = {
+      deep-equal = "^0.1.2";
+    };
     deps = with nodePackages; [
-      lodash_4-17-10
-      deep-equal_1-0-1
+      lodash_4-17-11
+      deep-equal_0-1-2
       debug_3-1-0
       mkdirp_0-5-1
       qs_6-5-2

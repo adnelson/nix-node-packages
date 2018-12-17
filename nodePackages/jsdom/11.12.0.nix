@@ -17,7 +17,7 @@ buildNodePackage {
       tough-cookie_2-3-4
       array-equal_1-0-0
       parse5_4-0-0
-      cssom_0-3-2
+      cssom_0-3-4
       nwsapi_2-0-9
       left-pad_1-3-0
       cssstyle_1-1-1

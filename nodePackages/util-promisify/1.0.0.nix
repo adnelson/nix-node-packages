@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       object-getownpropertydescriptors_2-0-3
-      define-properties_1-1-2
+      define-properties_1-1-3
     ];
     meta = {
       homepage = "https://github.com/ljharb/util.promisify#readme";

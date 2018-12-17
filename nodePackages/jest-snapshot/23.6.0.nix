@@ -10,7 +10,7 @@ buildNodePackage {
       jest-resolve_23-6-0
       mkdirp_0-5-1
       natural-compare_1-4-0
-      chalk_2-0-1
+      chalk_2-4-1
       babel-types_6-26-0
       jest-message-util_23-4-0
       pretty-format_23-6-0

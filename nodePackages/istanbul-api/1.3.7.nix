@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       fileset_2-0-3
-      js-yaml_3-9-1
+      js-yaml_3-12-0
       async_2-6-0
       once_1-4-0
       mkdirp_0-5-1

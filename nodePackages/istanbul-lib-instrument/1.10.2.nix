@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "1f55ed10ac3c47f2bdddd5307935126754d0a9ca";
     };
     deps = with nodePackages; [
-      babel-generator_6-26-0
+      babel-generator_6-26-1
       istanbul-lib-coverage_1-2-1
       babylon_6-18-0
       babel-template_6-26-0
