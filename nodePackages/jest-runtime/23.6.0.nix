@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "059e58c8ab445917cd0e0d84ac2ba68de8f23082";
     };
     patchDependencies = {
-      strip-bom = "^2.0.0";
+      strip-bom = "^3.0.0";
     };
     deps = with nodePackages; [
       yargs_11-1-0
