@@ -7,6 +7,8 @@ buildNodePackage {
       sha1 = "2bbc5b44c321837693ab6efcadbd46ed946211fe";
     };
     deps = [];
+    # DoS. Use 2.22 or later.
+    brokenPackage = true;
     meta = {
       homepage = "http://momentjs.com";
       description = "Parse, manipulate, and display dates.";
