@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       nodemon_1-18-4
-      event-stream_3-3-6
+      event-stream_3-3-5
       colors_1-3-2
       gulp_3-8-11
     ];

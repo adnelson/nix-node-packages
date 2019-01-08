@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "f3ae30cb8e9ca0873947ad755389cfe7c98dd2c8";
     };
     deps = with nodePackages; [
-      event-stream_3-3-6
+      event-stream_3-3-5
       coffee-script_1-7-0
       gulp-util_2-2-20
     ];

@@ -1,10 +1,10 @@
 { buildNodePackage, nodePackages, pkgs }:
 buildNodePackage {
     name = "event-stream";
-    version = "3.3.6";
+    version = "3.3.5";
     src = pkgs.fetchurl {
-      url = "https://registry.npmjs.org/event-stream/-/event-stream-3.3.6.tgz";
-      sha1 = "cac1230890e07e73ec9cacd038f60a5b66173eef";
+      url = "https://registry.npmjs.org/event-stream/-/event-stream-3.3.5.tgz";
+      sha1 = "ddik3yj10c95gmpldi6djc1naj4qkpg5";
     };
     deps = with nodePackages; [
       map-stream_0-0-7
@@ -12,7 +12,7 @@ buildNodePackage {
       duplexer_0-1-1
       split_1-0-1
       pause-stream_0-0-11
-      flatmap-stream_0-1-1
+      # flatmap-stream_0-1-1
       stream-combiner_0-2-2
       through_2-3-8
     ];

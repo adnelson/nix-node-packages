@@ -1113,8 +1113,8 @@
     etag = callPackage ./etag/1.8.1.nix {};
     etag_1-8-1 = callPackage ./etag/1.8.1.nix {};
     etag_1-5-1 = callPackage ./etag/1.5.1.nix {};
-    event-stream = callPackage ./event-stream/3.3.6.nix {};
-    event-stream_3-3-6 = callPackage ./event-stream/3.3.6.nix {};
+    event-stream = callPackage ./event-stream/3.3.5.nix {};
+    event-stream_3-3-5 = callPackage ./event-stream/3.3.5.nix {};
     event-stream_3-1-7 = callPackage ./event-stream/3.1.7.nix {};
     event-stream_3-0-20 = callPackage ./event-stream/3.0.20.nix {};
     eventemitter2 = callPackage ./eventemitter2/1.0.5.nix {};
