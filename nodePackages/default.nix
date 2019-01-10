@@ -617,6 +617,8 @@
     namespaces.babel.code-frame_7-0-0-rc-4 = callPackage (./. + "/@babel/code-frame/7.0.0-rc.4.nix") {};
     code-point-at = callPackage ./code-point-at/1.1.0.nix {};
     code-point-at_1-1-0 = callPackage ./code-point-at/1.1.0.nix {};
+    coffee-errors = callPackage ./coffee-errors/0.8.6.nix {};
+    coffee-errors_0-8-6 = callPackage ./coffee-errors/0.8.6.nix {};
     coffee-script = callPackage ./coffee-script/1.12.7.nix {};
     coffee-script_1-12-7 = callPackage ./coffee-script/1.12.7.nix {};
     coffee-script_1-11-1 = callPackage ./coffee-script/1.11.1.nix {};
