@@ -36,6 +36,7 @@
     acorn-walk_6-1-0 = callPackage ./acorn-walk/6.1.0.nix {};
     adm-zip = callPackage ./adm-zip/0.4.11.nix {};
     adm-zip_0-4-11 = callPackage ./adm-zip/0.4.11.nix {};
+    adm-zip_0-4-7 = callPackage ./adm-zip/0.4.7.nix {};
     adm-zip_0-4-4 = callPackage ./adm-zip/0.4.4.nix {};
     aes-js = callPackage ./aes-js/0.2.2.nix {};
     aes-js_0-2-2 = callPackage ./aes-js/0.2.2.nix {};
@@ -43,6 +44,7 @@
     after_0-8-2 = callPackage ./after/0.8.2.nix {};
     agent-base = callPackage ./agent-base/4.2.1.nix {};
     agent-base_4-2-1 = callPackage ./agent-base/4.2.1.nix {};
+    agent-base_2-1-1 = callPackage ./agent-base/2.1.1.nix {};
     agent-base_1-0-2 = callPackage ./agent-base/1.0.2.nix {};
     ajv = callPackage ./ajv/5.5.2.nix {};
     ajv_5-5-2 = callPackage ./ajv/5.5.2.nix {};
@@ -118,6 +120,8 @@
     array-slice = callPackage ./array-slice/1.1.0.nix {};
     array-slice_1-1-0 = callPackage ./array-slice/1.1.0.nix {};
     array-slice_0-2-3 = callPackage ./array-slice/0.2.3.nix {};
+    array-union = callPackage ./array-union/1.0.2.nix {};
+    array-union_1-0-2 = callPackage ./array-union/1.0.2.nix {};
     array-uniq = callPackage ./array-uniq/1.0.3.nix {};
     array-uniq_1-0-3 = callPackage ./array-uniq/1.0.3.nix {};
     array-unique = callPackage ./array-unique/0.3.2.nix {};
@@ -947,6 +951,8 @@
     defined_0-0-0 = callPackage ./defined/0.0.0.nix {};
     degenerator = callPackage ./degenerator/1.0.4.nix {};
     degenerator_1-0-4 = callPackage ./degenerator/1.0.4.nix {};
+    del = callPackage ./del/2.2.2.nix {};
+    del_2-2-2 = callPackage ./del/2.2.2.nix {};
     delayed-stream = callPackage ./delayed-stream/1.0.0.nix {};
     delayed-stream_1-0-0 = callPackage ./delayed-stream/1.0.0.nix {};
     delayed-stream_0-0-5 = callPackage ./delayed-stream/0.0.5.nix {};
@@ -1359,6 +1365,8 @@
     globals = callPackage ./globals/10.4.0.nix {};
     globals_10-4-0 = callPackage ./globals/10.4.0.nix {};
     globals_9-18-0 = callPackage ./globals/9.18.0.nix {};
+    globby = callPackage ./globby/5.0.0.nix {};
+    globby_5-0-0 = callPackage ./globby/5.0.0.nix {};
     globule = callPackage ./globule/0.1.0.nix {};
     globule_0-1-0 = callPackage ./globule/0.1.0.nix {};
     glogg = callPackage ./glogg/1.0.1.nix {};
@@ -1556,6 +1564,7 @@
     https-browserify_0-0-1 = callPackage ./https-browserify/0.0.1.nix {};
     https-proxy-agent = callPackage ./https-proxy-agent/2.2.1.nix {};
     https-proxy-agent_2-2-1 = callPackage ./https-proxy-agent/2.2.1.nix {};
+    https-proxy-agent_1-0-0 = callPackage ./https-proxy-agent/1.0.0.nix {};
     https-proxy-agent_0-3-6 = callPackage ./https-proxy-agent/0.3.6.nix {};
     iconv-lite = callPackage ./iconv-lite/0.4.24.nix {};
     iconv-lite_0-4-24 = callPackage ./iconv-lite/0.4.24.nix {};
@@ -1676,6 +1685,10 @@
     is-obj_1-0-1 = callPackage ./is-obj/1.0.1.nix {};
     is-object = callPackage ./is-object/1.0.1.nix {};
     is-object_1-0-1 = callPackage ./is-object/1.0.1.nix {};
+    is-path-cwd = callPackage ./is-path-cwd/1.0.0.nix {};
+    is-path-cwd_1-0-0 = callPackage ./is-path-cwd/1.0.0.nix {};
+    is-path-in-cwd = callPackage ./is-path-in-cwd/1.0.1.nix {};
+    is-path-in-cwd_1-0-1 = callPackage ./is-path-in-cwd/1.0.1.nix {};
     is-path-inside = callPackage ./is-path-inside/1.0.1.nix {};
     is-path-inside_1-0-1 = callPackage ./is-path-inside/1.0.1.nix {};
     is-plain-obj = callPackage ./is-plain-obj/1.1.0.nix {};
@@ -1749,10 +1762,14 @@
     jade = callPackage ./jade/1.11.0.nix {};
     jade_1-11-0 = callPackage ./jade/1.11.0.nix {};
     jade_0-26-3 = callPackage ./jade/0.26.3.nix {};
-    jasmine = callPackage ./jasmine/2.1.1.nix {};
+    jasmine = callPackage ./jasmine/2.4.1.nix {};
+    jasmine_2-4-1 = callPackage ./jasmine/2.4.1.nix {};
     jasmine_2-1-1 = callPackage ./jasmine/2.1.1.nix {};
+    namespaces.types.jasmine = callPackage (./. + "/@types/jasmine/2.8.14.nix") {};
+    namespaces.types.jasmine_2-8-14 = callPackage (./. + "/@types/jasmine/2.8.14.nix") {};
     jasmine-core = callPackage ./jasmine-core/2.99.1.nix {};
     jasmine-core_2-99-1 = callPackage ./jasmine-core/2.99.1.nix {};
+    jasmine-core_2-4-1 = callPackage ./jasmine-core/2.4.1.nix {};
     jasmine-core_2-1-3 = callPackage ./jasmine-core/2.1.3.nix {};
     jasmine-jquery = callPackage ./jasmine-jquery/2.1.1.nix {};
     jasmine-jquery_2-1-1 = callPackage ./jasmine-jquery/2.1.1.nix {};
@@ -1760,7 +1777,8 @@
     jasmine-reporters_1-1-0 = callPackage ./jasmine-reporters/1.1.0.nix {};
     jasminewd = callPackage ./jasminewd/1.1.0.nix {};
     jasminewd_1-1-0 = callPackage ./jasminewd/1.1.0.nix {};
-    jasminewd2 = callPackage ./jasminewd2/0.0.2.nix {};
+    jasminewd2 = callPackage ./jasminewd2/0.0.10.nix {};
+    jasminewd2_0-0-10 = callPackage ./jasminewd2/0.0.10.nix {};
     jasminewd2_0-0-2 = callPackage ./jasminewd2/0.0.2.nix {};
     jest = callPackage ./jest/23.6.0.nix {};
     jest_23-6-0 = callPackage ./jest/23.6.0.nix {};
@@ -2282,6 +2300,7 @@
     nock_10-0-0 = callPackage ./nock/10.0.0.nix {};
     namespaces.types.node = callPackage (./. + "/@types/node/10.12.0.nix") {};
     namespaces.types.node_10-12-0 = callPackage (./. + "/@types/node/10.12.0.nix") {};
+    namespaces.types.node_6-14-2 = callPackage (./. + "/@types/node/6.14.2.nix") {};
     node-cache = callPackage ./node-cache/3.2.1.nix {};
     node-cache_3-2-1 = callPackage ./node-cache/3.2.1.nix {};
     node-cache_1-1-0 = callPackage ./node-cache/1.1.0.nix {};
@@ -2632,7 +2651,8 @@
     prompts_0-1-14 = callPackage ./prompts/0.1.14.nix {};
     propagate = callPackage ./propagate/1.0.0.nix {};
     propagate_1-0-0 = callPackage ./propagate/1.0.0.nix {};
-    protractor = callPackage ./protractor/1.8.0.nix {};
+    protractor = callPackage ./protractor/4.0.14.nix {};
+    protractor_4-0-14 = callPackage ./protractor/4.0.14.nix {};
     protractor_1-8-0 = callPackage ./protractor/1.8.0.nix {};
     protractor-jasmine2-screenshot-reporter = callPackage ./protractor-jasmine2-screenshot-reporter/0.1.7.nix {};
     protractor-jasmine2-screenshot-reporter_0-1-7 = callPackage ./protractor-jasmine2-screenshot-reporter/0.1.7.nix {};
@@ -2662,8 +2682,11 @@
     punycode_1-2-4 = callPackage ./punycode/1.2.4.nix {};
     q = callPackage ./q/1.5.1.nix {};
     q_1-5-1 = callPackage ./q/1.5.1.nix {};
+    q_1-4-1 = callPackage ./q/1.4.1.nix {};
     q_1-0-0 = callPackage ./q/1.0.0.nix {};
     q_0-9-7 = callPackage ./q/0.9.7.nix {};
+    namespaces.types.q = callPackage (./. + "/@types/q/0.0.37.nix") {};
+    namespaces.types.q_0-0-37 = callPackage (./. + "/@types/q/0.0.37.nix") {};
     qjobs = callPackage ./qjobs/1.2.0.nix {};
     qjobs_1-2-0 = callPackage ./qjobs/1.2.0.nix {};
     qrs = callPackage ./qrs/2.0.3.nix {};
@@ -2861,7 +2884,8 @@
     samsam_1-1-3 = callPackage ./samsam/1.1.3.nix {};
     sane = callPackage ./sane/2.5.2.nix {};
     sane_2-5-2 = callPackage ./sane/2.5.2.nix {};
-    saucelabs = callPackage ./saucelabs/0.1.1.nix {};
+    saucelabs = callPackage ./saucelabs/1.3.0.nix {};
+    saucelabs_1-3-0 = callPackage ./saucelabs/1.3.0.nix {};
     saucelabs_0-1-1 = callPackage ./saucelabs/0.1.1.nix {};
     sax = callPackage ./sax/1.2.4.nix {};
     sax_1-2-4 = callPackage ./sax/1.2.4.nix {};
@@ -2871,11 +2895,15 @@
     sax_0-4-2 = callPackage ./sax/0.4.2.nix {};
     saxes = callPackage ./saxes/3.1.3.nix {};
     saxes_3-1-3 = callPackage ./saxes/3.1.3.nix {};
-    selenium-webdriver = callPackage ./selenium-webdriver/2.44.0.nix {};
+    selenium-webdriver = callPackage ./selenium-webdriver/2.53.3.nix {};
+    selenium-webdriver_2-53-3 = callPackage ./selenium-webdriver/2.53.3.nix {};
     selenium-webdriver_2-44-0 = callPackage ./selenium-webdriver/2.44.0.nix {};
+    namespaces.types.selenium-webdriver = callPackage (./. + "/@types/selenium-webdriver/2.53.37.nix") {};
+    namespaces.types.selenium-webdriver_2-53-37 = callPackage (./. + "/@types/selenium-webdriver/2.53.37.nix") {};
     semver = callPackage ./semver/5.6.0.nix {};
     semver_5-6-0 = callPackage ./semver/5.6.0.nix {};
     semver_5-5-0 = callPackage ./semver/5.5.0.nix {};
+    semver_5-0-3 = callPackage ./semver/5.0.3.nix {};
     semver_4-3-6 = callPackage ./semver/4.3.6.nix {};
     semver_4-3-2 = callPackage ./semver/4.3.2.nix {};
     semver_2-2-1 = callPackage ./semver/2.2.1.nix {};
@@ -3339,6 +3367,8 @@
     watch_0-18-0 = callPackage ./watch/0.18.0.nix {};
     watchify = callPackage ./watchify/3.8.0.nix {};
     watchify_3-8-0 = callPackage ./watchify/3.8.0.nix {};
+    webdriver-manager = callPackage ./webdriver-manager/10.3.0.nix {};
+    webdriver-manager_10-3-0 = callPackage ./webdriver-manager/10.3.0.nix {};
     webidl-conversions = callPackage ./webidl-conversions/4.0.2.nix {};
     webidl-conversions_4-0-2 = callPackage ./webidl-conversions/4.0.2.nix {};
     whatwg-encoding = callPackage ./whatwg-encoding/1.0.5.nix {};
