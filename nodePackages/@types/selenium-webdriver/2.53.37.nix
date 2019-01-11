@@ -5,7 +5,6 @@ buildNodePackage {
     src = fetchUrlWithHeaders {
       url = "https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-2.53.37.tgz";
       sha1 = "34f743c20e53ae7100ede90870fde554df2447f8";
-      headers.Authorization = "Bearer ${namespaceTokens.types}";
     };
     namespace = "types";
     deps = [];

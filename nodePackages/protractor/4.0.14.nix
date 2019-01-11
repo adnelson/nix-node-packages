@@ -6,6 +6,15 @@ buildNodePackage {
       url = "https://registry.npmjs.org/protractor/-/protractor-4.0.14.tgz";
       sha1 = "efc4a877fac3a182a9dded26cd5869f4762fd172";
     };
+    patchDependencies = {
+      "@types/q" = "^0.0.37";
+    };
+    postInstall = ''
+      wrapProgram $out/bin/webdriver-manager \
+        --prefix PATH : "${pkgs.openjdk}/bin"
+    '';
+    buildInputs = [pkgs.makeWrapper];
+    propagatedBuildInputs = [pkgs.openjdk];
     deps = with nodePackages; [
       namespaces.types.node_6-14-2
       namespaces.types.q_0-0-37
