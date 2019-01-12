@@ -20,6 +20,7 @@ buildNodePackage {
       jest-runtime_23-6-0
       jest-util_23-4-0
       jest-worker_23-2-0
+      jest-environment-jsdom
     ];
     devDependencies = [];
     meta = {
