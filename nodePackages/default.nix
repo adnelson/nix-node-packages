@@ -1861,7 +1861,8 @@
     jsonparse = callPackage ./jsonparse/1.3.1.nix {};
     jsonparse_1-3-1 = callPackage ./jsonparse/1.3.1.nix {};
     jsonparse_0-0-5 = callPackage ./jsonparse/0.0.5.nix {};
-    jsonwebtoken = callPackage ./jsonwebtoken/8.3.0.nix {};
+    jsonwebtoken = callPackage ./jsonwebtoken/8.4.0.nix {};
+    jsonwebtoken_8-4-0 = callPackage ./jsonwebtoken/8.4.0.nix {};
     jsonwebtoken_8-3-0 = callPackage ./jsonwebtoken/8.3.0.nix {};
     jsprim = callPackage ./jsprim/1.4.1.nix {};
     jsprim_1-4-1 = callPackage ./jsprim/1.4.1.nix {};
