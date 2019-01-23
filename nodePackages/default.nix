@@ -653,6 +653,7 @@
     color-support_1-1-3 = callPackage ./color-support/1.1.3.nix {};
     colors = callPackage ./colors/1.3.2.nix {};
     colors_1-3-2 = callPackage ./colors/1.3.2.nix {};
+    colors_1-1-2 = callPackage ./colors/1.1.2.nix {};
     colors_1-0-3 = callPackage ./colors/1.0.3.nix {};
     colors_0-6-2 = callPackage ./colors/0.6.2.nix {};
     combine-lists = callPackage ./combine-lists/1.0.1.nix {};
@@ -1775,6 +1776,8 @@
     jasmine-jquery_2-1-1 = callPackage ./jasmine-jquery/2.1.1.nix {};
     jasmine-reporters = callPackage ./jasmine-reporters/1.1.0.nix {};
     jasmine-reporters_1-1-0 = callPackage ./jasmine-reporters/1.1.0.nix {};
+    jasmine-spec-reporter = callPackage ./jasmine-spec-reporter/4.2.1.nix {};
+    jasmine-spec-reporter_4-2-1 = callPackage ./jasmine-spec-reporter/4.2.1.nix {};
     jasminewd = callPackage ./jasminewd/1.1.0.nix {};
     jasminewd_1-1-0 = callPackage ./jasminewd/1.1.0.nix {};
     jasminewd2 = callPackage ./jasminewd2/0.0.10.nix {};
