@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       concat-stream_1-6-2
-      https-proxy-agent_0-3-6
+      https-proxy-agent_2-2-1
       readable-stream_1-1-14
       json-stringify-safe_5-0-1
       semver_5-6-0
