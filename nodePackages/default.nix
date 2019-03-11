@@ -186,6 +186,8 @@
     aws-sdk_2-2-35 = callPackage ./aws-sdk/2.2.35.nix {};
     aws-sdk_2-0-31 = callPackage ./aws-sdk/2.0.31.nix {};
     aws-sdk_1-13-0 = callPackage ./aws-sdk/1.13.0.nix {};
+    aws-sdk-mock = callPackage ./aws-sdk-mock/1.0.10.nix {};
+    aws-sdk-mock_1-0-10 = callPackage ./aws-sdk-mock/1.0.10.nix {};
     aws-sign = callPackage ./aws-sign/0.3.0.nix {};
     aws-sign_0-3-0 = callPackage ./aws-sign/0.3.0.nix {};
     aws-sign_0-2-1 = callPackage ./aws-sign/0.2.1.nix {};
@@ -2110,7 +2112,8 @@
     log4js = callPackage ./log4js/3.0.6.nix {};
     log4js_3-0-6 = callPackage ./log4js/3.0.6.nix {};
     log4js_0-6-38 = callPackage ./log4js/0.6.38.nix {};
-    lolex = callPackage ./lolex/1.1.0.nix {};
+    lolex = callPackage ./lolex/1.3.2.nix {};
+    lolex_1-3-2 = callPackage ./lolex/1.3.2.nix {};
     lolex_1-1-0 = callPackage ./lolex/1.1.0.nix {};
     loose-envify = callPackage ./loose-envify/1.4.0.nix {};
     loose-envify_1-4-0 = callPackage ./loose-envify/1.4.0.nix {};
@@ -2886,6 +2889,7 @@
     safer-buffer_2-1-2 = callPackage ./safer-buffer/2.1.2.nix {};
     samsam = callPackage ./samsam/1.1.3.nix {};
     samsam_1-1-3 = callPackage ./samsam/1.1.3.nix {};
+    samsam_1-1-2 = callPackage ./samsam/1.1.2.nix {};
     sane = callPackage ./sane/2.5.2.nix {};
     sane_2-5-2 = callPackage ./sane/2.5.2.nix {};
     saucelabs = callPackage ./saucelabs/1.3.0.nix {};
@@ -2968,7 +2972,8 @@
     simple-concat_1-0-0 = callPackage ./simple-concat/1.0.0.nix {};
     simple-lru-cache = callPackage ./simple-lru-cache/0.0.2.nix {};
     simple-lru-cache_0-0-2 = callPackage ./simple-lru-cache/0.0.2.nix {};
-    sinon = callPackage ./sinon/1.12.2.nix {};
+    sinon = callPackage ./sinon/1.17.7.nix {};
+    sinon_1-17-7 = callPackage ./sinon/1.17.7.nix {};
     sinon_1-12-2 = callPackage ./sinon/1.12.2.nix {};
     sinon_1-9-1 = callPackage ./sinon/1.9.1.nix {};
     sinon-chai = callPackage ./sinon-chai/2.14.0.nix {};
@@ -3212,6 +3217,8 @@
     tr46_1-0-1 = callPackage ./tr46/1.0.1.nix {};
     transformers = callPackage ./transformers/2.1.0.nix {};
     transformers_2-1-0 = callPackage ./transformers/2.1.0.nix {};
+    traverse = callPackage ./traverse/0.6.6.nix {};
+    traverse_0-6-6 = callPackage ./traverse/0.6.6.nix {};
     trim-newlines = callPackage ./trim-newlines/1.0.0.nix {};
     trim-newlines_1-0-0 = callPackage ./trim-newlines/1.0.0.nix {};
     trim-right = callPackage ./trim-right/1.0.1.nix {};
