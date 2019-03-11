@@ -1437,7 +1437,8 @@
     grunt-simple-watch_0-1-3 = callPackage ./grunt-simple-watch/0.1.3.nix {};
     grunt-touch = callPackage ./grunt-touch/0.1.0.nix {};
     grunt-touch_0-1-0 = callPackage ./grunt-touch/0.1.0.nix {};
-    gulp = callPackage ./gulp/3.8.11.nix {};
+    gulp = callPackage ./gulp/3.9.1.nix {};
+    gulp_3-9-1 = callPackage ./gulp/3.9.1.nix {};
     gulp_3-8-11 = callPackage ./gulp/3.8.11.nix {};
     gulp-batch = callPackage ./gulp-batch/0.4.1.nix {};
     gulp-batch_0-4-1 = callPackage ./gulp-batch/0.4.1.nix {};
@@ -2633,7 +2634,8 @@
     pretty-data_0-40-0 = callPackage ./pretty-data/0.40.0.nix {};
     pretty-format = callPackage ./pretty-format/23.6.0.nix {};
     pretty-format_23-6-0 = callPackage ./pretty-format/23.6.0.nix {};
-    pretty-hrtime = callPackage ./pretty-hrtime/0.2.2.nix {};
+    pretty-hrtime = callPackage ./pretty-hrtime/1.0.3.nix {};
+    pretty-hrtime_1-0-3 = callPackage ./pretty-hrtime/1.0.3.nix {};
     pretty-hrtime_0-2-2 = callPackage ./pretty-hrtime/0.2.2.nix {};
     private = callPackage ./private/0.1.8.nix {};
     private_0-1-8 = callPackage ./private/0.1.8.nix {};
