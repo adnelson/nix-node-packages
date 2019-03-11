@@ -480,6 +480,8 @@
     browser-resolve_1-11-3 = callPackage ./browser-resolve/1.11.3.nix {};
     browser-resolve_1-2-4 = callPackage ./browser-resolve/1.2.4.nix {};
     browser-resolve_1-1-4 = callPackage ./browser-resolve/1.1.4.nix {};
+    browser-stdout = callPackage ./browser-stdout/1.3.0.nix {};
+    browser-stdout_1-3-0 = callPackage ./browser-stdout/1.3.0.nix {};
     browserify = callPackage ./browserify/13.3.0.nix {};
     browserify_13-3-0 = callPackage ./browserify/13.3.0.nix {};
     browserify_3-46-1 = callPackage ./browserify/3.46.1.nix {};
@@ -670,6 +672,7 @@
     commander = callPackage ./commander/2.19.0.nix {};
     commander_2-19-0 = callPackage ./commander/2.19.0.nix {};
     commander_2-13-0 = callPackage ./commander/2.13.0.nix {};
+    commander_2-9-0 = callPackage ./commander/2.9.0.nix {};
     commander_2-8-1 = callPackage ./commander/2.8.1.nix {};
     commander_2-6-0 = callPackage ./commander/2.6.0.nix {};
     commander_2-3-0 = callPackage ./commander/2.3.0.nix {};
@@ -915,6 +918,7 @@
     debug = callPackage ./debug/3.1.0.nix {};
     debug_3-1-0 = callPackage ./debug/3.1.0.nix {};
     debug_2-6-9 = callPackage ./debug/2.6.9.nix {};
+    debug_2-6-8 = callPackage ./debug/2.6.8.nix {};
     debug_2-6-7 = callPackage ./debug/2.6.7.nix {};
     debug_2-3-3 = callPackage ./debug/2.3.3.nix {};
     debug_2-2-0 = callPackage ./debug/2.2.0.nix {};
@@ -997,6 +1001,7 @@
     di_0-0-1 = callPackage ./di/0.0.1.nix {};
     diff = callPackage ./diff/3.5.0.nix {};
     diff_3-5-0 = callPackage ./diff/3.5.0.nix {};
+    diff_3-2-0 = callPackage ./diff/3.2.0.nix {};
     diff_1-4-0 = callPackage ./diff/1.4.0.nix {};
     diff_1-0-8 = callPackage ./diff/1.0.8.nix {};
     diffie-hellman = callPackage ./diffie-hellman/5.0.3.nix {};
@@ -1340,6 +1345,7 @@
     gkt_1-0-0 = callPackage ./gkt/1.0.0.nix {};
     glob = callPackage ./glob/7.1.3.nix {};
     glob_7-1-3 = callPackage ./glob/7.1.3.nix {};
+    glob_7-1-1 = callPackage ./glob/7.1.1.nix {};
     glob_5-0-15 = callPackage ./glob/5.0.15.nix {};
     glob_4-5-3 = callPackage ./glob/4.5.3.nix {};
     glob_4-3-5 = callPackage ./glob/4.3.5.nix {};
@@ -1481,6 +1487,7 @@
     has-cors_1-1-0 = callPackage ./has-cors/1.1.0.nix {};
     has-flag = callPackage ./has-flag/3.0.0.nix {};
     has-flag_3-0-0 = callPackage ./has-flag/3.0.0.nix {};
+    has-flag_1-0-0 = callPackage ./has-flag/1.0.0.nix {};
     has-gulplog = callPackage ./has-gulplog/0.1.0.nix {};
     has-gulplog_0-1-0 = callPackage ./has-gulplog/0.1.0.nix {};
     has-symbols = callPackage ./has-symbols/1.0.0.nix {};
@@ -1508,7 +1515,8 @@
     hawk = callPackage ./hawk/1.0.0.nix {};
     hawk_1-0-0 = callPackage ./hawk/1.0.0.nix {};
     hawk_0-10-2 = callPackage ./hawk/0.10.2.nix {};
-    he = callPackage ./he/0.5.0.nix {};
+    he = callPackage ./he/1.1.1.nix {};
+    he_1-1-1 = callPackage ./he/1.1.1.nix {};
     he_0-5-0 = callPackage ./he/0.5.0.nix {};
     helmet = callPackage ./helmet/3.8.1.nix {};
     helmet_3-8-1 = callPackage ./helmet/3.8.1.nix {};
@@ -2002,8 +2010,12 @@
     lodash_2-2-1 = callPackage ./lodash/2.2.1.nix {};
     lodash_1-0-2 = callPackage ./lodash/1.0.2.nix {};
     lodash_0-9-2 = callPackage ./lodash/0.9.2.nix {};
+    lodash-_baseassign = callPackage ./lodash-_baseassign/3.2.0.nix {};
+    lodash-_baseassign_3-2-0 = callPackage ./lodash-_baseassign/3.2.0.nix {};
     lodash-_basecopy = callPackage ./lodash-_basecopy/3.0.1.nix {};
     lodash-_basecopy_3-0-1 = callPackage ./lodash-_basecopy/3.0.1.nix {};
+    lodash-_basecreate = callPackage ./lodash-_basecreate/3.0.3.nix {};
+    lodash-_basecreate_3-0-3 = callPackage ./lodash-_basecreate/3.0.3.nix {};
     lodash-_basetostring = callPackage ./lodash-_basetostring/3.0.1.nix {};
     lodash-_basetostring_3-0-1 = callPackage ./lodash-_basetostring/3.0.1.nix {};
     lodash-_basevalues = callPackage ./lodash-_basevalues/3.0.0.nix {};
@@ -2043,6 +2055,8 @@
     lodash-bind_4-2-1 = callPackage ./lodash-bind/4.2.1.nix {};
     lodash-clonedeep = callPackage ./lodash-clonedeep/4.5.0.nix {};
     lodash-clonedeep_4-5-0 = callPackage ./lodash-clonedeep/4.5.0.nix {};
+    lodash-create = callPackage ./lodash-create/3.1.1.nix {};
+    lodash-create_3-1-1 = callPackage ./lodash-create/3.1.1.nix {};
     lodash-debounce = callPackage ./lodash-debounce/4.0.8.nix {};
     lodash-debounce_4-0-8 = callPackage ./lodash-debounce/4.0.8.nix {};
     lodash-defaults = callPackage ./lodash-defaults/4.2.0.nix {};
@@ -2239,7 +2253,8 @@
     mkdirp_0-3-5 = callPackage ./mkdirp/0.3.5.nix {};
     mkdirp_0-3-3 = callPackage ./mkdirp/0.3.3.nix {};
     mkdirp_0-3-0 = callPackage ./mkdirp/0.3.0.nix {};
-    mocha = callPackage ./mocha/2.5.3.nix {};
+    mocha = callPackage ./mocha/3.5.3.nix {};
+    mocha_3-5-3 = callPackage ./mocha/3.5.3.nix {};
     mocha_2-5-3 = callPackage ./mocha/2.5.3.nix {};
     mocha_1-21-5 = callPackage ./mocha/1.21.5.nix {};
     mock-knex = callPackage ./mock-knex/0.2.2.nix {};
@@ -3134,6 +3149,7 @@
     supertest_0-15-0 = callPackage ./supertest/0.15.0.nix {};
     supports-color = callPackage ./supports-color/5.5.0.nix {};
     supports-color_5-5-0 = callPackage ./supports-color/5.5.0.nix {};
+    supports-color_3-1-2 = callPackage ./supports-color/3.1.2.nix {};
     supports-color_2-0-0 = callPackage ./supports-color/2.0.0.nix {};
     supports-color_1-2-0 = callPackage ./supports-color/1.2.0.nix {};
     supports-color_0-2-0 = callPackage ./supports-color/0.2.0.nix {};

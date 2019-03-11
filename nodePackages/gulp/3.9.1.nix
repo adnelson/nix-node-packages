@@ -6,6 +6,10 @@ buildNodePackage {
       url = "https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz";
       sha1 = "571ce45928dd40af6514fc4011866016c13845b4";
     };
+    # Boo semver :(
+    patchDependencies = {
+      deprecated = "^0.0.2";
+    };
     deps = with nodePackages; [
       pretty-hrtime_1-0-3
       vinyl-fs_0-3-14
