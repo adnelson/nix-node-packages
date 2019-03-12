@@ -4,7 +4,7 @@ buildNodePackage {
     version = "7.0.0";
     src = fetchUrlWithHeaders {
       url = "https://registry.npmjs.org/@babel/highlight/-/highlight-7.0.0.tgz";
-      sha1 = "63fb56721e08a166e6693ebd5ab03a08bcb370cb";
+      sha1 = "wjcwx0dpzhvvdbq1lbcnv3j5in6c647p";
     };
     namespace = "babel";
     deps = with nodePackages; [

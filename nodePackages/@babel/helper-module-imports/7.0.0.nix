@@ -1,17 +1,17 @@
 { buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
-    name = "code-frame";
+    name = "helper-module-imports";
     version = "7.0.0";
     src = fetchUrlWithHeaders {
-      url = "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.0.0.tgz";
-      sha1 = "z002hj19jyjmpfxab5akhddmplcspqh6";
+      url = "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.0.0.tgz";
+      sha1 = "7lpcq5p29wdaswfr5i6xm1p425qin24n";
     };
     namespace = "babel";
     deps = with nodePackages; [
-      namespaces.babel.highlight_7-0-0
+      namespaces.babel.types_7-3-4
     ];
     meta = {
       homepage = "https://babeljs.io/";
-      description = "Generate errors that contain a code frame that point to source locations.";
+      description = "Babel helper functions for inserting module loads";
     };
   }

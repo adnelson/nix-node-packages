@@ -1,10 +1,10 @@
 { buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
-    name = "helper-get-function-arity";
+    name = "helper-optimise-call-expression";
     version = "7.0.0";
     src = fetchUrlWithHeaders {
-      url = "https://registry.npmjs.org/@babel/helper-get-function-arity/-/helper-get-function-arity-7.0.0.tgz";
-      sha1 = "qd4lxdk853216hbkcdr6b972411jsmw3";
+      url = "https://registry.npmjs.org/@babel/helper-optimise-call-expression/-/helper-optimise-call-expression-7.0.0.tgz";
+      sha1 = "snbh9lnam05201hiwmfw2wxh09bhr4m2";
     };
     namespace = "babel";
     deps = with nodePackages; [
@@ -12,6 +12,6 @@ buildNodePackage {
     ];
     devDependencies = [];
     meta = {
-      description = "Helper function to get function arity";
+      description = "Helper function to optimise call expression";
     };
   }

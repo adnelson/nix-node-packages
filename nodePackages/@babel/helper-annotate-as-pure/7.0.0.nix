@@ -5,7 +5,6 @@ buildNodePackage {
     src = fetchUrlWithHeaders {
       url = "https://registry.npmjs.org/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0.tgz";
       sha1 = "323d39dd0b50e10c7c06ca7d7638e6864d8c5c32";
-      headers.Authorization = "Bearer ${namespaceTokens.babel}";
     };
     namespace = "babel";
     deps = with nodePackages; [

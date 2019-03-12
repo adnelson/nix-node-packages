@@ -17,11 +17,7 @@ buildNodePackage {
       source-map_0-5-7
       slash_2-0-0
       glob_7-1-3
-    ];
-    peerDependencies = with nodePackages; [
       namespaces.babel.core_7-3-4
-    ];
-    optionalDependencies = with nodePackages; [
       chokidar_2-0-4
     ];
     meta = {
