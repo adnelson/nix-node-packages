@@ -608,6 +608,8 @@
     clean-css_2-2-23 = callPackage ./clean-css/2.2.23.nix {};
     cli = callPackage ./cli/0.6.6.nix {};
     cli_0-6-6 = callPackage ./cli/0.6.6.nix {};
+    namespaces.babel.cli = callPackage (./. + "/@babel/cli/7.2.3.nix") {};
+    namespaces.babel.cli_7-2-3 = callPackage (./. + "/@babel/cli/7.2.3.nix") {};
     cli-boxes = callPackage ./cli-boxes/1.0.0.nix {};
     cli-boxes_1-0-0 = callPackage ./cli-boxes/1.0.0.nix {};
     cli-table-redemption = callPackage ./cli-table-redemption/1.0.1.nix {};
@@ -621,8 +623,8 @@
     clone-stats_0-0-1 = callPackage ./clone-stats/0.0.1.nix {};
     co = callPackage ./co/4.6.0.nix {};
     co_4-6-0 = callPackage ./co/4.6.0.nix {};
-    namespaces.babel.code-frame = callPackage (./. + "/@babel/code-frame/7.0.0-rc.4.nix") {};
-    namespaces.babel.code-frame_7-0-0-rc-4 = callPackage (./. + "/@babel/code-frame/7.0.0-rc.4.nix") {};
+    namespaces.babel.code-frame = callPackage (./. + "/@babel/code-frame/7.0.0.nix") {};
+    namespaces.babel.code-frame_7-0-0 = callPackage (./. + "/@babel/code-frame/7.0.0.nix") {};
     code-point-at = callPackage ./code-point-at/1.1.0.nix {};
     code-point-at_1-1-0 = callPackage ./code-point-at/1.1.0.nix {};
     coffee-errors = callPackage ./coffee-errors/0.8.6.nix {};
@@ -773,6 +775,8 @@
     cookies_0-7-1 = callPackage ./cookies/0.7.1.nix {};
     copy-descriptor = callPackage ./copy-descriptor/0.1.1.nix {};
     copy-descriptor_0-1-1 = callPackage ./copy-descriptor/0.1.1.nix {};
+    namespaces.babel.core = callPackage (./. + "/@babel/core/7.3.4.nix") {};
+    namespaces.babel.core_7-3-4 = callPackage (./. + "/@babel/core/7.3.4.nix") {};
     core-js = callPackage ./core-js/2.5.7.nix {};
     core-js_2-5-7 = callPackage ./core-js/2.5.7.nix {};
     core-util-is = callPackage ./core-util-is/1.0.2.nix {};
@@ -915,7 +919,8 @@
     dateformat_2-2-0 = callPackage ./dateformat/2.2.0.nix {};
     dateformat_1-0-12 = callPackage ./dateformat/1.0.12.nix {};
     dateformat_1-0-2-1-2-3 = callPackage ./dateformat/1.0.2-1.2.3.nix {};
-    debug = callPackage ./debug/3.1.0.nix {};
+    debug = callPackage ./debug/4.1.1.nix {};
+    debug_4-1-1 = callPackage ./debug/4.1.1.nix {};
     debug_3-1-0 = callPackage ./debug/3.1.0.nix {};
     debug_2-6-9 = callPackage ./debug/2.6.9.nix {};
     debug_2-6-8 = callPackage ./debug/2.6.8.nix {};
@@ -1318,6 +1323,8 @@
     gauge_2-7-4 = callPackage ./gauge/2.7.4.nix {};
     gaze = callPackage ./gaze/0.5.2.nix {};
     gaze_0-5-2 = callPackage ./gaze/0.5.2.nix {};
+    namespaces.babel.generator = callPackage (./. + "/@babel/generator/7.3.4.nix") {};
+    namespaces.babel.generator_7-3-4 = callPackage (./. + "/@babel/generator/7.3.4.nix") {};
     generic-pool = callPackage ./generic-pool/2.4.3.nix {};
     generic-pool_2-4-3 = callPackage ./generic-pool/2.4.3.nix {};
     generic-pool_2-4-2 = callPackage ./generic-pool/2.4.2.nix {};
@@ -1371,7 +1378,8 @@
     global-prefix = callPackage ./global-prefix/1.0.2.nix {};
     global-prefix_1-0-2 = callPackage ./global-prefix/1.0.2.nix {};
     global-prefix_0-1-5 = callPackage ./global-prefix/0.1.5.nix {};
-    globals = callPackage ./globals/10.4.0.nix {};
+    globals = callPackage ./globals/11.11.0.nix {};
+    globals_11-11-0 = callPackage ./globals/11.11.0.nix {};
     globals_10-4-0 = callPackage ./globals/10.4.0.nix {};
     globals_9-18-0 = callPackage ./globals/9.18.0.nix {};
     globby = callPackage ./globby/5.0.0.nix {};
@@ -1522,10 +1530,20 @@
     helmet_3-8-1 = callPackage ./helmet/3.8.1.nix {};
     helmet-csp = callPackage ./helmet-csp/2.5.1.nix {};
     helmet-csp_2-5-1 = callPackage ./helmet-csp/2.5.1.nix {};
+    namespaces.babel.helper-annotate-as-pure = callPackage (./. + "/@babel/helper-annotate-as-pure/7.0.0.nix") {};
+    namespaces.babel.helper-annotate-as-pure_7-0-0 = callPackage (./. + "/@babel/helper-annotate-as-pure/7.0.0.nix") {};
+    namespaces.babel.helper-function-name = callPackage (./. + "/@babel/helper-function-name/7.1.0.nix") {};
+    namespaces.babel.helper-function-name_7-1-0 = callPackage (./. + "/@babel/helper-function-name/7.1.0.nix") {};
+    namespaces.babel.helper-get-function-arity = callPackage (./. + "/@babel/helper-get-function-arity/7.0.0.nix") {};
+    namespaces.babel.helper-get-function-arity_7-0-0 = callPackage (./. + "/@babel/helper-get-function-arity/7.0.0.nix") {};
+    namespaces.babel.helper-split-export-declaration = callPackage (./. + "/@babel/helper-split-export-declaration/7.0.0.nix") {};
+    namespaces.babel.helper-split-export-declaration_7-0-0 = callPackage (./. + "/@babel/helper-split-export-declaration/7.0.0.nix") {};
+    namespaces.babel.helpers = callPackage (./. + "/@babel/helpers/7.3.1.nix") {};
+    namespaces.babel.helpers_7-3-1 = callPackage (./. + "/@babel/helpers/7.3.1.nix") {};
     hide-powered-by = callPackage ./hide-powered-by/1.0.0.nix {};
     hide-powered-by_1-0-0 = callPackage ./hide-powered-by/1.0.0.nix {};
-    namespaces.babel.highlight = callPackage (./. + "/@babel/highlight/7.0.0-rc.4.nix") {};
-    namespaces.babel.highlight_7-0-0-rc-4 = callPackage (./. + "/@babel/highlight/7.0.0-rc.4.nix") {};
+    namespaces.babel.highlight = callPackage (./. + "/@babel/highlight/7.0.0.nix") {};
+    namespaces.babel.highlight_7-0-0 = callPackage (./. + "/@babel/highlight/7.0.0.nix") {};
     hmac-drbg = callPackage ./hmac-drbg/1.0.1.nix {};
     hmac-drbg_1-0-1 = callPackage ./hmac-drbg/1.0.1.nix {};
     hoek = callPackage ./hoek/4.2.1.nix {};
@@ -1887,7 +1905,8 @@
     json-stringify-safe_3-0-0 = callPackage ./json-stringify-safe/3.0.0.nix {};
     json3 = callPackage ./json3/3.3.2.nix {};
     json3_3-3-2 = callPackage ./json3/3.3.2.nix {};
-    json5 = callPackage ./json5/0.5.1.nix {};
+    json5 = callPackage ./json5/2.1.0.nix {};
+    json5_2-1-0 = callPackage ./json5/2.1.0.nix {};
     json5_0-5-1 = callPackage ./json5/0.5.1.nix {};
     jsonfile = callPackage ./jsonfile/2.4.0.nix {};
     jsonfile_2-4-0 = callPackage ./jsonfile/2.4.0.nix {};
@@ -2499,6 +2518,8 @@
     parsejson_0-0-3 = callPackage ./parsejson/0.0.3.nix {};
     parseqs = callPackage ./parseqs/0.0.5.nix {};
     parseqs_0-0-5 = callPackage ./parseqs/0.0.5.nix {};
+    namespaces.babel.parser = callPackage (./. + "/@babel/parser/7.3.4.nix") {};
+    namespaces.babel.parser_7-3-4 = callPackage (./. + "/@babel/parser/7.3.4.nix") {};
     parseuri = callPackage ./parseuri/0.0.5.nix {};
     parseuri_0-0-5 = callPackage ./parseuri/0.0.5.nix {};
     parseurl = callPackage ./parseurl/1.3.2.nix {};
@@ -2791,7 +2812,8 @@
     regenerate_1-4-0 = callPackage ./regenerate/1.4.0.nix {};
     regenerate-unicode-properties = callPackage ./regenerate-unicode-properties/7.0.0.nix {};
     regenerate-unicode-properties_7-0-0 = callPackage ./regenerate-unicode-properties/7.0.0.nix {};
-    regenerator-runtime = callPackage ./regenerator-runtime/0.11.1.nix {};
+    regenerator-runtime = callPackage ./regenerator-runtime/0.12.1.nix {};
+    regenerator-runtime_0-12-1 = callPackage ./regenerator-runtime/0.12.1.nix {};
     regenerator-runtime_0-11-1 = callPackage ./regenerator-runtime/0.11.1.nix {};
     regenerator-runtime_0-10-5 = callPackage ./regenerator-runtime/0.10.5.nix {};
     regenerator-transform = callPackage ./regenerator-transform/0.11.1.nix {};
@@ -2895,6 +2917,8 @@
     rsvp_3-6-2 = callPackage ./rsvp/3.6.2.nix {};
     ruglify = callPackage ./ruglify/1.0.0.nix {};
     ruglify_1-0-0 = callPackage ./ruglify/1.0.0.nix {};
+    namespaces.babel.runtime = callPackage (./. + "/@babel/runtime/7.3.4.nix") {};
+    namespaces.babel.runtime_7-3-4 = callPackage (./. + "/@babel/runtime/7.3.4.nix") {};
     rw = callPackage ./rw/1.3.3.nix {};
     rw_1-3-3 = callPackage ./rw/1.3.3.nix {};
     safe-buffer = callPackage ./safe-buffer/5.1.2.nix {};
@@ -2998,7 +3022,8 @@
     sinon-chai_2-5-0 = callPackage ./sinon-chai/2.5.0.nix {};
     sisteransi = callPackage ./sisteransi/0.1.1.nix {};
     sisteransi_0-1-1 = callPackage ./sisteransi/0.1.1.nix {};
-    slash = callPackage ./slash/1.0.0.nix {};
+    slash = callPackage ./slash/2.0.0.nix {};
+    slash_2-0-0 = callPackage ./slash/2.0.0.nix {};
     slash_1-0-0 = callPackage ./slash/1.0.0.nix {};
     smart-buffer = callPackage ./smart-buffer/1.1.15.nix {};
     smart-buffer_1-1-15 = callPackage ./smart-buffer/1.1.15.nix {};
@@ -3166,6 +3191,8 @@
     tar-stream = callPackage ./tar-stream/1.6.2.nix {};
     tar-stream_1-6-2 = callPackage ./tar-stream/1.6.2.nix {};
     tar-stream_1-2-2 = callPackage ./tar-stream/1.2.2.nix {};
+    namespaces.babel.template = callPackage (./. + "/@babel/template/7.2.2.nix") {};
+    namespaces.babel.template_7-2-2 = callPackage (./. + "/@babel/template/7.2.2.nix") {};
     term-size = callPackage ./term-size/1.2.0.nix {};
     term-size_1-2-0 = callPackage ./term-size/1.2.0.nix {};
     test-exclude = callPackage ./test-exclude/4.2.3.nix {};
@@ -3237,6 +3264,8 @@
     transformers_2-1-0 = callPackage ./transformers/2.1.0.nix {};
     traverse = callPackage ./traverse/0.6.6.nix {};
     traverse_0-6-6 = callPackage ./traverse/0.6.6.nix {};
+    namespaces.babel.traverse = callPackage (./. + "/@babel/traverse/7.3.4.nix") {};
+    namespaces.babel.traverse_7-3-4 = callPackage (./. + "/@babel/traverse/7.3.4.nix") {};
     trim-newlines = callPackage ./trim-newlines/1.0.0.nix {};
     trim-newlines_1-0-0 = callPackage ./trim-newlines/1.0.0.nix {};
     trim-right = callPackage ./trim-right/1.0.1.nix {};
@@ -3266,6 +3295,8 @@
     typechecker_4-6-0 = callPackage ./typechecker/4.6.0.nix {};
     typedarray = callPackage ./typedarray/0.0.6.nix {};
     typedarray_0-0-6 = callPackage ./typedarray/0.0.6.nix {};
+    namespaces.babel.types = callPackage (./. + "/@babel/types/7.3.4.nix") {};
+    namespaces.babel.types_7-3-4 = callPackage (./. + "/@babel/types/7.3.4.nix") {};
     uglify-js = callPackage ./uglify-js/2.4.24.nix {};
     uglify-js_2-4-24 = callPackage ./uglify-js/2.4.24.nix {};
     uglify-js_2-2-5 = callPackage ./uglify-js/2.2.5.nix {};

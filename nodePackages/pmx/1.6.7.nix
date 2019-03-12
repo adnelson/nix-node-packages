@@ -6,6 +6,9 @@ buildNodePackage {
       url = "https://registry.npmjs.org/pmx/-/pmx-1.6.7.tgz";
       sha1 = "b0fc8061bc8343a4069d18e4ee4f031de0af890a";
     };
+    patchDependencies = {
+      deep-metrics = "^0.0.2";
+    };
     deps = with nodePackages; [
       deep-metrics_0-0-2
       debug_3-1-0
