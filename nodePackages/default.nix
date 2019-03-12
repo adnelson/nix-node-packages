@@ -2729,6 +2729,8 @@
     namespaces.babel.plugin-transform-parameters_7-3-3 = callPackage (./. + "/@babel/plugin-transform-parameters/7.3.3.nix") {};
     namespaces.babel.plugin-transform-regenerator = callPackage (./. + "/@babel/plugin-transform-regenerator/7.3.4.nix") {};
     namespaces.babel.plugin-transform-regenerator_7-3-4 = callPackage (./. + "/@babel/plugin-transform-regenerator/7.3.4.nix") {};
+    namespaces.babel.plugin-transform-runtime = callPackage (./. + "/@babel/plugin-transform-runtime/7.3.4.nix") {};
+    namespaces.babel.plugin-transform-runtime_7-3-4 = callPackage (./. + "/@babel/plugin-transform-runtime/7.3.4.nix") {};
     namespaces.babel.plugin-transform-shorthand-properties = callPackage (./. + "/@babel/plugin-transform-shorthand-properties/7.2.0.nix") {};
     namespaces.babel.plugin-transform-shorthand-properties_7-2-0 = callPackage (./. + "/@babel/plugin-transform-shorthand-properties/7.2.0.nix") {};
     namespaces.babel.plugin-transform-spread = callPackage (./. + "/@babel/plugin-transform-spread/7.2.2.nix") {};
