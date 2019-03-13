@@ -113,6 +113,8 @@
     array-find-index_1-0-2 = callPackage ./array-find-index/1.0.2.nix {};
     array-flatten = callPackage ./array-flatten/1.1.1.nix {};
     array-flatten_1-1-1 = callPackage ./array-flatten/1.1.1.nix {};
+    array-from = callPackage ./array-from/2.1.1.nix {};
+    array-from_2-1-1 = callPackage ./array-from/2.1.1.nix {};
     array-map = callPackage ./array-map/0.0.0.nix {};
     array-map_0-0-0 = callPackage ./array-map/0.0.0.nix {};
     array-reduce = callPackage ./array-reduce/0.0.0.nix {};
@@ -180,13 +182,15 @@
     atob_2-1-2 = callPackage ./atob/2.1.2.nix {};
     auth0 = callPackage ./auth0/2.13.0.nix {};
     auth0_2-13-0 = callPackage ./auth0/2.13.0.nix {};
-    aws-sdk = callPackage ./aws-sdk/2.337.0.nix {};
+    aws-sdk = callPackage ./aws-sdk/2.420.0.nix {};
+    aws-sdk_2-420-0 = callPackage ./aws-sdk/2.420.0.nix {};
     aws-sdk_2-337-0 = callPackage ./aws-sdk/2.337.0.nix {};
     aws-sdk_2-3-19 = callPackage ./aws-sdk/2.3.19.nix {};
     aws-sdk_2-2-35 = callPackage ./aws-sdk/2.2.35.nix {};
     aws-sdk_2-0-31 = callPackage ./aws-sdk/2.0.31.nix {};
     aws-sdk_1-13-0 = callPackage ./aws-sdk/1.13.0.nix {};
-    aws-sdk-mock = callPackage ./aws-sdk-mock/1.0.10.nix {};
+    aws-sdk-mock = callPackage ./aws-sdk-mock/4.3.1.nix {};
+    aws-sdk-mock_4-3-1 = callPackage ./aws-sdk-mock/4.3.1.nix {};
     aws-sdk-mock_1-0-10 = callPackage ./aws-sdk-mock/1.0.10.nix {};
     aws-sign = callPackage ./aws-sign/0.3.0.nix {};
     aws-sign_0-3-0 = callPackage ./aws-sign/0.3.0.nix {};
@@ -685,6 +689,8 @@
     commander_0-6-1 = callPackage ./commander/0.6.1.nix {};
     commondir = callPackage ./commondir/0.0.1.nix {};
     commondir_0-0-1 = callPackage ./commondir/0.0.1.nix {};
+    namespaces.sinonjs.commons = callPackage (./. + "/@sinonjs/commons/1.4.0.nix") {};
+    namespaces.sinonjs.commons_1-4-0 = callPackage (./. + "/@sinonjs/commons/1.4.0.nix") {};
     component-bind = callPackage ./component-bind/1.0.0.nix {};
     component-bind_1-0-0 = callPackage ./component-bind/1.0.0.nix {};
     component-emitter = callPackage ./component-emitter/1.2.1.nix {};
@@ -1282,6 +1288,8 @@
     formatio = callPackage ./formatio/1.1.1.nix {};
     formatio_1-1-1 = callPackage ./formatio/1.1.1.nix {};
     formatio_1-0-2 = callPackage ./formatio/1.0.2.nix {};
+    namespaces.sinonjs.formatio = callPackage (./. + "/@sinonjs/formatio/3.2.1.nix") {};
+    namespaces.sinonjs.formatio_3-2-1 = callPackage (./. + "/@sinonjs/formatio/3.2.1.nix") {};
     formidable = callPackage ./formidable/1.2.1.nix {};
     formidable_1-2-1 = callPackage ./formidable/1.2.1.nix {};
     formidable_1-0-14 = callPackage ./formidable/1.0.14.nix {};
@@ -1960,6 +1968,8 @@
     jstransformer_0-0-2 = callPackage ./jstransformer/0.0.2.nix {};
     jszip = callPackage ./jszip/2.5.0.nix {};
     jszip_2-5-0 = callPackage ./jszip/2.5.0.nix {};
+    just-extend = callPackage ./just-extend/4.0.2.nix {};
+    just-extend_4-0-2 = callPackage ./just-extend/4.0.2.nix {};
     jwa = callPackage ./jwa/1.1.6.nix {};
     jwa_1-1-6 = callPackage ./jwa/1.1.6.nix {};
     jwks-rsa = callPackage ./jwks-rsa/1.3.0.nix {};
@@ -2181,7 +2191,9 @@
     log4js = callPackage ./log4js/3.0.6.nix {};
     log4js_3-0-6 = callPackage ./log4js/3.0.6.nix {};
     log4js_0-6-38 = callPackage ./log4js/0.6.38.nix {};
-    lolex = callPackage ./lolex/1.3.2.nix {};
+    lolex = callPackage ./lolex/3.1.0.nix {};
+    lolex_3-1-0 = callPackage ./lolex/3.1.0.nix {};
+    lolex_2-7-5 = callPackage ./lolex/2.7.5.nix {};
     lolex_1-3-2 = callPackage ./lolex/1.3.2.nix {};
     lolex_1-1-0 = callPackage ./lolex/1.1.0.nix {};
     loose-envify = callPackage ./loose-envify/1.4.0.nix {};
@@ -2371,6 +2383,8 @@
     netmask_1-0-6 = callPackage ./netmask/1.0.6.nix {};
     newrelic = callPackage ./newrelic/1.40.0.nix {};
     newrelic_1-40-0 = callPackage ./newrelic/1.40.0.nix {};
+    nise = callPackage ./nise/1.4.10.nix {};
+    nise_1-4-10 = callPackage ./nise/1.4.10.nix {};
     nocache = callPackage ./nocache/2.0.0.nix {};
     nocache_2-0-0 = callPackage ./nocache/2.0.0.nix {};
     nock = callPackage ./nock/10.0.0.nix {};
@@ -2618,7 +2632,8 @@
     path-root_0-1-1 = callPackage ./path-root/0.1.1.nix {};
     path-root-regex = callPackage ./path-root-regex/0.1.2.nix {};
     path-root-regex_0-1-2 = callPackage ./path-root-regex/0.1.2.nix {};
-    path-to-regexp = callPackage ./path-to-regexp/0.1.7.nix {};
+    path-to-regexp = callPackage ./path-to-regexp/1.7.0.nix {};
+    path-to-regexp_1-7-0 = callPackage ./path-to-regexp/1.7.0.nix {};
     path-to-regexp_0-1-7 = callPackage ./path-to-regexp/0.1.7.nix {};
     path-to-regexp_0-1-3 = callPackage ./path-to-regexp/0.1.3.nix {};
     path-type = callPackage ./path-type/1.1.0.nix {};
@@ -3049,6 +3064,8 @@
     samsam = callPackage ./samsam/1.1.3.nix {};
     samsam_1-1-3 = callPackage ./samsam/1.1.3.nix {};
     samsam_1-1-2 = callPackage ./samsam/1.1.2.nix {};
+    namespaces.sinonjs.samsam = callPackage (./. + "/@sinonjs/samsam/3.3.0.nix") {};
+    namespaces.sinonjs.samsam_3-3-0 = callPackage (./. + "/@sinonjs/samsam/3.3.0.nix") {};
     sane = callPackage ./sane/2.5.2.nix {};
     sane_2-5-2 = callPackage ./sane/2.5.2.nix {};
     saucelabs = callPackage ./saucelabs/1.3.0.nix {};
@@ -3131,7 +3148,8 @@
     simple-concat_1-0-0 = callPackage ./simple-concat/1.0.0.nix {};
     simple-lru-cache = callPackage ./simple-lru-cache/0.0.2.nix {};
     simple-lru-cache_0-0-2 = callPackage ./simple-lru-cache/0.0.2.nix {};
-    sinon = callPackage ./sinon/1.17.7.nix {};
+    sinon = callPackage ./sinon/7.2.7.nix {};
+    sinon_7-2-7 = callPackage ./sinon/7.2.7.nix {};
     sinon_1-17-7 = callPackage ./sinon/1.17.7.nix {};
     sinon_1-12-2 = callPackage ./sinon/1.12.2.nix {};
     sinon_1-9-1 = callPackage ./sinon/1.9.1.nix {};
@@ -3315,6 +3333,8 @@
     term-size_1-2-0 = callPackage ./term-size/1.2.0.nix {};
     test-exclude = callPackage ./test-exclude/4.2.3.nix {};
     test-exclude_4-2-3 = callPackage ./test-exclude/4.2.3.nix {};
+    namespaces.sinonjs.text-encoding = callPackage (./. + "/@sinonjs/text-encoding/0.7.1.nix") {};
+    namespaces.sinonjs.text-encoding_0-7-1 = callPackage (./. + "/@sinonjs/text-encoding/0.7.1.nix") {};
     text-table = callPackage ./text-table/0.2.0.nix {};
     text-table_0-2-0 = callPackage ./text-table/0.2.0.nix {};
     throat = callPackage ./throat/4.1.0.nix {};
