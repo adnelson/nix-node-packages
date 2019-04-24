@@ -398,7 +398,8 @@
     babylon = callPackage ./babylon/7.0.0-beta.27.nix {};
     babylon_7-0-0-beta-27 = callPackage ./babylon/7.0.0-beta.27.nix {};
     babylon_6-18-0 = callPackage ./babylon/6.18.0.nix {};
-    backbone = callPackage ./backbone/1.0.0.nix {};
+    backbone = callPackage ./backbone/1.4.0.nix {};
+    backbone_1-4-0 = callPackage ./backbone/1.4.0.nix {};
     backbone_1-0-0 = callPackage ./backbone/1.0.0.nix {};
     backbone_0-9-10 = callPackage ./backbone/0.9.10.nix {};
     backo2 = callPackage ./backo2/1.0.2.nix {};
@@ -668,7 +669,8 @@
     color-support_1-1-3 = callPackage ./color-support/1.1.3.nix {};
     colornames = callPackage ./colornames/1.1.1.nix {};
     colornames_1-1-1 = callPackage ./colornames/1.1.1.nix {};
-    colors = callPackage ./colors/1.3.2.nix {};
+    colors = callPackage ./colors/1.3.3.nix {};
+    colors_1-3-3 = callPackage ./colors/1.3.3.nix {};
     colors_1-3-2 = callPackage ./colors/1.3.2.nix {};
     colors_1-1-2 = callPackage ./colors/1.1.2.nix {};
     colors_1-0-3 = callPackage ./colors/1.0.3.nix {};
@@ -1021,7 +1023,8 @@
     di_0-0-1 = callPackage ./di/0.0.1.nix {};
     diagnostics = callPackage ./diagnostics/1.1.1.nix {};
     diagnostics_1-1-1 = callPackage ./diagnostics/1.1.1.nix {};
-    diff = callPackage ./diff/3.5.0.nix {};
+    diff = callPackage ./diff/4.0.1.nix {};
+    diff_4-0-1 = callPackage ./diff/4.0.1.nix {};
     diff_3-5-0 = callPackage ./diff/3.5.0.nix {};
     diff_3-2-0 = callPackage ./diff/3.2.0.nix {};
     diff_1-4-0 = callPackage ./diff/1.4.0.nix {};
@@ -2354,7 +2357,8 @@
     module-deps_1-0-2 = callPackage ./module-deps/1.0.2.nix {};
     module-not-found-error = callPackage ./module-not-found-error/1.0.1.nix {};
     module-not-found-error_1-0-1 = callPackage ./module-not-found-error/1.0.1.nix {};
-    moment = callPackage ./moment/2.22.2.nix {};
+    moment = callPackage ./moment/2.24.0.nix {};
+    moment_2-24-0 = callPackage ./moment/2.24.0.nix {};
     moment_2-22-2 = callPackage ./moment/2.22.2.nix {};
     moment_2-2-1 = callPackage ./moment/2.2.1.nix {};
     moment_2-1-0 = callPackage ./moment/2.1.0.nix {};
@@ -3293,7 +3297,8 @@
     streamroller_0-7-0 = callPackage ./streamroller/0.7.0.nix {};
     streamsearch = callPackage ./streamsearch/0.1.2.nix {};
     streamsearch_0-1-2 = callPackage ./streamsearch/0.1.2.nix {};
-    strftime = callPackage ./strftime/0.6.2.nix {};
+    strftime = callPackage ./strftime/0.10.0.nix {};
+    strftime_0-10-0 = callPackage ./strftime/0.10.0.nix {};
     strftime_0-6-2 = callPackage ./strftime/0.6.2.nix {};
     string = callPackage ./string/3.3.3.nix {};
     string_3-3-3 = callPackage ./string/3.3.3.nix {};
@@ -3487,12 +3492,14 @@
     undeclared-identifiers_1-1-2 = callPackage ./undeclared-identifiers/1.1.2.nix {};
     undefsafe = callPackage ./undefsafe/2.0.2.nix {};
     undefsafe_2-0-2 = callPackage ./undefsafe/2.0.2.nix {};
-    underscore = callPackage ./underscore/1.7.0.nix {};
+    underscore = callPackage ./underscore/1.9.1.nix {};
+    underscore_1-9-1 = callPackage ./underscore/1.9.1.nix {};
     underscore_1-7-0 = callPackage ./underscore/1.7.0.nix {};
     underscore_1-6-0 = callPackage ./underscore/1.6.0.nix {};
     underscore_1-5-2 = callPackage ./underscore/1.5.2.nix {};
     underscore_1-4-4 = callPackage ./underscore/1.4.4.nix {};
-    underscore-string = callPackage ./underscore-string/2.4.0.nix {};
+    underscore-string = callPackage ./underscore-string/3.3.5.nix {};
+    underscore-string_3-3-5 = callPackage ./underscore-string/3.3.5.nix {};
     underscore-string_2-4-0 = callPackage ./underscore-string/2.4.0.nix {};
     underscore-string_2-3-3 = callPackage ./underscore-string/2.3.3.nix {};
     underscore-string_2-2-1 = callPackage ./underscore-string/2.2.1.nix {};
@@ -3670,7 +3677,8 @@
     xml2js_0-4-4 = callPackage ./xml2js/0.4.4.nix {};
     xml2js_0-2-6 = callPackage ./xml2js/0.2.6.nix {};
     xml2js_0-2-4 = callPackage ./xml2js/0.2.4.nix {};
-    xmlbuilder = callPackage ./xmlbuilder/9.0.7.nix {};
+    xmlbuilder = callPackage ./xmlbuilder/12.0.0.nix {};
+    xmlbuilder_12-0-0 = callPackage ./xmlbuilder/12.0.0.nix {};
     xmlbuilder_9-0-7 = callPackage ./xmlbuilder/9.0.7.nix {};
     xmlbuilder_4-2-1 = callPackage ./xmlbuilder/4.2.1.nix {};
     xmlbuilder_2-6-2 = callPackage ./xmlbuilder/2.6.2.nix {};
