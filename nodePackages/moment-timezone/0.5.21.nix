@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "3cba247d84492174dbf71de2a9848fa13207b845";
     };
     deps = with nodePackages; [
-      moment_2-22-2
+      moment_2-24-0
     ];
     meta = {
       homepage = "http://momentjs.com/timezone/";
