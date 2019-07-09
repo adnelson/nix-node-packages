@@ -605,6 +605,10 @@
     chownr_1-1-1 = callPackage ./chownr/1.1.1.nix {};
     ci-info = callPackage ./ci-info/1.6.0.nix {};
     ci-info_1-6-0 = callPackage ./ci-info/1.6.0.nix {};
+    cidr-regex = callPackage ./cidr-regex/2.0.10.nix {};
+    cidr-regex_2-0-10 = callPackage ./cidr-regex/2.0.10.nix {};
+    cidr-tools = callPackage ./cidr-tools/2.2.8.nix {};
+    cidr-tools_2-2-8 = callPackage ./cidr-tools/2.2.8.nix {};
     cipher-base = callPackage ./cipher-base/1.0.4.nix {};
     cipher-base_1-0-4 = callPackage ./cipher-base/1.0.4.nix {};
     circular-json = callPackage ./circular-json/0.5.7.nix {};
@@ -1709,9 +1713,17 @@
     invert-kv_1-0-0 = callPackage ./invert-kv/1.0.0.nix {};
     ip = callPackage ./ip/1.1.5.nix {};
     ip_1-1-5 = callPackage ./ip/1.1.5.nix {};
+    ip-address = callPackage ./ip-address/5.9.2.nix {};
+    ip-address_5-9-2 = callPackage ./ip-address/5.9.2.nix {};
+    ip-cidr = callPackage ./ip-cidr/2.0.2.nix {};
+    ip-cidr_2-0-2 = callPackage ./ip-cidr/2.0.2.nix {};
+    ip-regex = callPackage ./ip-regex/2.1.0.nix {};
+    ip-regex_2-1-0 = callPackage ./ip-regex/2.1.0.nix {};
     ipaddr-js = callPackage ./ipaddr-js/1.8.0.nix {};
     ipaddr-js_1-8-0 = callPackage ./ipaddr-js/1.8.0.nix {};
     ipaddr-js_1-0-5 = callPackage ./ipaddr-js/1.0.5.nix {};
+    ipv6-normalize = callPackage ./ipv6-normalize/1.0.1.nix {};
+    ipv6-normalize_1-0-1 = callPackage ./ipv6-normalize/1.0.1.nix {};
     is = callPackage ./is/3.2.1.nix {};
     is_3-2-1 = callPackage ./is/3.2.1.nix {};
     is-absolute = callPackage ./is-absolute/1.0.0.nix {};
@@ -1733,6 +1745,8 @@
     is-callable_1-1-3 = callPackage ./is-callable/1.1.3.nix {};
     is-ci = callPackage ./is-ci/1.2.1.nix {};
     is-ci_1-2-1 = callPackage ./is-ci/1.2.1.nix {};
+    is-cidr = callPackage ./is-cidr/3.0.0.nix {};
+    is-cidr_3-0-0 = callPackage ./is-cidr/3.0.0.nix {};
     is-data-descriptor = callPackage ./is-data-descriptor/1.0.0.nix {};
     is-data-descriptor_1-0-0 = callPackage ./is-data-descriptor/1.0.0.nix {};
     is-data-descriptor_0-1-4 = callPackage ./is-data-descriptor/0.1.4.nix {};
@@ -1947,7 +1961,8 @@
     js-yaml_3-13-1 = callPackage ./js-yaml/3.13.1.nix {};
     js-yaml_3-12-0 = callPackage ./js-yaml/3.12.0.nix {};
     js-yaml_2-0-5 = callPackage ./js-yaml/2.0.5.nix {};
-    jsbn = callPackage ./jsbn/0.1.1.nix {};
+    jsbn = callPackage ./jsbn/1.1.0.nix {};
+    jsbn_1-1-0 = callPackage ./jsbn/1.1.0.nix {};
     jsbn_0-1-1 = callPackage ./jsbn/0.1.1.nix {};
     jsdom = callPackage ./jsdom/12.2.0.nix {};
     jsdom_12-2-0 = callPackage ./jsdom/12.2.0.nix {};
@@ -3253,7 +3268,8 @@
     split_0-2-10 = callPackage ./split/0.2.10.nix {};
     split-string = callPackage ./split-string/3.1.0.nix {};
     split-string_3-1-0 = callPackage ./split-string/3.1.0.nix {};
-    sprintf-js = callPackage ./sprintf-js/1.1.1.nix {};
+    sprintf-js = callPackage ./sprintf-js/1.1.2.nix {};
+    sprintf-js_1-1-2 = callPackage ./sprintf-js/1.1.2.nix {};
     sprintf-js_1-1-1 = callPackage ./sprintf-js/1.1.1.nix {};
     sprintf-js_1-0-3 = callPackage ./sprintf-js/1.0.3.nix {};
     ssh2 = callPackage ./ssh2/0.2.25.nix {};
@@ -3305,6 +3321,8 @@
     string_1-8-1 = callPackage ./string/1.8.1.nix {};
     string-length = callPackage ./string-length/2.0.0.nix {};
     string-length_2-0-0 = callPackage ./string-length/2.0.0.nix {};
+    string-natural-compare = callPackage ./string-natural-compare/2.0.3.nix {};
+    string-natural-compare_2-0-3 = callPackage ./string-natural-compare/2.0.3.nix {};
     string-prototype-startswith = callPackage ./string-prototype-startswith/0.2.0.nix {};
     string-prototype-startswith_0-2-0 = callPackage ./string-prototype-startswith/0.2.0.nix {};
     string-width = callPackage ./string-width/2.1.1.nix {};
