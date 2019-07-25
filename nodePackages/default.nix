@@ -832,6 +832,8 @@
     crypto-browserify_1-0-9 = callPackage ./crypto-browserify/1.0.9.nix {};
     crypto-random-string = callPackage ./crypto-random-string/1.0.0.nix {};
     crypto-random-string_1-0-0 = callPackage ./crypto-random-string/1.0.0.nix {};
+    csrf = callPackage ./csrf/3.1.0.nix {};
+    csrf_3-1-0 = callPackage ./csrf/3.1.0.nix {};
     css = callPackage ./css/1.0.8.nix {};
     css_1-0-8 = callPackage ./css/1.0.8.nix {};
     css-parse = callPackage ./css-parse/1.0.4.nix {};
@@ -848,6 +850,8 @@
     cssstyle = callPackage ./cssstyle/1.1.1.nix {};
     cssstyle_1-1-1 = callPackage ./cssstyle/1.1.1.nix {};
     cssstyle_0-2-37 = callPackage ./cssstyle/0.2.37.nix {};
+    csurf = callPackage ./csurf/1.10.0.nix {};
+    csurf_1-10-0 = callPackage ./csurf/1.10.0.nix {};
     ctype = callPackage ./ctype/0.5.3.nix {};
     ctype_0-5-3 = callPackage ./ctype/0.5.3.nix {};
     currently-unhandled = callPackage ./currently-unhandled/0.4.1.nix {};
@@ -1644,7 +1648,8 @@
     http-browserify = callPackage ./http-browserify/1.3.2.nix {};
     http-browserify_1-3-2 = callPackage ./http-browserify/1.3.2.nix {};
     http-browserify_0-1-14 = callPackage ./http-browserify/0.1.14.nix {};
-    http-errors = callPackage ./http-errors/1.6.3.nix {};
+    http-errors = callPackage ./http-errors/1.7.3.nix {};
+    http-errors_1-7-3 = callPackage ./http-errors/1.7.3.nix {};
     http-errors_1-6-3 = callPackage ./http-errors/1.6.3.nix {};
     http-proxy = callPackage ./http-proxy/1.17.0.nix {};
     http-proxy_1-17-0 = callPackage ./http-proxy/1.17.0.nix {};
@@ -1688,7 +1693,8 @@
     indexof_0-0-1 = callPackage ./indexof/0.0.1.nix {};
     inflight = callPackage ./inflight/1.0.6.nix {};
     inflight_1-0-6 = callPackage ./inflight/1.0.6.nix {};
-    inherits = callPackage ./inherits/2.0.3.nix {};
+    inherits = callPackage ./inherits/2.0.4.nix {};
+    inherits_2-0-4 = callPackage ./inherits/2.0.4.nix {};
     inherits_2-0-3 = callPackage ./inherits/2.0.3.nix {};
     inherits_2-0-1 = callPackage ./inherits/2.0.1.nix {};
     inherits_1-0-2 = callPackage ./inherits/1.0.2.nix {};
@@ -2921,6 +2927,8 @@
     querystring_0-2-0 = callPackage ./querystring/0.2.0.nix {};
     querystring-es3 = callPackage ./querystring-es3/0.2.0.nix {};
     querystring-es3_0-2-0 = callPackage ./querystring-es3/0.2.0.nix {};
+    random-bytes = callPackage ./random-bytes/1.0.0.nix {};
+    random-bytes_1-0-0 = callPackage ./random-bytes/1.0.0.nix {};
     randomatic = callPackage ./randomatic/3.1.0.nix {};
     randomatic_3-1-0 = callPackage ./randomatic/3.1.0.nix {};
     randombytes = callPackage ./randombytes/2.0.6.nix {};
@@ -3091,6 +3099,8 @@
     rimraf_2-2-8 = callPackage ./rimraf/2.2.8.nix {};
     ripemd160 = callPackage ./ripemd160/2.0.2.nix {};
     ripemd160_2-0-2 = callPackage ./ripemd160/2.0.2.nix {};
+    rndm = callPackage ./rndm/1.2.0.nix {};
+    rndm_1-2-0 = callPackage ./rndm/1.2.0.nix {};
     rsvp = callPackage ./rsvp/3.6.2.nix {};
     rsvp_3-6-2 = callPackage ./rsvp/3.6.2.nix {};
     ruglify = callPackage ./ruglify/1.0.0.nix {};
@@ -3160,7 +3170,8 @@
     set-value = callPackage ./set-value/2.0.0.nix {};
     set-value_2-0-0 = callPackage ./set-value/2.0.0.nix {};
     set-value_0-4-3 = callPackage ./set-value/0.4.3.nix {};
-    setprototypeof = callPackage ./setprototypeof/1.1.0.nix {};
+    setprototypeof = callPackage ./setprototypeof/1.1.1.nix {};
+    setprototypeof_1-1-1 = callPackage ./setprototypeof/1.1.1.nix {};
     setprototypeof_1-1-0 = callPackage ./setprototypeof/1.1.0.nix {};
     sftps = callPackage ./sftps/0.2.8.nix {};
     sftps_0-2-8 = callPackage ./sftps/0.2.8.nix {};
@@ -3443,6 +3454,8 @@
     to-regex-range_2-1-1 = callPackage ./to-regex-range/2.1.1.nix {};
     to-utf8 = callPackage ./to-utf8/0.0.1.nix {};
     to-utf8_0-0-1 = callPackage ./to-utf8/0.0.1.nix {};
+    toidentifier = callPackage ./toidentifier/1.0.0.nix {};
+    toidentifier_1-0-0 = callPackage ./toidentifier/1.0.0.nix {};
     touch = callPackage ./touch/3.1.0.nix {};
     touch_3-1-0 = callPackage ./touch/3.1.0.nix {};
     touch_0-0-2 = callPackage ./touch/0.0.2.nix {};
@@ -3463,6 +3476,8 @@
     trim-right_1-0-1 = callPackage ./trim-right/1.0.1.nix {};
     triple-beam = callPackage ./triple-beam/1.3.0.nix {};
     triple-beam_1-3-0 = callPackage ./triple-beam/1.3.0.nix {};
+    tsscmp = callPackage ./tsscmp/1.0.6.nix {};
+    tsscmp_1-0-6 = callPackage ./tsscmp/1.0.6.nix {};
     tty-browserify = callPackage ./tty-browserify/0.0.1.nix {};
     tty-browserify_0-0-1 = callPackage ./tty-browserify/0.0.1.nix {};
     tunnel = callPackage ./tunnel/0.0.4-pre.nix {};
@@ -3495,6 +3510,8 @@
     uglify-js_2-2-5 = callPackage ./uglify-js/2.2.5.nix {};
     uglify-to-browserify = callPackage ./uglify-to-browserify/1.0.2.nix {};
     uglify-to-browserify_1-0-2 = callPackage ./uglify-to-browserify/1.0.2.nix {};
+    uid-safe = callPackage ./uid-safe/2.1.5.nix {};
+    uid-safe_2-1-5 = callPackage ./uid-safe/2.1.5.nix {};
     uid2 = callPackage ./uid2/0.0.3.nix {};
     uid2_0-0-3 = callPackage ./uid2/0.0.3.nix {};
     ultron = callPackage ./ultron/1.1.1.nix {};
