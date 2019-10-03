@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "fc2ad255b8bd309e239cbc5816fd23a9b7ea4023";
     };
     deps = with nodePackages; [
-      sprintf-js_1-1-1
+      sprintf-js_1-1-2
       util-deprecate_1-0-2
     ];
     meta = {
