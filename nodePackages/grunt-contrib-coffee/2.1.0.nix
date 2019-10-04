@@ -10,8 +10,11 @@ buildNodePackage {
       lodash_4-17-11
       uri-path_1-0-0
       chalk_2-4-2
-      coffeescript_2-4-1
+      coffeescript_1-12-7
     ];
+    patchDependencies = {
+      coffeescript = "*";
+    };
     peerDependencies = with nodePackages; [
       grunt_1-0-4
     ];
