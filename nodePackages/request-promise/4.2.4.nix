@@ -11,8 +11,6 @@ buildNodePackage {
       tough-cookie_2-4-3
       stealthy-require_1-1-1
       bluebird_3-5-2
-    ];
-    peerDependencies = with nodePackages; [
       request_2-88-0
     ];
     meta = {
