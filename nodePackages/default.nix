@@ -167,7 +167,8 @@
     astw = callPackage ./astw/2.2.0.nix {};
     astw_2-2-0 = callPackage ./astw/2.2.0.nix {};
     astw_0-0-0 = callPackage ./astw/0.0.0.nix {};
-    async = callPackage ./async/2.6.2.nix {};
+    async = callPackage ./async/2.6.3.nix {};
+    async_2-6-3 = callPackage ./async/2.6.3.nix {};
     async_2-6-2 = callPackage ./async/2.6.2.nix {};
     async_2-6-1 = callPackage ./async/2.6.1.nix {};
     async_2-6-0 = callPackage ./async/2.6.0.nix {};
