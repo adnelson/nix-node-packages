@@ -7,10 +7,13 @@ buildNodePackage {
       sha1 = "645a414646db33870ff9cf3078905eaf1c201979";
     };
     deps = with nodePackages; [
-      lodash_4-11-2
+      lodash_4-17-15
       winston_1-1-2
       chalk_0-4-0
     ];
+    patchDependencies = {
+      lodash = "^4.17";
+    };
     meta = {
       homepage = "https://github.com/bithavoc/express-winston#readme";
       description = "express.js middleware for flatiron/winston";

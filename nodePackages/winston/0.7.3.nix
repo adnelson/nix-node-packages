@@ -12,9 +12,12 @@ buildNodePackage {
       stack-trace_0-0-10
       eyes_0-1-8
       colors_0-6-2
-      request_2-16-6
+      request_2-88-0
       pkginfo_0-3-1
     ];
+    patchDependencies = {
+      request = "^2.88";
+    };
     meta = {
       homepage = "https://github.com/flatiron/winston";
       description = "A multi-transport async logging library for Node.js";

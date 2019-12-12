@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       concat-stream_2-0-0
-      async_2-6-2
+      async_3-1-0
       namespaces.newrelic.native-metrics_4-1-0
       https-proxy-agent_2-2-1
       namespaces.tyriar.fibonacci-heap_2-0-9
@@ -16,6 +16,9 @@ buildNodePackage {
       json-stringify-safe_5-0-1
       semver_5-7-1
     ];
+    patchDependencies = {
+      async = "3.1.0";
+    };
     circularDependencies = with nodePackages; [
       namespaces.newrelic.koa_1-0-8
       namespaces.newrelic.superagent_1-0-3

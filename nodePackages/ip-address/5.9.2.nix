@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "8e7d2dab5cbf3cbf34e1f730ec6913f55fec8c74";
     };
     deps = with nodePackages; [
-      lodash_4-17-11
+      lodash_4-17-15
       jsbn_1-1-0
       sprintf-js_1-1-2
     ];

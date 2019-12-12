@@ -167,7 +167,8 @@
     astw = callPackage ./astw/2.2.0.nix {};
     astw_2-2-0 = callPackage ./astw/2.2.0.nix {};
     astw_0-0-0 = callPackage ./astw/0.0.0.nix {};
-    async = callPackage ./async/2.6.3.nix {};
+    async = callPackage ./async/3.1.0.nix {};
+    async_3-1-0 = callPackage ./async/3.1.0.nix {};
     async_2-6-3 = callPackage ./async/2.6.3.nix {};
     async_2-6-2 = callPackage ./async/2.6.2.nix {};
     async_2-6-1 = callPackage ./async/2.6.1.nix {};
@@ -2163,7 +2164,8 @@
     lcid_1-0-0 = callPackage ./lcid/1.0.0.nix {};
     ldapjs = callPackage ./ldapjs/0.7.1.nix {};
     ldapjs_0-7-1 = callPackage ./ldapjs/0.7.1.nix {};
-    ldclient-node = callPackage ./ldclient-node/5.5.0.nix {};
+    ldclient-node = callPackage ./ldclient-node/5.8.0.nix {};
+    ldclient-node_5-8-0 = callPackage ./ldclient-node/5.8.0.nix {};
     ldclient-node_5-5-0 = callPackage ./ldclient-node/5.5.0.nix {};
     left-pad = callPackage ./left-pad/1.3.0.nix {};
     left-pad_1-3-0 = callPackage ./left-pad/1.3.0.nix {};
@@ -2299,7 +2301,8 @@
     lodash-map_4-6-0 = callPackage ./lodash-map/4.6.0.nix {};
     lodash-memoize = callPackage ./lodash-memoize/3.0.4.nix {};
     lodash-memoize_3-0-4 = callPackage ./lodash-memoize/3.0.4.nix {};
-    lodash-merge = callPackage ./lodash-merge/4.6.1.nix {};
+    lodash-merge = callPackage ./lodash-merge/4.6.2.nix {};
+    lodash-merge_4-6-2 = callPackage ./lodash-merge/4.6.2.nix {};
     lodash-merge_4-6-1 = callPackage ./lodash-merge/4.6.1.nix {};
     lodash-once = callPackage ./lodash-once/4.1.1.nix {};
     lodash-once_4-1-1 = callPackage ./lodash-once/4.1.1.nix {};
@@ -3639,7 +3642,8 @@
     tsscmp_1-0-6 = callPackage ./tsscmp/1.0.6.nix {};
     tty-browserify = callPackage ./tty-browserify/0.0.1.nix {};
     tty-browserify_0-0-1 = callPackage ./tty-browserify/0.0.1.nix {};
-    tunnel = callPackage ./tunnel/0.0.4-pre.nix {};
+    tunnel = callPackage ./tunnel/0.0.6.nix {};
+    tunnel_0-0-6 = callPackage ./tunnel/0.0.6.nix {};
     tunnel_0-0-4-pre = callPackage ./tunnel/0.0.4-pre.nix {};
     tunnel-agent = callPackage ./tunnel-agent/0.6.0.nix {};
     tunnel-agent_0-6-0 = callPackage ./tunnel-agent/0.6.0.nix {};
@@ -3906,6 +3910,8 @@
     yallist = callPackage ./yallist/3.0.2.nix {};
     yallist_3-0-2 = callPackage ./yallist/3.0.2.nix {};
     yallist_2-1-2 = callPackage ./yallist/2.1.2.nix {};
+    yaml = callPackage ./yaml/1.0.1.nix {};
+    yaml_1-0-1 = callPackage ./yaml/1.0.1.nix {};
     yamljs = callPackage ./yamljs/0.3.0.nix {};
     yamljs_0-3-0 = callPackage ./yamljs/0.3.0.nix {};
     yamljs_0-2-10 = callPackage ./yamljs/0.2.10.nix {};

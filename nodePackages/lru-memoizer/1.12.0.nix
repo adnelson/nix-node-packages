@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "efe65706cc8a9cc653f80f0d5a6ea38ad950e352";
     };
     deps = with nodePackages; [
-      lodash_4-17-11
+      lodash_4-17-15
       lru-cache_4-0-2
       lock_0-1-4
       very-fast-args_1-1-0

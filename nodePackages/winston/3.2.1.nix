@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "63061377976c73584028be2490a1846055f77f07";
     };
     deps = with nodePackages; [
-      async_2-6-2
+      async_3-1-0
       winston-transport_4-3-0
       logform_2-1-2
       stack-trace_0-0-10
@@ -17,6 +17,9 @@ buildNodePackage {
       triple-beam_1-3-0
       readable-stream_3-3-0
     ];
+    patchDependencies = {
+      async = "3.1.0";
+    };
     meta = {
       homepage = "https://github.com/winstonjs/winston#readme";
       description = "A logger for just about everything.";
