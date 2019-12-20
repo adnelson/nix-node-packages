@@ -44,7 +44,8 @@
     after_0-8-2 = callPackage ./after/0.8.2.nix {};
     namespaces.pm2.agent = callPackage (./. + "/@pm2/agent/0.5.26.nix") {};
     namespaces.pm2.agent_0-5-26 = callPackage (./. + "/@pm2/agent/0.5.26.nix") {};
-    agent-base = callPackage ./agent-base/4.2.1.nix {};
+    agent-base = callPackage ./agent-base/4.3.0.nix {};
+    agent-base_4-3-0 = callPackage ./agent-base/4.3.0.nix {};
     agent-base_4-2-1 = callPackage ./agent-base/4.2.1.nix {};
     agent-base_2-1-1 = callPackage ./agent-base/2.1.1.nix {};
     agent-base_1-0-2 = callPackage ./agent-base/1.0.2.nix {};
@@ -1737,7 +1738,8 @@
     httpreq_0-4-24 = callPackage ./httpreq/0.4.24.nix {};
     https-browserify = callPackage ./https-browserify/0.0.1.nix {};
     https-browserify_0-0-1 = callPackage ./https-browserify/0.0.1.nix {};
-    https-proxy-agent = callPackage ./https-proxy-agent/2.2.1.nix {};
+    https-proxy-agent = callPackage ./https-proxy-agent/2.2.4.nix {};
+    https-proxy-agent_2-2-4 = callPackage ./https-proxy-agent/2.2.4.nix {};
     https-proxy-agent_2-2-1 = callPackage ./https-proxy-agent/2.2.1.nix {};
     https-proxy-agent_1-0-0 = callPackage ./https-proxy-agent/1.0.0.nix {};
     https-proxy-agent_0-3-6 = callPackage ./https-proxy-agent/0.3.6.nix {};
