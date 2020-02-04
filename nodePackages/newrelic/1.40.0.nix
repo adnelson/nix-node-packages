@@ -13,6 +13,12 @@ buildNodePackage {
       json-stringify-safe_5-0-1
       semver_5-6-0
     ];
+    prePatch = ''
+      rm -rf ./node_modules
+    '';
+    patchDependencies = {
+      https-proxy-agent = "*";
+    };
     meta = {
       homepage = "http://github.com/newrelic/node-newrelic";
       description = "New Relic agent";
