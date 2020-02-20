@@ -434,7 +434,8 @@
     basic-auth_2-0-1 = callPackage ./basic-auth/2.0.1.nix {};
     batch = callPackage ./batch/0.5.0.nix {};
     batch_0-5-0 = callPackage ./batch/0.5.0.nix {};
-    bcrypt = callPackage ./bcrypt/3.0.2.nix {};
+    bcrypt = callPackage ./bcrypt/3.0.8.nix {};
+    bcrypt_3-0-8 = callPackage ./bcrypt/3.0.8.nix {};
     bcrypt_3-0-2 = callPackage ./bcrypt/3.0.2.nix {};
     bcrypt_0-7-8 = callPackage ./bcrypt/0.7.8.nix {};
     bcrypt-pbkdf = callPackage ./bcrypt-pbkdf/1.0.2.nix {};
@@ -2570,7 +2571,8 @@
     node-notifier = callPackage ./node-notifier/5.2.1.nix {};
     node-notifier_5-2-1 = callPackage ./node-notifier/5.2.1.nix {};
     node-notifier_1-2-1 = callPackage ./node-notifier/1.2.1.nix {};
-    node-pre-gyp = callPackage ./node-pre-gyp/0.11.0.nix {};
+    node-pre-gyp = callPackage ./node-pre-gyp/0.14.0.nix {};
+    node-pre-gyp_0-14-0 = callPackage ./node-pre-gyp/0.14.0.nix {};
     node-pre-gyp_0-11-0 = callPackage ./node-pre-gyp/0.11.0.nix {};
     node-pre-gyp_0-10-3 = callPackage ./node-pre-gyp/0.10.3.nix {};
     node-releases = callPackage ./node-releases/1.1.10.nix {};

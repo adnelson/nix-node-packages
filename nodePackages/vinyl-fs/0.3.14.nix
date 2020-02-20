@@ -9,6 +9,7 @@ buildNodePackage {
     # weirdness around matching versions 0.x.x
     patchDependencies = {
       "glob-watcher" = "0.0.8";
+      "graceful-fs" = "^4.1";
     };
     deps = with nodePackages; [
       glob-watcher_0-0-8
@@ -16,7 +17,7 @@ buildNodePackage {
       mkdirp_0-5-1
       through2_0-6-5
       vinyl_0-4-6
-      graceful-fs_3-0-11
+      graceful-fs_4-1-11
       defaults_1-0-3
       strip-bom_1-0-0
     ];
