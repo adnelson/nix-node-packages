@@ -19,7 +19,8 @@
     accessibility-developer-tools_2-6-0 = callPackage ./accessibility-developer-tools/2.6.0.nix {};
     accounting = callPackage ./accounting/0.4.1.nix {};
     accounting_0-4-1 = callPackage ./accounting/0.4.1.nix {};
-    acorn = callPackage ./acorn/6.0.2.nix {};
+    acorn = callPackage ./acorn/7.1.1.nix {};
+    acorn_7-1-1 = callPackage ./acorn/7.1.1.nix {};
     acorn_6-0-2 = callPackage ./acorn/6.0.2.nix {};
     acorn_5-7-3 = callPackage ./acorn/5.7.3.nix {};
     acorn_4-0-13 = callPackage ./acorn/4.0.13.nix {};
@@ -2449,7 +2450,8 @@
     minimatch_2-0-10 = callPackage ./minimatch/2.0.10.nix {};
     minimatch_0-3-0 = callPackage ./minimatch/0.3.0.nix {};
     minimatch_0-2-14 = callPackage ./minimatch/0.2.14.nix {};
-    minimist = callPackage ./minimist/1.2.0.nix {};
+    minimist = callPackage ./minimist/1.2.3.nix {};
+    minimist_1-2-3 = callPackage ./minimist/1.2.3.nix {};
     minimist_1-2-0 = callPackage ./minimist/1.2.0.nix {};
     minimist_1-1-3 = callPackage ./minimist/1.1.3.nix {};
     minimist_0-2-0 = callPackage ./minimist/0.2.0.nix {};
