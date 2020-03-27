@@ -8,7 +8,7 @@ buildNodePackage {
     };
     deps = with nodePackages; [
       ini_1-3-5
-      minimist_1-2-0
+      minimist_1-2-3
       strip-json-comments_2-0-1
       deep-extend_0-6-0
     ];

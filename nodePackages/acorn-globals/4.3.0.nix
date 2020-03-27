@@ -6,9 +6,12 @@ buildNodePackage {
       url = "https://registry.npmjs.org/acorn-globals/-/acorn-globals-4.3.0.tgz";
       sha1 = "e3b6f8da3c1552a95ae627571f7dd6923bb54103";
     };
+    patchDependencies = {
+      acorn = "^7.1.1";
+    };
     deps = with nodePackages; [
       acorn-walk_6-1-0
-      acorn_6-0-2
+      acorn_7-1-1
     ];
     meta = {
       homepage = "https://github.com/ForbesLindesay/acorn-globals#readme";

@@ -6,6 +6,9 @@ buildNodePackage {
       url = "https://registry.npmjs.org/jsdom/-/jsdom-12.2.0.tgz";
       sha1 = "7cf3f5b5eafd47f8f09ca52315d367ff6e95de23";
     };
+    patchDependencies = {
+      acorn = "^7.1.1";
+    };
     deps = with nodePackages; [
       whatwg-url_7-0-0
       ws_6-1-0
@@ -29,7 +32,7 @@ buildNodePackage {
       w3c-hr-time_1-0-1
       xml-name-validator_3-0-0
       request_2-88-0
-      acorn_6-0-2
+      acorn_7-1-1
       domexception_1-0-1
       whatwg-mimetype_2-2-0
     ];
