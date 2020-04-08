@@ -6,8 +6,11 @@ buildNodePackage {
       url = "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz";
       sha1 = "da3ea74686fa21a19a111c326e90eb15a0196686";
     };
+    patchDependencies = {
+      minimist = "^1.2.3";
+    };
     deps = with nodePackages; [
-      minimist_0-0-8
+      minimist
       wordwrap_0-0-3
     ];
     meta = {
