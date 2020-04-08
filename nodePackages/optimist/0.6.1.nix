@@ -10,7 +10,7 @@ buildNodePackage {
       minimist = "^1.2.3";
     };
     deps = with nodePackages; [
-      minimist
+      minimist_1-2-3
       wordwrap_0-0-3
     ];
     meta = {

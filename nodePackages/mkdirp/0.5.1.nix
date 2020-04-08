@@ -10,7 +10,7 @@ buildNodePackage {
       minimist = "^1.2.3";
     };
     deps = with nodePackages; [
-      minimist
+      minimist_1-2-3
     ];
     meta = {
       homepage = "https://github.com/substack/node-mkdirp#readme";
