@@ -91,10 +91,12 @@
     append-transform_0-4-0 = callPackage ./append-transform/0.4.0.nix {};
     aproba = callPackage ./aproba/1.2.0.nix {};
     aproba_1-2-0 = callPackage ./aproba/1.2.0.nix {};
-    archiver = callPackage ./archiver/1.0.1.nix {};
+    archiver = callPackage ./archiver/4.0.1.nix {};
+    archiver_4-0-1 = callPackage ./archiver/4.0.1.nix {};
     archiver_1-0-1 = callPackage ./archiver/1.0.1.nix {};
     archiver_0-15-1 = callPackage ./archiver/0.15.1.nix {};
-    archiver-utils = callPackage ./archiver-utils/1.3.0.nix {};
+    archiver-utils = callPackage ./archiver-utils/2.1.0.nix {};
+    archiver-utils_2-1-0 = callPackage ./archiver-utils/2.1.0.nix {};
     archiver-utils_1-3-0 = callPackage ./archiver-utils/1.3.0.nix {};
     archy = callPackage ./archy/1.0.0.nix {};
     archy_1-0-0 = callPackage ./archy/1.0.0.nix {};
@@ -450,7 +452,8 @@
     bindings = callPackage ./bindings/1.3.0.nix {};
     bindings_1-3-0 = callPackage ./bindings/1.3.0.nix {};
     bindings_1-0-0 = callPackage ./bindings/1.0.0.nix {};
-    bl = callPackage ./bl/1.2.2.nix {};
+    bl = callPackage ./bl/4.0.2.nix {};
+    bl_4-0-2 = callPackage ./bl/4.0.2.nix {};
     bl_1-2-2 = callPackage ./bl/1.2.2.nix {};
     blessed = callPackage ./blessed/0.1.81.nix {};
     blessed_0-1-81 = callPackage ./blessed/0.1.81.nix {};
@@ -534,7 +537,8 @@
     bser_2-0-0 = callPackage ./bser/2.0.0.nix {};
     bson = callPackage ./bson/0.2.22.nix {};
     bson_0-2-22 = callPackage ./bson/0.2.22.nix {};
-    buffer = callPackage ./buffer/5.2.1.nix {};
+    buffer = callPackage ./buffer/5.6.0.nix {};
+    buffer_5-6-0 = callPackage ./buffer/5.6.0.nix {};
     buffer_5-2-1 = callPackage ./buffer/5.2.1.nix {};
     buffer_4-9-1 = callPackage ./buffer/4.9.1.nix {};
     buffer_2-1-13 = callPackage ./buffer/2.1.13.nix {};
@@ -544,7 +548,8 @@
     buffer-alloc-unsafe_1-1-0 = callPackage ./buffer-alloc-unsafe/1.1.0.nix {};
     buffer-browserify = callPackage ./buffer-browserify/0.1.0.nix {};
     buffer-browserify_0-1-0 = callPackage ./buffer-browserify/0.1.0.nix {};
-    buffer-crc32 = callPackage ./buffer-crc32/0.2.1.nix {};
+    buffer-crc32 = callPackage ./buffer-crc32/0.2.13.nix {};
+    buffer-crc32_0-2-13 = callPackage ./buffer-crc32/0.2.13.nix {};
     buffer-crc32_0-2-1 = callPackage ./buffer-crc32/0.2.1.nix {};
     buffer-crc32_0-1-1 = callPackage ./buffer-crc32/0.1.1.nix {};
     buffer-equal-constant-time = callPackage ./buffer-equal-constant-time/1.0.1.nix {};
@@ -743,7 +748,8 @@
     component-emitter_1-1-2 = callPackage ./component-emitter/1.1.2.nix {};
     component-inherit = callPackage ./component-inherit/0.0.3.nix {};
     component-inherit_0-0-3 = callPackage ./component-inherit/0.0.3.nix {};
-    compress-commons = callPackage ./compress-commons/1.2.2.nix {};
+    compress-commons = callPackage ./compress-commons/3.0.0.nix {};
+    compress-commons_3-0-0 = callPackage ./compress-commons/3.0.0.nix {};
     compress-commons_1-2-2 = callPackage ./compress-commons/1.2.2.nix {};
     compress-commons_0-2-9 = callPackage ./compress-commons/0.2.9.nix {};
     compressible = callPackage ./compressible/2.0.17.nix {};
@@ -845,7 +851,8 @@
     crc = callPackage ./crc/3.8.0.nix {};
     crc_3-8-0 = callPackage ./crc/3.8.0.nix {};
     crc_3-2-1 = callPackage ./crc/3.2.1.nix {};
-    crc32-stream = callPackage ./crc32-stream/2.0.0.nix {};
+    crc32-stream = callPackage ./crc32-stream/3.0.1.nix {};
+    crc32-stream_3-0-1 = callPackage ./crc32-stream/3.0.1.nix {};
     crc32-stream_2-0-0 = callPackage ./crc32-stream/2.0.0.nix {};
     crc32-stream_0-3-4 = callPackage ./crc32-stream/0.3.4.nix {};
     create-ecdh = callPackage ./create-ecdh/4.0.3.nix {};
@@ -1454,7 +1461,8 @@
     git-sha1_0-1-2 = callPackage ./git-sha1/0.1.2.nix {};
     gkt = callPackage ./gkt/1.0.0.nix {};
     gkt_1-0-0 = callPackage ./gkt/1.0.0.nix {};
-    glob = callPackage ./glob/7.1.3.nix {};
+    glob = callPackage ./glob/7.1.6.nix {};
+    glob_7-1-6 = callPackage ./glob/7.1.6.nix {};
     glob_7-1-3 = callPackage ./glob/7.1.3.nix {};
     glob_7-1-1 = callPackage ./glob/7.1.1.nix {};
     glob_7-0-6 = callPackage ./glob/7.0.6.nix {};
@@ -1495,7 +1503,8 @@
     glogg_1-0-1 = callPackage ./glogg/1.0.1.nix {};
     got = callPackage ./got/6.7.1.nix {};
     got_6-7-1 = callPackage ./got/6.7.1.nix {};
-    graceful-fs = callPackage ./graceful-fs/4.1.11.nix {};
+    graceful-fs = callPackage ./graceful-fs/4.2.4.nix {};
+    graceful-fs_4-2-4 = callPackage ./graceful-fs/4.2.4.nix {};
     graceful-fs_4-1-11 = callPackage ./graceful-fs/4.1.11.nix {};
     graceful-fs_3-0-11 = callPackage ./graceful-fs/3.0.11.nix {};
     graceful-fs_2-0-3 = callPackage ./graceful-fs/2.0.3.nix {};
@@ -2263,6 +2272,8 @@
     lodash-defaults = callPackage ./lodash-defaults/4.2.0.nix {};
     lodash-defaults_4-2-0 = callPackage ./lodash-defaults/4.2.0.nix {};
     lodash-defaults_2-4-1 = callPackage ./lodash-defaults/2.4.1.nix {};
+    lodash-difference = callPackage ./lodash-difference/4.5.0.nix {};
+    lodash-difference_4-5-0 = callPackage ./lodash-difference/4.5.0.nix {};
     lodash-escape = callPackage ./lodash-escape/3.2.0.nix {};
     lodash-escape_3-2-0 = callPackage ./lodash-escape/3.2.0.nix {};
     lodash-escape_2-4-1 = callPackage ./lodash-escape/2.4.1.nix {};
@@ -2328,6 +2339,8 @@
     lodash-templatesettings = callPackage ./lodash-templatesettings/3.1.1.nix {};
     lodash-templatesettings_3-1-1 = callPackage ./lodash-templatesettings/3.1.1.nix {};
     lodash-templatesettings_2-4-1 = callPackage ./lodash-templatesettings/2.4.1.nix {};
+    lodash-union = callPackage ./lodash-union/4.6.0.nix {};
+    lodash-union_4-6-0 = callPackage ./lodash-union/4.6.0.nix {};
     lodash-values = callPackage ./lodash-values/2.4.1.nix {};
     lodash-values_2-4-1 = callPackage ./lodash-values/2.4.1.nix {};
     log-driver = callPackage ./log-driver/1.2.7.nix {};
@@ -2597,7 +2610,8 @@
     nopt_1-0-10 = callPackage ./nopt/1.0.10.nix {};
     normalize-package-data = callPackage ./normalize-package-data/2.4.0.nix {};
     normalize-package-data_2-4-0 = callPackage ./normalize-package-data/2.4.0.nix {};
-    normalize-path = callPackage ./normalize-path/2.1.1.nix {};
+    normalize-path = callPackage ./normalize-path/3.0.0.nix {};
+    normalize-path_3-0-0 = callPackage ./normalize-path/3.0.0.nix {};
     normalize-path_2-1-1 = callPackage ./normalize-path/2.1.1.nix {};
     npm-bundled = callPackage ./npm-bundled/1.0.5.nix {};
     npm-bundled_1-0-5 = callPackage ./npm-bundled/1.0.5.nix {};
@@ -3103,9 +3117,11 @@
     read-pkg-up_1-0-1 = callPackage ./read-pkg-up/1.0.1.nix {};
     read-yaml = callPackage ./read-yaml/1.1.0.nix {};
     read-yaml_1-1-0 = callPackage ./read-yaml/1.1.0.nix {};
-    readable-stream = callPackage ./readable-stream/3.3.0.nix {};
+    readable-stream = callPackage ./readable-stream/3.6.0.nix {};
+    readable-stream_3-6-0 = callPackage ./readable-stream/3.6.0.nix {};
     readable-stream_3-3-0 = callPackage ./readable-stream/3.3.0.nix {};
     readable-stream_3-0-6 = callPackage ./readable-stream/3.0.6.nix {};
+    readable-stream_2-3-7 = callPackage ./readable-stream/2.3.7.nix {};
     readable-stream_2-3-6 = callPackage ./readable-stream/2.3.6.nix {};
     readable-stream_2-0-6 = callPackage ./readable-stream/2.0.6.nix {};
     readable-stream_1-1-14 = callPackage ./readable-stream/1.1.14.nix {};
@@ -3551,7 +3567,8 @@
     tar = callPackage ./tar/4.4.6.nix {};
     tar_4-4-6 = callPackage ./tar/4.4.6.nix {};
     tar_0-1-20 = callPackage ./tar/0.1.20.nix {};
-    tar-stream = callPackage ./tar-stream/1.6.2.nix {};
+    tar-stream = callPackage ./tar-stream/2.1.2.nix {};
+    tar-stream_2-1-2 = callPackage ./tar-stream/2.1.2.nix {};
     tar-stream_1-6-2 = callPackage ./tar-stream/1.6.2.nix {};
     tar-stream_1-2-2 = callPackage ./tar-stream/1.2.2.nix {};
     namespaces.babel.template = callPackage (./. + "/@babel/template/7.2.2.nix") {};
@@ -3936,7 +3953,8 @@
     ycssmin_1-0-1 = callPackage ./ycssmin/1.0.1.nix {};
     yeast = callPackage ./yeast/0.1.2.nix {};
     yeast_0-1-2 = callPackage ./yeast/0.1.2.nix {};
-    zip-stream = callPackage ./zip-stream/1.2.0.nix {};
+    zip-stream = callPackage ./zip-stream/3.0.1.nix {};
+    zip-stream_3-0-1 = callPackage ./zip-stream/3.0.1.nix {};
     zip-stream_1-2-0 = callPackage ./zip-stream/1.2.0.nix {};
     zip-stream_0-5-2 = callPackage ./zip-stream/0.5.2.nix {};
     zlib-browserify = callPackage ./zlib-browserify/0.0.1.nix {};
