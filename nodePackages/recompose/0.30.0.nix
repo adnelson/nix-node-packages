@@ -13,8 +13,6 @@ buildNodePackage {
       fbjs_0-8-17
       react-lifecycles-compat_3-0-4
       hoist-non-react-statics_2-5-5
-    ];
-    peerDependencies = with nodePackages; [
       react_16-13-1
     ];
     devDependencies = [];

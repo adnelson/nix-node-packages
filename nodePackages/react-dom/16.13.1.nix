@@ -11,8 +11,6 @@ buildNodePackage {
       loose-envify_1-4-0
       object-assign_4-1-1
       prop-types_15-7-2
-    ];
-    peerDependencies = with nodePackages; [
       react_16-13-1
     ];
     devDependencies = [];
