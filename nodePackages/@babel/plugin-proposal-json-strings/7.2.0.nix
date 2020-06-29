@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
     name = "plugin-proposal-json-strings";
     version = "7.2.0";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/plugin-proposal-json-strings/-/plugin-proposal-json-strings-7.2.0.tgz";
       sha1 = "568ecc446c6148ae6b267f02551130891e29f317";
     };

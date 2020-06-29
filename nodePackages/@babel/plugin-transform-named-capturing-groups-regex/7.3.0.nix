@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
     name = "plugin-transform-named-capturing-groups-regex";
     version = "7.3.0";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.3.0.tgz";
       sha1 = "140b52985b2d6ef0cb092ef3b29502b990f9cd50";
     };

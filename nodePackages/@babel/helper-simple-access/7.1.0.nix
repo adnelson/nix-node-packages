@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
     name = "helper-simple-access";
     version = "7.1.0";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/helper-simple-access/-/helper-simple-access-7.1.0.tgz";
       sha1 = "65eeb954c8c245beaa4e859da6188f39d71e585c";
     };

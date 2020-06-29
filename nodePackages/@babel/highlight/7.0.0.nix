@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, nodePackages, pkgs }:
 buildNodePackage {
     name = "highlight";
     version = "7.0.0";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/highlight/-/highlight-7.0.0.tgz";
       sha1 = "wjcwx0dpzhvvdbq1lbcnv3j5in6c647p";
     };

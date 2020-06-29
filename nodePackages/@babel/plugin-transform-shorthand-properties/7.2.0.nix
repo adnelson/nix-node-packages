@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
     name = "plugin-transform-shorthand-properties";
     version = "7.2.0";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/plugin-transform-shorthand-properties/-/plugin-transform-shorthand-properties-7.2.0.tgz";
       sha1 = "6333aee2f8d6ee7e28615457298934a3b46198f0";
     };

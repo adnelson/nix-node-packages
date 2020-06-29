@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, namespaces, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, namespaces, nodePackages, pkgs }:
 buildNodePackage {
     name = "plugin-transform-unicode-regex";
     version = "7.2.0";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/plugin-transform-unicode-regex/-/plugin-transform-unicode-regex-7.2.0.tgz";
       sha1 = "4eb8db16f972f8abb5062c161b8b115546ade08b";
     };

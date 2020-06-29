@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, nodePackages, pkgs }:
 buildNodePackage {
     name = "types";
     version = "7.3.4";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/types/-/types-7.3.4.tgz";
       sha1 = "bf482eaeaffb367a28abbf9357a94963235d90ed";
     };

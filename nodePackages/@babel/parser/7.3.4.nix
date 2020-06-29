@@ -1,8 +1,8 @@
-{ buildNodePackage, fetchUrlWithHeaders, namespaceTokens, nodePackages, pkgs }:
+{ buildNodePackage, fetchurl, namespaceTokens, nodePackages, pkgs }:
 buildNodePackage {
     name = "parser";
     version = "7.3.4";
-    src = fetchUrlWithHeaders {
+    src = fetchurl {
       url = "https://registry.npmjs.org/@babel/parser/-/parser-7.3.4.tgz";
       sha1 = "a43357e4bbf4b92a437fb9e465c192848287f27c";
     };
