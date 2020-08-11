@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "968bf1100d7956bb3ca086f006f846b3bc4008da";
     };
     deps = with nodePackages; [
-      has-symbols_1-0-0
+      has-symbols_1-0-1
       object-keys_1-0-12
       function-bind_1-1-1
       define-properties_1-1-3
