@@ -201,7 +201,8 @@
     atob_2-1-2 = callPackage ./atob/2.1.2.nix {};
     auth0 = callPackage ./auth0/2.13.0.nix {};
     auth0_2-13-0 = callPackage ./auth0/2.13.0.nix {};
-    aws-sdk = callPackage ./aws-sdk/2.542.0.nix {};
+    aws-sdk = callPackage ./aws-sdk/2.736.0.nix {};
+    aws-sdk_2-736-0 = callPackage ./aws-sdk/2.736.0.nix {};
     aws-sdk_2-542-0 = callPackage ./aws-sdk/2.542.0.nix {};
     aws-sdk_2-420-0 = callPackage ./aws-sdk/2.420.0.nix {};
     aws-sdk_2-337-0 = callPackage ./aws-sdk/2.337.0.nix {};
@@ -550,6 +551,7 @@
     buffer = callPackage ./buffer/5.6.0.nix {};
     buffer_5-6-0 = callPackage ./buffer/5.6.0.nix {};
     buffer_5-2-1 = callPackage ./buffer/5.2.1.nix {};
+    buffer_4-9-2 = callPackage ./buffer/4.9.2.nix {};
     buffer_4-9-1 = callPackage ./buffer/4.9.1.nix {};
     buffer_2-1-13 = callPackage ./buffer/2.1.13.nix {};
     buffer-alloc = callPackage ./buffer-alloc/1.2.0.nix {};
@@ -2350,7 +2352,8 @@
     location_0-0-1 = callPackage ./location/0.0.1.nix {};
     lock = callPackage ./lock/0.1.4.nix {};
     lock_0-1-4 = callPackage ./lock/0.1.4.nix {};
-    lodash = callPackage ./lodash/4.17.15.nix {};
+    lodash = callPackage ./lodash/4.17.20.nix {};
+    lodash_4-17-20 = callPackage ./lodash/4.17.20.nix {};
     lodash_4-17-15 = callPackage ./lodash/4.17.15.nix {};
     lodash_4-17-11 = callPackage ./lodash/4.17.11.nix {};
     lodash_4-11-2 = callPackage ./lodash/4.11.2.nix {};
