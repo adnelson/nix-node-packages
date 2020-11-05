@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "339f6aababcafdb31c799ff158700336301d3346";
     };
     deps = with nodePackages; [
-      lodash_4-17-15
+      lodash_4-17-20
     ];
     peerDependencies = with nodePackages; [
       request_2-88-0
