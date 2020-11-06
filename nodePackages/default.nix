@@ -2844,7 +2844,8 @@
     once_1-3-0 = callPackage ./once/1.3.0.nix {};
     one-time = callPackage ./one-time/0.0.4.nix {};
     one-time_0-0-4 = callPackage ./one-time/0.0.4.nix {};
-    openid = callPackage ./openid/0.5.13.nix {};
+    openid = callPackage ./openid/2.0.7.nix {};
+    openid_2-0-7 = callPackage ./openid/2.0.7.nix {};
     openid_0-5-13 = callPackage ./openid/0.5.13.nix {};
     optimist = callPackage ./optimist/0.6.1.nix {};
     optimist_0-6-1 = callPackage ./optimist/0.6.1.nix {};
