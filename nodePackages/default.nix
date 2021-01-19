@@ -1923,7 +1923,8 @@
     inherits_2-0-3 = callPackage ./inherits/2.0.3.nix {};
     inherits_2-0-1 = callPackage ./inherits/2.0.1.nix {};
     inherits_1-0-2 = callPackage ./inherits/1.0.2.nix {};
-    ini = callPackage ./ini/1.3.5.nix {};
+    ini = callPackage ./ini/1.3.6.nix {};
+    ini_1-3-6 = callPackage ./ini/1.3.6.nix {};
     ini_1-3-5 = callPackage ./ini/1.3.5.nix {};
     inline-source-map = callPackage ./inline-source-map/0.6.2.nix {};
     inline-source-map_0-6-2 = callPackage ./inline-source-map/0.6.2.nix {};
