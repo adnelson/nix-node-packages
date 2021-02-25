@@ -7,7 +7,7 @@ buildNodePackage {
       sha1 = "a7958d32a8a42d9119ce25986567ea2c5f966773";
     };
     deps = with nodePackages; [
-      lodash_4-17-15
+      lodash_4-17-20
       clone_1-0-4
     ];
     meta = {
