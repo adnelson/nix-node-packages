@@ -3608,6 +3608,7 @@
     samsam_1-1-3 = callPackage ./samsam/1.1.3.nix {};
     samsam_1-1-2 = callPackage ./samsam/1.1.2.nix {};
     namespaces.sinonjs.samsam = callPackage (./. + "/@sinonjs/samsam/5.0.3.nix") {};
+    namespaces.sinonjs.samsam_5-3-0 = callPackage (./. + "/@sinonjs/samsam/5.3.0.nix") {};
     namespaces.sinonjs.samsam_5-0-3 = callPackage (./. + "/@sinonjs/samsam/5.0.3.nix") {};
     namespaces.sinonjs.samsam_3-3-3 = callPackage (./. + "/@sinonjs/samsam/3.3.3.nix") {};
     namespaces.sinonjs.samsam_3-3-0 = callPackage (./. + "/@sinonjs/samsam/3.3.0.nix") {};
@@ -3713,6 +3714,7 @@
     simple-swizzle = callPackage ./simple-swizzle/0.2.2.nix {};
     simple-swizzle_0-2-2 = callPackage ./simple-swizzle/0.2.2.nix {};
     sinon = callPackage ./sinon/9.0.2.nix {};
+    sinon_9-2-2 = callPackage ./sinon/9.2.2.nix {};
     sinon_9-0-2 = callPackage ./sinon/9.0.2.nix {};
     sinon_7-5-0 = callPackage ./sinon/7.5.0.nix {};
     sinon_7-2-7 = callPackage ./sinon/7.2.7.nix {};
