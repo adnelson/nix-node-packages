@@ -68,7 +68,7 @@
     ansi_0-3-1 = callPackage ./ansi/0.3.1.nix {};
     ansi-align = callPackage ./ansi-align/2.0.0.nix {};
     ansi-align_2-0-0 = callPackage ./ansi-align/2.0.0.nix {};
-    ansi-colors = callPackage ./ansi-colors/3.2.3.nix {};
+    ansi-colors = callPackage ./ansi-colors/4.1.1.nix {};
     ansi-colors_3-2-3 = callPackage ./ansi-colors/3.2.3.nix {};
     ansi-colors_4-1-1 = callPackage ./ansi-colors/4.1.1.nix {};
     ansi-escapes = callPackage ./ansi-escapes/3.1.0.nix {};
@@ -80,7 +80,7 @@
     ansi-regex_3-0-0 = callPackage ./ansi-regex/3.0.0.nix {};
     ansi-regex_2-1-1 = callPackage ./ansi-regex/2.1.1.nix {};
     ansi-regex_0-2-1 = callPackage ./ansi-regex/0.2.1.nix {};
-    ansi-styles = callPackage ./ansi-styles/3.2.1.nix {};
+    ansi-styles = callPackage ./ansi-styles/4.1.0.nix {};
     ansi-styles_4-1-0 = callPackage ./ansi-styles/4.1.0.nix {};
     ansi-styles_3-2-1 = callPackage ./ansi-styles/3.2.1.nix {};
     ansi-styles_2-2-1 = callPackage ./ansi-styles/2.2.1.nix {};
@@ -605,7 +605,7 @@
     callsites_2-0-0 = callPackage ./callsites/2.0.0.nix {};
     camel-case = callPackage ./camel-case/1.2.2.nix {};
     camel-case_1-2-2 = callPackage ./camel-case/1.2.2.nix {};
-    camelcase = callPackage ./camelcase/5.3.1.nix {};
+    camelcase = callPackage ./camelcase/6.0.0.nix {};
     camelcase_6-0-0 = callPackage ./camelcase/6.0.0.nix {};
     camelcase_5-3-1 = callPackage ./camelcase/5.3.1.nix {};
     camelcase_4-1-0 = callPackage ./camelcase/4.1.0.nix {};
@@ -634,7 +634,7 @@
     chai-as-promised = callPackage ./chai-as-promised/7.1.1.nix {};
     chai-as-promised_7-1-1 = callPackage ./chai-as-promised/7.1.1.nix {};
     chai-as-promised_4-3-0 = callPackage ./chai-as-promised/4.3.0.nix {};
-    chalk = callPackage ./chalk/2.4.2.nix {};
+    chalk = callPackage ./chalk/4.0.0.nix {};
     chalk_4-0-0 = callPackage ./chalk/4.0.0.nix {};
     chalk_2-4-2 = callPackage ./chalk/2.4.2.nix {};
     chalk_2-4-1 = callPackage ./chalk/2.4.1.nix {};
@@ -656,7 +656,7 @@
     check-error_1-0-2 = callPackage ./check-error/1.0.2.nix {};
     cheerio = callPackage ./cheerio/0.22.0.nix {};
     cheerio_0-22-0 = callPackage ./cheerio/0.22.0.nix {};
-    chokidar = callPackage ./chokidar/3.3.0.nix {};
+    chokidar = callPackage ./chokidar/3.4.3.nix {};
     chokidar_3-4-3 = callPackage ./chokidar/3.4.3.nix {};
     chokidar_3-3-0 = callPackage ./chokidar/3.3.0.nix {};
     chokidar_2-1-8 = callPackage ./chokidar/2.1.8.nix {};
@@ -735,11 +735,11 @@
     color = callPackage ./color/3.0.0.nix {};
     color_3-0-0 = callPackage ./color/3.0.0.nix {};
     color_0-6-0 = callPackage ./color/0.6.0.nix {};
-    color-convert = callPackage ./color-convert/1.9.3.nix {};
+    color-convert = callPackage ./color-convert/2.0.1.nix {};
     color-convert_2-0-1 = callPackage ./color-convert/2.0.1.nix {};
     color-convert_1-9-3 = callPackage ./color-convert/1.9.3.nix {};
     color-convert_0-2-1 = callPackage ./color-convert/0.2.1.nix {};
-    color-name = callPackage ./color-name/1.1.3.nix {};
+    color-name = callPackage ./color-name/1.1.4.nix {};
     color-name_1-1-4 = callPackage ./color-name/1.1.4.nix {};
     color-name_1-1-3 = callPackage ./color-name/1.1.3.nix {};
     color-string = callPackage ./color-string/1.5.3.nix {};
@@ -1055,7 +1055,7 @@
     dateformat_2-2-0 = callPackage ./dateformat/2.2.0.nix {};
     dateformat_1-0-12 = callPackage ./dateformat/1.0.12.nix {};
     dateformat_1-0-2-1-2-3 = callPackage ./dateformat/1.0.2-1.2.3.nix {};
-    debug = callPackage ./debug/4.1.1.nix {};
+    debug = callPackage ./debug/4.2.0.nix {};
     debug_4-2-0 = callPackage ./debug/4.2.0.nix {};
     debug_4-1-1 = callPackage ./debug/4.1.1.nix {};
     debug_3-2-6 = callPackage ./debug/3.2.6.nix {};
@@ -1069,7 +1069,7 @@
     debug_2-0-0 = callPackage ./debug/2.0.0.nix {};
     debug_0-8-1 = callPackage ./debug/0.8.1.nix {};
     debug_0-7-4 = callPackage ./debug/0.7.4.nix {};
-    decamelize = callPackage ./decamelize/1.2.0.nix {};
+    decamelize = callPackage ./decamelize/4.0.0.nix {};
     decamelize_4-0-0 = callPackage ./decamelize/4.0.0.nix {};
     decamelize_1-2-0 = callPackage ./decamelize/1.2.0.nix {};
     decimal-js = callPackage ./decimal-js/10.2.1.nix {};
@@ -1273,7 +1273,7 @@
     escape-html_1-0-1 = callPackage ./escape-html/1.0.1.nix {};
     escape-regexp = callPackage ./escape-regexp/0.0.1.nix {};
     escape-regexp_0-0-1 = callPackage ./escape-regexp/0.0.1.nix {};
-    escape-string-regexp = callPackage ./escape-string-regexp/1.0.5.nix {};
+    escape-string-regexp = callPackage ./escape-string-regexp/4.0.0.nix {};
     escape-string-regexp_4-0-0 = callPackage ./escape-string-regexp/4.0.0.nix {};
     escape-string-regexp_1-0-5 = callPackage ./escape-string-regexp/1.0.5.nix {};
     escape-string-regexp_1-0-2 = callPackage ./escape-string-regexp/1.0.2.nix {};
@@ -1427,7 +1427,7 @@
     finalhandler_0-3-3 = callPackage ./finalhandler/0.3.3.nix {};
     find-index = callPackage ./find-index/0.1.1.nix {};
     find-index_0-1-1 = callPackage ./find-index/0.1.1.nix {};
-    find-up = callPackage ./find-up/3.0.0.nix {};
+    find-up = callPackage ./find-up/5.0.0.nix {};
     find-up_5-0-0 = callPackage ./find-up/5.0.0.nix {};
     find-up_3-0-0 = callPackage ./find-up/3.0.0.nix {};
     find-up_2-1-0 = callPackage ./find-up/2.1.0.nix {};
@@ -1447,7 +1447,7 @@
     flagged-respawn = callPackage ./flagged-respawn/1.0.0.nix {};
     flagged-respawn_1-0-0 = callPackage ./flagged-respawn/1.0.0.nix {};
     flagged-respawn_0-3-2 = callPackage ./flagged-respawn/0.3.2.nix {};
-    flat = callPackage ./flat/4.1.0.nix {};
+    flat = callPackage ./flat/5.0.2.nix {};
     flat_5-0-2 = callPackage ./flat/5.0.2.nix {};
     flat_4-1-0 = callPackage ./flat/4.1.0.nix {};
     flatmap-stream = callPackage ./flatmap-stream/0.1.1.nix {};
@@ -2050,7 +2050,7 @@
     is-path-in-cwd_1-0-1 = callPackage ./is-path-in-cwd/1.0.1.nix {};
     is-path-inside = callPackage ./is-path-inside/1.0.1.nix {};
     is-path-inside_1-0-1 = callPackage ./is-path-inside/1.0.1.nix {};
-    is-plain-obj = callPackage ./is-plain-obj/1.1.0.nix {};
+    is-plain-obj = callPackage ./is-plain-obj/2.1.0.nix {};
     is-plain-obj_2-1-0 = callPackage ./is-plain-obj/2.1.0.nix {};
     is-plain-obj_1-1-0 = callPackage ./is-plain-obj/1.1.0.nix {};
     is-plain-object = callPackage ./is-plain-object/2.0.4.nix {};
@@ -2223,7 +2223,7 @@
     js-tokens = callPackage ./js-tokens/4.0.0.nix {};
     js-tokens_4-0-0 = callPackage ./js-tokens/4.0.0.nix {};
     js-tokens_3-0-2 = callPackage ./js-tokens/3.0.2.nix {};
-    js-yaml = callPackage ./js-yaml/3.13.1.nix {};
+    js-yaml = callPackage ./js-yaml/3.14.0.nix {};
     js-yaml_3-14-0 = callPackage ./js-yaml/3.14.0.nix {};
     js-yaml_3-13-1 = callPackage ./js-yaml/3.13.1.nix {};
     js-yaml_3-12-0 = callPackage ./js-yaml/3.12.0.nix {};
@@ -2388,7 +2388,7 @@
     load-grunt-tasks_0-1-3 = callPackage ./load-grunt-tasks/0.1.3.nix {};
     load-json-file = callPackage ./load-json-file/1.1.0.nix {};
     load-json-file_1-1-0 = callPackage ./load-json-file/1.1.0.nix {};
-    locate-path = callPackage ./locate-path/3.0.0.nix {};
+    locate-path = callPackage ./locate-path/6.0.0.nix {};
     locate-path_6-0-0 = callPackage ./locate-path/6.0.0.nix {};
     locate-path_3-0-0 = callPackage ./locate-path/3.0.0.nix {};
     locate-path_2-0-0 = callPackage ./locate-path/2.0.0.nix {};
@@ -2534,7 +2534,7 @@
     lodash-values_2-4-1 = callPackage ./lodash-values/2.4.1.nix {};
     log-driver = callPackage ./log-driver/1.2.7.nix {};
     log-driver_1-2-7 = callPackage ./log-driver/1.2.7.nix {};
-    log-symbols = callPackage ./log-symbols/3.0.0.nix {};
+    log-symbols = callPackage ./log-symbols/4.0.0.nix {};
     log-symbols_4-0-0 = callPackage ./log-symbols/4.0.0.nix {};
     log-symbols_3-0-0 = callPackage ./log-symbols/3.0.0.nix {};
     log-symbols_2-2-0 = callPackage ./log-symbols/2.2.0.nix {};
@@ -2683,7 +2683,7 @@
     mkdirp_0-3-5 = callPackage ./mkdirp/0.3.5.nix {};
     mkdirp_0-3-3 = callPackage ./mkdirp/0.3.3.nix {};
     mkdirp_0-3-0 = callPackage ./mkdirp/0.3.0.nix {};
-    mocha = callPackage ./mocha/7.2.0.nix {};
+    mocha = callPackage ./mocha/8.2.1.nix {};
     mocha_8-2-1 = callPackage ./mocha/8.2.1.nix {};
     mocha_7-2-0 = callPackage ./mocha/7.2.0.nix {};
     mocha_6-2-1 = callPackage ./mocha/6.2.1.nix {};
@@ -2700,7 +2700,7 @@
     module-details-from-path_1-0-3 = callPackage ./module-details-from-path/1.0.3.nix {};
     module-not-found-error = callPackage ./module-not-found-error/1.0.1.nix {};
     module-not-found-error_1-0-1 = callPackage ./module-not-found-error/1.0.1.nix {};
-    moment = callPackage ./moment/2.24.0.nix {};
+    moment = callPackage ./moment/2.29.1.nix {};
     moment_2-29-1 = callPackage ./moment/2.29.1.nix {};
     moment_2-24-0 = callPackage ./moment/2.24.0.nix {};
     moment_2-22-2 = callPackage ./moment/2.22.2.nix {};
@@ -2716,7 +2716,7 @@
     mongojs_0-14-2 = callPackage ./mongojs/0.14.2.nix {};
     morgan = callPackage ./morgan/1.9.1.nix {};
     morgan_1-9-1 = callPackage ./morgan/1.9.1.nix {};
-    ms = callPackage ./ms/2.1.1.nix {};
+    ms = callPackage ./ms/2.1.2.nix {};
     ms_2-1-2 = callPackage ./ms/2.1.2.nix {};
     ms_2-1-1 = callPackage ./ms/2.1.1.nix {};
     ms_2-0-0 = callPackage ./ms/2.0.0.nix {};
@@ -2934,11 +2934,11 @@
     output-file-sync_1-1-2 = callPackage ./output-file-sync/1.1.2.nix {};
     p-finally = callPackage ./p-finally/1.0.0.nix {};
     p-finally_1-0-0 = callPackage ./p-finally/1.0.0.nix {};
-    p-limit = callPackage ./p-limit/2.2.1.nix {};
+    p-limit = callPackage ./p-limit/3.0.2.nix {};
     p-limit_3-0-2 = callPackage ./p-limit/3.0.2.nix {};
     p-limit_2-2-1 = callPackage ./p-limit/2.2.1.nix {};
     p-limit_1-1-0 = callPackage ./p-limit/1.1.0.nix {};
-    p-locate = callPackage ./p-locate/3.0.0.nix {};
+    p-locate = callPackage ./p-locate/5.0.0.nix {};
     p-locate_5-0-0 = callPackage ./p-locate/5.0.0.nix {};
     p-locate_3-0-0 = callPackage ./p-locate/3.0.0.nix {};
     p-locate_2-0-0 = callPackage ./p-locate/2.0.0.nix {};
@@ -3033,7 +3033,7 @@
     path-case_1-1-2 = callPackage ./path-case/1.1.2.nix {};
     path-dirname = callPackage ./path-dirname/1.0.2.nix {};
     path-dirname_1-0-2 = callPackage ./path-dirname/1.0.2.nix {};
-    path-exists = callPackage ./path-exists/3.0.0.nix {};
+    path-exists = callPackage ./path-exists/4.0.0.nix {};
     path-exists_4-0-0 = callPackage ./path-exists/4.0.0.nix {};
     path-exists_3-0-0 = callPackage ./path-exists/3.0.0.nix {};
     path-exists_2-1-0 = callPackage ./path-exists/2.1.0.nix {};
@@ -3402,7 +3402,7 @@
     random-bytes_1-0-0 = callPackage ./random-bytes/1.0.0.nix {};
     randomatic = callPackage ./randomatic/3.1.0.nix {};
     randomatic_3-1-0 = callPackage ./randomatic/3.1.0.nix {};
-    randombytes = callPackage ./randombytes/2.0.6.nix {};
+    randombytes = callPackage ./randombytes/2.1.0.nix {};
     randombytes_2-1-0 = callPackage ./randombytes/2.1.0.nix {};
     randombytes_2-0-6 = callPackage ./randombytes/2.0.6.nix {};
     randomfill = callPackage ./randomfill/1.0.4.nix {};
@@ -3464,7 +3464,7 @@
     readable-stream_1-1-14 = callPackage ./readable-stream/1.1.14.nix {};
     readable-stream_1-0-34 = callPackage ./readable-stream/1.0.34.nix {};
     readable-stream_1-0-27-1 = callPackage ./readable-stream/1.0.27-1.nix {};
-    readdirp = callPackage ./readdirp/3.2.0.nix {};
+    readdirp = callPackage ./readdirp/3.5.0.nix {};
     readdirp_3-5-0 = callPackage ./readdirp/3.5.0.nix {};
     readdirp_3-2-0 = callPackage ./readdirp/3.2.0.nix {};
     readdirp_2-2-1 = callPackage ./readdirp/2.2.1.nix {};
@@ -3635,7 +3635,7 @@
     samsam = callPackage ./samsam/1.1.3.nix {};
     samsam_1-1-3 = callPackage ./samsam/1.1.3.nix {};
     samsam_1-1-2 = callPackage ./samsam/1.1.2.nix {};
-    namespaces.sinonjs.samsam = callPackage (./. + "/@sinonjs/samsam/5.0.3.nix") {};
+    namespaces.sinonjs.samsam = callPackage (./. + "/@sinonjs/samsam/5.3.0.nix") {};
     namespaces.sinonjs.samsam_5-3-0 = callPackage (./. + "/@sinonjs/samsam/5.3.0.nix") {};
     namespaces.sinonjs.samsam_5-0-3 = callPackage (./. + "/@sinonjs/samsam/5.0.3.nix") {};
     namespaces.sinonjs.samsam_3-3-3 = callPackage (./. + "/@sinonjs/samsam/3.3.3.nix") {};
@@ -3743,7 +3743,7 @@
     simple-lru-cache_0-0-2 = callPackage ./simple-lru-cache/0.0.2.nix {};
     simple-swizzle = callPackage ./simple-swizzle/0.2.2.nix {};
     simple-swizzle_0-2-2 = callPackage ./simple-swizzle/0.2.2.nix {};
-    sinon = callPackage ./sinon/9.0.2.nix {};
+    sinon = callPackage ./sinon/9.2.2.nix {};
     sinon_9-2-2 = callPackage ./sinon/9.2.2.nix {};
     sinon_9-0-2 = callPackage ./sinon/9.0.2.nix {};
     sinon_7-5-0 = callPackage ./sinon/7.5.0.nix {};
@@ -3913,7 +3913,7 @@
     strip-eof_1-0-0 = callPackage ./strip-eof/1.0.0.nix {};
     strip-indent = callPackage ./strip-indent/1.0.1.nix {};
     strip-indent_1-0-1 = callPackage ./strip-indent/1.0.1.nix {};
-    strip-json-comments = callPackage ./strip-json-comments/2.0.1.nix {};
+    strip-json-comments = callPackage ./strip-json-comments/3.1.1.nix {};
     strip-json-comments_3-1-1 = callPackage ./strip-json-comments/3.1.1.nix {};
     strip-json-comments_2-0-1 = callPackage ./strip-json-comments/2.0.1.nix {};
     strip-json-comments_1-0-4 = callPackage ./strip-json-comments/1.0.4.nix {};
@@ -3932,7 +3932,7 @@
     supertest = callPackage ./supertest/3.3.0.nix {};
     supertest_3-3-0 = callPackage ./supertest/3.3.0.nix {};
     supertest_0-15-0 = callPackage ./supertest/0.15.0.nix {};
-    supports-color = callPackage ./supports-color/7.1.0.nix {};
+    supports-color = callPackage ./supports-color/7.2.0.nix {};
     supports-color_7-2-0 = callPackage ./supports-color/7.2.0.nix {};
     supports-color_7-1-0 = callPackage ./supports-color/7.1.0.nix {};
     supports-color_6-0-0 = callPackage ./supports-color/6.0.0.nix {};
@@ -4266,7 +4266,7 @@
     whatwg-url_8-4-0 = callPackage ./whatwg-url/8.4.0.nix {};
     whatwg-url_7-0-0 = callPackage ./whatwg-url/7.0.0.nix {};
     whatwg-url_6-5-0 = callPackage ./whatwg-url/6.5.0.nix {};
-    which = callPackage ./which/1.3.1.nix {};
+    which = callPackage ./which/2.0.2.nix {};
     which_2-0-2 = callPackage ./which/2.0.2.nix {};
     which_1-3-1 = callPackage ./which/1.3.1.nix {};
     which_1-0-9 = callPackage ./which/1.0.9.nix {};
@@ -4378,9 +4378,9 @@
     yargs-parser_13-1-2 = callPackage ./yargs-parser/13.1.2.nix {};
     yargs-parser_13-1-1 = callPackage ./yargs-parser/13.1.1.nix {};
     yargs-parser_9-0-2 = callPackage ./yargs-parser/9.0.2.nix {};
-    yargs-unparser = callPackage ./yargs-unparser/1.6.0.nix {};
-    yargs-unparser_1-6-0 = callPackage ./yargs-unparser/1.6.0.nix {};
+    yargs-unparser = callPackage ./yargs-unparser/2.0.0.nix {};
     yargs-unparser_2-0-0 = callPackage ./yargs-unparser/2.0.0.nix {};
+    yargs-unparser_1-6-0 = callPackage ./yargs-unparser/1.6.0.nix {};
     yauzl = callPackage ./yauzl/2.4.1.nix {};
     yauzl_2-4-1 = callPackage ./yauzl/2.4.1.nix {};
     ycssmin = callPackage ./ycssmin/1.0.1.nix {};
