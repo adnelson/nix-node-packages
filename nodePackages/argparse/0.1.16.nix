@@ -6,9 +6,12 @@ buildNodePackage {
       url = "https://registry.npmjs.org/argparse/-/argparse-0.1.16.tgz";
       sha1 = "cfd01e0fbba3d6caed049fbd758d40f65196f57c";
     };
+    patchDependencies = {
+      underscore = "~1.13.1";
+    };
     deps = with nodePackages; [
       underscore-string_2-4-0
-      underscore_1-7-0
+      underscore_1-13-1
     ];
     meta = {
       homepage = "https://github.com/nodeca/argparse";

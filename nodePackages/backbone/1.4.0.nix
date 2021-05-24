@@ -6,8 +6,11 @@ buildNodePackage {
       url = "https://registry.npmjs.org/backbone/-/backbone-1.4.0.tgz";
       sha1 = "54db4de9df7c3811c3f032f34749a4cd27f3bd12";
     };
+    patchDependencies = {
+      underscore = "~1.13.1";
+    };
     deps = with nodePackages; [
-      underscore_1-9-1
+      underscore_1-13-1
     ];
     meta = {
       homepage = "https://github.com/jashkenas/backbone#readme";

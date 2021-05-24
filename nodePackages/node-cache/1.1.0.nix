@@ -6,8 +6,11 @@ buildNodePackage {
       url = "https://registry.npmjs.org/node-cache/-/node-cache-1.1.0.tgz";
       sha1 = "186365032d2395bdff73404178fb2bc8981ace70";
     };
+    patchDependencies = {
+      underscore = "~1.13.1";
+    };
     deps = with nodePackages; [
-      underscore_1-6-0
+      underscore_1-13-1
     ];
     meta = {
       homepage = "https://github.com/tcs-de/nodecache";

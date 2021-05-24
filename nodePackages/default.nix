@@ -4120,12 +4120,8 @@
     undeclared-identifiers_1-1-2 = callPackage ./undeclared-identifiers/1.1.2.nix {};
     undefsafe = callPackage ./undefsafe/2.0.2.nix {};
     undefsafe_2-0-2 = callPackage ./undefsafe/2.0.2.nix {};
-    underscore = callPackage ./underscore/1.9.1.nix {};
-    underscore_1-9-1 = callPackage ./underscore/1.9.1.nix {};
-    underscore_1-7-0 = callPackage ./underscore/1.7.0.nix {};
-    underscore_1-6-0 = callPackage ./underscore/1.6.0.nix {};
-    underscore_1-5-2 = callPackage ./underscore/1.5.2.nix {};
-    underscore_1-4-4 = callPackage ./underscore/1.4.4.nix {};
+    underscore = callPackage ./underscore/1.13.1.nix {};
+    underscore_1-13-1 = callPackage ./underscore/1.13.1.nix {};
     underscore-string = callPackage ./underscore-string/3.3.5.nix {};
     underscore-string_3-3-5 = callPackage ./underscore-string/3.3.5.nix {};
     underscore-string_2-4-0 = callPackage ./underscore-string/2.4.0.nix {};

@@ -6,8 +6,11 @@ buildNodePackage {
       url = "https://registry.npmjs.org/backbone/-/backbone-0.9.10.tgz";
       sha1 = "12b841c29c12a55ef37d582803a0f7fb35094f8a";
     };
+    patchDependencies = {
+      underscore = "~1.13.1";
+    };
     deps = with nodePackages; [
-      underscore_1-6-0
+      underscore_1-13-1
     ];
     meta = {
       description = "Give your JS App some Backbone with Models, Views, Collections, and Events.";
